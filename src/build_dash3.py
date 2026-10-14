@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """Dashboard v3: 6 phan, ket luan tung muc, nap sao ke moi, tu cap nhat (artifact publish)."""
 import json, base64, os, subprocess, sys
+PAGES = os.environ.get("DASH_PAGES") == "1"
+PAGES_URL = "https://jukytwo.github.io/ssr-so-quy-bao-tri/"
 from collections import Counter
 sys.path.insert(0, "/home/claude/ssr")
 import viz
@@ -308,6 +310,11 @@ HEAD_FRAG = ('<title>Sổ quỹ bảo trì SSR</title>\n'
              '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Cormorant+Garamond:wght@600;700&display=swap">')
 ROOT_INIT = '<div id="root"><div class="boot">Đang tải sổ quỹ bảo trì…</div></div>'
 
+if PAGES:
+    import segno as _sg, io as _io2
+    _q = _sg.make(PAGES_URL, error="m"); _bq = _io2.BytesIO(); _q.save(_bq, kind="svg", scale=4, border=2, dark="#12301F", light="#FFFFFF", xmldecl=False, svgns=True)
+    D["clips"]["qr_svg"] = _bq.getvalue().decode(); D["clips"]["url"] = PAGES_URL
+    HEAD_FRAG = HEAD_FRAG + '\n<meta name="robots" content="noindex, nofollow">'
 def jsstr(s):
     return json.dumps(s, ensure_ascii=False).replace("</", "<\\/")
 js = "".join(open(f"d3/{f}").read() for f in ["js1_core.js", "js2_render.js", "js3_upload.js", "js6_clip.js", "js7_ldx.js", "js4_app.js", "js5_xref.js"])
@@ -315,7 +322,7 @@ js = js.replace("__SKEL_OPEN__", jsstr(SKEL_OPEN)).replace("__SKEL_CLOSE__", jss
 APP = "(function(){\n" + js + "\n})();\n"
 assert "</script" not in APP.lower() and "<!--" not in APP, "app has forbidden sequence"
 
-LIGHT = os.environ.get("DASH_LIGHT") == "1"
+LIGHT = os.environ.get("DASH_LIGHT") == "1" or PAGES
 if LIGHT:
     _FD = "/home/claude/ssr/video25/web/f"; os.makedirs(_FD, exist_ok=True)
     _EXT = {"pdf": "pdf", "sum": "pdf", "xlsx": "xlsx", "cv": "docx", "q10png": "png", "q10pdf": "pdf", "pl": "pdf", "hdan": "pdf"}
@@ -335,8 +342,19 @@ if len(sys.argv) > 1 and os.path.exists(sys.argv[1]):
 frag = (HEAD_FRAG + '\n<style id="css">' + css + "</style>\n" + ROOT_INIT + "\n" + stag("tpl", "text/plain", tpl) + stag("D", "application/json", jtxt(D)) +
         stag("IMG", "application/json", jtxt(IMG)) + stag("FILES", "application/json", jtxt(FILES)) + stag("U", "application/json", jtxt(U)) + stag("app", "", APP))
 doc = SKEL_OPEN + "\n" + frag + "\n" + SKEL_CLOSE
+# bieu tuong SSR cho tab trinh duyet va man hinh dien thoai (14/10/2026)
+_meta_app = '<meta name="theme-color" content="#12301f"><meta name="apple-mobile-web-app-title" content="Sổ quỹ SSR"><meta name="application-name" content="Sổ quỹ SSR">'
+if PAGES:
+    _ic = ('<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">'
+           '<link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="manifest.webmanifest">' + _meta_app)
+else:
+    import base64 as _b64i
+    _r = lambda f: _b64i.b64encode(open(f"icons/{f}", "rb").read()).decode()
+    _ic = ('<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,' + _r("favicon-32.png") + '">'
+           '<link rel="apple-touch-icon" href="data:image/png;base64,' + _r("apple-touch-icon.png") + '">' + _meta_app)
+doc = doc.replace("</style></head>", "</style>" + _ic + "</head>", 1)
 if LIGHT:
-    open("video25/web/so_quy_bao_tri.html", "w").write(frag); open("video25/web/_test_light.html", "w").write(doc)
+    (open("video25/pages/index.html", "w").write(doc) if PAGES else (open("video25/web/so_quy_bao_tri.html", "w").write(frag), open("video25/web/_test_light.html", "w").write(doc)))
 else:
     open("d3/dashboard_v3.html", "w").write(frag)
     open("d3/dashboard_v3_standalone.html", "w").write(doc)
