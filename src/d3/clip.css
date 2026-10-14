@@ -281,7 +281,7 @@
   #tong-quan .cstrip{order:7}
   #tong-quan .startp{order:8}
   #tong-quan .hero>aside.file{order:9}
-  #tong-quan .hero .idline,#tong-quan .hero .lede,#tong-quan .hero .chips,#tong-quan .hero .cta,#tong-quan .kpis,#tong-quan .kmw,#tong-quan .k5s-w{display:none!important}
+  #tong-quan .hero .lede,#tong-quan .hero .chips,#tong-quan .hero .cta,#tong-quan .kpis,#tong-quan .kmw,#tong-quan .k5s-w{display:none!important}
   #tong-quan .hero h1{font-size:28px}
   .part-clip .pd{font-size:14px}
 }
@@ -289,3 +289,12 @@
 /* trong tab rieng: bo tieu de lap lai (giu phan tu de cac lien ket #luu-do, #muoi-cau-hoi van toi dung cho) */
 #duong-tien>.h3x,#duong-tien>.subx,#cau-hoi-bqt .q10-p>h3{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 #duong-tien>.ldx{margin-top:0}
+
+/* logo SSR ro hon (14/10/2026) */
+.mark img{width:36px;height:36px;box-shadow:0 0 0 1px var(--line)}
+@media (max-width:760px){
+  .mark img{width:34px;height:34px}
+  #tong-quan .hero .idline{order:1;display:flex!important;gap:12px;align-items:center;margin:0 0 14px;padding:10px 12px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+  #tong-quan .hero .idline img{width:52px;height:52px}
+  #tong-quan .hero .idline .nm{font-size:14.5px;line-height:1.3}
+}
