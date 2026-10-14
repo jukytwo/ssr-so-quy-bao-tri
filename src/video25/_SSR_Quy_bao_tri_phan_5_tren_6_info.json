@@ -1,0 +1,261 @@
+{
+ "duration": 202.8,
+ "sentences": 31,
+ "cards": 3,
+ "scenes": 8,
+ "size": 10911403,
+ "voice": "vi_VN-vais1000-medium",
+ "doc": null,
+ "doc_size": null,
+ "chapters": [
+  "00:00 Mở đầu",
+  "00:12 Tóm lại",
+  "00:44 Mức độ, nguyên nhân",
+  "02:32 Khung xử lý",
+  "03:05 Liên hệ"
+ ],
+ "timeline": [
+  [
+   "bia",
+   "Quỹ bảo trì, phần 5 trên 6: Tóm lại, mức độ, nguyên nhân, khung xử lý.",
+   1.5,
+   6.891
+  ],
+  [
+   "bia",
+   "Phần này tóm lại năm vấn đề, đo mức độ, tìm nguyên nhân và đặt khung xử lý.",
+   7.131,
+   11.713
+  ],
+  [
+   "tong#-2",
+   "Tóm lại năm vấn đề.",
+   12.764,
+   15.145
+  ],
+  [
+   "tong#0",
+   "Hai vấn đề đầu là ba vi phạm đã rõ trên sao kê: 986,9 triệu qua tài khoản Ban quản trị, 1,71 tỷ nằm ngoài quỹ và 1,40 tỷ đã chi ngoài quy trình.",
+   15.385,
+   26.986
+  ],
+  [
+   "tong#2",
+   "Ba vấn đề sau: 5,04 tỷ chi chưa thấy văn bản cho phép, 1,69 tỷ chưa truy được tới cùng, và 127,5 tỷ tiền gửi chưa có xác nhận của ngân hàng.",
+   27.226,
+   37.7
+  ],
+  [
+   "tong#-1",
+   "Có văn bản và chứng từ hợp lệ thì khép lại; không có thì thành vi phạm và phải bồi hoàn quỹ.",
+   37.94,
+   43.1
+  ],
+  [
+   "sev#-2",
+   "Mức độ và nguyên nhân. Có hai thước đo.",
+   44.15,
+   47.167
+  ],
+  [
+   "sev#-1",
+   "Thước đo thứ nhất là mức nghiêm trọng của 16 dấu hiệu.",
+   47.407,
+   50.78
+  ],
+  [
+   "sev#0",
+   "3 dấu hiệu mức Đỏ cần giải trình ngay.",
+   51.02,
+   53.339
+  ],
+  [
+   "sev#1",
+   "7 dấu hiệu mức Cam cần hồ sơ chứng minh.",
+   53.579,
+   56.094
+  ],
+  [
+   "sev#2",
+   "6 dấu hiệu mức Vàng cần cải thiện.",
+   56.334,
+   58.553
+  ],
+  [
+   "cause#-1",
+   "Thước đo thứ hai là nguyên nhân: cái sai do đâu mà có.",
+   59.603,
+   63.255
+  ],
+  [
+   "cause#0",
+   "Nhóm một, thiếu năng lực: làm theo thói quen hoặc quy định cũ, hồ sơ lưu thiếu, nhưng tiền về đúng người nhận và không ai hưởng lợi.",
+   63.495,
+   71.345
+  ],
+  [
+   "cause#1",
+   "Nhóm hai, lỡ tay thật: sai một lần, sai kỹ thuật, chứng từ gốc đúng và sửa được ngay.",
+   71.585,
+   76.974
+  ],
+  [
+   "cause#2",
+   "Nhóm ba, lỡ tay có chủ đích: cùng kiểu sai lặp lại, tiền đi qua tài khoản trung gian, hợp đồng chia nhỏ hoặc trả trước toàn bộ, né tránh chứng từ.",
+   77.214,
+   86.283
+  ],
+  [
+   "nnt#-1",
+   "Kết quả phân loại sơ bộ.",
+   87.333,
+   88.745
+  ],
+  [
+   "nnt#0",
+   "9 dấu hiệu thuộc nhóm thiếu năng lực: làm sai quy trình hoặc quản lý tiền kém, không thấy ai hưởng lợi.",
+   88.985,
+   94.633
+  ],
+  [
+   "nnt#1",
+   "2 dấu hiệu là lỡ tay thật: sai giấy tờ, ghi chép.",
+   94.873,
+   99.222
+  ],
+  [
+   "nnt#2",
+   "Chưa dấu hiệu nào đủ căn cứ để xếp vào nhóm có chủ đích, nhưng 4 dấu hiệu chưa loại trừ được khả năng này.",
+   99.462,
+   106.074
+  ],
+  [
+   "nnt#3",
+   "Dấu hiệu còn lại là đợt tái tục 127,5 tỷ, chưa phát sinh sai, đang chờ hợp đồng.",
+   106.314,
+   111.722
+  ],
+  [
+   "k3#-1",
+   "Bốn dấu hiệu chưa loại trừ.",
+   112.772,
+   114.197
+  ],
+  [
+   "k3#0",
+   "986,9 triệu hoàn ứng qua tài khoản vận hành: lặp lại 6 lần trong 5 tháng, bảng chi phí lệch 123,1 triệu.",
+   114.437,
+   121.932
+  ],
+  [
+   "k3#1",
+   "705,8 triệu trả Thép Quang, trả trước toàn bộ, hàng hóa chỉ ghi chung chung, gấp 14 lần mức Ban quản trị được tự quyết.",
+   122.172,
+   130.727
+  ],
+  [
+   "k3#2",
+   "856,8 triệu cho Thành Công, một nhà thầu nội thất, qua 4 hợp đồng liên tiếp.",
+   130.967,
+   136.322
+  ],
+  [
+   "k3#3",
+   "Và hợp đồng quảng cáo ký lại với Chicilon Media, thu giảm khoảng 182,2 triệu mỗi năm.",
+   136.562,
+   142.375
+  ],
+  [
+   "k3#-1",
+   "Ba khoản chi đầu cộng lại khoảng 2,55 tỷ; để kết luận cần sao kê tài khoản vận hành, danh mục thiết bị của Thép Quang, báo giá và biên bản nghiệm thu của Thành Công.",
+   142.615,
+   151.887
+  ],
+  [
+   "lad#-2",
+   "Khung xử lý theo tình trạng của từng dấu hiệu.",
+   152.938,
+   155.494
+  ],
+  [
+   "lad#0",
+   "Với vi phạm đã rõ: khắc phục là bắt buộc, Ban quản trị thuộc diện phạt 50 đến 60 triệu đồng theo khoản 3 Điều 61 Nghị định 339 năm 2026, và đây là căn cứ để Hội nghị nhà chung cư xem xét bãi nhiệm.",
+   155.734,
+   170.173
+  ],
+  [
+   "lad#1",
+   "Với dấu hiệu chờ chứng minh: có chứng từ hợp lệ thì coi như đã giải trình xong; không chứng minh được thì bồi hoàn quỹ và thành vi phạm đã rõ.",
+   170.413,
+   178.475
+  ],
+  [
+   "lad#2",
+   "Trách nhiệm hình sự chỉ đặt ra khi có chứng cứ chiếm đoạt, do cơ quan điều tra xác định; đến nay chưa có dữ kiện như vậy.",
+   178.715,
+   184.932
+  ],
+  [
+   "lienhe",
+   "Phần 6 trên 6: Mười câu hỏi, Hội nghị và việc cư dân cần làm. Toàn bộ số liệu truy được về sao kê gốc trong thư mục chia sẻ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.",
+   185.982,
+   199.588
+  ]
+ ],
+ "card_times": [
+  [
+   12.144,
+   15.145
+  ],
+  [
+   43.53,
+   47.167
+  ],
+  [
+   152.317,
+   155.494
+  ]
+ ],
+ "seg_times": [
+  [
+   "bia",
+   0.0,
+   12.239
+  ],
+  [
+   "tong",
+   12.239,
+   43.625
+  ],
+  [
+   "sev",
+   43.625,
+   59.078
+  ],
+  [
+   "cause",
+   59.078,
+   86.808
+  ],
+  [
+   "nnt",
+   86.808,
+   112.247
+  ],
+  [
+   "k3",
+   112.247,
+   152.412
+  ],
+  [
+   "lad",
+   152.412,
+   185.457
+  ],
+  [
+   "lienhe",
+   185.457,
+   202.788
+  ]
+ ]
+}

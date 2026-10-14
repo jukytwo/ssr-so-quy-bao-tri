@@ -1,0 +1,340 @@
+{
+ "duration": 278.0,
+ "sentences": 45,
+ "cards": 2,
+ "scenes": 8,
+ "size": 12947195,
+ "voice": "vi_VN-vais1000-medium",
+ "doc": null,
+ "doc_size": null,
+ "chapters": [
+  "00:00 Mở đầu",
+  "00:15 Vấn đề 3",
+  "03:09 Vấn đề 4",
+  "04:24 Liên hệ"
+ ],
+ "timeline": [
+  [
+   "bia",
+   "Quỹ bảo trì, phần 3 trên 6: Hai khoản chờ chứng từ: vấn đề 3 và 4.",
+   1.5,
+   6.752
+  ],
+  [
+   "bia",
+   "Phần này nói hai vấn đề đang chờ chứng từ: 13 khoản chi trên 50 triệu, và 705,8 triệu trả Thép Quang.",
+   6.992,
+   14.221
+  ],
+  [
+   "f3#-2",
+   "Vấn đề ba: 13 khoản chi trên 50 triệu, tổng 5,04 tỷ, chưa thấy văn bản cho phép.",
+   15.271,
+   20.835
+  ],
+  [
+   "f3#-1",
+   "Rõ nhất là tháng 4/2026, ba hợp đồng 2,15 tỷ ký trong ba ngày.",
+   21.075,
+   26.47
+  ],
+  [
+   "f3#-1",
+   "Thành Công ký ngày 06/04, HNB ngày 07/04, Thép Quang ngày 08/04. Không thấy lấy ý kiến chủ sở hữu theo Điều 9.2.",
+   26.71,
+   34.318
+  ],
+  [
+   "f3#-1",
+   "Ngày 14/04, hai lệnh chi trên hai tài khoản được lập cách nhau 2 phút, cho thấy người lập và người duyệt lệnh chưa tách riêng.",
+   34.558,
+   40.999
+  ],
+  [
+   "f3#-1",
+   "Các khoản được tạm ứng từ 50% tới 100% trước khi thi công, nghiệm thu.",
+   41.239,
+   46.795
+  ],
+  [
+   "f3#-1",
+   "Số hợp đồng HNB mang ngày 24/03/2026, nhưng ghi ký ngày 07/04/2026.",
+   47.035,
+   53.662
+  ],
+  [
+   "f3#-1",
+   "HNB là đơn vị sửa hệ thống cấp nước sinh hoạt, còn 623,3 triệu sẽ chi tiếp từ quỹ, trong khi cư dân phản ánh ống nước vẫn bể, dột nhiều nơi.",
+   53.902,
+   64.767
+  ],
+  [
+   "f3#-1",
+   "Cần làm rõ: văn bản cho phép từng hợp đồng, báo giá, nghiệm thu, và bảo hành cấp nước của HNB.",
+   65.007,
+   71.674
+  ],
+  [
+   "v3a#-1",
+   "Điều 9.2 chỉ cho Ban quản trị tự quyết việc khẩn cấp tới 50 triệu. Có 13 khoản vượt mức này, tổng 5,04 tỷ.",
+   72.724,
+   80.857
+  ],
+  [
+   "v3a#0",
+   "Lớn nhất là hợp đồng cấp nước với HNB, khoảng 1,25 tỷ, gấp 25 lần mức tự quyết.",
+   81.097,
+   86.909
+  ],
+  [
+   "v3a#1",
+   "Tiếp theo là khoản hoàn ứng 986,9 triệu, gấp khoảng 20 lần.",
+   87.149,
+   91.71
+  ],
+  [
+   "v3a#2",
+   "Thép Quang 705,8 triệu, gấp 14 lần.",
+   91.95,
+   95.284
+  ],
+  [
+   "v3a#3",
+   "Hợp đồng sửa thang máy Schindler 477,1 triệu, gấp 9,5 lần.",
+   95.524,
+   100.384
+  ],
+  [
+   "v3a#4",
+   "Thành Công 350,7 triệu và Khởi Sáng Việt 289,3 triệu, gấp 7 và 5,8 lần.",
+   100.624,
+   107.665
+  ],
+  [
+   "v3a#-1",
+   "Tính cả hai tài khoản, chi sửa chữa năm 2025 là 2,89 tỷ, năm tháng đầu 2026 là 1,63 tỷ, đều vượt trần 500 triệu mỗi năm nếu không nằm trong kế hoạch bảo trì được thông qua.",
+   107.905,
+   121.707
+  ],
+  [
+   "v3b#-1",
+   "Riêng thang máy, quỹ đã trả Schindler 806,9 triệu qua 7 lệnh, từ ngày 04/04 tới 23/06/2025.",
+   122.757,
+   131.453
+  ],
+  [
+   "v3b#1",
+   "Bảy hợp đồng sửa chữa được trả gộp một lệnh 180,8 triệu, bốn hợp đồng khác gộp 154,7 triệu. Từng hợp đồng dưới 50 triệu, nhưng cộng lại vượt mức.",
+   131.693,
+   142.669
+  ],
+  [
+   "v3b#2",
+   "Phí bảo trì và bốn hợp đồng cuối năm 2024 được trả trễ 5 tới 6 tháng.",
+   142.909,
+   147.895
+  ],
+  [
+   "v3b#-1",
+   "Tiền trả thẳng cho Schindler nên rủi ro gian lận thấp. Điều cần xem là sửa chữa lặp lại mà cư dân vẫn phản ánh thang máy, và giấy kiểm định an toàn của từng thang.",
+   148.135,
+   156.519
+  ],
+  [
+   "v3c#-1",
+   "Theo Quy chế, một khoản chi lớn phải qua năm bước.",
+   157.569,
+   160.333
+  ],
+  [
+   "v3c#0",
+   "Một, có trong kế hoạch bảo trì Hội nghị đã thông qua, hoặc được hơn một nửa chủ sở hữu đồng ý.",
+   160.573,
+   165.599
+  ],
+  [
+   "v3c#1",
+   "Hai, chọn thầu công khai, việc trên 10 triệu phải có ba báo giá.",
+   165.839,
+   169.845
+  ],
+  [
+   "v3c#2",
+   "Ba, ít nhất một nửa thành viên Ban quản trị chọn nhà thầu, và 75% thành viên đồng ý chi.",
+   170.085,
+   176.38
+  ],
+  [
+   "v3c#3",
+   "Bốn, nghiệm thu, chứng từ thanh toán có đủ ba chữ ký.",
+   176.62,
+   179.837
+  ],
+  [
+   "v3c#4",
+   "Năm, chuyển tiền thẳng cho nhà thầu.",
+   180.077,
+   182.258
+  ],
+  [
+   "v3c#-1",
+   "Với 13 khoản trên, sao kê chỉ cho thấy tiền đã chuyển. Bốn bước đầu cần Ban quản trị đưa văn bản ra.",
+   182.498,
+   188.675
+  ],
+  [
+   "f4#-2",
+   "Vấn đề bốn: tiền chưa truy được tới hàng hóa.",
+   189.725,
+   192.185
+  ],
+  [
+   "f4#-1",
+   "Khoản 705,8 triệu trả trọn cho Thép Quang.",
+   192.425,
+   195.2
+  ],
+  [
+   "f4#-1",
+   "Khoản chi gấp 14 lần mức 50 triệu Ban quản trị được tự quyết, bằng 141% trần sửa chữa đột xuất cả năm, nhưng chưa thấy văn bản cho phép.",
+   195.44,
+   204.038
+  ],
+  [
+   "f4#-1",
+   "Tiền trả 100% trước nghiệm thu, không qua đợt tạm ứng.",
+   204.278,
+   207.379
+  ],
+  [
+   "f4#-1",
+   "Hàng hóa chỉ ghi chung là thiết bị khu vực sử dụng chung.",
+   207.619,
+   210.536
+  ],
+  [
+   "f4#-1",
+   "Chưa xác minh được mã số thuế của Thép Quang.",
+   210.776,
+   212.862
+  ],
+  [
+   "f4#-1",
+   "Ký hiệu hợp đồng trùng với hợp đồng của Thành Công.",
+   213.102,
+   215.318
+  ],
+  [
+   "f4#-1",
+   "Cùng với 986,9 triệu ở vấn đề một, tổng 1,69 tỷ chưa truy được tới cùng. Cần danh mục thiết bị, hóa đơn, biên bản giao nhận, ba báo giá và kiểm đếm thiết bị thực tế.",
+   215.558,
+   226.738
+  ],
+  [
+   "v4a#-1",
+   "Để khép lại 1,69 tỷ này, cần sáu loại chứng từ.",
+   227.788,
+   231.11
+  ],
+  [
+   "v4a#0",
+   "Danh mục thiết bị Thép Quang đã giao: chủng loại, số lượng, đơn giá, xuất xứ.",
+   231.35,
+   235.946
+  ],
+  [
+   "v4a#1",
+   "Hóa đơn giá trị gia tăng khớp với 705,8 triệu.",
+   236.186,
+   239.379
+  ],
+  [
+   "v4a#2",
+   "Biên bản giao nhận và nghiệm thu, có đủ ba chữ ký.",
+   239.619,
+   242.69
+  ],
+  [
+   "v4a#3",
+   "Ba báo giá cạnh tranh theo Điều 6.3.e.",
+   242.93,
+   246.506
+  ],
+  [
+   "v4a#4",
+   "Mã số thuế và hồ sơ năng lực của Thép Quang, vì tra cứu nhanh trên các trang công khai chưa thấy doanh nghiệp đúng tên này.",
+   246.746,
+   253.037
+  ],
+  [
+   "v4a#5",
+   "Và sao kê tài khoản vận hành, để biết 986,9 triệu cuối cùng đã trả cho ai.",
+   253.277,
+   258.323
+  ],
+  [
+   "v4a#-1",
+   "Có đủ chứng từ hợp lệ thì khép lại. Không có thì phải bồi hoàn quỹ theo Điều 10.1.",
+   258.563,
+   263.693
+  ],
+  [
+   "lienhe",
+   "Phần 4 trên 6: Tiền gửi sau tái tục và Quy chế áp dụng. Toàn bộ số liệu truy được về sao kê gốc trong thư mục chia sẻ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.",
+   264.743,
+   274.843
+  ]
+ ],
+ "card_times": [
+  [
+   14.651,
+   20.835
+  ],
+  [
+   189.105,
+   192.185
+  ]
+ ],
+ "seg_times": [
+  [
+   "bia",
+   0.0,
+   14.746
+  ],
+  [
+   "f3",
+   14.746,
+   72.199
+  ],
+  [
+   "v3a",
+   72.199,
+   122.232
+  ],
+  [
+   "v3b",
+   122.232,
+   157.044
+  ],
+  [
+   "v3c",
+   157.044,
+   189.2
+  ],
+  [
+   "f4",
+   189.2,
+   227.263
+  ],
+  [
+   "v4a",
+   227.263,
+   264.218
+  ],
+  [
+   "lienhe",
+   264.218,
+   278.043
+  ]
+ ]
+}

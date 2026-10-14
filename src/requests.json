@@ -1,0 +1,92 @@
+[
+ {
+  "doc": "Giấy xác nhận số dư các hợp đồng tiền gửi có kỳ hạn: VietinBank 45 tỷ, 15 tỷ, 5 tỷ và Agribank 60 tỷ, tại ngày gần nhất, ghi rõ không cầm cố, không phong tỏa",
+  "why": "Kiểm chứng 98% quỹ bảo trì còn nguyên",
+  "to": "Ngân hàng, qua BQT",
+  "pri": "Cao"
+ },
+ {
+  "doc": "Sao kê TK 118002976372 (Kinh phí quản lý vận hành) từ 01/08/2025 tới nay",
+  "why": "Truy người nhận cuối của 986,9 triệu chuyển từ quỹ ngày 23/12/2025",
+  "to": "BQT, VietinBank",
+  "pri": "Cao"
+ },
+ {
+  "doc": "Chứng từ 6 khoản chi được hoàn ứng ngày 23/12/2025: hợp đồng, hóa đơn, biên bản nghiệm thu, ủy nhiệm chi",
+  "why": "Xác định khoản nào là thang máy, PCCC, máy phát và có đúng quy trình không",
+  "to": "BQT",
+  "pri": "Cao"
+ },
+ {
+  "doc": "Hồ sơ HĐ 080426/HDDV/BQT TQ với Thép Quang: kế hoạch bảo trì được Hội nghị thông qua có hạng mục này hoặc văn bản trên 50% chủ sở hữu đồng ý, danh mục thiết bị, hóa đơn GTGT, biên bản giao nhận và nghiệm thu, 3 báo giá, mã số thuế và giấy đăng ký kinh doanh",
+  "why": "Xác minh ai cho phép chi 705,8 triệu (gấp 14 lần mức Ban quản trị được tự quyết), mua gì, của ai, giá có hợp lý không",
+  "to": "BQT",
+  "pri": "Cao"
+ },
+ {
+  "doc": "Sao kê từ 01/06/2026 tới nay của 3 tài khoản thanh toán, kèm hợp đồng tái tục các khoản tiền gửi tháng 8/2026",
+  "why": "Thấy khoảng 5,17 tỷ lãi đáo hạn về tài khoản và lãi suất tái tục (biểu 12 tháng đã lên 5,9%)",
+  "to": "BQT, ngân hàng",
+  "pri": "Cao"
+ },
+ {
+  "doc": "Hợp đồng bảo trì thang máy, giấy xác nhận công nợ của Schindler, giấy chứng nhận kiểm định an toàn còn hiệu lực của từng thang, nhật ký sự cố và bảo trì",
+  "why": "Biết phí bảo trì từ 21/01/2025 đã trả chưa và thang nào hết hạn kiểm định; chung cư phải kiểm định thang máy 2 năm/lần",
+  "to": "BQT, Schindler, đơn vị vận hành",
+  "pri": "Cao"
+ },
+ {
+  "doc": "Hồ sơ PCCC: biên bản tự kiểm tra hằng tháng, hợp đồng và biên bản bảo dưỡng định kỳ, kết quả kiểm tra của cơ quan PCCC",
+  "why": "Đánh giá rủi ro an toàn cháy nổ theo Nghị định 105/2025/NĐ-CP",
+  "to": "BQT, đơn vị vận hành",
+  "pri": "Cao"
+ },
+ {
+  "doc": "Kế hoạch bảo trì năm 2025, 2026 đã được Hội nghị nhà chung cư thông qua và biên bản hội nghị thường niên; văn bản lấy ý kiến chủ sở hữu cho các việc khẩn cấp trên 50 triệu",
+  "why": "13 khoản chi trên 50 triệu (HNB, Thép Quang, Schindler, Thành Công, Khởi Sáng Việt, KTECH và hoàn ứng 986,9 triệu) đều phải có một trong hai văn bản này (Điều 9.2)",
+  "to": "BQT",
+  "pri": "Cao"
+ },
+ {
+  "doc": "Hồ sơ chọn thầu (thông báo mời thầu hoặc 3 báo giá) cho HNB, Schindler, Thành Công, Khởi Sáng Việt, KTECH",
+  "why": "Đối chiếu Điều 6.3.a và 6.3.e Quy chế",
+  "to": "BQT",
+  "pri": "Trung bình"
+ },
+ {
+  "doc": "Hợp đồng khai thác khu vực chung (Chicilon 01/10/2024 và 05/01/2025, Viễn thông ACT, Hưng Thái) và sổ theo dõi toàn bộ nguồn thu khu vực chung từ 08/2024, kể cả doanh thu giữ xe",
+  "why": "Kiểm tra đủ nguồn thu và lý do giá thuê giảm",
+  "to": "BQT",
+  "pri": "Trung bình"
+ },
+ {
+  "doc": "Quyết định mở TK 117002997784 và TK Agribank; đăng ký mẫu chữ ký của các tài khoản",
+  "why": "Đối chiếu nguyên tắc một tài khoản KPBT và tối thiểu 3 người đồng ký",
+  "to": "BQT",
+  "pri": "Trung bình"
+ },
+ {
+  "doc": "Báo cáo kiểm toán KPBT năm 2024, 2025 và thư quản lý",
+  "why": "Quy chế bắt buộc kiểm toán độc lập hằng năm",
+  "to": "BQT",
+  "pri": "Trung bình"
+ },
+ {
+  "doc": "Biên bản quyết toán bàn giao KPBT với chủ đầu tư (số gốc 2%, lãi phát sinh 2019–2024, khoản trừ nếu có)",
+  "why": "Kiểm tra 124,79 tỷ đã gồm đủ lãi trong thời gian chủ đầu tư giữ quỹ",
+  "to": "BQT, chủ đầu tư",
+  "pri": "Trung bình"
+ },
+ {
+  "doc": "Danh sách người dùng internet banking (người lập lệnh, người duyệt lệnh) của 3 tài khoản và nhật ký duyệt lệnh",
+  "why": "Đối chiếu yêu cầu tối thiểu 3 chữ ký của Quy chế",
+  "to": "BQT, ngân hàng",
+  "pri": "Trung bình"
+ },
+ {
+  "doc": "Hợp đồng dịch vụ quản lý vận hành và bảng cấu thành giá dịch vụ",
+  "why": "Kiểm tra phí bảo trì thang máy, PCCC có bị tính trùng với khoản chi từ quỹ không",
+  "to": "BQT, đơn vị vận hành",
+  "pri": "Trung bình"
+ }
+]

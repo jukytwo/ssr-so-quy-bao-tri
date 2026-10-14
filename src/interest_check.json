@@ -1,0 +1,237 @@
+{
+ "q": [
+  {
+   "month": "08/2024",
+   "actual": 4036372,
+   "expected": 4036372,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "09/2024",
+   "actual": 788036,
+   "expected": 788036,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "10/2024",
+   "actual": 814433,
+   "expected": 814433,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "11/2024",
+   "actual": 792434,
+   "expected": 792434,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "12/2024",
+   "actual": 827541,
+   "expected": 827541,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "01/2025",
+   "actual": 827677,
+   "expected": 827677,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "02/2025",
+   "actual": 751017,
+   "expected": 751017,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "03/2025",
+   "actual": 840781,
+   "expected": 840781,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "04/2025",
+   "actual": 788029,
+   "expected": 788029,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "05/2025",
+   "actual": 814078,
+   "expected": 814078,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "06/2025",
+   "actual": 734246,
+   "expected": 734246,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "07/2025",
+   "actual": 728095,
+   "expected": 728095,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "08/2025",
+   "actual": 824639,
+   "expected": 824639,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "09/2025",
+   "actual": 694086,
+   "expected": 694086,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "10/2025",
+   "actual": 717336,
+   "expected": 717336,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "11/2025",
+   "actual": 698245,
+   "expected": 698245,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "12/2025",
+   "actual": 686507,
+   "expected": 686507,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "01/2026",
+   "actual": 562241,
+   "expected": 562241,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "02/2026",
+   "actual": 511062,
+   "expected": 511062,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "03/2026",
+   "actual": 574617,
+   "expected": 574617,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "04/2026",
+   "actual": 478322,
+   "expected": 478322,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "05/2026",
+   "actual": 354319,
+   "expected": 354319,
+   "diff": 0,
+   "rate": 0.2
+  }
+ ],
+ "v": [
+  {
+   "month": "07/2025",
+   "actual": 15551,
+   "expected": 15551,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "08/2025",
+   "actual": 95416,
+   "expected": 95416,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "09/2025",
+   "actual": 84386,
+   "expected": 84386,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "10/2025",
+   "actual": 78166,
+   "expected": 78166,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "11/2025",
+   "actual": 114934,
+   "expected": 114934,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "12/2025",
+   "actual": 60926,
+   "expected": 60926,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "01/2026",
+   "actual": 19866,
+   "expected": 19866,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "02/2026",
+   "actual": 18271,
+   "expected": 18271,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "03/2026",
+   "actual": 16199,
+   "expected": 16199,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "04/2026",
+   "actual": 22304,
+   "expected": 22304,
+   "diff": 0,
+   "rate": 0.2
+  },
+  {
+   "month": "05/2026",
+   "actual": 29766,
+   "expected": 29766,
+   "diff": 0,
+   "rate": 0.2
+  }
+ ]
+}

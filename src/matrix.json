@@ -1,0 +1,121 @@
+[
+ {
+  "dieu": "Điều 3.1.a",
+  "req": "Lập một tài khoản KPBT, tối thiểu 3 thành viên BQT đồng chủ tài khoản, không được thay đổi tài khoản",
+  "fact": "Có hai tài khoản KPBT: VietinBank 116605084999 nhận quỹ và Agribank 6350201010476 mở 04/07/2024 giữ 60 tỷ. Sổ phụ Agribank ghi Tài khoản đồng sở hữu: No.",
+  "st": "Một phần",
+  "codes": "F11, F15"
+ },
+ {
+  "dieu": "Điều 3.1.a",
+  "req": "Gửi tiết kiệm có kỳ hạn tại ngân hàng uy tín, có ưu đãi cho khu dân cư, lãi suất công bố theo từng thời điểm",
+  "fact": "125 tỷ gửi có kỳ hạn tại VietinBank, Agribank trong 6 ngày sau khi nhận quỹ, đúng biểu niêm yết. Không có mức ưu đãi thương lượng; 15 tỷ chỉ gửi kỳ hạn 3 tháng.",
+  "st": "Một phần",
+  "codes": "F10, F16"
+ },
+ {
+  "dieu": "Điều 3.1.b",
+  "req": "Chỉ thu bổ sung KPBT từ chủ sở hữu khi quỹ còn 20% giá trị ban đầu",
+  "fact": "Không có khoản thu bổ sung nào; quỹ còn khoảng 102% số nhận bàn giao.",
+  "st": "Tuân thủ",
+  "codes": ""
+ },
+ {
+  "dieu": "Điều 3.1.a, 6.1.g",
+  "req": "Công khai tài khoản KPBT tại HNNCC và công khai chi tiêu KPBT định kỳ trên bảng tin",
+  "fact": "Hồ sơ không có bản công khai nào, trong khi 3,12 tỷ đã chi trong 04/2025 – 04/2026.",
+  "st": "Chưa đủ hồ sơ",
+  "codes": "F12"
+ },
+ {
+  "dieu": "Điều 3.2.a",
+  "req": "Tài khoản kinh phí quản lý vận hành và các khoản thu khác do Công ty quản lý đứng tên",
+  "fact": "BQT tự đứng tên TK 118002976372 (Kinh phí quản lý vận hành) và TK 117002997784 (Thu phí dịch vụ). Thư xác nhận VietinBank ngày 22/07/2024: TK 118002976372 mở ngày 04/07/2024, 6 thành viên Ban quản trị là đồng chủ tài khoản; ngày 23/12/2025 tài khoản này nhận 986,9 triệu từ quỹ.",
+  "st": "Không tuân thủ",
+  "codes": "F01, F02"
+ },
+ {
+  "dieu": "Điều 6.1.b, 6.3.c",
+  "req": "Bảo trì theo Kế hoạch bảo trì được HNNCC thông qua, trừ trường hợp đột xuất",
+  "fact": "Mười lệnh chi 3,12 tỷ từ quỹ; hồ sơ không có kế hoạch bảo trì năm 2025, 2026.",
+  "st": "Chưa đủ hồ sơ",
+  "codes": "F05, F06"
+ },
+ {
+  "dieu": "Điều 6.1.c",
+  "req": "Chỉ thuê cá nhân, đơn vị đủ điều kiện, năng lực",
+  "fact": "Thép Quang (tên thương mại thép) bán thiết bị 705,8 triệu; Thành Công (trang trí nội thất) nhận 4 hợp đồng 856,8 triệu. Schindler là hãng thang máy của tòa nhà, phù hợp.",
+  "st": "Nghi vấn",
+  "codes": "F03, F07"
+ },
+ {
+  "dieu": "Điều 6.1.d",
+  "req": "KPBT chỉ dùng bảo trì phần sở hữu chung, không dùng cho quản lý vận hành",
+  "fact": "986,9 triệu chuyển vào tài khoản Kinh phí quản lý vận hành; phí bảo trì định kỳ thang máy cần xác định có nằm trong giá dịch vụ quản lý vận hành không.",
+  "st": "Nghi vấn",
+  "codes": "F01, F06, F14"
+ },
+ {
+  "dieu": "Điều 6.1.h, 8.8.b",
+  "req": "Kiểm toán độc lập KPBT hằng năm, có thể 6 tháng hoặc đột xuất",
+  "fact": "Chỉ một lần phí xác nhận số dư ngày 21/05/2025; không thấy dấu vết kiểm toán năm 2025 tới 31/05/2026.",
+  "st": "Nghi vấn",
+  "codes": "F12"
+ },
+ {
+  "dieu": "Điều 6.3.a",
+  "req": "Chọn nhà thầu theo hình thức đấu thầu công khai",
+  "fact": "HNB 1,25 tỷ, chuỗi 4 hợp đồng Thành Công, Khởi Sáng Việt, KTECH; hồ sơ không có thông báo mời thầu.",
+  "st": "Chưa đủ hồ sơ",
+  "codes": "F05, F07, F08"
+ },
+ {
+  "dieu": "Điều 6.3.b",
+  "req": "Nghiệm thu rồi mới thanh toán; chứng từ có tối thiểu 3 chữ ký",
+  "fact": "Thép Quang được trả 100% sau 16 ngày ký, Thành Công 100% sau 3 ngày (HĐ 081225) và 18 ngày (HĐ 1509/2025); HNB và 3 hợp đồng Schindler tạm ứng 50% trước thi công; hợp đồng giữ xe Khởi Sáng Việt trả vượt 67,1 triệu.",
+  "st": "Nghi vấn",
+  "codes": "F03, F05, F07, F08, F15"
+ },
+ {
+  "dieu": "Điều 6.3.c, 9.1",
+  "req": "Thanh toán bằng chuyển khoản; chỉ khoản dưới 5 triệu mới được rút tiền mặt",
+  "fact": "Không có lệnh rút tiền mặt nào trên cả ba tài khoản; mọi khoản chi đi tới doanh nghiệp, Kho bạc hoặc tài khoản của chính BQT.",
+  "st": "Tuân thủ",
+  "codes": ""
+ },
+ {
+  "dieu": "Điều 6.3.e",
+  "req": "Mỗi việc trên 10 triệu phải có 3 báo giá của 3 nhà cung cấp khác nhau",
+  "fact": "Cả 10 lệnh chi từ quỹ và 10 lệnh chi sửa chữa, mua sắm từ TK 7784 đều trên 10 triệu; hồ sơ không có báo giá.",
+  "st": "Chưa đủ hồ sơ",
+  "codes": "F05, F07"
+ },
+ {
+  "dieu": "Điều 7.2",
+  "req": "KPBT chỉ được chuyển tới tài khoản của đơn vị thực hiện bảo trì",
+  "fact": "Chín lệnh chuyển thẳng cho nhà thầu; lệnh 986,9 triệu ngày 23/12/2025 chuyển vào tài khoản của chính BQT.",
+  "st": "Không tuân thủ",
+  "codes": "F01"
+ },
+ {
+  "dieu": "Điều 7.4",
+  "req": "Tạm dùng kinh phí vận hành cho bảo trì đột xuất tối đa 10 triệu/tháng, hoàn lại cuối mỗi tháng",
+  "fact": "Hoàn một lần 986,9 triệu cho 6 khoản chi trải 5 tháng (29/08 – 23/12/2025), gấp khoảng 20 lần hạn mức.",
+  "st": "Không tuân thủ",
+  "codes": "F01"
+ },
+ {
+  "dieu": "Điều 9.2",
+  "req": "Sửa chữa khẩn cấp trên 50 triệu cần trên 50% chủ sở hữu chấp thuận; tổng đột xuất tối đa 500 triệu/năm",
+  "fact": "13 khoản chi trên 50 triệu, tổng 5,04 tỷ: HNB 1,25 tỷ (gấp 25 lần), hoàn ứng 986,9 triệu, Thép Quang 705,8 triệu (14 lần), Schindler 477,1 triệu (9,5 lần), Thành Công 4 hợp đồng, Khởi Sáng Việt, KTECH. Chi sửa chữa năm 2025 là 2,89 tỷ, 5 tháng đầu 2026 là 1,63 tỷ, gấp 5,8 và 3,3 lần trần. Hồ sơ chưa có kế hoạch được thông qua hoặc văn bản ý kiến chủ sở hữu.",
+  "st": "Nghi vấn",
+  "codes": "F01, F03, F05, F06, F07, F08"
+ },
+ {
+  "dieu": "Điều 11 và Luật Nhà ở 2023",
+  "req": "Thu từ khai thác phần sở hữu chung phải nộp vào tài khoản KPBT (khoản 4 Điều 153)",
+  "fact": "1,71 tỷ vào TK 7784; khoản 260,9 triệu đã vào đúng tài khoản KPBT bị chuyển đi 8 ngày sau.",
+  "st": "Không tuân thủ",
+  "codes": "F02, F09"
+ }
+]

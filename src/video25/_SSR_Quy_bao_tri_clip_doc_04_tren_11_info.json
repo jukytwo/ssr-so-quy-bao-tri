@@ -1,0 +1,188 @@
+{
+ "duration": 175.0,
+ "sentences": 23,
+ "cards": 1,
+ "scenes": 5,
+ "size": 9719071,
+ "voice": "vi_VN-vais1000-medium",
+ "doc": "/home/claude/ssr/video25/_SSR_Quy_bao_tri_clip_doc_04_tren_11_Video_Doc.mp4",
+ "doc_size": 9719071,
+ "chapters": [
+  "00:00 Mở đầu",
+  "00:11 Vấn đề 2",
+  "02:41 Liên hệ"
+ ],
+ "timeline": [
+  [
+   "bia",
+   "Quỹ bảo trì, clip 4 trên 11: Vấn đề 2: tiền khu vực chung ngoài quỹ.",
+   1.5,
+   6.266
+  ],
+  [
+   "bia",
+   "1,71 tỷ tiền quảng cáo và thuê mặt bằng khu vực chung chưa từng vào quỹ.",
+   6.506,
+   10.771
+  ],
+  [
+   "f2#-2",
+   "Vấn đề hai: tiền khai thác khu vực chung nằm ngoài quỹ.",
+   11.821,
+   14.488
+  ],
+  [
+   "f2#-1",
+   "Tiền quảng cáo của Chicilon Media, Hưng Thái và tiền thuê mặt bằng của Viễn thông ACT, tổng 1,71 tỷ, vào tài khoản 117002997784 do Ban quản trị đứng tên, không vào quỹ như khoản 4 Điều 153 Luật Nhà ở 2023 quy định.",
+   14.728,
+   32.819
+  ],
+  [
+   "f2#-1",
+   "Có khoản 260,9 triệu đã vào đúng quỹ, 8 ngày sau bị chuyển ra với lý do trả nhầm.",
+   33.059,
+   38.257
+  ],
+  [
+   "f2#-1",
+   "Từ tài khoản này, 1,40 tỷ đã chi cho Thành Công, Khởi Sáng Việt và KTECH, không qua kế hoạch bảo trì, ba báo giá và nghiệm thu của quỹ.",
+   38.497,
+   47.167
+  ],
+  [
+   "f2#-1",
+   "Cả 6 hợp đồng đều trên 50 triệu, chưa thấy văn bản cho phép của chủ sở hữu.",
+   47.407,
+   52.484
+  ],
+  [
+   "f2#-1",
+   "Và chưa thấy công khai thu chi của tài khoản này.",
+   52.724,
+   55.038
+  ],
+  [
+   "f2#-1",
+   "Cần làm rõ: căn cứ mở tài khoản, hồ sơ từng hợp đồng; và phải chuyển toàn bộ số dư về quỹ.",
+   55.278,
+   60.843
+  ],
+  [
+   "v2a#-1",
+   "Dòng tiền khu vực chung đi qua năm mốc.",
+   61.893,
+   64.088
+  ],
+  [
+   "v2a#0",
+   "Ngày 01/10/2024, hợp đồng quảng cáo với Chicilon Media có giá khoảng 87 triệu đồng mỗi tháng.",
+   64.328,
+   71.118
+  ],
+  [
+   "v2a#1",
+   "Ngày 05/01/2025, hợp đồng ký lại chỉ còn 71,8 triệu mỗi tháng, giảm 17,5%, tức khoảng 182 triệu mỗi năm.",
+   71.358,
+   81.628
+  ],
+  [
+   "v2a#2",
+   "Ngày 16/07/2025, Chicilon trả 260,9 triệu vào đúng tài khoản quỹ.",
+   81.868,
+   88.186
+  ],
+  [
+   "v2a#3",
+   "Tám ngày sau, khoản này bị chuyển sang tài khoản đuôi 7784 với lý do trả nhầm, dù theo luật tài khoản quỹ mới là tài khoản đúng.",
+   88.426,
+   96.471
+  ],
+  [
+   "v2a#4",
+   "Từ tháng 7/2025 tới tháng 5/2026, toàn bộ 1,71 tỷ từ Chicilon Media, Viễn thông ACT và Hưng Thái đều vào tài khoản ngoài quỹ.",
+   96.711,
+   107.346
+  ],
+  [
+   "v2a#-1",
+   "Nếu giá quảng cáo giảm vì đổi số màn hình hay vị trí, Ban quản trị cần văn bản giải thích.",
+   107.586,
+   112.747
+  ],
+  [
+   "v2b#-1",
+   "Từ tài khoản ngoài quỹ này, 1,40 tỷ đã chi cho ba nhà thầu.",
+   113.797,
+   118.588
+  ],
+  [
+   "v2b#0",
+   "Thành Công nhận 856,8 triệu qua bốn hợp đồng, chiếm 61% số tiền sửa chữa. Hai hợp đồng được trả trọn chỉ 3 và 18 ngày sau khi ký.",
+   118.828,
+   128.46
+  ],
+  [
+   "v2b#0",
+   "Một hợp đồng là xây nhà để hàng hóa, 165,8 triệu. Xây mới trên phần sở hữu chung không phải bảo trì, phải do Hội nghị quyết định.",
+   128.7,
+   138.072
+  ],
+  [
+   "v2b#1",
+   "Khởi Sáng Việt sửa hệ thống giữ xe: tạm ứng 40% là 115,7 triệu, tức hợp đồng khoảng 289,3 triệu, nhưng tổng đã trả 356,4 triệu, cao hơn 67,1 triệu.",
+   138.312,
+   151.65
+  ],
+  [
+   "v2b#2",
+   "KTECH sửa và lắp camera, 187 triệu.",
+   151.89,
+   154.971
+  ],
+  [
+   "v2b#-1",
+   "Cả ba đều không qua kế hoạch bảo trì, ba báo giá và nghiệm thu như tiền quỹ phải có.",
+   155.211,
+   160.019
+  ],
+  [
+   "lienhe",
+   "Clip tiếp theo, số 5 trên 11: Vấn đề 3: 13 khoản chi trên 50 triệu. Toàn bộ số liệu truy được về sao kê gốc trong thư mục chia sẻ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.",
+   161.069,
+   171.84
+  ]
+ ],
+ "card_times": [
+  [
+   11.201,
+   14.488
+  ]
+ ],
+ "seg_times": [
+  [
+   "bia",
+   0.0,
+   11.296
+  ],
+  [
+   "f2",
+   11.296,
+   61.368
+  ],
+  [
+   "v2a",
+   61.368,
+   113.272
+  ],
+  [
+   "v2b",
+   113.272,
+   160.544
+  ],
+  [
+   "lienhe",
+   160.544,
+   175.04
+  ]
+ ]
+}

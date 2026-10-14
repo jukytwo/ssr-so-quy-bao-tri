@@ -1,0 +1,270 @@
+{
+ "duration": 211.0,
+ "sentences": 35,
+ "cards": 3,
+ "scenes": 5,
+ "size": 10221022,
+ "voice": "vi_VN-vais1000-medium",
+ "doc": null,
+ "doc_size": null,
+ "chapters": [
+  "00:00 Mở đầu",
+  "00:14 Mười câu hỏi",
+  "02:22 Hội nghị quyết định",
+  "02:55 Cư dân làm gì",
+  "03:20 Liên hệ"
+ ],
+ "timeline": [
+  [
+   "bia",
+   "Quỹ bảo trì, phần 6 trên 6: Mười câu hỏi, Hội nghị và việc cư dân cần làm.",
+   1.5,
+   6.991
+  ],
+  [
+   "bia",
+   "Phần cuối gồm mười câu hỏi đã gửi Ban quản trị, ba phương án cho Hội nghị và việc cư dân cần làm.",
+   7.231,
+   13.461
+  ],
+  [
+   "q10#-2",
+   "Mười câu hỏi đã gửi Ban quản trị ngày 29/09/2026, hạn trả lời ngày 04/10/2026.",
+   14.511,
+   22.632
+  ],
+  [
+   "q10#0",
+   "Câu một: vì sao 986,9 triệu tiền quỹ chuyển vào tài khoản vận hành, căn cứ là biên bản hay văn bản nào.",
+   22.872,
+   29.728
+  ],
+  [
+   "q10#0",
+   "Kèm theo là biên bản họp, sao kê tài khoản nhận từ 01/08/2025, và hợp đồng, hóa đơn, nghiệm thu của sáu khoản.",
+   29.968,
+   38.235
+  ],
+  [
+   "q10#1",
+   "Câu hai: bảng chi phí ngày 15/05/2026 chỉ giải thích 863,8 triệu, phần lệch 123,1 triệu là gì.",
+   38.475,
+   46.659
+  ],
+  [
+   "q10#1",
+   "Kèm theo là bảng đối chiếu từng khoản với chứng từ gốc.",
+   46.899,
+   49.364
+  ],
+  [
+   "q10#2",
+   "Câu ba: căn cứ nào để thu 1,71 tỷ tiền khu vực chung vào tài khoản ngoài quỹ.",
+   49.604,
+   54.274
+  ],
+  [
+   "q10#2",
+   "Kèm theo là hợp đồng với Chicilon Media, Viễn thông ACT, Hưng Thái, và quyết định mở tài khoản.",
+   54.514,
+   60.572
+  ],
+  [
+   "q10#3",
+   "Câu bốn: hồ sơ của 1,40 tỷ đã chi, trong đó 856,8 triệu cho Thành Công.",
+   60.812,
+   66.326
+  ],
+  [
+   "q10#3",
+   "Kèm theo là dự toán, ba báo giá, biên bản nghiệm thu và ảnh hiện trạng trước, sau của từng hợp đồng.",
+   66.566,
+   71.855
+  ],
+  [
+   "q10#4",
+   "Câu năm: vì sao hợp đồng giữ xe với Khởi Sáng Việt được trả vượt 67,1 triệu.",
+   72.095,
+   76.981
+  ],
+  [
+   "q10#4",
+   "Kèm theo là hợp đồng gốc, phụ lục phát sinh và biên bản quyết toán.",
+   77.221,
+   80.868
+  ],
+  [
+   "q10#5",
+   "Câu sáu: danh mục thiết bị và hóa đơn của 705,8 triệu trả Thép Quang.",
+   81.108,
+   86.485
+  ],
+  [
+   "q10#5",
+   "Kèm theo là biên bản giao nhận, mã số thuế của nhà cung cấp, và kiểm đếm thiết bị thực tế.",
+   86.725,
+   90.958
+  ],
+  [
+   "q10#6",
+   "Câu bảy: vì sao phí bảo trì thang máy Schindler vắng trên tài khoản quỹ từ ngày 21/01/2025.",
+   91.198,
+   96.983
+  ],
+  [
+   "q10#6",
+   "Kèm theo là giấy xác nhận công nợ của Schindler và nhật ký bảo trì từng thang.",
+   97.223,
+   101.502
+  ],
+  [
+   "q10#7",
+   "Câu tám: xác nhận của ngân hàng cho 127,5 tỷ tiền gửi sau tái tục.",
+   101.742,
+   106.096
+  ],
+  [
+   "q10#7",
+   "Kèm theo là hợp đồng tiền gửi và giấy xác nhận số dư tại quầy, ghi rõ không cầm cố, không phong tỏa.",
+   106.336,
+   112.448
+  ],
+  [
+   "q10#8",
+   "Câu chín: vì sao tiền quảng cáo của Chicilon Media giảm 17,5% sau khi ký lại hợp đồng.",
+   112.688,
+   118.101
+  ],
+  [
+   "q10#8",
+   "Kèm theo là hai hợp đồng, phụ lục, và lý do điều chỉnh giá.",
+   118.341,
+   121.857
+  ],
+  [
+   "q10#9",
+   "Câu mười: sao kê của ba tài khoản từ ngày 01/06/2026 tới nay.",
+   122.097,
+   127.003
+  ],
+  [
+   "q10#9",
+   "Vì sổ phụ in ngày 04/09/2026 nhưng chỉ tới 31/05/2026, nên chưa thấy dòng tiền đáo hạn và tái tục.",
+   127.243,
+   135.774
+  ],
+  [
+   "q10#-1",
+   "Mỗi câu đều kèm danh sách chứng từ cụ thể. Ban quản trị trả lời đủ thì từng dấu hiệu được khép lại.",
+   136.014,
+   141.44
+  ],
+  [
+   "pa#-2",
+   "Hội nghị quyết định theo điều kiện, xét riêng từng thành viên.",
+   142.49,
+   145.265
+  ],
+  [
+   "pa#-1",
+   "Mỗi thành viên được xét riêng, vì vai trò ký duyệt và mức độ tham gia của từng người khác nhau.",
+   145.505,
+   149.841
+  ],
+  [
+   "pa#0",
+   "Giữ, khi tiền đã về đủ quỹ, có đủ văn bản, chứng từ và xác nhận của ngân hàng.",
+   150.081,
+   154.949
+  ],
+  [
+   "pa#1",
+   "Xem xét thêm, khi đã khắc phục hai vấn đề đầu nhưng còn thiếu chứng từ. Kèm hạn 30 ngày, kiểm toán độc lập và tạm dừng khoản chi mới trên 50 triệu.",
+   155.189,
+   165.506
+  ],
+  [
+   "pa#2",
+   "Bãi nhiệm, khi không khắc phục, không có văn bản cho phép, hoặc né tránh cung cấp chứng từ. Khoản nào không chứng minh được thì phải bồi hoàn quỹ.",
+   165.746,
+   174.453
+  ],
+  [
+   "cuda#-2",
+   "Trước Hội nghị, cư dân có thể làm ba việc.",
+   175.503,
+   178.05
+  ],
+  [
+   "cuda#0",
+   "Đọc ba file trong thư mục 0 của thư mục chia sẻ: tờ Năm vấn đề, lưu đồ dòng tiền và bản tóm tắt, mất khoảng 20 phút.",
+   178.29,
+   186.33
+  ],
+  [
+   "cuda#1",
+   "Ghi ý kiến vào phiếu ở mặt sau tờ Năm vấn đề và mang tới Hội nghị.",
+   186.57,
+   190.743
+  ],
+  [
+   "cuda#2",
+   "Theo dõi câu trả lời của Ban quản trị cho mười câu hỏi, và góp thêm chứng từ nếu có.",
+   190.983,
+   195.569
+  ],
+  [
+   "cuda#-1",
+   "Chủ sở hữu không dự được có thể ủy quyền cho người khác tham dự Hội nghị.",
+   195.809,
+   199.704
+  ],
+  [
+   "lienhe",
+   "Toàn bộ số liệu truy được về sao kê gốc trong thư mục chia sẻ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.",
+   200.754,
+   207.817
+  ]
+ ],
+ "card_times": [
+  [
+   13.891,
+   22.632
+  ],
+  [
+   141.87,
+   145.265
+  ],
+  [
+   174.883,
+   178.05
+  ]
+ ],
+ "seg_times": [
+  [
+   "bia",
+   0.0,
+   13.986
+  ],
+  [
+   "q10",
+   13.986,
+   141.965
+  ],
+  [
+   "pa",
+   141.965,
+   174.978
+  ],
+  [
+   "cuda",
+   174.978,
+   200.229
+  ],
+  [
+   "lienhe",
+   200.229,
+   211.017
+  ]
+ ]
+}

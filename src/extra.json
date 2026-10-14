@@ -1,0 +1,72 @@
+[
+ {
+  "t": "Lãi không kỳ hạn từng tháng",
+  "m": "Tính lại lãi 0,2%/năm trên số dư đầu ngày của 33 tháng ở hai tài khoản VietinBank; lãi Agribank theo quy tắc làm tròn 100 đồng.",
+  "r": "33/33 tháng khớp tới từng đồng. Agribank khớp quy tắc làm tròn và không trả lãi khi số dư dưới 1 triệu.",
+  "i": "Sao kê đầy đủ, không có giao dịch qua đêm nào bị giấu hoặc thêm vào; đây là bằng chứng mạnh nhất rằng sao kê do hệ thống ngân hàng lập.",
+  "st": "Đạt"
+ },
+ {
+  "t": "Lãi suất so với thực tế từng thời điểm",
+  "m": "So lãi suất suy ra với biểu niêm yết của VietinBank, Agribank và mặt bằng thị trường tại cùng thời điểm.",
+  "r": "BQT nhận đúng biểu cá nhân tại quầy: 3 tháng 2,0% rồi 1,9% và 2,4%; 12 tháng 4,7%. Cao hơn biểu doanh nghiệp (1,9% và 4,2%). Tháng 8/2024 Techcombank trả 5,75%, ABBank 6,0% cho 12 tháng.",
+  "i": "Không có dấu hiệu bị hưởng lãi thấp hơn thực tế. Hiệu quả thấp đến từ việc chọn kỳ hạn 3 tháng, để tiền nhàn rỗi và chỉ gửi tại quầy nhóm ngân hàng quốc doanh mà không thương lượng.",
+  "st": "Lưu ý"
+ },
+ {
+  "t": "Thuế GTGT trên từng khoản chi",
+  "m": "Tách thuế 8% và 10% để tìm giá trị trước thuế tròn số của từng hợp đồng.",
+  "r": "Phí bảo trì Schindler 52.308.000 đồng/tháng trước thuế, đúng 2.906.000 đồng x 18 thang. HNB 1.154.242.000 đồng trước thuế. Hợp đồng giữ xe Khởi Sáng Việt gốc 263.000.000 đồng, quyết toán 324.000.000 đồng. Thép Quang 653.490.625 đồng trước thuế, không tròn số.",
+  "i": "Số liệu mang cấu trúc hóa đơn thật. Cần đối chiếu hóa đơn với hợp đồng, nhất là phần tăng 61 triệu (23%) của hợp đồng giữ xe và cơ cấu giá của Thép Quang.",
+  "st": "Phát hiện"
+ },
+ {
+  "t": "Nhịp thanh toán cho Schindler",
+  "m": "Đối chiếu kỳ dịch vụ ghi trong nội dung với ngày trả tiền.",
+  "r": "Phí bảo trì 21/10/2024 – 20/01/2025 và các sửa chữa tháng 11–12/2024 đều trả ngày 06/06/2025. Từ 21/01/2025 không còn khoản phí bảo trì định kỳ nào trên tài khoản quỹ.",
+  "i": "Hoặc phí được trả từ tài khoản vận hành, hoặc hãng bị nợ phí nhiều tháng; trường hợp sau có thể làm gián đoạn bảo trì chính hãng.",
+  "st": "Cần hồ sơ"
+ },
+ {
+  "t": "Phiên lập lệnh và giờ giao dịch",
+  "m": "Xem thời điểm lập từng lệnh trên hai tài khoản VietinBank.",
+  "r": "Ngày 14/04/2026 hai lệnh 623,3 triệu (TK quỹ, 11:26:17) và 116,2 triệu (TK 7784, 11:28:21) cách nhau 2 phút. Các lệnh nộp thuế lập lúc 19–23 giờ cuối tuần.",
+  "i": "Cùng một người thao tác internet banking trên cả hai tài khoản; cần xác nhận có người duyệt lệnh độc lập.",
+  "st": "Cần hồ sơ"
+ },
+ {
+  "t": "Người nhận tiền và tiền mặt",
+  "m": "Rà đối ứng của mọi khoản chi trên ba tài khoản.",
+  "r": "Không có lệnh rút tiền mặt, không có khoản chuyển cho cá nhân; tiền chỉ đi tới doanh nghiệp, Kho bạc hoặc tài khoản của chính BQT.",
+  "i": "Điểm tích cực. Rủi ro tập trung ở khoản chuyển vào tài khoản vận hành của BQT, nơi không có sao kê.",
+  "st": "Đạt"
+ },
+ {
+  "t": "Chi phí giữ tài khoản Agribank",
+  "m": "So phí duy trì với lãi thu được trên tài khoản thanh toán Agribank.",
+  "r": "Phí SMS và quản lý tài khoản 77.000 đồng mỗi tháng, cộng 1.238.600 đồng phí chuyển lãi về VietinBank; lãi không kỳ hạn thu được chỉ 458.900 đồng.",
+  "i": "Số nhỏ, nhưng là chi phí trực tiếp của việc chia quỹ ra hai ngân hàng.",
+  "st": "Lưu ý"
+ },
+ {
+  "t": "Số tiền nhận bàn giao",
+  "m": "So số nhận với nghĩa vụ 2% và phần lãi trong thời gian chủ đầu tư giữ quỹ (bàn giao căn hộ từ 12/2019).",
+  "r": "124.789.887.563 đồng gồm 301,4 triệu và 124.488,5 triệu từ việc đóng TK 110002805677; hồ sơ không có biên bản quyết toán.",
+  "i": "Cần biên bản để biết lãi 2019–2024 đã tính đủ. Nếu quỹ nằm ở tài khoản thanh toán nhiều năm, phần lãi có thể rất thấp so với gửi có kỳ hạn.",
+  "st": "Cần hồ sơ"
+ },
+ {
+  "t": "Cam kết chi còn lại",
+  "m": "Cộng phần chưa trả của các hợp đồng đã tạm ứng từ quỹ.",
+  "r": "HNB còn 623,3 triệu; ba hợp đồng Schindler còn 298,8 triệu nếu chưa trả qua tài khoản vận hành.",
+  "i": "Khoảng 0,92 tỷ có thể tiếp tục rời quỹ; nên tạm dừng cho tới khi có hồ sơ nghiệm thu.",
+  "st": "Cần hồ sơ"
+ },
+ {
+  "t": "Đợt tái tục tháng 8/2026",
+  "m": "So lãi suất khi các khoản tiền gửi đáo hạn sau kỳ sao kê.",
+  "r": "45 tỷ (20/08), 60 tỷ (22/08), 5 tỷ (29/08/2026) đáo hạn; biểu 12 tháng tại quầy đã lên 5,9%, Agribank trực tuyến 6,8%.",
+  "i": "Tái tục đúng biểu mang lại thêm khoảng 1,32 tỷ/năm so với 4,7%; khoảng 5,17 tỷ lãi năm 2025–2026 phải về tài khoản trong tháng 8/2026.",
+  "st": "Cần hồ sơ"
+ }
+]

@@ -1,0 +1,146 @@
+{
+ "duration": 102.5,
+ "sentences": 16,
+ "cards": 1,
+ "scenes": 5,
+ "size": 6184252,
+ "voice": "vi_VN-vais1000-medium",
+ "doc": "/home/claude/ssr/video25/_SSR_Quy_bao_tri_clip_doc_08_tren_11_Video_Doc.mp4",
+ "doc_size": 6184252,
+ "chapters": [
+  "00:00 Mở đầu",
+  "00:10 Quy chế áp dụng",
+  "01:27 Liên hệ"
+ ],
+ "timeline": [
+  [
+   "bia",
+   "Quỹ bảo trì, clip 8 trên 11: Quy chế áp dụng.",
+   1.5,
+   4.68
+  ],
+  [
+   "bia",
+   "Có hai bộ quy chế đang lưu hành; clip này nói bản nào áp dụng và điều gì đã thay đổi.",
+   4.92,
+   9.567
+  ],
+  [
+   "qc1#-2",
+   "Quy chế nào đang áp dụng?",
+   10.617,
+   11.884
+  ],
+  [
+   "qc1#0",
+   "Có hai bộ quy chế đang lưu hành. Bản dự thảo 50 trang gửi kèm công văn ngày 16/11/2023, còn để ngỏ nhiều phương án.",
+   12.124,
+   20.273
+  ],
+  [
+   "qc1#1",
+   "Và bản Hội nghị thông qua ngày 26/05/2024, 42 trang, đã chốt từng phương án. Mọi đối chiếu trong clip này dùng bản thông qua.",
+   20.513,
+   29.391
+  ],
+  [
+   "qc2#-1",
+   "So với dự thảo, thay đổi nằm ở cách tổ chức Ban quản trị.",
+   30.441,
+   33.726
+  ],
+  [
+   "qc2#0",
+   "Ban quản trị có tối thiểu 9 thành viên, mỗi block ít nhất một người; dự thảo chỉ có hai phương án 7 hoặc 11 người.",
+   33.966,
+   41.139
+  ],
+  [
+   "qc2#1",
+   "Có hai Phó ban, trong đó một người đại diện chủ đầu tư.",
+   41.379,
+   45.264
+  ],
+  [
+   "qc2#2",
+   "Ban quản trị hoạt động theo mô hình Hội đồng quản trị của công ty cổ phần.",
+   45.504,
+   49.153
+  ],
+  [
+   "qc2#3",
+   "Thù lao chốt ở mức 6, 5 và 4 triệu đồng mỗi tháng cho Trưởng ban, Phó ban và thành viên.",
+   49.393,
+   55.189
+  ],
+  [
+   "qc3#-1",
+   "Các điều kiểm soát tiền quỹ thì giữ nguyên, không đổi một chữ.",
+   56.239,
+   59.331
+  ],
+  [
+   "qc3#0",
+   "Điều 3.1.a: tài khoản quỹ có ít nhất ba thành viên cùng đứng tên và không được thay đổi.",
+   59.571,
+   64.97
+  ],
+  [
+   "qc3#1",
+   "Điều 7.2 tới 7.4: tiền quỹ chuyển thẳng cho nhà thầu, tạm dùng tiền vận hành tối đa 10 triệu mỗi tháng.",
+   65.21,
+   71.853
+  ],
+  [
+   "qc3#2",
+   "Điều 9.2: khoản trên 50 triệu cần hơn một nửa chủ sở hữu đồng ý.",
+   72.093,
+   76.37
+  ],
+  [
+   "qc3#-1",
+   "Quy chế có một chỗ tự mâu thuẫn: Điều 3.1.a công khai chi tiêu 6 tháng một lần, Điều 6.1.g yêu cầu hằng tháng. Cư dân có thể đề nghị áp dụng mức hằng tháng.",
+   76.61,
+   86.926
+  ],
+  [
+   "lienhe",
+   "Clip tiếp theo, số 9 trên 11: Tóm lại, mức độ và khung xử lý. Toàn bộ số liệu truy được về sao kê gốc trong thư mục chia sẻ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.",
+   87.976,
+   99.296
+  ]
+ ],
+ "card_times": [
+  [
+   9.997,
+   11.884
+  ]
+ ],
+ "seg_times": [
+  [
+   "bia",
+   0.0,
+   10.092
+  ],
+  [
+   "qc1",
+   10.092,
+   29.916
+  ],
+  [
+   "qc2",
+   29.916,
+   55.714
+  ],
+  [
+   "qc3",
+   55.714,
+   87.451
+  ],
+  [
+   "lienhe",
+   87.451,
+   102.496
+  ]
+ ]
+}

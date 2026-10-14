@@ -1,0 +1,83 @@
+[
+ {
+  "when": "20/08/2024",
+  "item": "15 tỷ, kỳ hạn 3 tháng (VietinBank)",
+  "got": 0.02,
+  "posted": "2,0% (cá nhân, 3–6 tháng)",
+  "corp": "1,9%",
+  "market": "—",
+  "note": "Đúng biểu"
+ },
+ {
+  "when": "20/08/2024",
+  "item": "45 tỷ, kỳ hạn 12 tháng (VietinBank)",
+  "got": 0.047,
+  "posted": "4,7%",
+  "corp": "4,2%",
+  "market": "Techcombank 5,75%; ABBank 6,0%",
+  "note": "Đúng biểu, cao hơn biểu doanh nghiệp"
+ },
+ {
+  "when": "21/08/2024",
+  "item": "60 tỷ, kỳ hạn 12 tháng (Agribank)",
+  "got": 0.047,
+  "posted": "4,7%",
+  "corp": "—",
+  "market": "Techcombank 5,75%; ABBank 6,0%",
+  "note": "Đúng biểu"
+ },
+ {
+  "when": "20/05/2025 – 20/02/2026",
+  "item": "15 tỷ tái tục 3 tháng (3 kỳ)",
+  "got": 0.019,
+  "posted": "1,9% (cá nhân, 3–6 tháng, 12/2025)",
+  "corp": "1,9%",
+  "market": "—",
+  "note": "Đúng biểu; 12 tháng lúc đó 4,7%"
+ },
+ {
+  "when": "20/08/2025",
+  "item": "45 tỷ tái tục 12 tháng (VietinBank)",
+  "got": null,
+  "posted": "4,7%",
+  "corp": "4,2%",
+  "market": "HDBank 6,1% (18 tháng)",
+  "note": "Chưa có chứng từ lãi suất tái tục"
+ },
+ {
+  "when": "22/08/2025",
+  "item": "60 tỷ gửi lại 12 tháng (Agribank)",
+  "got": null,
+  "posted": "4,7% (12–18 tháng)",
+  "corp": "—",
+  "market": "HDBank 6,1% (18 tháng)",
+  "note": "Chưa có chứng từ lãi suất"
+ },
+ {
+  "when": "20/02/2026",
+  "item": "15 tỷ tái tục 3 tháng",
+  "got": 0.024,
+  "posted": "2,4% (cá nhân, 3–6 tháng); 12 tháng 5,2%",
+  "corp": "—",
+  "market": "—",
+  "note": "Đúng biểu; chênh 12 tháng 2,8 điểm"
+ },
+ {
+  "when": "Cả kỳ",
+  "item": "Tiền gửi thanh toán (không kỳ hạn)",
+  "got": 0.002,
+  "posted": "0,1% (cá nhân)",
+  "corp": "0,2%",
+  "market": "—",
+  "note": "Đúng biểu doanh nghiệp"
+ },
+ {
+  "when": "20–29/08/2026",
+  "item": "110 tỷ đáo hạn, tái tục; 15 tỷ chuyển sang 12 tháng",
+  "got": 0.08,
+  "posted": "5,9% (quầy, 12 tháng)",
+  "corp": "4,5%",
+  "market": "Agribank trực tuyến 6,8% (03/09/2026); HDBank 7,2%; lãi thỏa thuận cho khoản gửi lớn có thể cao hơn biểu 2 – 2,5 điểm",
+  "note": "Theo Thông báo 05-2026/TB-BQTSSR ngày 15/09/2026: 8%/năm kỳ hạn 12 tháng (khoản 5 tỷ 7,8% kỳ hạn 6 tháng), cao hơn biểu tại quầy; cần hợp đồng và xác nhận của ngân hàng"
+ }
+]

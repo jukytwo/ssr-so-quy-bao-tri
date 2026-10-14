@@ -1,0 +1,235 @@
+{
+ "duration": 201.4,
+ "sentences": 30,
+ "cards": 1,
+ "scenes": 6,
+ "size": 11684725,
+ "voice": "vi_VN-vais1000-medium",
+ "doc": "/home/claude/ssr/video25/_SSR_Quy_bao_tri_clip_doc_03_tren_11_Video_Doc.mp4",
+ "doc_size": 11684725,
+ "chapters": [
+  "00:00 Mở đầu",
+  "00:17 Vấn đề 1",
+  "03:07 Liên hệ"
+ ],
+ "timeline": [
+  [
+   "bia",
+   "Quỹ bảo trì, clip 3 trên 11: Vấn đề 1: 986,9 triệu vào tài khoản Ban quản trị.",
+   1.5,
+   7.814
+  ],
+  [
+   "bia",
+   "Ngày 23/12/2025, 986,9 triệu tiền quỹ chuyển vào một tài khoản do chính các thành viên Ban quản trị đồng đứng tên.",
+   8.054,
+   16.55
+  ],
+  [
+   "f1#-2",
+   "Vấn đề một: 986,9 triệu tiền quỹ đi vào tài khoản của chính Ban quản trị.",
+   17.6,
+   22.799
+  ],
+  [
+   "f1#-1",
+   "Đường xanh là đường đúng theo Quy chế, đường đỏ là đường tiền đã đi.",
+   23.039,
+   26.876
+  ],
+  [
+   "f1#-1",
+   "Theo Quy chế, tiền quỹ chỉ được chuyển thẳng tới đơn vị làm bảo trì. Thực tế, ngày 23/12/2025, quỹ chuyển 986,9 triệu vào tài khoản vận hành, trái Điều 7.2.",
+   27.116,
+   39.242
+  ],
+  [
+   "f1#-1",
+   "Tài khoản nhận do 6 thành viên Ban quản trị đồng đứng tên, trong khi Điều 3.2.a giao công ty quản lý đứng tên tài khoản này.",
+   39.482,
+   46.094
+  ],
+  [
+   "f1#-1",
+   "Sáu khoản chi được ứng từ ngày 29/08 rồi gộp hoàn một lần ngày 23/12. Điều 7.4 chỉ cho tạm dùng tối đa 10 triệu mỗi tháng và hoàn cuối mỗi tháng; khoản này gấp khoảng 20 lần.",
+   46.334,
+   58.287
+  ],
+  [
+   "f1#-1",
+   "Chưa có sao kê tài khoản nhận, nên chưa biết tiền cuối cùng trả cho ai.",
+   58.527,
+   62.001
+  ],
+  [
+   "f1#-1",
+   "Bảng chi phí Ban quản trị báo cáo ngày 15/05/2026 chỉ giải thích 863,8 triệu, lệch 123,1 triệu so với số đã chuyển.",
+   62.241,
+   72.206
+  ],
+  [
+   "f1#-1",
+   "Trong khi đó, quỹ luôn còn ít nhất 4,22 tỷ, không có lý do phải ứng trước từ tài khoản khác.",
+   72.446,
+   78.062
+  ],
+  [
+   "f1#-1",
+   "Cần làm rõ: căn cứ của lệnh chuyển, sao kê tài khoản nhận từ 01/08/2025, và hợp đồng, hóa đơn, nghiệm thu của 6 khoản.",
+   78.302,
+   87.006
+  ],
+  [
+   "v1a#-1",
+   "Nhìn kỹ hơn sáu khoản được hoàn ứng.",
+   88.056,
+   90.215
+  ],
+  [
+   "v1a#0",
+   "Khoản đầu tiên có chứng từ ngày 29/08/2025.",
+   90.455,
+   94.228
+  ],
+  [
+   "v1a#1",
+   "Ba khoản tiếp theo trong tháng 10, ngày 03, 14 và 21.",
+   94.468,
+   99.226
+  ],
+  [
+   "v1a#2",
+   "Nội dung ghi chung là sửa chữa thang máy, phòng cháy chữa cháy và máy phát điện, chưa tách từng việc.",
+   99.466,
+   104.655
+  ],
+  [
+   "v1a#3",
+   "Khoản cuối có chứng từ ngày 23/12, cùng ngày với lệnh hoàn.",
+   104.895,
+   108.697
+  ],
+  [
+   "v1a#4",
+   "Cả sáu khoản được hoàn gộp một lần, 986,9 triệu đồng, vào tài khoản vận hành.",
+   108.937,
+   113.958
+  ],
+  [
+   "v1b#-1",
+   "Lệnh chuyển này chạm tới năm quy định.",
+   115.008,
+   116.859
+  ],
+  [
+   "v1b#0",
+   "Điều 7.2: tiền quỹ chỉ được chuyển cho đơn vị làm bảo trì, không qua tài khoản trung gian.",
+   117.099,
+   122.077
+  ],
+  [
+   "v1b#1",
+   "Điều 7.4: chỉ được tạm dùng tiền vận hành tối đa 10 triệu mỗi tháng và phải hoàn ngay cuối tháng.",
+   122.317,
+   127.905
+  ],
+  [
+   "v1b#2",
+   "Điều 3.2.a: tài khoản vận hành do công ty quản lý đứng tên. Nhưng thư xác nhận của VietinBank cho thấy tài khoản này do 6 thành viên Ban quản trị đồng đứng tên.",
+   128.145,
+   137.117
+  ],
+  [
+   "v1b#3",
+   "Điều 9.2: sửa chữa khẩn cấp trên 50 triệu phải được hơn một nửa chủ sở hữu đồng ý. Chưa thấy văn bản này.",
+   137.357,
+   143.67
+  ],
+  [
+   "v1b#4",
+   "Và Quy chế hoạt động yêu cầu 75% thành viên Ban quản trị đồng ý khi chi kinh phí bảo trì. Cần xem biên bản họp.",
+   143.91,
+   151.074
+  ],
+  [
+   "v1b#-1",
+   "Ba điều đầu đã rõ trên sao kê; hai điều sau cần văn bản để kết luận.",
+   151.314,
+   155.371
+  ],
+  [
+   "v1c#-1",
+   "Đi kèm vấn đề này là một câu hỏi về thang máy.",
+   156.421,
+   158.875
+  ],
+  [
+   "v1c#0",
+   "Phí bảo trì Schindler là 57,5 triệu đồng mỗi tháng cho 18 thang.",
+   159.115,
+   163.425
+  ],
+  [
+   "v1c#1",
+   "Từ ngày 21/01/2025 tới 31/05/2026, tài khoản quỹ không còn khoản phí định kỳ nào, ngoài khoản hoàn gộp 986,9 triệu.",
+   163.665,
+   174.602
+  ],
+  [
+   "v1c#2",
+   "Nếu hợp đồng vẫn tiếp tục, phí của 16 tháng này vào khoảng 0,94 tỷ đồng.",
+   174.842,
+   179.742
+  ],
+  [
+   "v1c#-1",
+   "Hoặc phí đã trả từ tài khoản vận hành, hoặc Schindler đang bị nợ phí. Sao kê tài khoản vận hành sẽ trả lời câu này.",
+   179.982,
+   186.503
+  ],
+  [
+   "lienhe",
+   "Clip tiếp theo, số 4 trên 11: Vấn đề 2: tiền khu vực chung ngoài quỹ. Toàn bộ số liệu truy được về sao kê gốc trong thư mục chia sẻ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.",
+   187.553,
+   198.178
+  ]
+ ],
+ "card_times": [
+  [
+   16.98,
+   22.799
+  ]
+ ],
+ "seg_times": [
+  [
+   "bia",
+   0.0,
+   17.075
+  ],
+  [
+   "f1",
+   17.075,
+   87.531
+  ],
+  [
+   "v1a",
+   87.531,
+   114.483
+  ],
+  [
+   "v1b",
+   114.483,
+   155.896
+  ],
+  [
+   "v1c",
+   155.896,
+   187.028
+  ],
+  [
+   "lienhe",
+   187.028,
+   201.378
+  ]
+ ]
+}

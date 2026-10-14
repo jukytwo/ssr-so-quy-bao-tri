@@ -1,0 +1,47 @@
+{
+ "claude_outputs": {
+  "00": "00 - Đọc trước - Mục lục.pdf",
+  "01": "01 - Tờ phát Hội nghị.pdf",
+  "02": "02 - Lưu đồ dòng tiền.pdf",
+  "03": "03 - Bản tóm tắt 25 trang.pdf",
+  "04": "04 - Báo cáo đầy đủ 59 trang.pdf",
+  "05": "05 - Công văn gửi Ban quản trị.pdf",
+  "06": "06 - Excel sao kê và phân tích.xlsx",
+  "07": "07 - Ảnh Tuân thủ pháp lý.png"
+ },
+ "ket_qua": {
+  "folders": {
+   "0": "0. Dùng tại Hội nghị",
+   "1": "1. Gửi Ban quản trị",
+   "2": "2. Đăng cho cư dân",
+   "3": "3. Nhóm điều phối"
+  },
+  "files": {
+   "1.1": "1.1 Công văn (Word, để điền và in).docx",
+   "1.2": "1.2 Công văn.pdf",
+   "1.3": "1.3 Báo cáo đầy đủ.pdf",
+   "1.4": "1.4 Excel sao kê và phân tích.xlsx",
+   "1.5": "1.5 Ảnh gửi Ban quản trị.png",
+   "2.1": "2.1 Ảnh Mười câu hỏi.png",
+   "2.2": "2.2 Ảnh Hiểu đúng vấn đề.png",
+   "2.3": "2.3 Clip Mười câu hỏi.mp4",
+   "2.4": "2.4 Mười câu hỏi - bản in bảng tin.pdf",
+   "2.5": "2.5 Clip ngang Hiểu đúng vấn đề.mp4",
+   "2.6": "2.6 Clip dọc Hiểu đúng vấn đề.mp4",
+   "2.7": "2.7 Bản tóm tắt.pdf",
+   "2.8": "2.8 Ảnh Dòng tiền.png",
+   "2.9": "2.9 Ảnh Tuân thủ.png",
+   "2.10": "2.10 Mười câu hỏi (Word).docx",
+   "2.11": "2.11 Ảnh Phân loại nguyên nhân.png",
+   "2.12": "2.12 Clip Phân loại nguyên nhân.mp4",
+   "3.1": "3.1 Tin nhắn mẫu.docx",
+   "3.2": "3.2 Hỏi dần.pdf",
+   "3.3": "3.3 Phân loại nguyên nhân.pdf",
+   "3.4": "3.4 Sổ quỹ bảo trì (offline).html",
+   "0.1": "0.1 Tờ phát A4 - Năm vấn đề.pdf",
+   "0.2": "0.2 Lưu đồ dòng tiền.pdf",
+   "00": "00 - Đọc trước - Quy trình 7 bước.png"
+  }
+ },
+ "root": "C:\\Users\\jukyt\\OneDrive\\Desktop\\SSR - Sao kê\\"
+}

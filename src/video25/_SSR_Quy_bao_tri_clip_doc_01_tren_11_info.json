@@ -1,0 +1,170 @@
+{
+ "duration": 117.9,
+ "sentences": 20,
+ "cards": 1,
+ "scenes": 5,
+ "size": 7005228,
+ "voice": "vi_VN-vais1000-medium",
+ "doc": "/home/claude/ssr/video25/_SSR_Quy_bao_tri_clip_doc_01_tren_11_Video_Doc.mp4",
+ "doc_size": 7005228,
+ "chapters": [
+  "00:00 Mở đầu",
+  "00:09 Tiền có mất không",
+  "01:45 Liên hệ"
+ ],
+ "timeline": [
+  [
+   "bia",
+   "Quỹ bảo trì, clip 1 trên 11: Tiền có mất không.",
+   1.5,
+   4.471
+  ],
+  [
+   "bia",
+   "Tiền quỹ bảo trì có mất không, và Ban quản trị đã làm đúng những gì.",
+   4.711,
+   8.103
+  ],
+  [
+   "ok#-2",
+   "Trước hết, tiền có mất không?",
+   9.153,
+   10.697
+  ],
+  [
+   "ok#0",
+   "Chưa thấy mất: 198 giao dịch của ba tài khoản khớp số dư tới từng đồng.",
+   10.937,
+   16.139
+  ],
+  [
+   "ok#1",
+   "Không có lệnh rút tiền mặt, không có khoản chuyển cho cá nhân.",
+   16.379,
+   19.165
+  ],
+  [
+   "ok#1",
+   "Tiền chỉ đi tới doanh nghiệp, Kho bạc, hoặc tài khoản do Ban quản trị đứng tên.",
+   19.405,
+   23.341
+  ],
+  [
+   "ok#2",
+   "Tiền gốc còn 127,15 tỷ đồng vào ngày 31/05/2026.",
+   23.581,
+   28.945
+  ],
+  [
+   "ok#-1",
+   "Vì vậy, câu hỏi không phải là tiền có biến mất hay không, mà là tiền có đi đúng đường và đúng thẩm quyền hay không.",
+   29.185,
+   34.874
+  ],
+  [
+   "kt#-1",
+   "Câu trả lời này đến từ bốn bước kiểm tra.",
+   35.924,
+   38.0
+  ],
+  [
+   "kt#0",
+   "Bước một, đọc sao kê của ba tài khoản từ ngày 15/08/2024 tới ngày 31/05/2026.",
+   38.24,
+   46.485
+  ],
+  [
+   "kt#1",
+   "Bước hai, cộng trừ lại 198 giao dịch, số dư khớp tới từng đồng.",
+   46.725,
+   51.493
+  ],
+  [
+   "kt#2",
+   "Bước ba, đặt từng khoản chi cạnh Quy chế thu chi mà Hội nghị đã thông qua, và Luật Nhà ở.",
+   51.733,
+   57.09
+  ],
+  [
+   "kt#3",
+   "Bước bốn, những chỗ chưa rõ được hỏi Ban quản trị bằng văn bản, mười câu, gửi ngày 29/09/2026.",
+   57.33,
+   65.042
+  ],
+  [
+   "dung#-1",
+   "Cũng cần ghi nhận những việc Ban quản trị đã làm đúng.",
+   66.092,
+   69.442
+  ],
+  [
+   "dung#0",
+   "Chín lệnh chi từ quỹ được chuyển thẳng cho nhà thầu, đúng Điều 7.2 Quy chế.",
+   69.682,
+   74.305
+  ],
+  [
+   "dung#1",
+   "Tiền gốc tăng từ 124,79 tỷ lúc nhận bàn giao lên 127,15 tỷ, nhờ 5,48 tỷ tiền lãi.",
+   74.545,
+   83.41
+  ],
+  [
+   "dung#2",
+   "Phần lớn tiền quỹ, 105 tỷ, được gửi có kỳ hạn tại VietinBank và Agribank với lãi 4,7% một năm.",
+   83.65,
+   90.527
+  ],
+  [
+   "dung#3",
+   "Ban quản trị đã lập báo cáo quỹ ba lần, ngày 14/05/2025, 15/05/2026 và 15/09/2026.",
+   90.767,
+   100.484
+  ],
+  [
+   "dung#-1",
+   "Nhưng sao kê cũng cho thấy tiền đi sai đường ở nhiều chỗ.",
+   100.724,
+   104.217
+  ],
+  [
+   "lienhe",
+   "Clip tiếp theo, số 2 trên 11: Toàn cảnh dòng tiền. Toàn bộ số liệu truy được về sao kê gốc trong thư mục chia sẻ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.",
+   105.267,
+   114.674
+  ]
+ ],
+ "card_times": [
+  [
+   8.533,
+   10.697
+  ]
+ ],
+ "seg_times": [
+  [
+   "bia",
+   0.0,
+   8.628
+  ],
+  [
+   "ok",
+   8.628,
+   35.399
+  ],
+  [
+   "kt",
+   35.399,
+   65.567
+  ],
+  [
+   "dung",
+   65.567,
+   104.742
+  ],
+  [
+   "lienhe",
+   104.742,
+   117.874
+  ]
+ ]
+}

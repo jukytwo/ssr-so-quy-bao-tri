@@ -1,0 +1,159 @@
+{
+ "duration": 103.9,
+ "sentences": 19,
+ "cards": 1,
+ "scenes": 4,
+ "size": 5935201,
+ "voice": "vi_VN-vais1000-medium",
+ "doc": "/home/claude/ssr/video25/_SSR_Quy_bao_tri_clip_doc_06_tren_11_Video_Doc.mp4",
+ "doc_size": 5935201,
+ "chapters": [
+  "00:00 Mở đầu",
+  "00:13 Vấn đề 4",
+  "01:28 Liên hệ"
+ ],
+ "timeline": [
+  [
+   "bia",
+   "Quỹ bảo trì, clip 6 trên 11: Vấn đề 4: 705,8 triệu trả Thép Quang.",
+   1.5,
+   7.776
+  ],
+  [
+   "bia",
+   "705,8 triệu trả trọn cho Thép Quang, nhưng hàng hóa chỉ ghi chung chung.",
+   8.016,
+   12.565
+  ],
+  [
+   "f4#-2",
+   "Vấn đề bốn: tiền chưa truy được tới hàng hóa.",
+   13.615,
+   16.074
+  ],
+  [
+   "f4#-1",
+   "Khoản 705,8 triệu trả trọn cho Thép Quang.",
+   16.314,
+   19.09
+  ],
+  [
+   "f4#-1",
+   "Khoản chi gấp 14 lần mức 50 triệu Ban quản trị được tự quyết, bằng 141% trần sửa chữa đột xuất cả năm, nhưng chưa thấy văn bản cho phép.",
+   19.33,
+   27.928
+  ],
+  [
+   "f4#-1",
+   "Tiền trả 100% trước nghiệm thu, không qua đợt tạm ứng.",
+   28.168,
+   31.269
+  ],
+  [
+   "f4#-1",
+   "Hàng hóa chỉ ghi chung là thiết bị khu vực sử dụng chung.",
+   31.509,
+   34.426
+  ],
+  [
+   "f4#-1",
+   "Chưa xác minh được mã số thuế của Thép Quang.",
+   34.666,
+   36.751
+  ],
+  [
+   "f4#-1",
+   "Ký hiệu hợp đồng trùng với hợp đồng của Thành Công.",
+   36.991,
+   39.207
+  ],
+  [
+   "f4#-1",
+   "Cùng với 986,9 triệu ở vấn đề một, tổng 1,69 tỷ chưa truy được tới cùng. Cần danh mục thiết bị, hóa đơn, biên bản giao nhận, ba báo giá và kiểm đếm thiết bị thực tế.",
+   39.447,
+   50.628
+  ],
+  [
+   "v4a#-1",
+   "Để khép lại 1,69 tỷ này, cần sáu loại chứng từ.",
+   51.678,
+   55.0
+  ],
+  [
+   "v4a#0",
+   "Danh mục thiết bị Thép Quang đã giao: chủng loại, số lượng, đơn giá, xuất xứ.",
+   55.24,
+   59.836
+  ],
+  [
+   "v4a#1",
+   "Hóa đơn giá trị gia tăng khớp với 705,8 triệu.",
+   60.076,
+   63.269
+  ],
+  [
+   "v4a#2",
+   "Biên bản giao nhận và nghiệm thu, có đủ ba chữ ký.",
+   63.509,
+   66.58
+  ],
+  [
+   "v4a#3",
+   "Ba báo giá cạnh tranh theo Điều 6.3.e.",
+   66.82,
+   70.395
+  ],
+  [
+   "v4a#4",
+   "Mã số thuế và hồ sơ năng lực của Thép Quang, vì tra cứu nhanh trên các trang công khai chưa thấy doanh nghiệp đúng tên này.",
+   70.635,
+   76.927
+  ],
+  [
+   "v4a#5",
+   "Và sao kê tài khoản vận hành, để biết 986,9 triệu cuối cùng đã trả cho ai.",
+   77.167,
+   82.213
+  ],
+  [
+   "v4a#-1",
+   "Có đủ chứng từ hợp lệ thì khép lại. Không có thì phải bồi hoàn quỹ theo Điều 10.1.",
+   82.453,
+   87.582
+  ],
+  [
+   "lienhe",
+   "Clip tiếp theo, số 7 trên 11: Vấn đề 5: 127,5 tỷ tiền gửi. Toàn bộ số liệu truy được về sao kê gốc trong thư mục chia sẻ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.",
+   88.632,
+   100.701
+  ]
+ ],
+ "card_times": [
+  [
+   12.995,
+   16.074
+  ]
+ ],
+ "seg_times": [
+  [
+   "bia",
+   0.0,
+   13.09
+  ],
+  [
+   "f4",
+   13.09,
+   51.153
+  ],
+  [
+   "v4a",
+   51.153,
+   88.107
+  ],
+  [
+   "lienhe",
+   88.107,
+   103.901
+  ]
+ ]
+}

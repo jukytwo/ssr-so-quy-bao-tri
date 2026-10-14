@@ -1,0 +1,439 @@
+<header class="top">
+  <div class="top-in">
+    <a class="mark" href="#tong-quan"><img alt="Logo Saigon South Residences" src="{{IMG:logo96}}"><span>Sổ quỹ bảo trì</span></a>
+    <nav class="nav" aria-label="Các phần của trang">
+      <a href="#phan-clip" data-part="clip" class="nav-clip"><span class="pn"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span>Clip</a><a href="#phan-tien" data-part="tien" class="nav-q">Đường tiền</a><a href="#phan-cauhoi" data-part="cauhoi" class="nav-q">10 câu hỏi</a><a href="#phan-1" data-part="1"><span class="pn">I</span>Kết luận</a><a href="#phan-2" data-part="2"><span class="pn">II</span>Dữ liệu</a><a href="#phan-3" data-part="3"><span class="pn">III</span>Dòng tiền</a><a href="#phan-4" data-part="4"><span class="pn">IV</span>Tuân thủ</a><a href="#phan-5" data-part="5"><span class="pn">V</span>Hành động</a><a href="#phan-hd" data-part="hd"><span class="pn">VI</span>Hỏi đáp</a><a href="#phan-6" data-part="6"><span class="pn">VII</span>Công cụ</a>
+    </nav>
+    <div class="top-act">
+      <button class="tbtn tb-theme" id="btn-theme" type="button" aria-label="Chuyển nền sáng hoặc tối" title="Nền sáng / tối"><svg class="i-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="i-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="tbtn" id="btn-toc" type="button" aria-haspopup="dialog" aria-controls="toc" title="Mục lục"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span>Mục lục</span></button>
+      <button class="tbtn" id="btn-print" type="button" title="In hoặc lưu thành PDF"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg><span>In</span></button>
+      <button class="tbtn pri" id="btn-dl" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="dl-pop" title="Tải báo cáo PDF, Excel, Word"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg><span>Tải về</span></button>
+    </div>
+  </div>
+  <div class="prog" id="prog" aria-hidden="true"></div>
+  <div class="dl-pop" id="dl-pop" hidden></div>
+</header>
+
+<main class="wrap">
+  <div class="banner" id="upd-banner" hidden></div>
+
+  <section id="tong-quan">
+    <div class="hero">
+      <div>
+        <div class="idline"><img alt="Logo Phú Mỹ Hưng Saigon South Residences" src="{{IMG:logo}}"><div><div class="nm">Chung cư Nam Sài Gòn Residences (Saigon South Residences)</div><div class="dc">Phân tích độc lập phục vụ giám sát của cư dân. Không phải văn bản của chủ đầu tư, Ban quản trị hay đơn vị quản lý vận hành.</div></div></div>
+        <div class="eyebrow" id="hero-eyebrow">Sao kê ngân hàng 15/08/2024 – 31/05/2026</div>
+        <h1>Quỹ bảo trì: có khuất tất hay không?</h1>
+        <div class="ansr"><small>Câu trả lời ngắn</small><span id="ansr"></span></div>
+        <p class="lede" id="lede"></p>
+        <div class="chips" id="hero-chips"></div>
+        <div class="cta"><a class="tbtn pri" href="#phan-clip"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>Xem clip</a><a class="tbtn" href="#nam-cau-hoi">Năm câu hỏi kết luận</a><a class="tbtn" href="#dau-hieu" data-sev="Đỏ">3 điểm mức Đỏ</a><a class="tbtn" href="#hoi-dap">Hỏi đáp nhanh</a><a class="tbtn" href="#muoi-cau-hoi">Mười câu hỏi gửi Ban quản trị</a><a class="tbtn" href="#cap-nhat">Cập nhật sao kê mới</a></div>
+      </div>
+      <aside class="file" aria-label="Hồ sơ đã phân tích">
+        <h3>Hồ sơ đã phân tích</h3>
+        <dl>
+          <dt>Tài khoản</dt><dd>VietinBank 116605084999 (quỹ bảo trì), Agribank 6350201010476 (quỹ bảo trì), VietinBank 117002997784 (thu dịch vụ)</dd>
+          <dt>Sao kê</dt><dd id="file-stm">8 file scan, 21 trang, 15/08/2024 – 31/05/2026</dd>
+          <dt>Giao dịch</dt><dd id="file-tx"><span class="num">198</span> dòng, chép lại và tính lại số dư</dd>
+          <dt>Đối chiếu</dt><dd>Quy chế thu chi tài chính (trang 11–17 Bộ quy chế đã thông qua tại Hội nghị nhà chung cư ngày 26/05/2024), Luật Nhà ở 2023</dd>
+        </dl>
+        <div class="stamp"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="var(--ok)"/><path d="M5 9.3l2.6 2.6L13 6.4" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>Số dư 198 dòng khớp với sao kê gốc; lãi 33/33 tháng khớp tới từng đồng. Không phát hiện dấu hiệu dùng AI làm giả chứng từ.</div></div>
+      </aside>
+    </div>
+    <div class="fiv" id="fiv"></div>
+    <div class="cstrip" id="clip-strip"></div>
+    <div class="q10s" id="q10s"></div>
+    <div class="kmw" id="km" aria-label="Hiểu đúng vấn đề"></div>
+    {{KL5S}}
+    <div class="startp" id="bat-dau"><h2>Đọc theo từng phần</h2><p>Trang chia thành bảy phần, mỗi lần hiện một phần. Chọn phần muốn đọc bên dưới, ở thanh trên cùng (trên điện thoại là thanh dưới cùng), hoặc bấm Phần tiếp theo ở cuối mỗi trang. Mỗi mục hiện kết luận trước; bấm Xem phân tích chi tiết khi cần đọc sâu.</p><div class="sp-g"><button type="button" class="sp-c first" data-goview="1"><span class="sp-n">PHẦN I</span><b>Kết luận</b><small>Năm câu hỏi: có sai phạm không, tới đâu, mức độ, quy mô, khung xử lý</small></button><button type="button" class="sp-c" data-goview="2"><span class="sp-n">PHẦN II</span><b>Dữ liệu và độ tin cậy</b><small>Nguồn dữ liệu, sao kê thật hay giả</small></button><button type="button" class="sp-c" data-goview="3"><span class="sp-n">PHẦN III</span><b>Dòng tiền của quỹ</b><small>Quỹ còn bao nhiêu, 3,12 tỷ đi đâu, tiền khu vực chung, lãi suất</small></button><button type="button" class="sp-c" data-goview="4"><span class="sp-n">PHẦN IV</span><b>An toàn và tuân thủ</b><small>Thang máy, phòng cháy, đối chiếu 17 quy định</small></button><button type="button" class="sp-c" data-goview="5"><span class="sp-n">PHẦN V</span><b>Dấu hiệu và hành động</b><small>16 dấu hiệu, hệ quả pháp lý, mười câu hỏi, hồ sơ cần đòi</small></button><button type="button" class="sp-c" data-goview="hd"><span class="sp-n">PHẦN VI</span><b>Hỏi đáp</b><small>{{NFAQ}} câu hỏi thường gặp, tìm theo từ khóa</small></button><button type="button" class="sp-c" data-goview="6"><span class="sp-n">PHẦN VII</span><b>Công cụ và dữ liệu gốc</b><small>Tra cứu 198 giao dịch, nạp sao kê mới, tải tài liệu</small></button><a class="sp-c sp-q" href="#muoi-cau-hoi"><span class="sp-n">MỚI</span><b>Mười câu hỏi đã gửi Ban quản trị</b><small>Đọc nhanh, tải ảnh và PDF để chia sẻ</small></a></div></div>
+    <div class="kpis" id="kpis" style="margin-top:22px"></div>
+  </section>
+
+  <div class="part part-clip" id="phan-clip"><div class="pn">Xem thay vì đọc</div><h2 class="pt">Bộ clip Quỹ bảo trì</h2><p class="pd">Toàn bộ nội dung phân tích dưới dạng clip có thuyết minh: bản đầy đủ chia chương để chiếu Hội nghị, sáu phần ngang để chiếu từng phần, mười một clip dọc và một clip tóm tắt để xem, gửi trên điện thoại.</p></div>
+
+  <section id="xem-clip" class="clip-sec">
+    <div id="clip-app"><div class="boot">Đang tải bộ clip…</div></div>
+  </section>
+
+  <div class="part part-clip" id="phan-tien"><div class="pn">Xem nhanh</div><h2 class="pt">Đường đi của tiền</h2><p class="pd">Năm trường hợp tiền đi sai đường. Mỗi trường hợp đặt đường lẽ ra phải đi cạnh đường đi thực tế trên sao kê, từng chặng có kết luận.</p></div>
+
+  <section id="duong-tien">
+    {{LD}}
+  </section>
+
+  <div class="part part-clip" id="phan-cauhoi"><div class="pn">Theo dõi</div><h2 class="pt">Mười câu hỏi gửi Ban quản trị</h2><p class="pd">Gửi ngày 29/09/2026, đề nghị trả lời trong 5 ngày. Tình trạng trả lời từng câu do nhóm cư dân cập nhật.</p></div>
+
+  <section id="cau-hoi-bqt">
+    {{Q10}}
+  </section>
+
+  <div class="part" id="phan-1"><div class="pn">Phần I</div><h2 class="pt">Kết luận</h2><p class="pd">Năm câu hỏi của cuộc kiểm tra: có sai phạm không, tới đâu, mức độ, quy mô, khung xử lý; phân loại nguyên nhân, hỏi dần ba vòng, ba tầng kết luận, sơ đồ dòng tiền và dòng thời gian 22 tháng.</p><div class="pchips" data-part="1"></div></div>
+
+  <section id="ket-luan">
+    <div class="sec-h"><div class="eyebrow"><span class="no">01</span>Có sai phạm không, tới đâu, xử lý thế nào</div><h2>Năm câu hỏi của cuộc kiểm tra và ba tầng kết luận</h2>
+      <p>Mục tiêu của việc soi sao kê là trả lời năm câu hỏi: có sai phạm không, sai phạm tới đâu, mức độ, quy mô và khung xử lý. Điều đã rõ có bằng chứng trực tiếp trên sao kê; điều nghi vấn cần chứng từ để khẳng định hoặc bác bỏ.</p></div>
+    <div class="kl-slot" data-no="01"></div>
+    <div class="vans" id="vans"></div>
+    <div class="aisum" id="ai-sum" hidden></div>
+    {{KL5}}
+    {{NN}}
+    <div class="h3x">Ba tầng kết luận</div>
+    <div class="subx">Điều đã rõ trên sao kê, điều còn nghi vấn cần chứng từ, và những điểm đã kiểm tra và đạt.</div>
+    <div class="tiers" id="tiers"></div>
+    <div class="h3x">Ba hồ sơ quyết định kết luận cuối cùng</div>
+    <div class="subx">Có ba hồ sơ này, các nghi vấn lớn nhất sẽ được khẳng định hoặc bác bỏ. Danh mục đầy đủ ở mục 12.</div>
+    <div class="keys" id="keys"></div>
+    <a class="ptr" href="#duong-tien"><b>Đường đi của tiền: năm trường hợp</b><span>Xem tiền đi qua từng chặng, chặng nào đúng, chặng nào sai</span></a>
+    <div class="h3x">Tiền đã đi đâu</div>
+    <div class="subx">Sơ đồ dòng tiền của ba tài khoản, 15/08/2024 – 31/05/2026</div>
+    <div class="figbox fl-d">{{SVG_FLOW}}</div>
+    {{FLOW_M}}
+    <div class="h3x">Dòng thời gian</div>
+    <div class="subx">Các mốc chính của quỹ và tài khoản thu khu vực chung</div>
+    <div class="filters" id="tl-f" role="group" aria-label="Lọc dòng thời gian" style="margin:10px 0 0"></div>
+    <div class="tln" id="tln"></div>
+    <div class="h3x">Kết luận từng mục</div>
+    <div class="subx">Bấm một dòng để tới mục đó</div>
+    <div class="score" id="score"></div>
+    <div class="nd" id="nd01"></div>
+  </section>
+
+  <div class="part" id="phan-2"><div class="pn">Phần II</div><h2 class="pt">Dữ liệu và độ tin cậy</h2><p class="pd">Nguồn dữ liệu, cách đối chiếu và giám định dấu hiệu làm giả sao kê bằng AI.</p><div class="pchips" data-part="2"></div></div>
+
+  <section id="du-lieu">
+    <div class="sec-h"><div class="eyebrow"><span class="no">02</span>Nguồn dữ liệu</div><h2 id="dl-h2">198 giao dịch của 8 sao kê, khớp với số dư</h2>
+      <p>Toàn bộ giao dịch được chép lại từ ảnh scan 600 dpi, tính lại số dư từng dòng và đối chiếu với tổng phát sinh, số bút toán in trên từng sao kê.</p></div>
+    <div class="kl-slot" data-no="02"></div>
+    <div class="panel"><h3>Các sao kê đã phân tích</h3><div class="sub">Dòng "Mới" là sao kê nạp thêm ở mục Cập nhật sao kê mới</div>
+      <div class="tbl-wrap cards" style="margin-top:10px;max-height:none"><table><thead><tr><th>Tài khoản</th><th>Kỳ sao kê</th><th class="n">Số GD</th><th class="n">Tổng tiền ra</th><th class="n">Tổng tiền vào</th><th class="n">Số dư cuối kỳ</th><th>Đối chiếu</th></tr></thead><tbody id="stm-body"></tbody></table></div>
+      <p class="note" id="stm-note"></p>
+    </div>
+    <div class="two" style="margin-top:14px">
+      <div class="panel"><h3>Vai trò của ba tài khoản</h3><p style="font-size:14px;color:var(--ink-2);margin-top:8px">VietinBank 116605084999 là tài khoản quỹ bảo trì chính, nhận tiền bàn giao ngày 15/08/2024. Agribank 6350201010476 là tài khoản quỹ thứ hai, mở ngày 04/07/2024, giữ hợp đồng tiền gửi 60 tỷ. VietinBank 117002997784 mở tháng 07/2025 để thu tiền khai thác khu vực chung.</p></div>
+      <div class="panel"><h3>Phần chưa có trong hồ sơ</h3><p style="font-size:14px;color:var(--ink-2);margin-top:8px">Sao kê TK 118002976372 (kinh phí quản lý vận hành) nơi nhận 986,9 triệu từ quỹ; giấy xác nhận tiền gửi tại ngày gần nhất (ngân hàng mới xác nhận 120 tỷ tại 20/05/2025); sao kê từ 01/06/2026; hợp đồng, hóa đơn, biên bản nghiệm thu của các khoản chi.</p></div>
+    </div>
+  </section>
+
+  <section id="giam-dinh">
+    <div class="sec-h"><div class="eyebrow"><span class="no">03</span>Sao kê thật hay giả</div><h2>Có dấu hiệu dùng AI làm giả sao kê không</h2>
+      <p>Mười phép thử trên 21 trang sao kê scan và file Quy chế, tập trung vào dòng và số tài khoản bị khoanh đỏ trên sổ phụ Agribank 2024.</p></div>
+    <div class="kl-slot" data-no="03"></div>
+    <div class="verdict"><div class="big"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M7 15.5l5 5L23 9.5" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div><h3>Không phát hiện dấu hiệu tạo hoặc chỉnh sửa bằng AI</h3>
+      <p>File là bản scan gốc từ máy Toshiba, ảnh nén cùng một dấu vân tay, số học khớp từng đồng, khớp chéo giữa hai ngân hàng, và tiền lãi 33/33 tháng khớp tới từng đồng với số dư trên sao kê. Rủi ro còn lại là in bản sửa rồi scan; chỉ ngân hàng xác nhận trực tiếp mới loại trừ được.</p></div></div>
+    <div class="panel" style="margin-top:14px"><h3>Mười phép thử</h3><div class="tests" id="tests"></div></div>
+    <details class="more-d"><summary>Xem ảnh phóng lớn từ bản scan và phép thử chữ viết hoa</summary>
+      <div class="grid2e" style="margin-top:6px">
+        <div>
+          <figure class="scan" style="margin:12px 0 0"><img alt="Số tài khoản trên sổ phụ Agribank 2024" src="{{IMG:acct}}"><figcaption>Số tài khoản 6350201010476: 13 chữ số, đúng độ dài tài khoản Agribank, khớp ở 5 chỗ trên sao kê hai ngân hàng. Tên thư mục 635020101476 thiếu một chữ số 0.</figcaption></figure>
+          <figure class="scan" style="margin:12px 0 0"><img alt="Các dòng giao dịch ngày 21/08/2024 trên sổ phụ Agribank" src="{{IMG:rows}}"><figcaption>Cùng phông, cỡ chữ, đường chân chữ và kiểu chữ số với các dòng khác. 60 tỷ vào rồi chuyển sang hợp đồng tiền gửi trong cùng ngày, khớp lệnh chuyển 60 tỷ trên sao kê VietinBank.</figcaption></figure>
+        </div>
+        <div>
+          <figure class="scan" style="margin:12px 0 0"><img alt="Phóng lớn dòng chữ Mở hợp đồng tiền gửi có kỳ hạn 12 tháng" src="{{IMG:zoom}}"><figcaption>Phóng lớn: chữ I trong TIềN là chữ hoa, không có dấu chấm; các nguyên âm có dấu vẫn là chữ thường. Nét chữ đồng nhất, không có vệt ghép hay nhòe quanh chữ.</figcaption></figure>
+          <div class="caps" id="caps"></div>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <div class="part" id="phan-3"><div class="pn">Phần III</div><h2 class="pt">Dòng tiền của quỹ</h2><p class="pd">Quỹ còn bao nhiêu, 3,12 tỷ đi đâu, tiền khai thác khu vực chung và lãi suất so với thực tế từng thời điểm.</p><div class="pchips" data-part="3"></div></div>
+
+  <section id="tien-o-dau">
+    <div class="sec-h"><div class="eyebrow"><span class="no">04</span>Quỹ còn bao nhiêu</div><h2 id="tod-h2">127,15 tỷ đang nằm ở đâu</h2>
+      <p>98% quỹ là hợp đồng tiền gửi có kỳ hạn. Sao kê tài khoản thanh toán chỉ cho thấy lệnh gửi và tiền lãi, chưa phải bằng chứng số dư hiện tại.</p></div>
+    <div class="kl-slot" data-no="04"></div>
+    <div class="grid2">
+      <div class="panel"><h3 id="comp-h3">Cơ cấu quỹ ngày 31/05/2026</h3><div class="sub">Tiền gửi có kỳ hạn suy ra từ sao kê, cần ngân hàng xác nhận</div>
+        <div class="stack" id="stack" role="img" aria-label="Cơ cấu quỹ bảo trì"></div>
+        <div class="legend"><span><i class="sw" style="background:var(--s1)"></i>Tiền gửi có kỳ hạn</span><span><i class="sw" style="background:var(--s3)"></i>Tiền gửi thanh toán</span></div>
+        <div class="list" id="comp-list"></div>
+        <p class="note" id="comp-note"></p>
+      </div>
+      <div class="panel"><h3>Dấu vết của từng khoản tiền gửi</h3><div class="sub">Lần cuối khoản gửi còn để lại dấu vết trên sao kê</div>
+        <div class="chart" id="td-trace"></div>
+        <p class="note">Khoản 5 tỷ và 60 tỷ không có thêm dấu vết nào từ ngày gửi tới 31/05/2026. Đây là lý do cần giấy xác nhận số dư của ngân hàng, ghi rõ không cầm cố, không phong tỏa.</p>
+        <p class="note" id="td-new"></p>
+      </div>
+    </div>
+    <div class="panel" id="td-tai-tuc" style="margin-top:14px"><h3>Tiền gửi sau đợt tái tục tháng 8/2026</h3><div class="sub">Theo Thông báo 05-2026/TB-BQTSSR ngày 15/09/2026 của Ban quản trị; cần hợp đồng tiền gửi và giấy xác nhận của ngân hàng để chốt</div>
+      <div class="tbl-wrap cards" id="tdn-tbl" style="margin-top:10px;max-height:none"></div><p class="note" id="tdn-note"></p></div>
+  </section>
+
+  <section id="vi-sao">
+    <div class="sec-h"><div class="eyebrow"><span class="no">05</span>Tiền đi đâu</div><h2>Vì sao quỹ thấp hơn gốc cộng lãi 3,12 tỷ</h2>
+      <p>Quỹ nhận 124,79 tỷ và có thêm 5,48 tỷ tiền lãi. Bốn nhóm khoản chi kéo quỹ xuống còn 127,15 tỷ. Trục dọc không bắt đầu từ 0 để thấy rõ các khoản chi.</p></div>
+    <div class="kl-slot" data-no="05"></div>
+    <div class="panel"><h3>Cầu nối quỹ bảo trì, tỷ đồng</h3><div class="sub">Rê chuột hoặc chạm vào cột để xem số tiền chính xác tới từng đồng</div>
+      <div class="chart" id="wf"></div>
+      <div class="legend"><span><i class="sw" style="background:var(--s3)"></i>Số dư</span><span><i class="sw" style="background:var(--s1)"></i>Tiền vào</span><span><i class="sw" style="background:var(--s2)"></i>Tiền ra</span></div>
+    </div>
+    <div class="causes" id="causes"></div>
+    <div class="blackbox"><div class="bx">TK<br>118002<br>976372</div>
+      <p><b>Tài khoản không có trong hồ sơ.</b> Ngày 23/12/2025 quỹ chuyển 986,9 triệu vào tài khoản "Kinh phí quản lý vận hành" do chính Ban quản trị đứng tên. Không có sao kê tài khoản này thì không biết tiền cuối cùng trả cho ai. Quy chế chỉ cho chuyển tiền quỹ thẳng tới đơn vị thực hiện bảo trì.</p></div>
+    <div class="figbox"><div class="sub">Chi theo tháng, triệu đồng: các khoản lớn dồn vào tháng 12/2025 và tháng 4/2026</div><div class="hscroll"><div style="min-width:600px">{{SVG_MONTHLY}}</div></div><div class="hs-hint">Vuốt ngang để xem đủ biểu đồ</div></div>
+    <div class="panel" id="hach-toan-dung" style="margin-top:16px"><h3>Nếu hạch toán đúng thì như thế nào</h3>
+      <div class="sub">Bước 1: đưa mọi dòng tiền khu vực chung về đúng tài khoản quỹ. Bước 2: chọn khoản chi nào coi là hợp lệ. Mặc định theo kịch bản cư dân nêu: 986,9 triệu chuyển sang TK vận hành 118002976372, các khoản trả Schindler và tiền thuế là hợp lệ. Lựa chọn chỉ lưu trên máy của bạn.</div>
+      <div class="tiles" id="ht-tiles"></div>
+      <div class="ht-pre" id="ht-pre" role="group" aria-label="Chọn nhanh kịch bản"></div>
+      <div class="ht-list" id="ht-list"></div>
+      <div class="tiles ht-sum" id="ht-sum" aria-live="polite"></div>
+      <div id="ht-nd"></div>
+    </div>
+    <div class="panel" id="doi-chieu-hd" style="margin-top:16px"><h3>Đối chiếu tạm ứng với quyết toán từng hợp đồng</h3>
+      <div class="sub">Giá trị hợp đồng suy ra bằng tiền tạm ứng chia cho tỷ lệ tạm ứng ghi trong lệnh chi, rồi so với tổng đã trả cho cùng mã hợp đồng.</div>
+      <div class="tbl-wrap cards" id="hd-tbl" style="margin-top:10px;max-height:none"></div>
+      <div id="hd-nd"></div>
+    </div>
+  </section>
+
+  <section id="khu-vuc-chung">
+    <div class="sec-h"><div class="eyebrow"><span class="no">06</span>Tiền khu vực chung</div><h2>1,71 tỷ thu từ khu vực chung không vào quỹ</h2>
+      <p>Tiền quảng cáo của Chicilon Media, thuê mặt bằng của Viễn thông ACT, kệ quảng cáo của Hưng Thái đi vào tài khoản 117002997784 mở từ 07/2025, rồi được chi cho sửa chữa, mua sắm mà không qua quy trình của quỹ bảo trì.</p></div>
+    <div class="kl-slot" data-no="06"></div>
+    <div class="grid2e">
+      <div class="panel"><h3 id="inc-h3">Tiền vào tài khoản 7784, 07/2025 – 05/2026</h3><div class="sub">Theo đơn vị trả tiền, triệu đồng</div><div class="chart" id="inc"></div></div>
+      <div class="panel"><h3>Tiền ra khỏi tài khoản 7784</h3><div class="sub" id="out-sub">Còn lại 120,3 triệu ngày 31/05/2026</div><div class="chart" id="out7784"></div></div>
+    </div>
+    <p class="note" id="kvc-new"></p>
+    <div class="law"><b>Khoản 4 Điều 153 Luật Nhà ở 2023</b>, hiệu lực từ 01/08/2024: các khoản thu từ khai thác dịch vụ đối với phần sở hữu chung phải nộp vào tài khoản kinh phí bảo trì do Ban quản trị quản lý. Ngày 16/07/2025, 260,9 triệu tiền quảng cáo đã vào đúng tài khoản quỹ; tám ngày sau Ban quản trị chuyển đi với lý do <q>trả nhầm tài khoản</q>.</div>
+    <div class="tiles" id="chic-tiles"></div>
+  </section>
+
+  <section id="lai-suat">
+    <div class="sec-h"><div class="eyebrow"><span class="no">07</span>Lãi suất</div><h2>Lãi suất đúng biểu, nhưng cách gửi làm bỏ lỡ 0,42 – 0,96 tỷ</h2>
+      <p>Mọi mức lãi Ban quản trị nhận đều khớp biểu niêm yết của VietinBank, Agribank tại từng thời điểm, không thấp hơn thực tế. Hiệu quả thấp đến từ việc gửi 15 tỷ kỳ hạn 3 tháng, để 2–6 tỷ ở tài khoản thanh toán lãi 0,2% và không thương lượng mức ưu đãi.</p></div>
+    <div class="kl-slot" data-no="07"></div>
+    <div class="figbox"><div class="sub">Chấm vàng là lãi Ban quản trị nhận, vòng tròn là biểu niêm yết tại quầy cùng thời điểm, %/năm</div><div class="hscroll"><div style="min-width:640px">{{SVG_RATES}}</div></div><div class="hs-hint">Vuốt ngang để xem đủ biểu đồ</div></div>
+    <div class="grid2e" style="margin-top:14px">
+      <div class="panel"><h3>Số dư tài khoản thanh toán quỹ bảo trì</h3><div class="sub">VietinBank 116605084999, tỷ đồng; vạch ngang là mức 1 tỷ đủ cho khoản chi lớn nhất</div><div class="chart" id="idle"></div></div>
+      <div class="panel" id="lai-bo-lo"><h3>Tiền lãi bỏ lỡ</h3><div class="sub">Ước tính 20/08/2024 – 31/05/2026</div><div class="tiles" id="rate-tiles" style="grid-template-columns:minmax(0,1fr)"></div></div>
+    </div>
+    <div class="panel" style="margin-top:14px"><h3>Đợt tái tục 110 tỷ tháng 8/2026: mỗi mức lãi suất mang lại bao nhiêu</h3><div class="sub">Nhập số tiền và lãi suất để tính tiền lãi 12 tháng. Biểu 12 tháng tại quầy đầu tháng 8/2026 khoảng 5,9%/năm, gửi trực tuyến tới 6,8%/năm. Ban quản trị thông báo ngày 15/09/2026 đã tái tục với lãi 8%/năm.</div>
+      <div class="calc">
+        <div class="inp">
+          <label>Số tiền đáo hạn, tỷ đồng<input type="number" id="c-amt" value="110" min="1" max="1000" step="1" inputmode="decimal"></label>
+          <label>Lãi suất, %/năm<input type="number" id="c-rate" value="5.9" min="0" max="15" step="0.05" inputmode="decimal"></label>
+          <div class="qbtns" id="c-q" role="group" aria-label="Mức lãi suất tham khảo"></div>
+        </div>
+        <div class="out" id="c-out"></div>
+      </div>
+    </div>
+    <div class="h3x">Bốn việc nên làm với 125 tỷ tiền gửi của quỹ</div>
+    <div class="k4" id="k4"></div>
+    <details class="more-d"><summary>Bảng so sánh lãi suất từng thời điểm với biểu niêm yết và thị trường</summary>
+      <div class="tbl-wrap mx rt" style="margin-top:10px"><table><thead><tr><th>Thời điểm</th><th>Khoản gửi</th><th class="n">BQT nhận</th><th>Biểu niêm yết cá nhân</th><th>Biểu doanh nghiệp</th><th>Thị trường cùng lúc</th><th>Nhận xét</th></tr></thead><tbody id="rt-body"></tbody></table></div>
+      <p class="note">Nguồn biểu lãi suất: Vietnambiz 04/08/2024; Thị trường Tài chính Tiền tệ 04/11/2024; CafeF 09/05/2025, 09/02/2026; DNSE 08/12/2025; Thương Gia 03/08/2026; VnEconomy 07/08/2026; Stockbiz 13/08/2024; Kênh 14 30/08/2026.</p>
+    </details>
+  </section>
+
+  <div class="part" id="phan-4"><div class="pn">Phần IV</div><h2 class="pt">An toàn và tuân thủ</h2><p class="pd">Thang máy, phòng cháy, đối chiếu 17 quy định của Quy chế và mười phép kiểm tra bổ sung.</p><div class="pchips" data-part="4"></div></div>
+
+  <section id="an-toan">
+    <div class="sec-h"><div class="eyebrow"><span class="no">08</span>Thang máy, phòng cháy</div><h2>Chi nhiều cho thang máy, phòng cháy nhưng rủi ro an toàn vẫn còn</h2>
+      <p>Khoảng 2,42 tỷ chi cho thang máy, phòng cháy, máy phát và cấp nước, trong khi 2,11 tỷ khác đi vào thiết bị mô tả chung chung (Thép Quang), nhà để hàng, ốp lát sảnh (Thành Công), hệ thống giữ xe (Khởi Sáng Việt) và camera (KTECH). Cư dân vẫn phản ánh thang máy kém an toàn, nên cần đối chiếu tiền đã chi với kết quả sửa chữa.</p></div>
+    <div class="kl-slot" data-no="08"></div>
+    <div class="grid2">
+      <div class="panel"><h3>Các hạng mục đã chi, triệu đồng</h3><div class="sub">Từ quỹ bảo trì và tài khoản 7784, 04/2025 – 05/2026</div><div class="chart" id="safety"></div>
+        <div class="legend"><span><i class="sw" style="background:var(--s1)"></i>An toàn và hạ tầng thiết yếu</span><span><i class="sw" style="background:var(--s2)"></i>Không khẩn cấp hoặc mô tả chưa rõ</span></div></div>
+      <div class="panel"><h3>Điều cần kiểm tra ngay</h3>
+        <div class="facts" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+          <div class="fact"><div class="v num">18</div><div class="k">thang máy (6 block, mỗi block 3 thang), bàn giao 12/2019</div></div>
+          <div class="fact"><div class="v num">14</div><div class="k">hợp đồng sửa chữa thang máy được thanh toán trong khoảng 7 tháng</div></div>
+          <div class="fact"><div class="v">2 năm</div><div class="k">chu kỳ kiểm định an toàn thang máy chung cư (Thông tư 12/2021/TT-BLĐTBXH)</div></div>
+          <div class="fact"><div class="v">Hằng tháng</div><div class="k">cơ sở tự kiểm tra phòng cháy (Nghị định 105/2025/NĐ-CP)</div></div>
+        </div>
+        <ul class="qs">
+          <li>Giấy chứng nhận kiểm định của từng thang còn hiệu lực không, thang nào đang hỏng?</li>
+          <li>14 hợp đồng sửa chữa đã nghiệm thu chưa, có hạng mục nào sửa lặp lại?</li>
+          <li>Phí bảo trì thang máy định kỳ khoảng 57,5 triệu mỗi tháng đang được trả từ đâu, có bị tính trùng trong phí quản lý vận hành?</li>
+          <li>Phần nào của 986,9 triệu hoàn ứng là phòng cháy, máy phát; biên bản bảo dưỡng ở đâu?</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="quy-che">
+    <div class="sec-h"><div class="eyebrow"><span class="no">09</span>Tuân thủ Quy chế</div><h2>17 quy định đối chiếu với sao kê: 3 không tuân thủ, 6 nghi vấn</h2>
+      <p>Đối chiếu từng điều của Quy chế thu chi tài chính (trang 11–17 Bộ quy chế đã thông qua tại Hội nghị nhà chung cư ngày 26/05/2024) và khoản 4 Điều 153 Luật Nhà ở 2023 với những gì sao kê thể hiện. "Chưa đủ hồ sơ" nghĩa là sao kê không đủ để kết luận, cần chứng từ.</p></div>
+    <div class="kl-slot" data-no="09"></div>
+    <div class="panel"><div class="dn">{{SVG_DONUT}}<div class="lg" id="dn-lg"></div></div></div>
+    <div class="mx-sum" id="mx-sum" role="group" aria-label="Lọc theo đánh giá" style="margin-top:14px"></div>
+    <div class="tbl-wrap mx"><table><thead><tr><th>Điều khoản</th><th>Quy chế yêu cầu</th><th>Sao kê cho thấy</th><th>Đánh giá</th><th>Mã dấu hiệu</th></tr></thead><tbody id="mx-body"></tbody></table></div>
+  </section>
+
+  <section id="bo-sung">
+    <div class="sec-h"><div class="eyebrow"><span class="no">10</span>Kiểm tra bổ sung</div><h2>Mười phép kiểm tra bổ sung trên chính dữ liệu sao kê</h2>
+      <p>Ngoài đối chiếu Quy chế, dữ liệu còn cho phép kiểm tra tính đầy đủ của sao kê, cấu trúc hóa đơn, nhịp thanh toán, quyền duyệt lệnh và các khoản sắp phát sinh.</p></div>
+    <div class="kl-slot" data-no="10"></div>
+    <div class="figbox" style="margin:0 0 14px"><div class="sub">Lãi không kỳ hạn từng tháng, triệu đồng: cột là số trên sao kê, chấm vàng là số tính lại theo 0,2%/năm</div><div class="hscroll"><div style="min-width:600px">{{SVG_INTEREST}}</div></div><div class="hs-hint">Vuốt ngang để xem đủ biểu đồ</div></div>
+    <div class="checks" id="checks"></div>
+    <div class="moreb"><button class="tbtn" id="chk-more" type="button"></button></div>
+  </section>
+
+  <div class="part" id="phan-5"><div class="pn">Phần V</div><h2 class="pt">Dấu hiệu và hành động</h2><p class="pd">Mười sáu dấu hiệu theo mức độ và nguyên nhân, hướng xử lý, hệ quả pháp lý và điều kiện bãi nhiệm, hồ sơ cần yêu cầu và lộ trình cho cư dân.</p><div class="pchips" data-part="5"></div></div>
+
+  <section id="dau-hieu">
+    <div class="sec-h"><div class="eyebrow"><span class="no">11</span>Mức độ, nguyên nhân, xử lý</div><h2>16 dấu hiệu cần Ban quản trị giải trình</h2>
+      <p>Mức Đỏ cần giải trình ngay, mức Cam cần hồ sơ chứng minh, mức Vàng cần cải thiện. Mỗi thẻ ghi tình trạng pháp lý, hệ quả và nguyên nhân sơ bộ: thiếu năng lực, lỡ tay thật, hay chưa loại trừ lỡ tay có chủ đích. Phân loại nguyên nhân chi tiết và khung xử lý ở mục 01; hệ quả pháp lý và điều kiện bãi nhiệm ở cuối mục này. Việc xử lý thuộc Hội nghị nhà chung cư và cơ quan có thẩm quyền.</p></div>
+    <div class="kl-slot" data-no="11"></div>
+    <div class="panel" id="canh-bao-moi" hidden style="margin-bottom:14px"></div>
+    <div class="filters" id="fchips" role="group" aria-label="Lọc theo mức độ"></div>
+    <div class="filters" id="fnnchips" role="group" aria-label="Lọc theo nguyên nhân"></div>
+    <div class="finds" id="finds"></div>
+    <div class="moreb"><button class="tbtn" id="find-more" type="button"></button></div>
+    <div class="panel nn-link"><b>Nguyên nhân, quy mô và khung xử lý</b><span>Phân loại nguyên nhân của 16 dấu hiệu, bảng quy mô, khung xử lý và cách hỏi dần ba vòng nằm ở mục 01, cùng năm câu hỏi của cuộc kiểm tra.</span><div class="q10-acts"><a class="tbtn" href="#nguyen-nhan">Phân loại nguyên nhân</a><a class="tbtn" href="#khung-xu-ly">Khung xử lý</a></div></div>
+    {{LEGAL}}
+  </section>
+
+  <section id="ho-so">
+    <div class="sec-h"><div class="eyebrow"><span class="no">12</span>Việc cần làm</div><h2>Hồ sơ cần đòi Ban quản trị và ngân hàng</h2>
+      <p>Chủ sở hữu có quyền yêu cầu cung cấp toàn bộ thông tin quản lý, sử dụng nhà chung cư (khoản 1 Điều 7 Nội quy). Bảng dưới theo dõi tình trạng từng hồ sơ; người quản trị trang cập nhật và mọi người cùng xem.</p></div>
+    <div class="kl-slot" data-no="12"></div>
+    <a class="ptr" href="#cau-hoi-bqt"><b>Mười câu hỏi đã gửi Ban quản trị</b><span>Tình trạng trả lời từng câu</span></a>
+    <div class="panel docs-p" id="tai-lieu-moi"><h3>Tài liệu BQT đã cung cấp, nhận ngày 28/09/2026</h3>
+      <div class="sub">Bảy tài liệu gồm thư, giấy xác nhận của ngân hàng và báo cáo, thông báo của BQT, đã đối chiếu với sao kê.</div>
+      <div class="docs" id="docs"></div>
+      <div class="tbl-wrap cards" id="docs-chk" style="margin-top:12px;max-height:none"></div>
+      <div id="docs-nd"></div>
+      <div class="h3x" style="margin-top:16px">Câu hỏi mới cần BQT trả lời</div>
+      <ol class="qs" id="docs-q"></ol>
+    </div>
+    <div class="trk-bar" id="trk-bar" style="margin-top:16px"></div>
+    <div class="reqs" id="reqs"></div>
+    <div class="h3x">Lộ trình đề xuất</div>
+    <div class="road" id="road"></div>
+    <div class="two" style="margin-top:12px" id="road2"></div>
+  </section>
+
+  <div class="part" id="phan-hd"><div class="pn">Phần VI</div><h2 class="pt">Hỏi đáp</h2><p class="pd">Câu trả lời ngắn cho những điều cư dân hay hỏi, chia theo chủ đề. Mỗi câu có nhãn tình trạng và dẫn tới mục phân tích chi tiết.</p><div class="pchips" data-part="hd"></div></div>
+
+  <section id="hoi-dap">
+    <div class="sec-h"><div class="eyebrow">Hỏi đáp</div><h2 id="hd-h2">Câu hỏi thường gặp theo chủ đề</h2>
+      <p>Chọn chủ đề hoặc gõ từ khóa như 986, lãi suất, thang máy. Bấm vào câu hỏi để xem câu trả lời và đường dẫn tới phần phân tích.</p></div>
+    <div class="hdq">
+      <aside class="hd-side" aria-label="Tìm kiếm và chủ đề hỏi đáp">
+        <div class="hd-search"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input type="search" id="hd-q" placeholder="Tìm câu hỏi, từ khóa" aria-label="Tìm trong hỏi đáp" autocomplete="off" enterkeyhint="search"><button class="hd-clr" type="button" id="hd-clr" hidden>Xóa</button></div>
+        <nav class="hd-tops" id="hd-tops" aria-label="Chủ đề hỏi đáp"></nav>
+        <div class="hd-leg" id="hd-leg"></div>
+      </aside>
+      <div class="hd-main">
+        <div class="hd-head" id="hd-head" aria-live="polite"></div>
+        <div class="hd-list" id="hd-list"></div>
+        <div class="hd-empty" id="hd-empty" hidden></div>
+        <div class="hd-ask" id="hd-ask" hidden>
+          <div class="hd-ask-h"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg></span><div><b>Chưa thấy câu bạn cần? Hỏi Claude</b><p>Claude trả lời dựa trên dữ liệu và phân tích của trang này. Lượt dùng tính vào tài khoản Claude của người hỏi; câu trả lời tự động có thể chưa chính xác, hãy đối chiếu với mục chi tiết.</p></div></div>
+          <form id="hd-ask-f" autocomplete="off"><textarea id="hd-ask-q" rows="2" maxlength="500" aria-label="Câu hỏi gửi Claude" placeholder="Ví dụ: Nếu 986,9 triệu không có chứng từ thì cư dân nên đề nghị gì?"></textarea>
+            <div class="acts"><button class="tbtn pri" type="submit" id="hd-ask-go">Hỏi Claude</button><button class="tbtn dng" type="button" id="hd-ask-stop" hidden>Dừng</button><span class="hint">Tối đa 500 ký tự. Không nhập thông tin cá nhân.</span></div></form>
+          <div id="hd-ask-out"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="part" id="phan-6"><div class="pn">Phần VII</div><h2 class="pt">Công cụ và dữ liệu gốc</h2><p class="pd">Nạp sao kê mới để cập nhật báo cáo, tra cứu toàn bộ giao dịch, tải báo cáo và tra thuật ngữ.</p><div class="pchips" data-part="6"></div></div>
+
+  <section id="cap-nhat">
+    <div class="sec-h"><div class="eyebrow">Công cụ</div><h2>Cập nhật sao kê mới</h2>
+      <p>Khi có sao kê mới của ba tài khoản, nạp vào đây. Trang kiểm tra số dư từng dòng, phân loại, gắn cảnh báo theo Quy chế, rồi tính lại các con số, biểu đồ và bảng giao dịch.</p></div>
+    <div class="up">
+      <div class="panel">
+        <h3>1. Chọn cách nạp</h3>
+        <div class="tabs" role="group" aria-label="Cách nạp dữ liệu"><button class="fbtn" type="button" data-tab="file" aria-pressed="true">Tệp Excel, CSV, PDF</button><button class="fbtn" type="button" data-tab="man" aria-pressed="false">Nhập tay từng dòng</button></div>
+        <div id="tab-file">
+          <label class="drop" id="drop" for="f-up"><b>Chọn tệp sao kê</b> hoặc kéo thả vào đây<br><span class="subx">Excel (.xlsx, .xls), CSV hoặc PDF</span></label>
+          <input type="file" id="f-up" accept=".xlsx,.xls,.csv,.pdf" hidden>
+          <div class="frow"><label>Tài khoản của tệp<select id="up-acc"><option value="">Tự nhận diện theo số tài khoản</option><option value="999">VietinBank 116605084999 (quỹ)</option><option value="AGR">Agribank 6350201010476 (quỹ)</option><option value="7784">VietinBank 117002997784 (thu dịch vụ)</option></select></label></div>
+        </div>
+        <div id="tab-man" hidden>
+          <div class="frow"><label>Tài khoản<select id="m-acc"><option value="999">VietinBank 116605084999 (quỹ)</option><option value="AGR">Agribank 6350201010476 (quỹ)</option><option value="7784">VietinBank 117002997784 (thu dịch vụ)</option></select></label><label>Ngày giao dịch<input id="m-d" type="date"></label></div>
+          <div class="frow"><label style="flex:3 1 260px">Nội dung trên sao kê<input id="m-s" type="text" autocomplete="off"></label><label>Đối ứng<input id="m-cp" type="text" autocomplete="off" placeholder="Tên đơn vị nhận hoặc trả"></label></div>
+          <div class="frow"><label>Tiền ra, đồng<input id="m-dr" inputmode="numeric" autocomplete="off" placeholder="0"></label><label>Tiền vào, đồng<input id="m-cr" inputmode="numeric" autocomplete="off" placeholder="0"></label><label>Số dư sau giao dịch<input id="m-b" inputmode="numeric" autocomplete="off" placeholder="Để trống để tự tính"></label></div>
+          <div class="acts"><button class="tbtn" id="m-add" type="button">Thêm vào bảng kiểm tra</button></div>
+        </div>
+        <div class="stline" id="up-st" role="status" aria-live="polite"></div>
+        <div class="acts" id="up-stop" hidden><button class="tbtn dng" type="button" id="up-abort">Dừng đọc tệp</button></div>
+      </div>
+      <div class="panel">
+        <h3>Trang làm gì với dữ liệu mới</h3>
+        <ul class="ul">
+          <li>Kiểm tra số dư từng dòng, nối liền với số dư cuối của dữ liệu đã có; báo dòng lệch, dòng trùng, tháng bị thiếu.</li>
+          <li>Tính lại tiền lãi không kỳ hạn từng tháng theo 0,2%/năm, như phép thử đã khớp 33/33 tháng.</li>
+          <li>Phân loại và gắn cảnh báo theo Quy chế: tiền quỹ chuyển sang tài khoản của Ban quản trị, rút tiền mặt, người nhận là cá nhân, thu khu vực chung ngoài quỹ, khoản chi lớn thiếu hồ sơ.</li>
+          <li>Tính lại số tiền quỹ còn, tiền lãi, tiền chi, thu khu vực chung, cơ cấu quỹ, biểu đồ số dư, dòng thời gian và bảng giao dịch.</li>
+        </ul>
+        <p class="note">Tệp gốc chỉ được đọc trên máy của bạn. PDF được Claude đọc giúp và dùng lượt Claude của người bấm. Chỉ người quản trị trang lưu được dữ liệu cho mọi người cùng xem.</p>
+      </div>
+    </div>
+    <div class="panel" id="pv" hidden style="margin-top:14px">
+      <h3>2. Kiểm tra trước khi áp dụng</h3><div class="sub" id="pv-sub"></div>
+      <div class="pv-sum" id="pv-sum"></div>
+      <div class="pv-wrap"><table class="pv"><thead><tr><th>#</th><th>Ngày</th><th>Nội dung</th><th class="n">Tiền ra</th><th class="n">Tiền vào</th><th class="n">Số dư</th><th>Đối ứng</th><th>Phân loại, cảnh báo</th><th>Số dư khớp?</th><th></th></tr></thead><tbody id="pv-body"></tbody></table></div>
+      <div class="acts"><button class="tbtn" type="button" id="pv-addrow">Thêm dòng</button><button class="tbtn" type="button" id="pv-fill">Tự tính số dư còn trống</button><button class="tbtn dng" type="button" id="pv-drop">Bỏ bảng này</button><button class="tbtn pri" type="button" id="pv-apply">Áp dụng vào báo cáo</button></div>
+    </div>
+    <div class="panel" style="margin-top:14px">
+      <h3>3. Dữ liệu mới đã áp dụng</h3><div class="sub" id="bl-sub"></div>
+      <div class="bl" id="bl"></div>
+      <div class="acts" id="bl-acts"></div>
+      <div class="aibox" id="aibox" hidden></div>
+    </div>
+  </section>
+
+  <section id="giao-dich">
+    <div class="sec-h"><div class="eyebrow">Dữ liệu gốc</div><h2 id="tx-h2">198 giao dịch của ba tài khoản</h2>
+      <p>Chép lại từ 8 file sao kê, cộng các sao kê nạp thêm. Dòng tô màu là giao dịch có cảnh báo.</p></div>
+    <div class="tbar">
+      <select id="f-acc" aria-label="Tài khoản"><option value="">Tất cả tài khoản</option><option value="999">VietinBank 116605084999 (quỹ)</option><option value="AGR">Agribank 6350201010476 (quỹ)</option><option value="7784">VietinBank 117002997784 (thu dịch vụ)</option></select>
+      <select id="f-cat" aria-label="Phân loại"><option value="">Mọi phân loại</option></select>
+      <select id="f-src" aria-label="Nguồn dữ liệu"><option value="">Dữ liệu gốc và mới</option><option value="0">Chỉ dữ liệu gốc</option><option value="1">Chỉ dữ liệu mới</option></select>
+      <label class="ck"><input type="checkbox" id="f-flag"> Chỉ dòng có cảnh báo</label>
+      <label class="ck"><input type="checkbox" id="f-small" checked> Ẩn phí và lãi nhỏ</label>
+      <input type="search" id="f-q" placeholder="Tìm nội dung, đối tác, số hợp đồng" aria-label="Tìm kiếm">
+    </div>
+    <div class="tsum" id="tsum"></div>
+    <div class="tbl-wrap cards tx-t"><table><thead><tr><th>TK</th><th>Ngày</th><th>Nội dung</th><th class="n">Tiền ra</th><th class="n">Tiền vào</th><th class="n">Số dư</th><th>Đối ứng</th><th>Phân loại</th><th>Cảnh báo</th></tr></thead><tbody id="tb"></tbody></table></div>
+    <div class="moreb"><button class="tbtn" id="tx-more" type="button" hidden></button></div>
+  </section>
+
+  <section id="tai-ve">
+    <div class="sec-h"><div class="eyebrow">Tải về</div><h2>Báo cáo, dữ liệu và bản lưu trữ</h2>
+      <p>Báo cáo PDF và file Excel là bản phân tích dữ liệu tới 31/05/2026. Hai tệp giao dịch cập nhật gồm cả sao kê nạp thêm. Mỗi lần tải, khung xem của Claude sẽ hỏi xác nhận trước khi lưu tệp.</p></div>
+    <p class="note" id="dl-note" hidden style="margin:0 0 12px;color:var(--warn)">Khung xem hiện tại không cho trang tải tệp. Vui lòng mở trang bằng trình duyệt web tại claude.ai để tải, hoặc nhờ người quản trị trang gửi tệp.</p>
+    <div class="dlg" id="dlg"></div>
+  </section>
+
+  <section id="tu-dien">
+    <div class="sec-h"><div class="eyebrow">Tra cứu</div><h2>Thuật ngữ dùng trong trang</h2></div>
+    <div class="glo" id="glo"></div>
+  </section>
+</main>
+
+<footer><div class="foot">
+  <div><h4>Nguồn dữ liệu</h4><ul>
+    <li>8 file scan sao kê: Agribank 6350201010476 (2024, 2025, 01–05/2026); VietinBank 116605084999 (08–12/2024, 2025, 01–05/2026); VietinBank 117002997784 (2025, 01–05/2026).</li>
+    <li>Bộ quy chế đã thông qua tại Hội nghị nhà chung cư ngày 26/05/2024: Quy chế thu chi tài chính (trang 11–17), Quy chế hoạt động Ban quản trị (trang 18–28), Nội quy (trang 29–42).</li>
+    <li>Quy mô 1.840 căn, 6 block, bàn giao 12/2019: phumyhungcorp.com.vn.</li></ul></div>
+  <div><h4>Căn cứ đối chiếu</h4><ul>
+    <li>Luật Nhà ở 2023, khoản 4 Điều 153 (hiệu lực 01/08/2024).</li>
+    <li>Thông tư 12/2021/TT-BLĐTBXH về kiểm định thang máy; Nghị định 105/2025/NĐ-CP về phòng cháy chữa cháy.</li>
+    <li>Biểu lãi suất niêm yết VietinBank, Agribank từng thời điểm (Vietnambiz, CafeF, Mekong ASEAN, VnEconomy, Thương Gia).</li>
+    <li>Agribank Chi nhánh Phước Kiển đổi tên thành Chi nhánh Đông TP.HCM từ 01/07/2022 (agribank.com.vn).</li></ul></div>
+  <div><h4>Cách đọc</h4><ul>
+    <li>Số liệu gốc tới 31/05/2026, ngày cuối của các sao kê; dữ liệu nạp thêm được ghi rõ là "Mới".</li>
+    <li>Các hợp đồng tiền gửi có kỳ hạn được suy ra từ sao kê tài khoản thanh toán.</li>
+    <li>Tài liệu phân tích độc lập phục vụ giám sát của cư dân, không thay thế kiểm toán độc lập hay kết luận của cơ quan có thẩm quyền.</li></ul></div>
+  <div class="upd" id="foot-upd"></div>
+</div></footer>
+<nav class="bnav" id="bnav" aria-label="Điều hướng nhanh">
+  <a href="#tong-quan" data-part="0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Tổng quan</a>
+  <a href="#phan-clip" data-part="clip"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor"/></svg>Clip</a>
+  <a href="#phan-tien" data-part="tien"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M7.2 6H14a3 3 0 0 1 0 6h-4a3 3 0 0 0 0 6h6.8"/></svg>Đường tiền</a>
+  <a href="#phan-cauhoi" data-part="cauhoi"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M9.5 9.2a2.5 2.5 0 1 1 3.3 2.4c-.5.2-.8.6-.8 1.1"/><path d="M12 14.6v.01"/></svg>10 câu hỏi</a>
+  <button type="button" id="bnav-toc" aria-haspopup="dialog" aria-controls="toc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Mục lục</button>
+</nav>
+<div class="toc hb" id="helpbox" hidden><div class="hb-in" role="dialog" aria-modal="true" aria-label="Hướng dẫn"></div></div>
+<div class="toc" id="toc" hidden><div class="toc-in" role="dialog" aria-modal="true" aria-label="Mục lục"><div class="toc-h"><b>Mục lục</b><button class="tbtn" type="button" id="toc-x">Đóng</button></div><div id="toc-list"></div><div class="toc-f"><button class="tbtn" type="button" id="toc-exp">Mở tất cả các mục</button><button class="tbtn" type="button" id="toc-col">Chỉ xem kết luận</button></div></div></div>
+<button class="fab" id="fab" type="button" aria-label="Lên đầu trang" hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<div class="savebar" id="savebar" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<div class="tip" id="tip" hidden></div>

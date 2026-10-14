@@ -1,0 +1,62 @@
+[
+ {
+  "test": "Cấu trúc file PDF",
+  "how": "Đọc siêu dữ liệu, đếm số lần lưu (%%EOF, startxref), tìm lớp XMP và dấu vết phần mềm chỉnh sửa.",
+  "result": "9/9 file do máy scan Toshiba tạo (e-STUDIO3518A cho 8 sao kê, e-STUDIO4508A cho Quy chế), trình tạo SECnvtToPDF V1.0. Mỗi file chỉ một lần lưu, không có lớp chỉnh sửa, không có dấu vết phần mềm đồ họa hay công cụ AI.",
+  "verdict": "Đạt"
+ },
+ {
+  "test": "Dấu vân tay nén ảnh JPEG",
+  "how": "So bảng lượng tử hóa, chuỗi marker, cách lấy mẫu màu, kích thước và độ phân giải của 15 trang màu và 6 trang đen trắng (21 trang sao kê).",
+  "result": "Cả 15 trang màu dùng cùng một bảng lượng tử hóa, cùng chuỗi marker APP0-DQT-SOF0-DHT, 600 dpi, 4938x6992 điểm ảnh. Trang không có màu được nén CCITT 4944x6992, đúng chế độ tự nhận màu của máy scan. Không trang nào bị nén lại bằng phần mềm khác.",
+  "verdict": "Đạt"
+ },
+ {
+  "test": "Số học từng dòng",
+  "how": "Tính lại số dư của 198 giao dịch, tổng Nợ, tổng Có và số bút toán in trên từng sao kê.",
+  "result": "Khớp ở cả 198 dòng, không lệch một đồng. 8/8 sao kê khớp tổng phát sinh, số dư cuối và số bút toán.",
+  "verdict": "Đạt"
+ },
+ {
+  "test": "Toán lãi suất",
+  "how": "Tính ngược lãi suất từ tiền lãi và số ngày theo quy ước ACT/365.",
+  "result": "75.616.438 = 15 tỷ x 2,0% x 92/365; 2.820.000.000 = 60 tỷ x 4,7%; 87.780.822 = 15 tỷ x 2,4% x 89/365; lãi không kỳ hạn khớp mức 0,2%/năm theo số dư từng ngày. Số liệu bịa bằng AI rất khó khớp tới từng đồng như vậy.",
+  "verdict": "Đạt"
+ },
+ {
+  "test": "Lãi không kỳ hạn từng tháng",
+  "how": "Tính lại lãi 0,2%/năm trên số dư đầu ngày suy ra từ sao kê cho từng tháng, so với khoản lãi ngân hàng đã trả.",
+  "result": "33/33 tháng lãi của hai tài khoản VietinBank khớp tới từng đồng; lãi Agribank khớp quy tắc làm tròn 100 đồng và không trả lãi khi số dư dưới 1 triệu. Chỉ cần thêm, bớt hay sửa một giao dịch qua đêm là tiền lãi sẽ lệch.",
+  "verdict": "Đạt"
+ },
+ {
+  "test": "Khớp chéo giữa các tài khoản",
+  "how": "Dò từng khoản chuyển qua lại giữa ba tài khoản ở hai ngân hàng.",
+  "result": "60 tỷ rời VietinBank ngày 21/08/2024 vào Agribank cùng ngày; 2,815 tỷ rời Agribank ngày 29/08/2025 vào VietinBank cùng ngày; 260.945.454 đồng rời TK 999 và vào TK 7784 cùng giây 10:35:36 ngày 24/07/2025; nội dung HDTG 210824/2024 năm 2025 mã hóa đúng ngày gửi 21/08/2024.",
+  "verdict": "Đạt"
+ },
+ {
+  "test": "Dòng bị khoanh đỏ Mở HợP ĐồNG TIềN GửI",
+  "how": "Phóng lớn 600 dpi, so phông chữ, cỡ chữ, đường chân chữ, độ đậm, hình dạng chữ số và căn lề với các dòng lân cận.",
+  "result": "Cùng phông Times New Roman, cùng cỡ, độ đậm và đường chân chữ; chữ số giống hệt các dòng khác. Kiểu hoa thường lẫn lộn theo một quy luật cố định: chữ cái không dấu được viết hoa, nguyên âm có dấu giữ chữ thường. Đây là lỗi quen thuộc của hàm viết hoa trong phần mềm ngân hàng thế hệ cũ, không phải lỗi ngẫu nhiên kiểu AI vẽ chữ. Số tiền, số dư trước sau và giao dịch đối ứng ở VietinBank đều khớp.",
+  "verdict": "Đạt"
+ },
+ {
+  "test": "Số tài khoản bị khoanh đỏ",
+  "how": "So độ dài và sự nhất quán của số tài khoản trên chứng từ hai ngân hàng.",
+  "result": "6350201010476 gồm 13 chữ số, đúng độ dài tài khoản Agribank, xuất hiện thống nhất ở 5 chỗ trên sao kê hai ngân hàng. Tên thư mục 635020101476 thiếu một chữ số 0; đó là lỗi đặt tên thư mục, không phải sai lệch trên chứng từ.",
+  "verdict": "Đạt"
+ },
+ {
+  "test": "Con dấu, chữ ký, thông tin chi nhánh",
+  "how": "Đối chiếu mã trên con dấu với mã số thuế chi nhánh, so các lần đóng dấu và chữ ký giữa các bản.",
+  "result": "Dấu Agribank mang mã 0100686174-072, đúng mã số thuế Chi nhánh Đông TP.HCM (tên cũ Chi nhánh Phước Kiển, đổi tên từ 01/07/2022 và giữ số điện thoại cũ nên sổ phụ vẫn in 08.3781...). Dấu VietinBank mang mã 0100111948-149. Mỗi lần đóng dấu lệch góc, đậm nhạt khác nhau, mực đỏ nằm đè lên chữ in; chữ ký mực xanh khác nhau giữa các bản; có dấu giáp lai ở mép trang.",
+  "verdict": "Đạt"
+ },
+ {
+  "test": "Điểm chưa hoàn chỉnh về thủ tục",
+  "how": "Rà từng trang tìm thiếu dấu, thiếu chữ ký, lỗi scan.",
+  "result": "Trang cuối sao kê TK 7784 năm 2026 có chữ ký nhưng không có dấu ngân hàng. Sổ phụ Agribank chỉ đóng dấu trang đầu. Trang đầu sổ phụ Agribank 2026 bị mất mép trên khi scan. Đồng hồ máy scan cài sai múi giờ (-08:00) nên thời điểm tạo file không dùng để chứng minh ngày scan.",
+  "verdict": "Lưu ý: đề nghị ngân hàng cấp lại bản có dấu hoặc xác nhận trực tiếp"
+ }
+]

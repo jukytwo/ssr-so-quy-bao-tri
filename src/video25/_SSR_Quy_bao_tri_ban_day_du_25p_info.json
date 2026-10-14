@@ -1,0 +1,1518 @@
+{
+ "duration": 1353.3,
+ "sentences": 209,
+ "cards": 15,
+ "scenes": 34,
+ "size": 63062295,
+ "voice": "vi_VN-vais1000-medium",
+ "doc": null,
+ "doc_size": null,
+ "chapters": [
+  "00:00 Mở đầu",
+  "00:17 Tiền có mất không",
+  "01:53 Toàn cảnh dòng tiền",
+  "03:41 Vấn đề 1",
+  "06:31 Vấn đề 2",
+  "09:00 Vấn đề 3",
+  "11:54 Vấn đề 4",
+  "13:09 Vấn đề 5",
+  "15:04 Quy chế áp dụng",
+  "16:22 Tóm lại",
+  "16:53 Mức độ, nguyên nhân",
+  "18:42 Khung xử lý",
+  "19:15 Mười câu hỏi",
+  "21:23 Hội nghị quyết định",
+  "21:56 Cư dân làm gì",
+  "22:21 Liên hệ"
+ ],
+ "timeline": [
+  [
+   "bia",
+   "Ngày 23/12/2025, 986,9 triệu đồng tiền quỹ bảo trì chuyển vào một tài khoản do chính các thành viên Ban quản trị đồng đứng tên.",
+   1.5,
+   11.062
+  ],
+  [
+   "bia",
+   "Clip này trả lời ba câu: tiền có mất không, sai ở đâu, và Hội nghị cần quyết định gì.",
+   11.302,
+   16.451
+  ],
+  [
+   "ok#-2",
+   "Trước hết, tiền có mất không?",
+   17.501,
+   19.044
+  ],
+  [
+   "ok#0",
+   "Chưa thấy mất: 198 giao dịch của ba tài khoản khớp số dư tới từng đồng.",
+   19.284,
+   24.486
+  ],
+  [
+   "ok#1",
+   "Không có lệnh rút tiền mặt, không có khoản chuyển cho cá nhân.",
+   24.726,
+   27.513
+  ],
+  [
+   "ok#1",
+   "Tiền chỉ đi tới doanh nghiệp, Kho bạc, hoặc tài khoản do Ban quản trị đứng tên.",
+   27.753,
+   31.689
+  ],
+  [
+   "ok#2",
+   "Tiền gốc còn 127,15 tỷ đồng vào ngày 31/05/2026.",
+   31.929,
+   37.293
+  ],
+  [
+   "ok#-1",
+   "Vì vậy, câu hỏi không phải là tiền có biến mất hay không, mà là tiền có đi đúng đường và đúng thẩm quyền hay không.",
+   37.533,
+   43.222
+  ],
+  [
+   "kt#-1",
+   "Câu trả lời này đến từ bốn bước kiểm tra.",
+   44.272,
+   46.348
+  ],
+  [
+   "kt#0",
+   "Bước một, đọc sao kê của ba tài khoản từ ngày 15/08/2024 tới ngày 31/05/2026.",
+   46.588,
+   54.833
+  ],
+  [
+   "kt#1",
+   "Bước hai, cộng trừ lại 198 giao dịch, số dư khớp tới từng đồng.",
+   55.073,
+   59.841
+  ],
+  [
+   "kt#2",
+   "Bước ba, đặt từng khoản chi cạnh Quy chế thu chi mà Hội nghị đã thông qua, và Luật Nhà ở.",
+   60.081,
+   65.437
+  ],
+  [
+   "kt#3",
+   "Bước bốn, những chỗ chưa rõ được hỏi Ban quản trị bằng văn bản, mười câu, gửi ngày 29/09/2026.",
+   65.677,
+   73.39
+  ],
+  [
+   "dung#-1",
+   "Cũng cần ghi nhận những việc Ban quản trị đã làm đúng.",
+   74.44,
+   77.79
+  ],
+  [
+   "dung#0",
+   "Chín lệnh chi từ quỹ được chuyển thẳng cho nhà thầu, đúng Điều 7.2 Quy chế.",
+   78.03,
+   82.653
+  ],
+  [
+   "dung#1",
+   "Tiền gốc tăng từ 124,79 tỷ lúc nhận bàn giao lên 127,15 tỷ, nhờ 5,48 tỷ tiền lãi.",
+   82.893,
+   91.758
+  ],
+  [
+   "dung#2",
+   "Phần lớn tiền quỹ, 105 tỷ, được gửi có kỳ hạn tại VietinBank và Agribank với lãi 4,7% một năm.",
+   91.998,
+   98.875
+  ],
+  [
+   "dung#3",
+   "Ban quản trị đã lập báo cáo quỹ ba lần, ngày 14/05/2025, 15/05/2026 và 15/09/2026.",
+   99.115,
+   108.832
+  ],
+  [
+   "dung#-1",
+   "Nhưng sao kê cũng cho thấy tiền đi sai đường ở nhiều chỗ.",
+   109.072,
+   112.565
+  ],
+  [
+   "tk4#-2",
+   "Trước khi xem lưu đồ, có bốn tài khoản cần nhớ.",
+   113.615,
+   116.289
+  ],
+  [
+   "tk4#0",
+   "Tài khoản quỹ chính tại VietinBank, đuôi 4999, nhận 124,79 tỷ từ chủ đầu tư ngày 15/08/2024.",
+   116.529,
+   126.089
+  ],
+  [
+   "tk4#1",
+   "Tài khoản thứ hai tại Agribank, đuôi 0476, nhận 60 tỷ ngày 21/08/2024 để gửi có kỳ hạn.",
+   126.329,
+   134.752
+  ],
+  [
+   "tk4#2",
+   "Tài khoản thu phí dịch vụ, đuôi 7784, nhận 1,71 tỷ tiền khai thác khu vực chung, nằm ngoài quỹ.",
+   134.992,
+   141.039
+  ],
+  [
+   "tk4#3",
+   "Và tài khoản vận hành do Ban quản trị đứng tên, đuôi 6372, nhận 986,9 triệu từ quỹ, hiện chưa có sao kê.",
+   141.279,
+   148.934
+  ],
+  [
+   "f0#-2",
+   "Toàn cảnh dòng tiền của quỹ.",
+   149.984,
+   151.425
+  ],
+  [
+   "f0#-1",
+   "Đường xanh là tiền vào, đường cam là khoản chi cần kiểm tra hồ sơ, đường đỏ là chỗ làm trái Quy chế hoặc Luật.",
+   151.665,
+   158.224
+  ],
+  [
+   "f0#-1",
+   "Quỹ nhận 124,79 tỷ từ chủ đầu tư ngày 15/08/2024, có thêm 5,48 tỷ tiền lãi, và còn 127,15 tỷ vào ngày 31/05/2026.",
+   158.464,
+   173.274
+  ],
+  [
+   "f0#-1",
+   "3,12 tỷ đã rời quỹ cho bốn nhóm: Schindler 806,9 triệu, HNB 623,3 triệu, Thép Quang 705,8 triệu và tài khoản vận hành 986,9 triệu.",
+   173.514,
+   186.906
+  ],
+  [
+   "f0#-1",
+   "Hai đường đỏ là 986,9 triệu vào tài khoản vận hành của Ban quản trị, và 705,8 triệu trả Thép Quang khi chưa rõ hàng hóa.",
+   187.146,
+   195.632
+  ],
+  [
+   "f0#-1",
+   "Phía dưới, 1,71 tỷ tiền khai thác khu vực chung vào tài khoản 117002997784 thay vì vào quỹ, kể cả 260,9 triệu đã vào quỹ rồi bị chuyển sang.",
+   195.872,
+   207.638
+  ],
+  [
+   "f0#-1",
+   "Từ tài khoản này, 1,40 tỷ đã chi cho Thành Công, Khởi Sáng Việt, KTECH, và 187,4 triệu nộp thuế, không qua quy trình của quỹ.",
+   207.878,
+   217.036
+  ],
+  [
+   "f0#-1",
+   "Sau đây là năm vấn đề, xem kỹ từng đường tiền.",
+   217.276,
+   220.055
+  ],
+  [
+   "f1#-2",
+   "Vấn đề một: 986,9 triệu tiền quỹ đi vào tài khoản của chính Ban quản trị.",
+   221.105,
+   226.304
+  ],
+  [
+   "f1#-1",
+   "Đường xanh là đường đúng theo Quy chế, đường đỏ là đường tiền đã đi.",
+   226.544,
+   230.381
+  ],
+  [
+   "f1#-1",
+   "Theo Quy chế, tiền quỹ chỉ được chuyển thẳng tới đơn vị làm bảo trì. Thực tế, ngày 23/12/2025, quỹ chuyển 986,9 triệu vào tài khoản vận hành, trái Điều 7.2.",
+   230.621,
+   242.747
+  ],
+  [
+   "f1#-1",
+   "Tài khoản nhận do 6 thành viên Ban quản trị đồng đứng tên, trong khi Điều 3.2.a giao công ty quản lý đứng tên tài khoản này.",
+   242.987,
+   249.599
+  ],
+  [
+   "f1#-1",
+   "Sáu khoản chi được ứng từ ngày 29/08 rồi gộp hoàn một lần ngày 23/12. Điều 7.4 chỉ cho tạm dùng tối đa 10 triệu mỗi tháng và hoàn cuối mỗi tháng; khoản này gấp khoảng 20 lần.",
+   249.839,
+   261.791
+  ],
+  [
+   "f1#-1",
+   "Chưa có sao kê tài khoản nhận, nên chưa biết tiền cuối cùng trả cho ai.",
+   262.031,
+   265.505
+  ],
+  [
+   "f1#-1",
+   "Bảng chi phí Ban quản trị báo cáo ngày 15/05/2026 chỉ giải thích 863,8 triệu, lệch 123,1 triệu so với số đã chuyển.",
+   265.745,
+   275.711
+  ],
+  [
+   "f1#-1",
+   "Trong khi đó, quỹ luôn còn ít nhất 4,22 tỷ, không có lý do phải ứng trước từ tài khoản khác.",
+   275.951,
+   281.566
+  ],
+  [
+   "f1#-1",
+   "Cần làm rõ: căn cứ của lệnh chuyển, sao kê tài khoản nhận từ 01/08/2025, và hợp đồng, hóa đơn, nghiệm thu của 6 khoản.",
+   281.806,
+   290.51
+  ],
+  [
+   "v1a#-1",
+   "Nhìn kỹ hơn sáu khoản được hoàn ứng.",
+   291.56,
+   293.719
+  ],
+  [
+   "v1a#0",
+   "Khoản đầu tiên có chứng từ ngày 29/08/2025.",
+   293.959,
+   297.732
+  ],
+  [
+   "v1a#1",
+   "Ba khoản tiếp theo trong tháng 10, ngày 03, 14 và 21.",
+   297.972,
+   302.731
+  ],
+  [
+   "v1a#2",
+   "Nội dung ghi chung là sửa chữa thang máy, phòng cháy chữa cháy và máy phát điện, chưa tách từng việc.",
+   302.971,
+   308.159
+  ],
+  [
+   "v1a#3",
+   "Khoản cuối có chứng từ ngày 23/12, cùng ngày với lệnh hoàn.",
+   308.399,
+   312.201
+  ],
+  [
+   "v1a#4",
+   "Cả sáu khoản được hoàn gộp một lần, 986,9 triệu đồng, vào tài khoản vận hành.",
+   312.441,
+   317.463
+  ],
+  [
+   "v1b#-1",
+   "Lệnh chuyển này chạm tới năm quy định.",
+   318.513,
+   320.363
+  ],
+  [
+   "v1b#0",
+   "Điều 7.2: tiền quỹ chỉ được chuyển cho đơn vị làm bảo trì, không qua tài khoản trung gian.",
+   320.603,
+   325.581
+  ],
+  [
+   "v1b#1",
+   "Điều 7.4: chỉ được tạm dùng tiền vận hành tối đa 10 triệu mỗi tháng và phải hoàn ngay cuối tháng.",
+   325.821,
+   331.41
+  ],
+  [
+   "v1b#2",
+   "Điều 3.2.a: tài khoản vận hành do công ty quản lý đứng tên. Nhưng thư xác nhận của VietinBank cho thấy tài khoản này do 6 thành viên Ban quản trị đồng đứng tên.",
+   331.65,
+   340.621
+  ],
+  [
+   "v1b#3",
+   "Điều 9.2: sửa chữa khẩn cấp trên 50 triệu phải được hơn một nửa chủ sở hữu đồng ý. Chưa thấy văn bản này.",
+   340.861,
+   347.175
+  ],
+  [
+   "v1b#4",
+   "Và Quy chế hoạt động yêu cầu 75% thành viên Ban quản trị đồng ý khi chi kinh phí bảo trì. Cần xem biên bản họp.",
+   347.415,
+   354.578
+  ],
+  [
+   "v1b#-1",
+   "Ba điều đầu đã rõ trên sao kê; hai điều sau cần văn bản để kết luận.",
+   354.818,
+   358.875
+  ],
+  [
+   "v1c#-1",
+   "Đi kèm vấn đề này là một câu hỏi về thang máy.",
+   359.925,
+   362.38
+  ],
+  [
+   "v1c#0",
+   "Phí bảo trì Schindler là 57,5 triệu đồng mỗi tháng cho 18 thang.",
+   362.62,
+   366.93
+  ],
+  [
+   "v1c#1",
+   "Từ ngày 21/01/2025 tới 31/05/2026, tài khoản quỹ không còn khoản phí định kỳ nào, ngoài khoản hoàn gộp 986,9 triệu.",
+   367.17,
+   378.106
+  ],
+  [
+   "v1c#2",
+   "Nếu hợp đồng vẫn tiếp tục, phí của 16 tháng này vào khoảng 0,94 tỷ đồng.",
+   378.346,
+   383.246
+  ],
+  [
+   "v1c#-1",
+   "Hoặc phí đã trả từ tài khoản vận hành, hoặc Schindler đang bị nợ phí. Sao kê tài khoản vận hành sẽ trả lời câu này.",
+   383.486,
+   390.007
+  ],
+  [
+   "f2#-2",
+   "Vấn đề hai: tiền khai thác khu vực chung nằm ngoài quỹ.",
+   391.057,
+   393.724
+  ],
+  [
+   "f2#-1",
+   "Tiền quảng cáo của Chicilon Media, Hưng Thái và tiền thuê mặt bằng của Viễn thông ACT, tổng 1,71 tỷ, vào tài khoản 117002997784 do Ban quản trị đứng tên, không vào quỹ như khoản 4 Điều 153 Luật Nhà ở 2023 quy định.",
+   393.964,
+   412.055
+  ],
+  [
+   "f2#-1",
+   "Có khoản 260,9 triệu đã vào đúng quỹ, 8 ngày sau bị chuyển ra với lý do trả nhầm.",
+   412.295,
+   417.493
+  ],
+  [
+   "f2#-1",
+   "Từ tài khoản này, 1,40 tỷ đã chi cho Thành Công, Khởi Sáng Việt và KTECH, không qua kế hoạch bảo trì, ba báo giá và nghiệm thu của quỹ.",
+   417.733,
+   426.403
+  ],
+  [
+   "f2#-1",
+   "Cả 6 hợp đồng đều trên 50 triệu, chưa thấy văn bản cho phép của chủ sở hữu.",
+   426.643,
+   431.72
+  ],
+  [
+   "f2#-1",
+   "Và chưa thấy công khai thu chi của tài khoản này.",
+   431.96,
+   434.275
+  ],
+  [
+   "f2#-1",
+   "Cần làm rõ: căn cứ mở tài khoản, hồ sơ từng hợp đồng; và phải chuyển toàn bộ số dư về quỹ.",
+   434.515,
+   440.08
+  ],
+  [
+   "v2a#-1",
+   "Dòng tiền khu vực chung đi qua năm mốc.",
+   441.13,
+   443.324
+  ],
+  [
+   "v2a#0",
+   "Ngày 01/10/2024, hợp đồng quảng cáo với Chicilon Media có giá khoảng 87 triệu đồng mỗi tháng.",
+   443.564,
+   450.354
+  ],
+  [
+   "v2a#1",
+   "Ngày 05/01/2025, hợp đồng ký lại chỉ còn 71,8 triệu mỗi tháng, giảm 17,5%, tức khoảng 182 triệu mỗi năm.",
+   450.594,
+   460.864
+  ],
+  [
+   "v2a#2",
+   "Ngày 16/07/2025, Chicilon trả 260,9 triệu vào đúng tài khoản quỹ.",
+   461.104,
+   467.422
+  ],
+  [
+   "v2a#3",
+   "Tám ngày sau, khoản này bị chuyển sang tài khoản đuôi 7784 với lý do trả nhầm, dù theo luật tài khoản quỹ mới là tài khoản đúng.",
+   467.662,
+   475.707
+  ],
+  [
+   "v2a#4",
+   "Từ tháng 7/2025 tới tháng 5/2026, toàn bộ 1,71 tỷ từ Chicilon Media, Viễn thông ACT và Hưng Thái đều vào tài khoản ngoài quỹ.",
+   475.947,
+   486.582
+  ],
+  [
+   "v2a#-1",
+   "Nếu giá quảng cáo giảm vì đổi số màn hình hay vị trí, Ban quản trị cần văn bản giải thích.",
+   486.822,
+   491.984
+  ],
+  [
+   "v2b#-1",
+   "Từ tài khoản ngoài quỹ này, 1,40 tỷ đã chi cho ba nhà thầu.",
+   493.034,
+   497.824
+  ],
+  [
+   "v2b#0",
+   "Thành Công nhận 856,8 triệu qua bốn hợp đồng, chiếm 61% số tiền sửa chữa. Hai hợp đồng được trả trọn chỉ 3 và 18 ngày sau khi ký.",
+   498.064,
+   507.696
+  ],
+  [
+   "v2b#0",
+   "Một hợp đồng là xây nhà để hàng hóa, 165,8 triệu. Xây mới trên phần sở hữu chung không phải bảo trì, phải do Hội nghị quyết định.",
+   507.936,
+   517.308
+  ],
+  [
+   "v2b#1",
+   "Khởi Sáng Việt sửa hệ thống giữ xe: tạm ứng 40% là 115,7 triệu, tức hợp đồng khoảng 289,3 triệu, nhưng tổng đã trả 356,4 triệu, cao hơn 67,1 triệu.",
+   517.548,
+   530.886
+  ],
+  [
+   "v2b#2",
+   "KTECH sửa và lắp camera, 187 triệu.",
+   531.126,
+   534.207
+  ],
+  [
+   "v2b#-1",
+   "Cả ba đều không qua kế hoạch bảo trì, ba báo giá và nghiệm thu như tiền quỹ phải có.",
+   534.447,
+   539.255
+  ],
+  [
+   "f3#-2",
+   "Vấn đề ba: 13 khoản chi trên 50 triệu, tổng 5,04 tỷ, chưa thấy văn bản cho phép.",
+   540.305,
+   545.87
+  ],
+  [
+   "f3#-1",
+   "Rõ nhất là tháng 4/2026, ba hợp đồng 2,15 tỷ ký trong ba ngày.",
+   546.11,
+   551.505
+  ],
+  [
+   "f3#-1",
+   "Thành Công ký ngày 06/04, HNB ngày 07/04, Thép Quang ngày 08/04. Không thấy lấy ý kiến chủ sở hữu theo Điều 9.2.",
+   551.745,
+   559.353
+  ],
+  [
+   "f3#-1",
+   "Ngày 14/04, hai lệnh chi trên hai tài khoản được lập cách nhau 2 phút, cho thấy người lập và người duyệt lệnh chưa tách riêng.",
+   559.593,
+   566.033
+  ],
+  [
+   "f3#-1",
+   "Các khoản được tạm ứng từ 50% tới 100% trước khi thi công, nghiệm thu.",
+   566.273,
+   571.83
+  ],
+  [
+   "f3#-1",
+   "Số hợp đồng HNB mang ngày 24/03/2026, nhưng ghi ký ngày 07/04/2026.",
+   572.07,
+   578.697
+  ],
+  [
+   "f3#-1",
+   "HNB là đơn vị sửa hệ thống cấp nước sinh hoạt, còn 623,3 triệu sẽ chi tiếp từ quỹ, trong khi cư dân phản ánh ống nước vẫn bể, dột nhiều nơi.",
+   578.937,
+   589.801
+  ],
+  [
+   "f3#-1",
+   "Cần làm rõ: văn bản cho phép từng hợp đồng, báo giá, nghiệm thu, và bảo hành cấp nước của HNB.",
+   590.041,
+   596.709
+  ],
+  [
+   "v3a#-1",
+   "Điều 9.2 chỉ cho Ban quản trị tự quyết việc khẩn cấp tới 50 triệu. Có 13 khoản vượt mức này, tổng 5,04 tỷ.",
+   597.759,
+   605.891
+  ],
+  [
+   "v3a#0",
+   "Lớn nhất là hợp đồng cấp nước với HNB, khoảng 1,25 tỷ, gấp 25 lần mức tự quyết.",
+   606.131,
+   611.943
+  ],
+  [
+   "v3a#1",
+   "Tiếp theo là khoản hoàn ứng 986,9 triệu, gấp khoảng 20 lần.",
+   612.183,
+   616.744
+  ],
+  [
+   "v3a#2",
+   "Thép Quang 705,8 triệu, gấp 14 lần.",
+   616.984,
+   620.319
+  ],
+  [
+   "v3a#3",
+   "Hợp đồng sửa thang máy Schindler 477,1 triệu, gấp 9,5 lần.",
+   620.559,
+   625.419
+  ],
+  [
+   "v3a#4",
+   "Thành Công 350,7 triệu và Khởi Sáng Việt 289,3 triệu, gấp 7 và 5,8 lần.",
+   625.659,
+   632.7
+  ],
+  [
+   "v3a#-1",
+   "Tính cả hai tài khoản, chi sửa chữa năm 2025 là 2,89 tỷ, năm tháng đầu 2026 là 1,63 tỷ, đều vượt trần 500 triệu mỗi năm nếu không nằm trong kế hoạch bảo trì được thông qua.",
+   632.94,
+   646.742
+  ],
+  [
+   "v3b#-1",
+   "Riêng thang máy, quỹ đã trả Schindler 806,9 triệu qua 7 lệnh, từ ngày 04/04 tới 23/06/2025.",
+   647.792,
+   656.488
+  ],
+  [
+   "v3b#1",
+   "Bảy hợp đồng sửa chữa được trả gộp một lệnh 180,8 triệu, bốn hợp đồng khác gộp 154,7 triệu. Từng hợp đồng dưới 50 triệu, nhưng cộng lại vượt mức.",
+   656.728,
+   667.703
+  ],
+  [
+   "v3b#2",
+   "Phí bảo trì và bốn hợp đồng cuối năm 2024 được trả trễ 5 tới 6 tháng.",
+   667.943,
+   672.93
+  ],
+  [
+   "v3b#-1",
+   "Tiền trả thẳng cho Schindler nên rủi ro gian lận thấp. Điều cần xem là sửa chữa lặp lại mà cư dân vẫn phản ánh thang máy, và giấy kiểm định an toàn của từng thang.",
+   673.17,
+   681.554
+  ],
+  [
+   "v3c#-1",
+   "Theo Quy chế, một khoản chi lớn phải qua năm bước.",
+   682.604,
+   685.368
+  ],
+  [
+   "v3c#0",
+   "Một, có trong kế hoạch bảo trì Hội nghị đã thông qua, hoặc được hơn một nửa chủ sở hữu đồng ý.",
+   685.608,
+   690.634
+  ],
+  [
+   "v3c#1",
+   "Hai, chọn thầu công khai, việc trên 10 triệu phải có ba báo giá.",
+   690.874,
+   694.88
+  ],
+  [
+   "v3c#2",
+   "Ba, ít nhất một nửa thành viên Ban quản trị chọn nhà thầu, và 75% thành viên đồng ý chi.",
+   695.12,
+   701.415
+  ],
+  [
+   "v3c#3",
+   "Bốn, nghiệm thu, chứng từ thanh toán có đủ ba chữ ký.",
+   701.655,
+   704.871
+  ],
+  [
+   "v3c#4",
+   "Năm, chuyển tiền thẳng cho nhà thầu.",
+   705.111,
+   707.293
+  ],
+  [
+   "v3c#-1",
+   "Với 13 khoản trên, sao kê chỉ cho thấy tiền đã chuyển. Bốn bước đầu cần Ban quản trị đưa văn bản ra.",
+   707.533,
+   713.71
+  ],
+  [
+   "f4#-2",
+   "Vấn đề bốn: tiền chưa truy được tới hàng hóa.",
+   714.76,
+   717.219
+  ],
+  [
+   "f4#-1",
+   "Khoản 705,8 triệu trả trọn cho Thép Quang.",
+   717.459,
+   720.235
+  ],
+  [
+   "f4#-1",
+   "Khoản chi gấp 14 lần mức 50 triệu Ban quản trị được tự quyết, bằng 141% trần sửa chữa đột xuất cả năm, nhưng chưa thấy văn bản cho phép.",
+   720.475,
+   729.073
+  ],
+  [
+   "f4#-1",
+   "Tiền trả 100% trước nghiệm thu, không qua đợt tạm ứng.",
+   729.313,
+   732.414
+  ],
+  [
+   "f4#-1",
+   "Hàng hóa chỉ ghi chung là thiết bị khu vực sử dụng chung.",
+   732.654,
+   735.571
+  ],
+  [
+   "f4#-1",
+   "Chưa xác minh được mã số thuế của Thép Quang.",
+   735.811,
+   737.896
+  ],
+  [
+   "f4#-1",
+   "Ký hiệu hợp đồng trùng với hợp đồng của Thành Công.",
+   738.136,
+   740.352
+  ],
+  [
+   "f4#-1",
+   "Cùng với 986,9 triệu ở vấn đề một, tổng 1,69 tỷ chưa truy được tới cùng. Cần danh mục thiết bị, hóa đơn, biên bản giao nhận, ba báo giá và kiểm đếm thiết bị thực tế.",
+   740.592,
+   751.773
+  ],
+  [
+   "v4a#-1",
+   "Để khép lại 1,69 tỷ này, cần sáu loại chứng từ.",
+   752.823,
+   756.145
+  ],
+  [
+   "v4a#0",
+   "Danh mục thiết bị Thép Quang đã giao: chủng loại, số lượng, đơn giá, xuất xứ.",
+   756.385,
+   760.981
+  ],
+  [
+   "v4a#1",
+   "Hóa đơn giá trị gia tăng khớp với 705,8 triệu.",
+   761.221,
+   764.414
+  ],
+  [
+   "v4a#2",
+   "Biên bản giao nhận và nghiệm thu, có đủ ba chữ ký.",
+   764.654,
+   767.724
+  ],
+  [
+   "v4a#3",
+   "Ba báo giá cạnh tranh theo Điều 6.3.e.",
+   767.964,
+   771.54
+  ],
+  [
+   "v4a#4",
+   "Mã số thuế và hồ sơ năng lực của Thép Quang, vì tra cứu nhanh trên các trang công khai chưa thấy doanh nghiệp đúng tên này.",
+   771.78,
+   778.072
+  ],
+  [
+   "v4a#5",
+   "Và sao kê tài khoản vận hành, để biết 986,9 triệu cuối cùng đã trả cho ai.",
+   778.312,
+   783.358
+  ],
+  [
+   "v4a#-1",
+   "Có đủ chứng từ hợp lệ thì khép lại. Không có thì phải bồi hoàn quỹ theo Điều 10.1.",
+   783.598,
+   788.727
+  ],
+  [
+   "f5#-2",
+   "Vấn đề năm: 127,5 tỷ tiền gửi sau tái tục.",
+   789.777,
+   793.315
+  ],
+  [
+   "f5#-1",
+   "Sổ phụ in ngày 04/09/2026 nhưng chỉ lấy tới 31/05/2026, nên không thấy dòng tiền đáo hạn và tái tục.",
+   793.555,
+   802.562
+  ],
+  [
+   "f5#-1",
+   "127,5 tỷ sau tái tục chưa có hợp đồng và giấy xác nhận của ngân hàng.",
+   802.802,
+   808.67
+  ],
+  [
+   "f5#-1",
+   "Khoản 2,5 tỷ gửi mới chưa rõ lấy từ đâu.",
+   808.91,
+   811.876
+  ],
+  [
+   "f5#-1",
+   "Khoản 5 tỷ và 60 tỷ không có dấu vết từ ngày gửi tới 31/05/2026.",
+   812.115,
+   818.065
+  ],
+  [
+   "f5#-1",
+   "Lãi 8% cao hơn biểu 12 tháng tại quầy khoảng 5,9%, cần xem điều kiện kèm theo.",
+   818.305,
+   824.34
+  ],
+  [
+   "f5#-1",
+   "Cần làm rõ: sao kê ba tài khoản từ 01/06/2026, hợp đồng tiền gửi và giấy xác nhận tại quầy của VietinBank, Agribank.",
+   824.58,
+   833.216
+  ],
+  [
+   "v5a#-1",
+   "Tiền gửi có kỳ hạn chiếm 98% quỹ, nên đây là phép kiểm tra quan trọng nhất.",
+   834.266,
+   838.796
+  ],
+  [
+   "v5a#0",
+   "Tài khoản Agribank mở ngày 04/07/2024, trước khi nhận quỹ. Sổ phụ ghi không phải tài khoản đồng sở hữu, trong khi Điều 3.1.a yêu cầu ít nhất ba thành viên cùng đứng tên.",
+   839.036,
+   850.696
+  ],
+  [
+   "v5a#1",
+   "Ngày 21/08/2024, 60 tỷ được chuyển sang Agribank và gửi kỳ hạn 12 tháng.",
+   850.936,
+   857.376
+  ],
+  [
+   "v5a#2",
+   "Khoản 15 tỷ chỉ gửi kỳ hạn 3 tháng, lãi 1,9 tới 2,4% một năm, trong khi các khoản lớn hưởng 4,7%. Tính cả số dư nhàn rỗi, tiền lãi bỏ lỡ khoảng 0,42 tới 0,96 tỷ.",
+   857.616,
+   871.27
+  ],
+  [
+   "v5a#3",
+   "Chỉ thấy một lần phí xác nhận số dư ngày 21/05/2025, thường dùng cho kiểm toán năm 2024. Chưa thấy dấu vết kiểm toán năm 2025, trong khi Quy chế yêu cầu kiểm toán độc lập hằng năm.",
+   871.51,
+   885.04
+  ],
+  [
+   "v5a#4",
+   "Ngày 15/09/2026, Ban quản trị thông báo đã tái tục thành năm hợp đồng, tổng 127,5 tỷ, lãi 8% một năm, nhưng chưa có hợp đồng và xác nhận của ngân hàng.",
+   885.28,
+   897.13
+  ],
+  [
+   "v5a#-1",
+   "Chưa có dấu hiệu thất thoát, nhưng chỉ nhìn sao kê tài khoản thanh toán thì chưa thể khẳng định tiền còn đủ.",
+   897.37,
+   903.84
+  ],
+  [
+   "qc1#-2",
+   "Quy chế nào đang áp dụng?",
+   904.89,
+   906.156
+  ],
+  [
+   "qc1#0",
+   "Có hai bộ quy chế đang lưu hành. Bản dự thảo 50 trang gửi kèm công văn ngày 16/11/2023, còn để ngỏ nhiều phương án.",
+   906.396,
+   914.545
+  ],
+  [
+   "qc1#1",
+   "Và bản Hội nghị thông qua ngày 26/05/2024, 42 trang, đã chốt từng phương án. Mọi đối chiếu trong clip này dùng bản thông qua.",
+   914.785,
+   923.663
+  ],
+  [
+   "qc2#-1",
+   "So với dự thảo, thay đổi nằm ở cách tổ chức Ban quản trị.",
+   924.713,
+   927.999
+  ],
+  [
+   "qc2#0",
+   "Ban quản trị có tối thiểu 9 thành viên, mỗi block ít nhất một người; dự thảo chỉ có hai phương án 7 hoặc 11 người.",
+   928.239,
+   935.411
+  ],
+  [
+   "qc2#1",
+   "Có hai Phó ban, trong đó một người đại diện chủ đầu tư.",
+   935.651,
+   939.536
+  ],
+  [
+   "qc2#2",
+   "Ban quản trị hoạt động theo mô hình Hội đồng quản trị của công ty cổ phần.",
+   939.776,
+   943.425
+  ],
+  [
+   "qc2#3",
+   "Thù lao chốt ở mức 6, 5 và 4 triệu đồng mỗi tháng cho Trưởng ban, Phó ban và thành viên.",
+   943.665,
+   949.461
+  ],
+  [
+   "qc3#-1",
+   "Các điều kiểm soát tiền quỹ thì giữ nguyên, không đổi một chữ.",
+   950.511,
+   953.603
+  ],
+  [
+   "qc3#0",
+   "Điều 3.1.a: tài khoản quỹ có ít nhất ba thành viên cùng đứng tên và không được thay đổi.",
+   953.843,
+   959.242
+  ],
+  [
+   "qc3#1",
+   "Điều 7.2 tới 7.4: tiền quỹ chuyển thẳng cho nhà thầu, tạm dùng tiền vận hành tối đa 10 triệu mỗi tháng.",
+   959.482,
+   966.125
+  ],
+  [
+   "qc3#2",
+   "Điều 9.2: khoản trên 50 triệu cần hơn một nửa chủ sở hữu đồng ý.",
+   966.365,
+   970.642
+  ],
+  [
+   "qc3#-1",
+   "Quy chế có một chỗ tự mâu thuẫn: Điều 3.1.a công khai chi tiêu 6 tháng một lần, Điều 6.1.g yêu cầu hằng tháng. Cư dân có thể đề nghị áp dụng mức hằng tháng.",
+   970.882,
+   981.198
+  ],
+  [
+   "tong#-2",
+   "Tóm lại năm vấn đề.",
+   982.248,
+   984.63
+  ],
+  [
+   "tong#0",
+   "Hai vấn đề đầu là ba vi phạm đã rõ trên sao kê: 986,9 triệu qua tài khoản Ban quản trị, 1,71 tỷ nằm ngoài quỹ và 1,40 tỷ đã chi ngoài quy trình.",
+   984.87,
+   996.47
+  ],
+  [
+   "tong#2",
+   "Ba vấn đề sau: 5,04 tỷ chi chưa thấy văn bản cho phép, 1,69 tỷ chưa truy được tới cùng, và 127,5 tỷ tiền gửi chưa có xác nhận của ngân hàng.",
+   996.71,
+   1007.185
+  ],
+  [
+   "tong#-1",
+   "Có văn bản và chứng từ hợp lệ thì khép lại; không có thì thành vi phạm và phải bồi hoàn quỹ.",
+   1007.425,
+   1012.584
+  ],
+  [
+   "sev#-2",
+   "Mức độ và nguyên nhân. Có hai thước đo.",
+   1013.634,
+   1016.652
+  ],
+  [
+   "sev#-1",
+   "Thước đo thứ nhất là mức nghiêm trọng của 16 dấu hiệu.",
+   1016.892,
+   1020.265
+  ],
+  [
+   "sev#0",
+   "3 dấu hiệu mức Đỏ cần giải trình ngay.",
+   1020.505,
+   1022.824
+  ],
+  [
+   "sev#1",
+   "7 dấu hiệu mức Cam cần hồ sơ chứng minh.",
+   1023.064,
+   1025.579
+  ],
+  [
+   "sev#2",
+   "6 dấu hiệu mức Vàng cần cải thiện.",
+   1025.819,
+   1028.038
+  ],
+  [
+   "cause#-1",
+   "Thước đo thứ hai là nguyên nhân: cái sai do đâu mà có.",
+   1029.088,
+   1032.74
+  ],
+  [
+   "cause#0",
+   "Nhóm một, thiếu năng lực: làm theo thói quen hoặc quy định cũ, hồ sơ lưu thiếu, nhưng tiền về đúng người nhận và không ai hưởng lợi.",
+   1032.98,
+   1040.829
+  ],
+  [
+   "cause#1",
+   "Nhóm hai, lỡ tay thật: sai một lần, sai kỹ thuật, chứng từ gốc đúng và sửa được ngay.",
+   1041.069,
+   1046.459
+  ],
+  [
+   "cause#2",
+   "Nhóm ba, lỡ tay có chủ đích: cùng kiểu sai lặp lại, tiền đi qua tài khoản trung gian, hợp đồng chia nhỏ hoặc trả trước toàn bộ, né tránh chứng từ.",
+   1046.699,
+   1055.768
+  ],
+  [
+   "nnt#-1",
+   "Kết quả phân loại sơ bộ.",
+   1056.818,
+   1058.23
+  ],
+  [
+   "nnt#0",
+   "9 dấu hiệu thuộc nhóm thiếu năng lực: làm sai quy trình hoặc quản lý tiền kém, không thấy ai hưởng lợi.",
+   1058.47,
+   1064.117
+  ],
+  [
+   "nnt#1",
+   "2 dấu hiệu là lỡ tay thật: sai giấy tờ, ghi chép.",
+   1064.357,
+   1068.707
+  ],
+  [
+   "nnt#2",
+   "Chưa dấu hiệu nào đủ căn cứ để xếp vào nhóm có chủ đích, nhưng 4 dấu hiệu chưa loại trừ được khả năng này.",
+   1068.947,
+   1075.559
+  ],
+  [
+   "nnt#3",
+   "Dấu hiệu còn lại là đợt tái tục 127,5 tỷ, chưa phát sinh sai, đang chờ hợp đồng.",
+   1075.799,
+   1081.207
+  ],
+  [
+   "k3#-1",
+   "Bốn dấu hiệu chưa loại trừ.",
+   1082.257,
+   1083.681
+  ],
+  [
+   "k3#0",
+   "986,9 triệu hoàn ứng qua tài khoản vận hành: lặp lại 6 lần trong 5 tháng, bảng chi phí lệch 123,1 triệu.",
+   1083.921,
+   1091.417
+  ],
+  [
+   "k3#1",
+   "705,8 triệu trả Thép Quang, trả trước toàn bộ, hàng hóa chỉ ghi chung chung, gấp 14 lần mức Ban quản trị được tự quyết.",
+   1091.657,
+   1100.212
+  ],
+  [
+   "k3#2",
+   "856,8 triệu cho Thành Công, một nhà thầu nội thất, qua 4 hợp đồng liên tiếp.",
+   1100.452,
+   1105.807
+  ],
+  [
+   "k3#3",
+   "Và hợp đồng quảng cáo ký lại với Chicilon Media, thu giảm khoảng 182,2 triệu mỗi năm.",
+   1106.047,
+   1111.86
+  ],
+  [
+   "k3#-1",
+   "Ba khoản chi đầu cộng lại khoảng 2,55 tỷ; để kết luận cần sao kê tài khoản vận hành, danh mục thiết bị của Thép Quang, báo giá và biên bản nghiệm thu của Thành Công.",
+   1112.1,
+   1121.372
+  ],
+  [
+   "lad#-2",
+   "Khung xử lý theo tình trạng của từng dấu hiệu.",
+   1122.422,
+   1124.978
+  ],
+  [
+   "lad#0",
+   "Với vi phạm đã rõ: khắc phục là bắt buộc, Ban quản trị thuộc diện phạt 50 đến 60 triệu đồng theo khoản 3 Điều 61 Nghị định 339 năm 2026, và đây là căn cứ để Hội nghị nhà chung cư xem xét bãi nhiệm.",
+   1125.218,
+   1139.657
+  ],
+  [
+   "lad#1",
+   "Với dấu hiệu chờ chứng minh: có chứng từ hợp lệ thì coi như đã giải trình xong; không chứng minh được thì bồi hoàn quỹ và thành vi phạm đã rõ.",
+   1139.897,
+   1147.96
+  ],
+  [
+   "lad#2",
+   "Trách nhiệm hình sự chỉ đặt ra khi có chứng cứ chiếm đoạt, do cơ quan điều tra xác định; đến nay chưa có dữ kiện như vậy.",
+   1148.2,
+   1154.417
+  ],
+  [
+   "q10#-2",
+   "Mười câu hỏi đã gửi Ban quản trị ngày 29/09/2026, hạn trả lời ngày 04/10/2026.",
+   1155.467,
+   1163.587
+  ],
+  [
+   "q10#0",
+   "Câu một: vì sao 986,9 triệu tiền quỹ chuyển vào tài khoản vận hành, căn cứ là biên bản hay văn bản nào.",
+   1163.827,
+   1170.684
+  ],
+  [
+   "q10#0",
+   "Kèm theo là biên bản họp, sao kê tài khoản nhận từ 01/08/2025, và hợp đồng, hóa đơn, nghiệm thu của sáu khoản.",
+   1170.924,
+   1179.19
+  ],
+  [
+   "q10#1",
+   "Câu hai: bảng chi phí ngày 15/05/2026 chỉ giải thích 863,8 triệu, phần lệch 123,1 triệu là gì.",
+   1179.43,
+   1187.614
+  ],
+  [
+   "q10#1",
+   "Kèm theo là bảng đối chiếu từng khoản với chứng từ gốc.",
+   1187.854,
+   1190.319
+  ],
+  [
+   "q10#2",
+   "Câu ba: căn cứ nào để thu 1,71 tỷ tiền khu vực chung vào tài khoản ngoài quỹ.",
+   1190.559,
+   1195.229
+  ],
+  [
+   "q10#2",
+   "Kèm theo là hợp đồng với Chicilon Media, Viễn thông ACT, Hưng Thái, và quyết định mở tài khoản.",
+   1195.469,
+   1201.528
+  ],
+  [
+   "q10#3",
+   "Câu bốn: hồ sơ của 1,40 tỷ đã chi, trong đó 856,8 triệu cho Thành Công.",
+   1201.768,
+   1207.281
+  ],
+  [
+   "q10#3",
+   "Kèm theo là dự toán, ba báo giá, biên bản nghiệm thu và ảnh hiện trạng trước, sau của từng hợp đồng.",
+   1207.521,
+   1212.81
+  ],
+  [
+   "q10#4",
+   "Câu năm: vì sao hợp đồng giữ xe với Khởi Sáng Việt được trả vượt 67,1 triệu.",
+   1213.05,
+   1217.936
+  ],
+  [
+   "q10#4",
+   "Kèm theo là hợp đồng gốc, phụ lục phát sinh và biên bản quyết toán.",
+   1218.176,
+   1221.823
+  ],
+  [
+   "q10#5",
+   "Câu sáu: danh mục thiết bị và hóa đơn của 705,8 triệu trả Thép Quang.",
+   1222.063,
+   1227.441
+  ],
+  [
+   "q10#5",
+   "Kèm theo là biên bản giao nhận, mã số thuế của nhà cung cấp, và kiểm đếm thiết bị thực tế.",
+   1227.681,
+   1231.914
+  ],
+  [
+   "q10#6",
+   "Câu bảy: vì sao phí bảo trì thang máy Schindler vắng trên tài khoản quỹ từ ngày 21/01/2025.",
+   1232.154,
+   1237.938
+  ],
+  [
+   "q10#6",
+   "Kèm theo là giấy xác nhận công nợ của Schindler và nhật ký bảo trì từng thang.",
+   1238.178,
+   1242.458
+  ],
+  [
+   "q10#7",
+   "Câu tám: xác nhận của ngân hàng cho 127,5 tỷ tiền gửi sau tái tục.",
+   1242.698,
+   1247.051
+  ],
+  [
+   "q10#7",
+   "Kèm theo là hợp đồng tiền gửi và giấy xác nhận số dư tại quầy, ghi rõ không cầm cố, không phong tỏa.",
+   1247.291,
+   1253.403
+  ],
+  [
+   "q10#8",
+   "Câu chín: vì sao tiền quảng cáo của Chicilon Media giảm 17,5% sau khi ký lại hợp đồng.",
+   1253.643,
+   1259.057
+  ],
+  [
+   "q10#8",
+   "Kèm theo là hai hợp đồng, phụ lục, và lý do điều chỉnh giá.",
+   1259.297,
+   1262.813
+  ],
+  [
+   "q10#9",
+   "Câu mười: sao kê của ba tài khoản từ ngày 01/06/2026 tới nay.",
+   1263.053,
+   1267.958
+  ],
+  [
+   "q10#9",
+   "Vì sổ phụ in ngày 04/09/2026 nhưng chỉ tới 31/05/2026, nên chưa thấy dòng tiền đáo hạn và tái tục.",
+   1268.198,
+   1276.73
+  ],
+  [
+   "q10#-1",
+   "Mỗi câu đều kèm danh sách chứng từ cụ thể. Ban quản trị trả lời đủ thì từng dấu hiệu được khép lại.",
+   1276.97,
+   1282.396
+  ],
+  [
+   "pa#-2",
+   "Hội nghị quyết định theo điều kiện, xét riêng từng thành viên.",
+   1283.446,
+   1286.22
+  ],
+  [
+   "pa#-1",
+   "Mỗi thành viên được xét riêng, vì vai trò ký duyệt và mức độ tham gia của từng người khác nhau.",
+   1286.46,
+   1290.796
+  ],
+  [
+   "pa#0",
+   "Giữ, khi tiền đã về đủ quỹ, có đủ văn bản, chứng từ và xác nhận của ngân hàng.",
+   1291.036,
+   1295.905
+  ],
+  [
+   "pa#1",
+   "Xem xét thêm, khi đã khắc phục hai vấn đề đầu nhưng còn thiếu chứng từ. Kèm hạn 30 ngày, kiểm toán độc lập và tạm dừng khoản chi mới trên 50 triệu.",
+   1296.145,
+   1306.462
+  ],
+  [
+   "pa#2",
+   "Bãi nhiệm, khi không khắc phục, không có văn bản cho phép, hoặc né tránh cung cấp chứng từ. Khoản nào không chứng minh được thì phải bồi hoàn quỹ.",
+   1306.702,
+   1315.409
+  ],
+  [
+   "cuda#-2",
+   "Trước Hội nghị, cư dân có thể làm ba việc.",
+   1316.459,
+   1319.006
+  ],
+  [
+   "cuda#0",
+   "Đọc ba file trong thư mục 0 của thư mục chia sẻ: tờ Năm vấn đề, lưu đồ dòng tiền và bản tóm tắt, mất khoảng 20 phút.",
+   1319.246,
+   1327.285
+  ],
+  [
+   "cuda#1",
+   "Ghi ý kiến vào phiếu ở mặt sau tờ Năm vấn đề và mang tới Hội nghị.",
+   1327.525,
+   1331.699
+  ],
+  [
+   "cuda#2",
+   "Theo dõi câu trả lời của Ban quản trị cho mười câu hỏi, và góp thêm chứng từ nếu có.",
+   1331.939,
+   1336.525
+  ],
+  [
+   "cuda#-1",
+   "Chủ sở hữu không dự được có thể ủy quyền cho người khác tham dự Hội nghị.",
+   1336.765,
+   1340.659
+  ],
+  [
+   "lienhe",
+   "Toàn bộ số liệu truy được về sao kê gốc trong thư mục chia sẻ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc. Xin cảm ơn quý cư dân.",
+   1341.709,
+   1350.092
+  ]
+ ],
+ "card_times": [
+  [
+   16.881,
+   19.044
+  ],
+  [
+   112.995,
+   116.289
+  ],
+  [
+   149.364,
+   151.425
+  ],
+  [
+   220.485,
+   226.304
+  ],
+  [
+   390.437,
+   393.724
+  ],
+  [
+   539.685,
+   545.87
+  ],
+  [
+   714.14,
+   717.219
+  ],
+  [
+   789.157,
+   793.315
+  ],
+  [
+   904.27,
+   906.156
+  ],
+  [
+   981.628,
+   984.63
+  ],
+  [
+   1013.014,
+   1016.652
+  ],
+  [
+   1121.802,
+   1124.978
+  ],
+  [
+   1154.847,
+   1163.587
+  ],
+  [
+   1282.826,
+   1286.22
+  ],
+  [
+   1315.839,
+   1319.006
+  ]
+ ],
+ "seg_times": [
+  [
+   "bia",
+   0.0,
+   16.976
+  ],
+  [
+   "ok",
+   16.976,
+   43.747
+  ],
+  [
+   "kt",
+   43.747,
+   73.915
+  ],
+  [
+   "dung",
+   73.915,
+   113.09
+  ],
+  [
+   "tk4",
+   113.09,
+   149.459
+  ],
+  [
+   "f0",
+   149.459,
+   220.58
+  ],
+  [
+   "f1",
+   220.58,
+   291.035
+  ],
+  [
+   "v1a",
+   291.035,
+   317.988
+  ],
+  [
+   "v1b",
+   317.988,
+   359.4
+  ],
+  [
+   "v1c",
+   359.4,
+   390.532
+  ],
+  [
+   "f2",
+   390.532,
+   440.605
+  ],
+  [
+   "v2a",
+   440.605,
+   492.509
+  ],
+  [
+   "v2b",
+   492.509,
+   539.78
+  ],
+  [
+   "f3",
+   539.78,
+   597.234
+  ],
+  [
+   "v3a",
+   597.234,
+   647.267
+  ],
+  [
+   "v3b",
+   647.267,
+   682.079
+  ],
+  [
+   "v3c",
+   682.079,
+   714.235
+  ],
+  [
+   "f4",
+   714.235,
+   752.298
+  ],
+  [
+   "v4a",
+   752.298,
+   789.252
+  ],
+  [
+   "f5",
+   789.252,
+   833.741
+  ],
+  [
+   "v5a",
+   833.741,
+   904.365
+  ],
+  [
+   "qc1",
+   904.365,
+   924.188
+  ],
+  [
+   "qc2",
+   924.188,
+   949.986
+  ],
+  [
+   "qc3",
+   949.986,
+   981.723
+  ],
+  [
+   "tong",
+   981.723,
+   1013.109
+  ],
+  [
+   "sev",
+   1013.109,
+   1028.563
+  ],
+  [
+   "cause",
+   1028.563,
+   1056.293
+  ],
+  [
+   "nnt",
+   1056.293,
+   1081.732
+  ],
+  [
+   "k3",
+   1081.732,
+   1121.897
+  ],
+  [
+   "lad",
+   1121.897,
+   1154.942
+  ],
+  [
+   "q10",
+   1154.942,
+   1282.921
+  ],
+  [
+   "pa",
+   1282.921,
+   1315.934
+  ],
+  [
+   "cuda",
+   1315.934,
+   1341.184
+  ],
+  [
+   "lienhe",
+   1341.184,
+   1353.292
+  ]
+ ]
+}

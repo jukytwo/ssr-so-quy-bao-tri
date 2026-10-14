@@ -1,0 +1,105 @@
+{
+ "folders": {
+  "1": "1. Gửi Ban quản trị",
+  "2": "2. Đăng cho cư dân",
+  "3": "3. Nhóm điều phối"
+ },
+ "files": {
+  "1.1": [
+   "1.1 Công văn (Word, để điền và in).docx",
+   "Công văn, bản Word để điền, in, ký",
+   "1_Gui_Ban_quan_tri/Cong_van_kien_nghi_gui_BQT_SSR.docx"
+  ],
+  "1.2": [
+   "1.2 Công văn.pdf",
+   "Công văn, bản PDF",
+   "1_Gui_Ban_quan_tri/Cong_van_kien_nghi_gui_BQT_SSR.pdf"
+  ],
+  "1.3": [
+   "1.3 Báo cáo đầy đủ.pdf",
+   "Báo cáo đầy đủ",
+   "1_Gui_Ban_quan_tri/SSR_Bao_cao_phan_tich_quy_bao_tri_full.pdf"
+  ],
+  "1.4": [
+   "1.4 Excel sao kê và phân tích.xlsx",
+   "File Excel sao kê",
+   "1_Gui_Ban_quan_tri/SSR_Sao_ke_tong_hop_va_phan_tich.xlsx"
+  ],
+  "1.5": [
+   "1.5 Ảnh gửi Ban quản trị.png",
+   "Ảnh gửi Ban quản trị",
+   "gui_bqt/Ảnh gửi Ban quản trị - Cùng làm rõ bằng chứng từ.png"
+  ],
+  "2.1": [
+   "2.1 Ảnh Mười câu hỏi.png",
+   "Ảnh Mười câu hỏi",
+   "2_Cho_cu_dan/SSR_Muoi_cau_hoi_can_lam_ro.png"
+  ],
+  "2.2": [
+   "2.2 Ảnh Hiểu đúng vấn đề.png",
+   "Ảnh Hiểu đúng vấn đề",
+   "2_Cho_cu_dan/SSR_Anh_trong_tam_1.png"
+  ],
+  "2.4": [
+   "2.4 Mười câu hỏi - bản in bảng tin.pdf",
+   "PDF in dán bảng tin",
+   "2_Cho_cu_dan/SSR_Muoi_cau_hoi_can_lam_ro.pdf"
+  ],
+  "2.5": [
+   "2.5 Clip toàn bộ vấn đề.mp4",
+   "Clip toàn bộ vấn đề, 11 phút 11 giây",
+   "video8/SSR_Quy_bao_tri_toan_bo_van_de.mp4"
+  ],
+  "2.6": [
+   "2.6 Clip dọc toàn bộ vấn đề.mp4",
+   "Clip dọc cho điện thoại",
+   "video9/SSR_Quy_bao_tri_toan_bo_van_de_v2_Doc.mp4"
+  ],
+  "2.7": [
+   "2.7 Bản tóm tắt.pdf",
+   "Bản tóm tắt",
+   "2_Cho_cu_dan/SSR_Bao_cao_phan_tich_quy_bao_tri_tom_tat.pdf"
+  ],
+  "2.8": [
+   "2.8 Ảnh Dòng tiền.png",
+   "Ảnh Dòng tiền",
+   "2_Cho_cu_dan/SSR_Anh_trong_tam_2.png"
+  ],
+  "2.9": [
+   "2.9 Ảnh Tuân thủ.png",
+   "Ảnh Tuân thủ",
+   "2_Cho_cu_dan/SSR_Anh_trong_tam_3.png"
+  ],
+  "2.10": [
+   "2.10 Mười câu hỏi (Word).docx",
+   "Mười câu hỏi, bản Word",
+   "muoi_cau_hoi/Mười câu hỏi cần làm rõ (Word).docx"
+  ],
+  "2.11": [
+   "2.11 Ảnh Phân loại nguyên nhân.png",
+   "Ảnh Phân loại nguyên nhân",
+   "phan_loai/Phân loại nguyên nhân sai sót.png"
+  ],
+  "3.1": [
+   "3.1 Tin nhắn mẫu.docx",
+   "Tin nhắn mẫu",
+   "SSR_Huong_dan_gui_tai_lieu_va_tin_nhan_mau.docx"
+  ],
+  "3.2": [
+   "3.2 Hỏi dần.pdf",
+   "Hỏi dần",
+   "3_Tai_lieu_lam_viec/SSR_Hoi_dan_phan_loai_nguyen_nhan.pdf"
+  ],
+  "3.3": [
+   "3.3 Phân loại nguyên nhân.pdf",
+   "Phân loại nguyên nhân",
+   "3_Tai_lieu_lam_viec/SSR_Phan_loai_nguyen_nhan.pdf"
+  ],
+  "3.4": [
+   "3.4 Sổ quỹ bảo trì (offline).html",
+   "Dashboard offline",
+   "2_Cho_cu_dan/SSR_So_quy_bao_tri_dashboard_offline.html"
+  ]
+ },
+ "img": "00 - Đọc trước - Quy trình 7 bước.png"
+}

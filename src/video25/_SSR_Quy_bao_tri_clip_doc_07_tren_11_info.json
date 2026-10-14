@@ -1,0 +1,147 @@
+{
+ "duration": 141.5,
+ "sentences": 17,
+ "cards": 1,
+ "scenes": 4,
+ "size": 7674844,
+ "voice": "vi_VN-vais1000-medium",
+ "doc": "/home/claude/ssr/video25/_SSR_Quy_bao_tri_clip_doc_07_tren_11_Video_Doc.mp4",
+ "doc_size": 7674844,
+ "chapters": [
+  "00:00 Mở đầu",
+  "00:13 Vấn đề 5",
+  "02:08 Liên hệ"
+ ],
+ "timeline": [
+  [
+   "bia",
+   "Quỹ bảo trì, clip 7 trên 11: Vấn đề 5: 127,5 tỷ tiền gửi.",
+   1.5,
+   6.732
+  ],
+  [
+   "bia",
+   "127,5 tỷ tiền gửi sau tái tục chưa có xác nhận của ngân hàng.",
+   6.972,
+   12.262
+  ],
+  [
+   "f5#-2",
+   "Vấn đề năm: 127,5 tỷ tiền gửi sau tái tục.",
+   13.312,
+   16.85
+  ],
+  [
+   "f5#-1",
+   "Sổ phụ in ngày 04/09/2026 nhưng chỉ lấy tới 31/05/2026, nên không thấy dòng tiền đáo hạn và tái tục.",
+   17.09,
+   26.097
+  ],
+  [
+   "f5#-1",
+   "127,5 tỷ sau tái tục chưa có hợp đồng và giấy xác nhận của ngân hàng.",
+   26.337,
+   32.204
+  ],
+  [
+   "f5#-1",
+   "Khoản 2,5 tỷ gửi mới chưa rõ lấy từ đâu.",
+   32.444,
+   35.41
+  ],
+  [
+   "f5#-1",
+   "Khoản 5 tỷ và 60 tỷ không có dấu vết từ ngày gửi tới 31/05/2026.",
+   35.65,
+   41.6
+  ],
+  [
+   "f5#-1",
+   "Lãi 8% cao hơn biểu 12 tháng tại quầy khoảng 5,9%, cần xem điều kiện kèm theo.",
+   41.84,
+   47.875
+  ],
+  [
+   "f5#-1",
+   "Cần làm rõ: sao kê ba tài khoản từ 01/06/2026, hợp đồng tiền gửi và giấy xác nhận tại quầy của VietinBank, Agribank.",
+   48.115,
+   56.75
+  ],
+  [
+   "v5a#-1",
+   "Tiền gửi có kỳ hạn chiếm 98% quỹ, nên đây là phép kiểm tra quan trọng nhất.",
+   57.8,
+   62.331
+  ],
+  [
+   "v5a#0",
+   "Tài khoản Agribank mở ngày 04/07/2024, trước khi nhận quỹ. Sổ phụ ghi không phải tài khoản đồng sở hữu, trong khi Điều 3.1.a yêu cầu ít nhất ba thành viên cùng đứng tên.",
+   62.571,
+   74.23
+  ],
+  [
+   "v5a#1",
+   "Ngày 21/08/2024, 60 tỷ được chuyển sang Agribank và gửi kỳ hạn 12 tháng.",
+   74.47,
+   80.91
+  ],
+  [
+   "v5a#2",
+   "Khoản 15 tỷ chỉ gửi kỳ hạn 3 tháng, lãi 1,9 tới 2,4% một năm, trong khi các khoản lớn hưởng 4,7%. Tính cả số dư nhàn rỗi, tiền lãi bỏ lỡ khoảng 0,42 tới 0,96 tỷ.",
+   81.15,
+   94.804
+  ],
+  [
+   "v5a#3",
+   "Chỉ thấy một lần phí xác nhận số dư ngày 21/05/2025, thường dùng cho kiểm toán năm 2024. Chưa thấy dấu vết kiểm toán năm 2025, trong khi Quy chế yêu cầu kiểm toán độc lập hằng năm.",
+   95.044,
+   108.574
+  ],
+  [
+   "v5a#4",
+   "Ngày 15/09/2026, Ban quản trị thông báo đã tái tục thành năm hợp đồng, tổng 127,5 tỷ, lãi 8% một năm, nhưng chưa có hợp đồng và xác nhận của ngân hàng.",
+   108.814,
+   120.665
+  ],
+  [
+   "v5a#-1",
+   "Chưa có dấu hiệu thất thoát, nhưng chỉ nhìn sao kê tài khoản thanh toán thì chưa thể khẳng định tiền còn đủ.",
+   120.905,
+   127.374
+  ],
+  [
+   "lienhe",
+   "Clip tiếp theo, số 8 trên 11: Quy chế áp dụng. Toàn bộ số liệu truy được về sao kê gốc trong thư mục chia sẻ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.",
+   128.424,
+   138.294
+  ]
+ ],
+ "card_times": [
+  [
+   12.692,
+   16.85
+  ]
+ ],
+ "seg_times": [
+  [
+   "bia",
+   0.0,
+   12.787
+  ],
+  [
+   "f5",
+   12.787,
+   57.275
+  ],
+  [
+   "v5a",
+   57.275,
+   127.899
+  ],
+  [
+   "lienhe",
+   127.899,
+   141.494
+  ]
+ ]
+}

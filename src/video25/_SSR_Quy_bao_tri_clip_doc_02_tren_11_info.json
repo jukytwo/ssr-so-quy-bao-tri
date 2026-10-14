@@ -1,0 +1,145 @@
+{
+ "duration": 133.9,
+ "sentences": 16,
+ "cards": 2,
+ "scenes": 4,
+ "size": 7093049,
+ "voice": "vi_VN-vais1000-medium",
+ "doc": "/home/claude/ssr/video25/_SSR_Quy_bao_tri_clip_doc_02_tren_11_Video_Doc.mp4",
+ "doc_size": 7093049,
+ "chapters": [
+  "00:00 Mở đầu",
+  "00:10 Toàn cảnh dòng tiền",
+  "01:58 Liên hệ"
+ ],
+ "timeline": [
+  [
+   "bia",
+   "Quỹ bảo trì, clip 2 trên 11: Toàn cảnh dòng tiền.",
+   1.5,
+   5.444
+  ],
+  [
+   "bia",
+   "Tiền quỹ đi qua bốn tài khoản; lưu đồ cho thấy đường nào đúng, đường nào sai.",
+   5.684,
+   9.737
+  ],
+  [
+   "tk4#-2",
+   "Trước khi xem lưu đồ, có bốn tài khoản cần nhớ.",
+   10.787,
+   13.461
+  ],
+  [
+   "tk4#0",
+   "Tài khoản quỹ chính tại VietinBank, đuôi 4999, nhận 124,79 tỷ từ chủ đầu tư ngày 15/08/2024.",
+   13.701,
+   23.262
+  ],
+  [
+   "tk4#1",
+   "Tài khoản thứ hai tại Agribank, đuôi 0476, nhận 60 tỷ ngày 21/08/2024 để gửi có kỳ hạn.",
+   23.502,
+   31.925
+  ],
+  [
+   "tk4#2",
+   "Tài khoản thu phí dịch vụ, đuôi 7784, nhận 1,71 tỷ tiền khai thác khu vực chung, nằm ngoài quỹ.",
+   32.165,
+   38.211
+  ],
+  [
+   "tk4#3",
+   "Và tài khoản vận hành do Ban quản trị đứng tên, đuôi 6372, nhận 986,9 triệu từ quỹ, hiện chưa có sao kê.",
+   38.451,
+   46.107
+  ],
+  [
+   "f0#-2",
+   "Toàn cảnh dòng tiền của quỹ.",
+   47.157,
+   48.598
+  ],
+  [
+   "f0#-1",
+   "Đường xanh là tiền vào, đường cam là khoản chi cần kiểm tra hồ sơ, đường đỏ là chỗ làm trái Quy chế hoặc Luật.",
+   48.838,
+   55.397
+  ],
+  [
+   "f0#-1",
+   "Quỹ nhận 124,79 tỷ từ chủ đầu tư ngày 15/08/2024, có thêm 5,48 tỷ tiền lãi, và còn 127,15 tỷ vào ngày 31/05/2026.",
+   55.637,
+   70.447
+  ],
+  [
+   "f0#-1",
+   "3,12 tỷ đã rời quỹ cho bốn nhóm: Schindler 806,9 triệu, HNB 623,3 triệu, Thép Quang 705,8 triệu và tài khoản vận hành 986,9 triệu.",
+   70.687,
+   84.079
+  ],
+  [
+   "f0#-1",
+   "Hai đường đỏ là 986,9 triệu vào tài khoản vận hành của Ban quản trị, và 705,8 triệu trả Thép Quang khi chưa rõ hàng hóa.",
+   84.319,
+   92.804
+  ],
+  [
+   "f0#-1",
+   "Phía dưới, 1,71 tỷ tiền khai thác khu vực chung vào tài khoản 117002997784 thay vì vào quỹ, kể cả 260,9 triệu đã vào quỹ rồi bị chuyển sang.",
+   93.044,
+   104.811
+  ],
+  [
+   "f0#-1",
+   "Từ tài khoản này, 1,40 tỷ đã chi cho Thành Công, Khởi Sáng Việt, KTECH, và 187,4 triệu nộp thuế, không qua quy trình của quỹ.",
+   105.051,
+   114.208
+  ],
+  [
+   "f0#-1",
+   "Sau đây là năm vấn đề, xem kỹ từng đường tiền.",
+   114.448,
+   117.227
+  ],
+  [
+   "lienhe",
+   "Clip tiếp theo, số 3 trên 11: Vấn đề 1: 986,9 triệu vào tài khoản Ban quản trị. Toàn bộ số liệu truy được về sao kê gốc trong thư mục chia sẻ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.",
+   118.277,
+   130.713
+  ]
+ ],
+ "card_times": [
+  [
+   10.167,
+   13.461
+  ],
+  [
+   46.537,
+   48.598
+  ]
+ ],
+ "seg_times": [
+  [
+   "bia",
+   0.0,
+   10.262
+  ],
+  [
+   "tk4",
+   10.262,
+   46.632
+  ],
+  [
+   "f0",
+   46.632,
+   117.752
+  ],
+  [
+   "lienhe",
+   117.752,
+   133.913
+  ]
+ ]
+}

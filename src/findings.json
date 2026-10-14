@@ -1,0 +1,162 @@
+[
+ {
+  "id": "F01",
+  "sev": "Đỏ",
+  "title": "Chuyển 986,9 triệu từ quỹ bảo trì sang tài khoản vận hành của chính BQT",
+  "evidence": "Ngày 23/12/2025, TK 116605084999 chuyển 986.910.176 đồng sang TK 118002976372 mang tên BQT (Kinh phí quản lý vận hành), nội dung hoàn tạm ứng bảo trì, sửa chữa hệ thống thang máy, PCCC, máy phát điện cho các chứng từ ngày 29/08, 03/10, 14/10, 21/10, 11/12 và 23/12/2025.",
+  "rule": "Quy chế Điều 7.2: KPBT chỉ được chuyển qua tài khoản của đơn vị thực hiện bảo trì khi đủ hồ sơ Điều 6. Điều 7.4: tạm dùng kinh phí vận hành cho bảo trì đột xuất tối đa 10 triệu đồng/tháng và hoàn lại cuối mỗi tháng. Điều 3.2.a: tài khoản kinh phí quản lý vận hành do Công ty quản lý đứng tên; theo thư xác nhận của VietinBank ngày 22/07/2024, TK 118002976372 mở ngày 04/07/2024 mang tên Ban quản trị, 6 thành viên Ban quản trị là đồng chủ tài khoản. Điều 9.2: sửa chữa khẩn cấp trên 50 triệu phải được trên 50% chủ sở hữu chấp thuận, tổng sửa chữa đột xuất không quá 500 triệu/năm. Quy chế hoạt động Ban quản trị, điểm c khoản 3 Điều 3: quyết định chi tiêu kinh phí bảo trì phải được 75% thành viên Ban quản trị đồng ý.",
+  "amount": 986910176,
+  "ask": "Căn cứ của lệnh chuyển ngày 23/12/2025 (biên bản họp, văn bản cho phép); sao kê TK 118002976372 từ 01/08/2025; chứng từ gốc của 6 khoản được hoàn ứng (hợp đồng, hóa đơn, biên bản nghiệm thu, ủy nhiệm chi tới nhà thầu); biên bản họp BQT; văn bản lấy ý kiến cư dân nếu là sửa chữa khẩn cấp.",
+  "view": "Đây là khoản thiếu minh bạch nhất. Tiền rời quỹ bảo trì nhưng người nhận cuối cùng không hiện trên sao kê. Hạn mức Quy chế cho 5 tháng chỉ khoảng 50 triệu, số hoàn ứng gấp khoảng 20 lần, và khoản ứng không được hoàn cuối mỗi tháng như Điều 7.4 yêu cầu. Tài khoản nhận lại do chính các thành viên Ban quản trị đồng đứng tên, không phải Công ty quản lý như Điều 3.2.a."
+ },
+ {
+  "id": "F02",
+  "sev": "Đỏ",
+  "title": "Tiền khai thác khu vực chung không nộp vào tài khoản quỹ bảo trì",
+  "evidence": "Ngày 16/07/2025 Chicilon Media trả 260.945.454 đồng (tiền thuê quý 4/2024) vào đúng TK KPBT. Tám ngày sau BQT chuyển khoản này sang TK 117002997784 (Thu phí dịch vụ) với lý do Chicilon trả nhầm tài khoản. Từ 07/2025 tới 05/2026, toàn bộ 1.707.909.092 đồng thu từ quảng cáo (Chicilon), cho thuê mặt bằng (Viễn thông ACT), đặt standee (Hưng Thái) đều đi vào TK 7784.",
+  "rule": "Khoản 4 Điều 153 Luật Nhà ở 2023 (hiệu lực 01/08/2024): các khoản thu từ khai thác dịch vụ đối với phần sở hữu chung phải nộp vào tài khoản kinh phí bảo trì do BQT quản lý. Quy chế Điều 11: quy định trái luật thì áp dụng luật hiện hành.",
+  "amount": 1707909092,
+  "ask": "Hợp đồng với Chicilon Media, Viễn thông ACT, Hưng Thái; sổ theo dõi toàn bộ nguồn thu khu vực chung từ 08/2024 (kể cả trước 07/2025 và doanh thu giữ xe nếu có); quyết định mở TK 117002997784 và căn cứ cho phép.",
+  "view": "Tiền không mất nhưng không qua quy trình kiểm soát của quỹ bảo trì. Khoản bị ghi là trả nhầm tài khoản thực ra đã vào đúng tài khoản theo luật. Từ TK 7784 đã chi 1,40 tỷ cho sửa chữa, mua sắm (Thành Công 856,8 triệu, Khởi Sáng Việt 356,4 triệu, KTECH 187,0 triệu) mà không qua quy trình của KPBT."
+ },
+ {
+  "id": "F03",
+  "sev": "Đỏ",
+  "title": "Trả một lần 705,8 triệu cho Thép Quang, hàng hóa mô tả chung chung",
+  "evidence": "Ngày 24/04/2026, TK KPBT chuyển 705.769.875 đồng cho Công ty TNHH Thương mại Xây dựng Thép Quang (TK 2666677777) để mua thiết bị sửa chữa hệ thống thiết bị khu vực sử dụng chung theo HĐ 080426/HDDV/BQT TQ ngày 08/04/2026. Trả trọn sau 16 ngày ký, không có đợt tạm ứng và thanh toán sau nghiệm thu như các hợp đồng khác. Số tiền gấp khoảng 14 lần mức 50 triệu mà Ban quản trị được tự quyết khi sửa chữa khẩn cấp và bằng 141% trần sửa chữa đột xuất 500 triệu cho cả năm; cùng tháng 4/2026 quỹ còn tạm ứng 623,3 triệu cho HNB, nâng tổng chi trong tháng lên 1,33 tỷ.",
+  "rule": "Quy chế Điều 6.1.b và 6.3.c: bảo trì theo kế hoạch được Hội nghị nhà chung cư thông qua, trừ khẩn cấp. Điều 9.2: Ban quản trị chỉ tự quyết việc khẩn cấp tới 50 triệu; trên mức đó cần trên 50% chủ sở hữu đồng ý; sửa chữa đột xuất không quá 500 triệu mỗi năm. Điều 6.1.c: chỉ thuê đơn vị đủ điều kiện, năng lực. Điều 6.3.a: chọn nhà thầu bằng đấu thầu công khai. Điều 6.3.e: mỗi việc trên 10 triệu phải có 3 báo giá. Điều 6.3.b: nghiệm thu trước khi thanh toán, chứng từ có đủ 3 chữ ký. Quy chế hoạt động Ban quản trị, điểm b khoản 3 Điều 3: chọn đơn vị thực hiện bảo trì cần tối thiểu 50% tổng số thành viên tán thành; khoản 5 Điều 10: Trưởng ban chỉ ký hợp đồng sau khi Ban quản trị thông qua.",
+  "amount": 705769875,
+  "ask": "Kế hoạch bảo trì được Hội nghị thông qua có hạng mục này, hoặc văn bản trên 50% chủ sở hữu đồng ý; hợp đồng, danh mục thiết bị (chủng loại, số lượng, đơn giá, xuất xứ), hóa đơn GTGT, biên bản giao nhận và nghiệm thu, 3 báo giá cạnh tranh, mã số thuế và hồ sơ năng lực của Thép Quang; kiểm tra thực tế thiết bị đã lắp.",
+  "view": "Khoản chi đơn lẻ lớn nhất nhưng mô tả mơ hồ nhất. Quy chế không cho Ban quản trị tự quyết khoản này: phải có kế hoạch được Hội nghị thông qua, hoặc trên 50% chủ sở hữu đồng ý. Không có một trong hai văn bản đó thì đã trái Điều 9.2, dù hàng hóa có thật. Tra cứu nhanh trên các trang mã số thuế công khai chưa thấy doanh nghiệp đúng tên này, cần BQT cung cấp mã số thuế để xác minh."
+ },
+ {
+  "id": "F04",
+  "sev": "Cam",
+  "title": "125 tỷ tiền gửi có kỳ hạn chưa có chứng từ xác nhận",
+  "evidence": "Bộ hồ sơ chỉ có sao kê tài khoản thanh toán. Các khoản 45 tỷ, 15 tỷ, 5 tỷ (VietinBank) và 60 tỷ (Agribank, gửi lại ngày 22/08/2025) chỉ suy ra được từ lệnh gửi và tiền lãi. Khoản 5 tỷ và 60 tỷ không có thêm dấu vết nào từ ngày gửi tới 31/05/2026.",
+  "rule": "Quy chế Điều 6.1.h và Điều 8.8.b: kiểm toán độc lập KPBT hằng năm. Quy chế hoạt động Ban quản trị, điểm b khoản 1 Điều 9: công khai tài khoản và chi tiêu KPBT định kỳ.",
+  "amount": 125000000000,
+  "ask": "Giấy xác nhận số dư các hợp đồng tiền gửi tại VietinBank và Agribank ở ngày gần nhất, ghi rõ không cầm cố, không phong tỏa; hợp đồng tiền gửi và lãi suất khi tái tục 08/2025; sao kê từ 06/2026 của các tài khoản thanh toán.",
+  "view": "Khoản này chiếm 98% quỹ nên là phép kiểm tra quan trọng nhất. Chưa có dấu hiệu thất thoát, nhưng chỉ nhìn sao kê tài khoản thanh toán thì chưa thể khẳng định tiền còn đủ."
+ },
+ {
+  "id": "F05",
+  "sev": "Cam",
+  "title": "Hợp đồng sửa cấp nước với HNB khoảng 1,25 tỷ, tạm ứng ngay 50%",
+  "evidence": "HNB là đơn vị thi công hệ thống cấp nước sinh hoạt của tòa nhà. Ngày 14/04/2026 tạm ứng 623.290.680 đồng (50%) cho Công ty TNHH Kỹ thuật Thương mại HNB theo HĐ 01HNBSSR24032026 ngày 07/04/2026. Giá trị hợp đồng suy ra khoảng 1.246.581.360 đồng, phần còn lại 623,3 triệu sẽ tiếp tục chi từ quỹ. Giá trị này gấp khoảng 25 lần mức 50 triệu Ban quản trị được tự quyết và bằng 249% trần sửa chữa đột xuất cả năm. Số hợp đồng mang ngày 24/03/2026 nhưng ghi ký ngày 07/04/2026; cùng tuần còn ký hợp đồng với Thép Quang (08/04) và Thành Công (06/04), ba hợp đồng cộng 2,15 tỷ.",
+  "rule": "Quy chế Điều 6.1.b và 6.3.c: bảo trì theo kế hoạch được Hội nghị nhà chung cư thông qua, trừ khẩn cấp. Điều 6.3.a: đấu thầu công khai. Điều 6.3.e: 3 báo giá. Điều 9.2: sửa chữa khẩn cấp trên 50 triệu cần trên 50% chủ sở hữu chấp thuận. Quy chế hoạt động Ban quản trị, điểm b, c khoản 3 Điều 3: chọn đơn vị bảo trì cần tối thiểu 50% tổng số thành viên tán thành, chi tiêu kinh phí bảo trì cần 75% thành viên đồng ý.",
+  "amount": 623290680,
+  "ask": "Kế hoạch bảo trì 2026 đã được thông qua có hạng mục cấp nước, hoặc văn bản trên 50% chủ sở hữu đồng ý; hồ sơ khảo sát hư hỏng, dự toán; hồ sơ mời thầu và 3 báo giá; bảo lãnh tạm ứng; tiến độ và biên bản nghiệm thu từng phần; điều khoản bảo hành và biên bản xử lý các điểm ống nước bể, dột.",
+  "view": "Hạng mục có thể chính đáng vì hệ thống cấp nước là phần sở hữu chung. Nhưng với giá trị 1,25 tỷ, Ban quản trị phải có kế hoạch được Hội nghị thông qua hoặc trên 50% chủ sở hữu đồng ý; điều cần kiểm tiếp là quy trình chọn thầu và việc tạm ứng một nửa giá trị trước khi thi công. Cư dân phản ánh thời gian gần đây đường ống cấp nước vẫn bể, dột nhiều nơi; trước khi trả tiếp 623,3 triệu cần đối chiếu nghiệm thu và nghĩa vụ bảo hành của HNB."
+ },
+ {
+  "id": "F06",
+  "sev": "Cam",
+  "title": "Chi 806,9 triệu cho Schindler: phí bảo trì và 14 hợp đồng mã EID/FR trong khoảng 7 tháng, trả trễ 5–6 tháng",
+  "evidence": "Từ 04/04 tới 23/06/2025 có 7 lệnh chuyển cho Schindler Việt Nam: phí bảo trì kỳ 21/10/2024–20/01/2025 là 172,6 triệu (57,5 triệu/tháng); sửa chữa theo 4 hợp đồng tháng 11–12/2024 là 154,7 triệu; 7 hợp đồng EID/FR là 180,8 triệu; tạm ứng 50% ba hợp đồng là 298,8 triệu. Riêng hợp đồng EID/FR/18062025REV01 ký 19/06/2025 có giá trị suy ra 477,1 triệu, gấp 9,5 lần mức 50 triệu; chi cho Schindler trong năm 2025 đã vượt trần 500 triệu từ ngày 06/06/2025.",
+  "rule": "Quy chế Điều 6.2: thang máy thuộc phạm vi dùng KPBT. Điều 6.3.b: nghiệm thu trước thanh toán. Điều 9.2: Ban quản trị chỉ tự quyết việc khẩn cấp tới 50 triệu, trên mức đó cần trên 50% chủ sở hữu đồng ý; sửa chữa đột xuất không quá 500 triệu/năm nếu không nằm trong kế hoạch bảo trì.",
+  "amount": 806917257,
+  "ask": "Hợp đồng bảo trì thang máy với Schindler; báo giá, biên bản sự cố và nghiệm thu từng hợp đồng EID/FR; giấy chứng nhận kiểm định an toàn còn hiệu lực của từng thang; xác nhận phí bảo trì thang máy không nằm trong giá dịch vụ quản lý vận hành đang thu.",
+  "view": "Tiền trả thẳng cho Schindler nên rủi ro gian lận thấp hơn. Rủi ro nằm ở việc sửa chữa lặp lại liên tục mà chất lượng vẫn bị phản ánh, thanh toán trễ và khả năng trả trùng phí bảo trì."
+ },
+ {
+  "id": "F07",
+  "sev": "Cam",
+  "title": "Thành Công nhận 856,8 triệu qua 4 hợp đồng liên tiếp",
+  "evidence": "Công ty TNHH Xây dựng và Trang trí Nội thất Thành Công nhận 6 lệnh từ TK 7784 cho 4 hợp đồng: thiết bị sửa chữa phần sở hữu chung 146,5 triệu (09/2025), xây nhà để hàng hóa 165,8 triệu (10/2025), vật tư thiết bị sửa chữa 350,7 triệu (12/2025), ốp lát sảnh lễ tân 193,7 triệu (04/2026). Cả bốn hợp đồng đều trên 50 triệu (gấp 2,9 – 7 lần). Hợp đồng 081225 giá 350,7 triệu được trả 100% chỉ 3 ngày sau ký, hợp đồng 1509/2025 giá 146,5 triệu trả 100% sau 18 ngày, cùng kiểu trả trọn như Thép Quang; hợp đồng 221025 mang ký hiệu BQT TQ giống hợp đồng Thép Quang.",
+  "rule": "Quy chế Điều 6.3.a và 6.3.e: đấu thầu công khai, 3 báo giá cho mỗi việc trên 10 triệu. Điều 9.2 và 6.3.c: mỗi việc trên 50 triệu cần kế hoạch được Hội nghị thông qua hoặc trên 50% chủ sở hữu đồng ý. Điều 6.1.c: nhà thầu đủ năng lực. Xây mới hạng mục trên phần sở hữu chung không phải bảo trì và cần Hội nghị nhà chung cư quyết định. Quy chế hoạt động Ban quản trị, khoản 14 Điều 4: hợp đồng bảo trì đã ký phải được thông báo công khai tại Hội nghị nhà chung cư.",
+  "amount": 856792068,
+  "ask": "Văn bản cho phép theo Điều 9.2 của từng hợp đồng; bốn hợp đồng, dự toán, 3 báo giá mỗi hợp đồng, biên bản nghiệm thu, ảnh hiện trạng trước và sau; căn cứ cho phép xây nhà để hàng hóa.",
+  "view": "Thành Công chiếm 61% tiền sửa chữa chi từ TK 7784. Cần xem có chia nhỏ hợp đồng để tránh quy trình chọn thầu hay không, và vì sao hai hợp đồng được trả trọn trước khi có nghiệm thu."
+ },
+ {
+  "id": "F08",
+  "sev": "Cam",
+  "title": "Hợp đồng giữ xe với Khởi Sáng Việt vượt 67,1 triệu so với giá trị suy ra",
+  "evidence": "Ngày 15/08/2025 tạm ứng 40% là 115.720.000 đồng, tức hợp đồng 18KSVSSR08082025 khoảng 289.300.000 đồng. Ngày 11/12/2025 trả phần còn lại 240.679.800 đồng. Tổng đã trả 356.399.800 đồng, cao hơn 67.099.800 đồng (23%). Giá trị hợp đồng gấp 5,8 lần mức 50 triệu Ban quản trị được tự quyết, chi từ TK 7784 thay vì từ quỹ.",
+  "rule": "Quy chế Điều 6.3.b: thanh toán theo hợp đồng và nghiệm thu; phát sinh phải có phụ lục hợp đồng.",
+  "amount": 67099800,
+  "ask": "Hợp đồng gốc, phụ lục phát sinh, biên bản nghiệm thu, quyết toán; làm rõ doanh thu giữ xe thuộc về ai khi tiền khai thác khu vực chung được dùng để sửa hệ thống giữ xe.",
+  "view": "Hoặc có phụ lục tăng giá trị, hoặc khoản tạm ứng không đúng 40%. Trường hợp nào cũng cần chứng từ."
+ },
+ {
+  "id": "F09",
+  "sev": "Cam",
+  "title": "Tiền thuê quảng cáo của Chicilon Media giảm 17,5% ngay sau khi ký lại hợp đồng",
+  "evidence": "Chicilon trả 260.945.454 đồng cho 3 tháng cuối 2024 theo HĐ 01/10/2024, tức 86,98 triệu/tháng. Theo HĐ 05/01/2025 chỉ còn 430.800.000 đồng mỗi 6 tháng, tức 71,8 triệu/tháng. Mức chênh khoảng 182 triệu/năm.",
+  "rule": "Quy chế Điều 1 và Điều 2: thu chi phải công khai, minh bạch, hiệu quả. Khoản 4 Điều 153 Luật Nhà ở 2023.",
+  "amount": 182181816,
+  "ask": "Hai hợp đồng Chicilon (01/10/2024 và 05/01/2025) và phụ lục, lý do điều chỉnh giá, việc chào giá cạnh tranh quyền quảng cáo, biên bản lấy ý kiến cư dân.",
+  "view": "Có thể do khác phạm vi (số màn hình, vị trí) hoặc cách tính thuế. Nếu cùng phạm vi, đây là khoản thu bị giảm cần giải trình."
+ },
+ {
+  "id": "F10",
+  "sev": "Vàng",
+  "title": "15 tỷ gửi kỳ hạn 3 tháng và số dư thanh toán nhàn rỗi, lãi bỏ lỡ 0,42–0,96 tỷ",
+  "evidence": "HĐTG 214000411282 (15 tỷ) tái tục mỗi quý với lãi 2,0% rồi 1,9% và 2,4%/năm, trong khi 45 tỷ và 60 tỷ cùng thời điểm hưởng 4,7%/năm. TK thanh toán KPBT thường giữ 2–6 tỷ (bình quân 4,24 tỷ) với lãi khoảng 0,2%/năm.",
+  "rule": "Quy chế Điều 3.1.a: KPBT gửi tiết kiệm có kỳ hạn, chọn ngân hàng có chính sách ưu đãi, lãi suất công bố theo từng thời điểm.",
+  "amount": 963960165,
+  "ask": "Lý do chọn kỳ hạn 3 tháng; kế hoạch dòng tiền chi bảo trì; phương án chia bậc kỳ hạn 6–12 tháng và thương lượng lãi suất cho khoản gửi lớn.",
+  "view": "Đây không phải thất thoát mà là hiệu quả thấp. Với 125 tỷ, mỗi 0,5 điểm phần trăm thương lượng thêm tương đương 625 triệu đồng một năm."
+ },
+ {
+  "id": "F11",
+  "sev": "Vàng",
+  "title": "Mở tài khoản quỹ bảo trì thứ hai tại Agribank",
+  "evidence": "TK Agribank 6350201010476 mở ngày 04/07/2024, trước khi nhận quỹ, với 1 triệu đồng chưa rõ nguồn. Ngày 21/08/2024 nhận 60 tỷ từ TK VietinBank và mở HĐTG 12 tháng. Sổ phụ ghi Tài khoản đồng sở hữu: No.",
+  "rule": "Quy chế Điều 3.1.a: BQT lập một tài khoản KPBT, tối thiểu 3 thành viên BQT đồng chủ tài khoản, công bố tại Hội nghị nhà chung cư và không được thay đổi tài khoản này.",
+  "amount": 60000000000,
+  "ask": "Biên bản BQT và thông báo công khai về việc mở TK Agribank; đăng ký mẫu chữ ký (ai được ký, cần mấy chữ ký); nguồn 1 triệu đồng nộp khi mở tài khoản.",
+  "view": "Gửi ở hai ngân hàng lớn không sai về bản chất và lãi suất ngang nhau. Vấn đề là thủ tục công khai và cơ chế đồng ký theo Quy chế."
+ },
+ {
+  "id": "F12",
+  "sev": "Vàng",
+  "title": "Dấu hiệu chưa kiểm toán năm 2025 và công khai chưa đầy đủ",
+  "evidence": "Chỉ thấy một lần phí xác nhận số dư (21/05/2025, 33.000 đồng) trên TK VietinBank, thường phục vụ kiểm toán năm 2024. Không thấy dấu vết tương tự cho năm 2025 tới 31/05/2026, cũng không thấy trên TK Agribank.",
+  "rule": "Quy chế Điều 6.1.h và Điều 8.8: kiểm toán độc lập KPBT hằng năm. Điều 3.1.a, 6.1.g và Quy chế hoạt động Ban quản trị điểm b khoản 1 Điều 9: công khai chi tiêu KPBT định kỳ; khoản 14 Điều 4: công khai hợp đồng bảo trì đã ký tại Hội nghị nhà chung cư.",
+  "amount": 0,
+  "ask": "Báo cáo kiểm toán KPBT năm 2024 và 2025 kèm thư quản lý; các bản công khai chi tiêu KPBT đã niêm yết.",
+  "view": "Nếu chưa kiểm toán năm 2025 thì đây là thiếu sót thủ tục cần khắc phục trước Hội nghị nhà chung cư thường niên."
+ },
+ {
+  "id": "F13",
+  "sev": "Vàng",
+  "title": "Các chi tiết nhỏ trên chứng từ cần giải thích",
+  "evidence": "Ký hiệu BQT TQ xuất hiện trong số hợp đồng với hai nhà thầu khác nhau (Thành Công 221025, Thép Quang 080426), trong khi các hợp đồng khác của Thành Công ghi BQT THANH CONG. Hợp đồng Khởi Sáng Việt ghi hai ngày ký khác nhau (08/08 và 09/08/2025). Người trả tiền thuê quảng cáo không có gì bất thường: Công ty CP Công nghệ Thông tin Truyền thông Thiên Hy Long Việt Nam là pháp nhân của Chicilon Media, các kỳ trả qua tài khoản trung gian cho vay của ngân hàng đều ghi rõ Chicilon Media.",
+  "rule": "Quy chế Điều 2: thu chi phải công khai, minh bạch.",
+  "amount": 0,
+  "ask": "Giải thích ký hiệu TQ trong số hợp đồng và cho biết đơn vị soạn thảo các hợp đồng; ngày ký thực tế của hợp đồng Khởi Sáng Việt.",
+  "view": "Từng điểm riêng lẻ không chứng minh sai phạm, nhưng gộp lại cho thấy hồ sơ hợp đồng cần được rà soát."
+ },
+ {
+  "id": "F14",
+  "sev": "Cam",
+  "title": "Không thấy phí bảo trì thang máy Schindler định kỳ từ 21/01/2025 trên tài khoản quỹ",
+  "evidence": "Phí bảo trì Schindler là 57.538.800 đồng/tháng, tức 52.308.000 đồng trước thuế, đúng bằng 2.906.000 đồng cho mỗi thang nhân 18 thang. Tài khoản quỹ chỉ trả kỳ 21/10/2024 – 20/01/2025, trả trễ vào ngày 06/06/2025. Từ 21/01/2025 tới 31/05/2026 không còn khoản phí định kỳ nào, ngoài khoản hoàn ứng gộp 986,9 triệu ngày 23/12/2025. Nếu hợp đồng vẫn tiếp tục, phí của 16 tháng này vào khoảng 0,94 tỷ đồng.",
+  "rule": "Quy chế Điều 6.2: bảo trì thang máy thuộc phạm vi dùng KPBT. Điều 6.1.b: bảo trì theo kế hoạch được Hội nghị nhà chung cư thông qua.",
+  "amount": 0,
+  "ask": "Giấy xác nhận công nợ của Schindler tới ngày gần nhất; nhật ký bảo trì từng thang năm 2025–2026; hóa đơn phí bảo trì và nguồn tiền đã trả.",
+  "view": "Hoặc phí bảo trì được trả từ tài khoản vận hành, hoặc Schindler bị nợ phí nhiều tháng. Trường hợp sau có thể làm gián đoạn bảo trì chính hãng, cần đặt cạnh phản ánh của cư dân về thang máy."
+ },
+ {
+  "id": "F15",
+  "sev": "Vàng",
+  "title": "Lệnh chi hai tài khoản được lập liên tiếp trong cùng một phiên",
+  "evidence": "Ngày 14/04/2026 lệnh 623,3 triệu từ TK quỹ (11:26:17) và lệnh 116,2 triệu từ TK 7784 (11:28:21) cách nhau hai phút. Nhiều lệnh nộp thuế được lập lúc 19–23 giờ ngày cuối tuần (27/07/2025, 23/08/2025, 11/04/2026).",
+  "rule": "Quy chế Điều 3.1.a: tối thiểu 3 thành viên BQT đồng chủ tài khoản KPBT. Điều 6.3.b: chứng từ thanh toán cần tối thiểu 3 chữ ký. Quy chế hoạt động Ban quản trị, điểm c khoản 3 Điều 3: chi tiêu kinh phí bảo trì phải được 75% thành viên Ban quản trị đồng ý.",
+  "amount": 0,
+  "ask": "Danh sách người dùng internet banking của ba tài khoản (người lập lệnh, người duyệt lệnh) và nhật ký duyệt lệnh; đăng ký mẫu chữ ký tại ngân hàng.",
+  "view": "Dùng internet banking là bình thường. Điều cần xác nhận là một người không thể vừa lập vừa duyệt lệnh chi tiền quỹ."
+ },
+ {
+  "id": "F16",
+  "sev": "Vàng",
+  "title": "Đợt tái tục 110 tỷ tháng 8/2026 cần kiểm tra lãi suất và tiền lãi về tài khoản",
+  "evidence": "Các khoản 45 tỷ (20/08), 60 tỷ (22/08) và 5 tỷ (29/08/2026) đáo hạn sau kỳ sao kê. Biểu 12 tháng tại quầy của VietinBank và Agribank đã lên 5,9%/năm, Agribank gửi trực tuyến 6,8%/năm. Khoảng 5,17 tỷ tiền lãi năm 2025–2026 phải về tài khoản trong tháng 8/2026. Thông báo 05-2026/TB-BQTSSR ngày 15/09/2026 cho biết đã tái tục thành năm hợp đồng tổng 127,5 tỷ, lãi 8%/năm (khoản 5 tỷ 7,8%), chưa có hợp đồng và xác nhận của ngân hàng. Sổ phụ Agribank in ngày 04/09/2026 nhưng chỉ tới 31/05/2026; sao kê VietinBank cũng dừng ở 31/05/2026.",
+  "rule": "Quy chế Điều 3.1.a: gửi tại ngân hàng có chính sách ưu đãi, lãi suất công bố theo từng thời điểm.",
+  "amount": 1320000000,
+  "ask": "Lý do sao kê chỉ cung cấp tới 31/05/2026; sao kê từ 01/06/2026 của các tài khoản; hợp đồng tái tục và lãi suất áp dụng; xác nhận số dư sau tái tục.",
+  "view": "Nếu tái tục đúng biểu niêm yết, tiền lãi tăng khoảng 1,32 tỷ mỗi năm so với mức 4,7%. Nếu tiền nằm lại ở tài khoản thanh toán hay kỳ hạn ngắn, phần lãi mất đi sẽ lớn hơn nhiều so với giai đoạn trước."
+ }
+]

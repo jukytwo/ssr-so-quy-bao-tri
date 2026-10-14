@@ -1,0 +1,245 @@
+{
+ "duration": 218.4,
+ "sentences": 30,
+ "cards": 2,
+ "scenes": 7,
+ "size": 10393173,
+ "voice": "vi_VN-vais1000-medium",
+ "doc": null,
+ "doc_size": null,
+ "chapters": [
+  "00:00 Mở đầu",
+  "00:12 Vấn đề 5",
+  "02:07 Quy chế áp dụng",
+  "03:24 Liên hệ"
+ ],
+ "timeline": [
+  [
+   "bia",
+   "Quỹ bảo trì, phần 4 trên 6: Tiền gửi sau tái tục và Quy chế áp dụng.",
+   1.5,
+   6.523
+  ],
+  [
+   "bia",
+   "Phần này nói 127,5 tỷ tiền gửi sau tái tục, và bộ quy chế đang áp dụng.",
+   6.763,
+   11.023
+  ],
+  [
+   "f5#-2",
+   "Vấn đề năm: 127,5 tỷ tiền gửi sau tái tục.",
+   12.073,
+   15.611
+  ],
+  [
+   "f5#-1",
+   "Sổ phụ in ngày 04/09/2026 nhưng chỉ lấy tới 31/05/2026, nên không thấy dòng tiền đáo hạn và tái tục.",
+   15.851,
+   24.858
+  ],
+  [
+   "f5#-1",
+   "127,5 tỷ sau tái tục chưa có hợp đồng và giấy xác nhận của ngân hàng.",
+   25.098,
+   30.966
+  ],
+  [
+   "f5#-1",
+   "Khoản 2,5 tỷ gửi mới chưa rõ lấy từ đâu.",
+   31.206,
+   34.171
+  ],
+  [
+   "f5#-1",
+   "Khoản 5 tỷ và 60 tỷ không có dấu vết từ ngày gửi tới 31/05/2026.",
+   34.411,
+   40.361
+  ],
+  [
+   "f5#-1",
+   "Lãi 8% cao hơn biểu 12 tháng tại quầy khoảng 5,9%, cần xem điều kiện kèm theo.",
+   40.601,
+   46.636
+  ],
+  [
+   "f5#-1",
+   "Cần làm rõ: sao kê ba tài khoản từ 01/06/2026, hợp đồng tiền gửi và giấy xác nhận tại quầy của VietinBank, Agribank.",
+   46.876,
+   55.512
+  ],
+  [
+   "v5a#-1",
+   "Tiền gửi có kỳ hạn chiếm 98% quỹ, nên đây là phép kiểm tra quan trọng nhất.",
+   56.562,
+   61.092
+  ],
+  [
+   "v5a#0",
+   "Tài khoản Agribank mở ngày 04/07/2024, trước khi nhận quỹ. Sổ phụ ghi không phải tài khoản đồng sở hữu, trong khi Điều 3.1.a yêu cầu ít nhất ba thành viên cùng đứng tên.",
+   61.332,
+   72.992
+  ],
+  [
+   "v5a#1",
+   "Ngày 21/08/2024, 60 tỷ được chuyển sang Agribank và gửi kỳ hạn 12 tháng.",
+   73.232,
+   79.672
+  ],
+  [
+   "v5a#2",
+   "Khoản 15 tỷ chỉ gửi kỳ hạn 3 tháng, lãi 1,9 tới 2,4% một năm, trong khi các khoản lớn hưởng 4,7%. Tính cả số dư nhàn rỗi, tiền lãi bỏ lỡ khoảng 0,42 tới 0,96 tỷ.",
+   79.912,
+   93.566
+  ],
+  [
+   "v5a#3",
+   "Chỉ thấy một lần phí xác nhận số dư ngày 21/05/2025, thường dùng cho kiểm toán năm 2024. Chưa thấy dấu vết kiểm toán năm 2025, trong khi Quy chế yêu cầu kiểm toán độc lập hằng năm.",
+   93.806,
+   107.336
+  ],
+  [
+   "v5a#4",
+   "Ngày 15/09/2026, Ban quản trị thông báo đã tái tục thành năm hợp đồng, tổng 127,5 tỷ, lãi 8% một năm, nhưng chưa có hợp đồng và xác nhận của ngân hàng.",
+   107.576,
+   119.426
+  ],
+  [
+   "v5a#-1",
+   "Chưa có dấu hiệu thất thoát, nhưng chỉ nhìn sao kê tài khoản thanh toán thì chưa thể khẳng định tiền còn đủ.",
+   119.666,
+   126.136
+  ],
+  [
+   "qc1#-2",
+   "Quy chế nào đang áp dụng?",
+   127.186,
+   128.452
+  ],
+  [
+   "qc1#0",
+   "Có hai bộ quy chế đang lưu hành. Bản dự thảo 50 trang gửi kèm công văn ngày 16/11/2023, còn để ngỏ nhiều phương án.",
+   128.692,
+   136.841
+  ],
+  [
+   "qc1#1",
+   "Và bản Hội nghị thông qua ngày 26/05/2024, 42 trang, đã chốt từng phương án. Mọi đối chiếu trong clip này dùng bản thông qua.",
+   137.081,
+   145.959
+  ],
+  [
+   "qc2#-1",
+   "So với dự thảo, thay đổi nằm ở cách tổ chức Ban quản trị.",
+   147.009,
+   150.295
+  ],
+  [
+   "qc2#0",
+   "Ban quản trị có tối thiểu 9 thành viên, mỗi block ít nhất một người; dự thảo chỉ có hai phương án 7 hoặc 11 người.",
+   150.535,
+   157.707
+  ],
+  [
+   "qc2#1",
+   "Có hai Phó ban, trong đó một người đại diện chủ đầu tư.",
+   157.947,
+   161.832
+  ],
+  [
+   "qc2#2",
+   "Ban quản trị hoạt động theo mô hình Hội đồng quản trị của công ty cổ phần.",
+   162.072,
+   165.721
+  ],
+  [
+   "qc2#3",
+   "Thù lao chốt ở mức 6, 5 và 4 triệu đồng mỗi tháng cho Trưởng ban, Phó ban và thành viên.",
+   165.961,
+   171.757
+  ],
+  [
+   "qc3#-1",
+   "Các điều kiểm soát tiền quỹ thì giữ nguyên, không đổi một chữ.",
+   172.807,
+   175.899
+  ],
+  [
+   "qc3#0",
+   "Điều 3.1.a: tài khoản quỹ có ít nhất ba thành viên cùng đứng tên và không được thay đổi.",
+   176.139,
+   181.538
+  ],
+  [
+   "qc3#1",
+   "Điều 7.2 tới 7.4: tiền quỹ chuyển thẳng cho nhà thầu, tạm dùng tiền vận hành tối đa 10 triệu mỗi tháng.",
+   181.778,
+   188.421
+  ],
+  [
+   "qc3#2",
+   "Điều 9.2: khoản trên 50 triệu cần hơn một nửa chủ sở hữu đồng ý.",
+   188.661,
+   192.938
+  ],
+  [
+   "qc3#-1",
+   "Quy chế có một chỗ tự mâu thuẫn: Điều 3.1.a công khai chi tiêu 6 tháng một lần, Điều 6.1.g yêu cầu hằng tháng. Cư dân có thể đề nghị áp dụng mức hằng tháng.",
+   193.178,
+   203.494
+  ],
+  [
+   "lienhe",
+   "Phần 5 trên 6: Tóm lại, mức độ, nguyên nhân, khung xử lý. Toàn bộ số liệu truy được về sao kê gốc trong thư mục chia sẻ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.",
+   204.544,
+   215.199
+  ]
+ ],
+ "card_times": [
+  [
+   11.453,
+   15.611
+  ],
+  [
+   126.566,
+   128.452
+  ]
+ ],
+ "seg_times": [
+  [
+   "bia",
+   0.0,
+   11.548
+  ],
+  [
+   "f5",
+   11.548,
+   56.037
+  ],
+  [
+   "v5a",
+   56.037,
+   126.661
+  ],
+  [
+   "qc1",
+   126.661,
+   146.484
+  ],
+  [
+   "qc2",
+   146.484,
+   172.282
+  ],
+  [
+   "qc3",
+   172.282,
+   204.019
+  ],
+  [
+   "lienhe",
+   204.019,
+   218.399
+  ]
+ ]
+}

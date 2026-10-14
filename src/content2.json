@@ -1,0 +1,432 @@
+{
+ "verdict": {
+  "q": "Có khuất tất hay không?",
+  "answer": "Có những điểm khuất tất theo nghĩa thiếu minh bạch và làm trái Quy chế; chưa có bằng chứng về việc chiếm đoạt tiền quỹ.",
+  "stats": [
+   [
+    "3",
+    "điểm đã rõ trên sao kê",
+    "r"
+   ],
+   [
+    "5",
+    "nghi vấn cần hồ sơ",
+    "o"
+   ],
+   [
+    "4",
+    "điểm kiểm tra đạt",
+    "g"
+   ]
+  ],
+  "tiers": [
+   {
+    "k": "proven",
+    "name": "Đã rõ trên sao kê",
+    "tone": "r",
+    "sub": "Làm trái Quy chế có bằng chứng trực tiếp, không cần thêm hồ sơ để khẳng định",
+    "items": [
+     {
+      "h": "986,9 triệu rời quỹ vào tài khoản của chính Ban quản trị",
+      "t": "Ngày 23/12/2025 quỹ chuyển 986.910.176 đồng sang TK 118002976372 (Kinh phí quản lý vận hành) để hoàn ứng 6 khoản chi từ 29/08 tới 23/12/2025. Quy chế chỉ cho chuyển tiền quỹ thẳng tới đơn vị bảo trì và giới hạn tạm dùng tiền vận hành 10 triệu mỗi tháng.",
+      "amt": "986,9 triệu",
+      "rule": "Điều 7.2, 7.4",
+      "code": "F01"
+     },
+     {
+      "h": "Tiền khai thác khu vực chung không vào tài khoản quỹ",
+      "t": "1,71 tỷ tiền quảng cáo (Chicilon Media), thuê mặt bằng (Viễn thông ACT), kệ quảng cáo (Hưng Thái) từ 07/2025 tới 05/2026 đi vào TK 117002997784. Khoản 260,9 triệu đã vào đúng quỹ ngày 16/07/2025 bị chuyển đi 8 ngày sau với lý do trả nhầm.",
+      "amt": "1,71 tỷ",
+      "rule": "Khoản 4 Điều 153 Luật Nhà ở 2023",
+      "code": "F02"
+     },
+     {
+      "h": "1,40 tỷ chi ngoài quy trình của quỹ",
+      "t": "Từ tài khoản thu khu vực chung đã chi 1,40 tỷ cho sửa chữa, mua sắm; Thành Công nhận 856,8 triệu qua 4 hợp đồng liên tiếp, không qua kế hoạch bảo trì, chọn thầu và kiểm soát chứng từ của quỹ.",
+      "amt": "1,40 tỷ",
+      "rule": "Điều 6.1, 6.3",
+      "code": "F02, F07"
+     }
+    ]
+   },
+   {
+    "k": "suspect",
+    "name": "Nghi vấn, cần hồ sơ để kết luận",
+    "tone": "o",
+    "sub": "Sao kê cho thấy dấu hiệu; chỉ chứng từ mới xác nhận hoặc bác bỏ",
+    "items": [
+     {
+      "h": "705,8 triệu trả trọn cho Thép Quang, chưa rõ hàng hóa",
+      "t": "Trả đủ 100% chỉ 16 ngày sau khi ký, hàng hóa ghi chung là thiết bị khu vực sử dụng chung. Số tiền gấp khoảng 14 lần mức 50 triệu Ban quản trị được tự quyết và vượt trần 500 triệu của cả năm, nên phải có kế hoạch được Hội nghị thông qua hoặc trên 50% chủ sở hữu đồng ý.",
+      "amt": "705,8 triệu",
+      "rule": "Điều 9.2, 6.3.b, 6.3.c",
+      "code": "F03"
+     },
+     {
+      "h": "Tiền gửi chưa có giấy xác nhận tại ngày gần nhất",
+      "t": "98% quỹ nằm trong các hợp đồng tiền gửi; ngân hàng mới xác nhận 120 tỷ tại ngày 20/05/2025, còn 127,5 tỷ sau đợt tái tục tháng 8/2026 theo thông báo của Ban quản trị chưa có xác nhận.",
+      "amt": "127,5 tỷ",
+      "rule": "Điều 3.1.a",
+      "code": "F04"
+     },
+     {
+      "h": "Phí bảo trì Schindler định kỳ biến mất khỏi tài khoản quỹ",
+      "t": "Từ 21/01/2025 không còn khoản phí khoảng 57,5 triệu mỗi tháng, cộng dồn khoảng 0,94 tỷ tới 31/05/2026: hoặc trả từ tài khoản vận hành, hoặc hãng đang bị nợ phí.",
+      "amt": "",
+      "rule": "Điều 6.1.d",
+      "code": "F14"
+     },
+     {
+      "h": "13 khoản trên mức 50 triệu, chi vượt trần nếu ngoài kế hoạch",
+      "t": "13 khoản chi trên 50 triệu, tổng 5,04 tỷ (HNB 1,25 tỷ, Thép Quang 705,8 triệu, Schindler 477,1 triệu, Thành Công, Khởi Sáng Việt, KTECH), chưa thấy kế hoạch được Hội nghị thông qua hoặc ý kiến chủ sở hữu; chi sửa chữa năm 2025 là 2,89 tỷ, gấp 5,8 lần trần 500 triệu.",
+      "amt": "5,04 tỷ",
+      "rule": "Điều 9.2",
+      "code": "F03, F05, F06, F07, F08"
+     },
+     {
+      "h": "Kiểm soát lệnh chi, giá hợp đồng và kiểm toán",
+      "t": "Hai tài khoản được thao tác trong cùng một phiên; hợp đồng giữ xe Khởi Sáng Việt tăng 23% khi quyết toán; tiền quảng cáo giảm 17,5% sau khi ký lại; chưa thấy dấu vết kiểm toán năm 2025.",
+      "amt": "",
+      "rule": "Điều 3.1.a, 8.8.b",
+      "code": "F08, F09, F12, F15"
+     }
+    ]
+   },
+   {
+    "k": "clean",
+    "name": "Không có dấu hiệu bất thường",
+    "tone": "g",
+    "sub": "Những điểm đã kiểm tra và đạt",
+    "items": [
+     {
+      "h": "Sao kê là thật",
+      "t": "198 giao dịch khớp số dư tới từng đồng, tiền lãi không kỳ hạn của 33 tháng khớp tới từng đồng, không có dấu hiệu làm giả bằng AI.",
+      "amt": "",
+      "rule": "",
+      "code": ""
+     },
+     {
+      "h": "Lãi suất đúng biểu",
+      "t": "Các khoản gửi hưởng đúng biểu niêm yết từng thời điểm, cao hơn biểu dành cho tổ chức; không có dấu hiệu bị trả thấp hay bị giữ lại tiền lãi.",
+      "amt": "",
+      "rule": "",
+      "code": ""
+     },
+     {
+      "h": "Không có tiền mặt, không chuyển cho cá nhân",
+      "t": "Mọi khoản chi đi tới doanh nghiệp, Kho bạc hoặc tài khoản của Ban quản trị; không có khoản thu bổ sung quỹ từ cư dân.",
+      "amt": "",
+      "rule": "",
+      "code": ""
+     },
+     {
+      "h": "Tiền gốc quỹ không giảm",
+      "t": "Quỹ còn 127,15 tỷ ngày 31/05/2026, cao hơn số nhận bàn giao 2,36 tỷ nhờ 5,48 tỷ tiền lãi.",
+      "amt": "",
+      "rule": "",
+      "code": ""
+     }
+    ]
+   }
+  ],
+  "keys": [
+   "Sao kê TK 118002976372 (Kinh phí quản lý vận hành) từ 01/08/2025",
+   "Hồ sơ hợp đồng 705,8 triệu: hóa đơn, danh mục thiết bị, biên bản giao nhận, 3 báo giá",
+   "Giấy xác nhận số dư 127,5 tỷ tiền gửi sau tái tục, cấp tại quầy ngân hàng"
+  ],
+  "nd": [
+   "Có khuất tất theo nghĩa thiếu minh bạch và làm trái Quy chế: 986,9 triệu rời quỹ và 1,71 tỷ lẽ ra phải vào quỹ, tổng 2,69 tỷ đồng, đã không qua quy trình kiểm soát của Quy chế.",
+   "Chưa có bằng chứng chiếm đoạt: không có tiền mặt, không có khoản chuyển cho cá nhân, và tiền gốc quỹ vẫn tăng nhờ lãi.",
+   "Kết luận cuối cùng phụ thuộc ba hồ sơ còn thiếu; nếu Ban quản trị không cung cấp được, các khoản tương ứng phải bồi hoàn quỹ và bị coi là vi phạm đã rõ."
+  ]
+ },
+ "timeline": [
+  {
+   "d": "04/07/2024",
+   "t": "Mở tài khoản quỹ thứ hai tại Agribank 6350201010476",
+   "v": "",
+   "k": "n",
+   "c": "F11"
+  },
+  {
+   "d": "15/08/2024",
+   "t": "Chủ đầu tư bàn giao quỹ bảo trì vào VietinBank 116605084999",
+   "v": "+124,79 tỷ",
+   "k": "in",
+   "c": ""
+  },
+  {
+   "d": "20 – 21/08/2024",
+   "t": "Gửi 45 tỷ và 15 tỷ tại VietinBank, chuyển 60 tỷ sang Agribank gửi 12 tháng",
+   "v": "120 tỷ",
+   "k": "n",
+   "c": ""
+  },
+  {
+   "d": "05/01/2025",
+   "t": "Ký lại hợp đồng quảng cáo, tiền thuê thực nhận giảm 17,5%",
+   "v": "−15,2 triệu/tháng",
+   "k": "warn",
+   "c": "F09"
+  },
+  {
+   "d": "21/01/2025",
+   "t": "Kỳ phí bảo trì thang máy định kỳ cuối cùng thấy trên tài khoản quỹ",
+   "v": "",
+   "k": "warn",
+   "c": "F14"
+  },
+  {
+   "d": "04 – 06/2025",
+   "t": "Bảy lệnh chi cho Schindler: phí bảo trì trả trễ 5 – 6 tháng và 14 hợp đồng sửa chữa",
+   "v": "−806,9 triệu",
+   "k": "out",
+   "c": "F06"
+  },
+  {
+   "d": "16 – 24/07/2025",
+   "t": "Tiền quảng cáo quý 4/2024 vào đúng tài khoản quỹ, 8 ngày sau bị chuyển sang TK 117002997784 với lý do trả nhầm; từ đây thu khu vực chung nằm ngoài quỹ",
+   "v": "−260,9 triệu",
+   "k": "red",
+   "c": "F02"
+  },
+  {
+   "d": "20 – 29/08/2025",
+   "t": "Tái tục 45 tỷ, gửi lại 60 tỷ tại Agribank, gửi thêm 5 tỷ; chưa có chứng từ lãi suất tái tục",
+   "v": "110 tỷ",
+   "k": "warn",
+   "c": "F04"
+  },
+  {
+   "d": "08/2025 – 05/2026",
+   "t": "Tài khoản thu khu vực chung chi cho Thành Công, Khởi Sáng Việt, KTECH",
+   "v": "−1,40 tỷ",
+   "k": "red",
+   "c": "F07, F08"
+  },
+  {
+   "d": "23/12/2025",
+   "t": "Quỹ chuyển tiền sang tài khoản vận hành do Ban quản trị đứng tên",
+   "v": "−986,9 triệu",
+   "k": "red",
+   "c": "F01"
+  },
+  {
+   "d": "14/04/2026",
+   "t": "Tạm ứng 50% hợp đồng sửa hệ thống cấp nước; cùng phiên chi 116,2 triệu từ tài khoản thu khu vực chung",
+   "v": "−623,3 triệu",
+   "k": "out",
+   "c": "F05, F15"
+  },
+  {
+   "d": "24/04/2026",
+   "t": "Trả trọn 705,8 triệu mua thiết bị cho Thép Quang",
+   "v": "−705,8 triệu",
+   "k": "red",
+   "c": "F03"
+  },
+  {
+   "d": "31/05/2026",
+   "t": "Kết thúc kỳ sao kê: quỹ còn 127,15 tỷ, 98% là tiền gửi có kỳ hạn",
+   "v": "127,15 tỷ",
+   "k": "n",
+   "c": ""
+  },
+  {
+   "d": "20 – 29/08/2026",
+   "t": "110 tỷ tiền gửi đáo hạn, biểu 12 tháng tại quầy đã lên 5,9%",
+   "v": "110 tỷ",
+   "k": "warn",
+   "c": "F16"
+  }
+ ],
+ "glossary": [
+  [
+   "Quỹ bảo trì (KPBT)",
+   "Kinh phí bảo trì phần sở hữu chung, bằng 2% giá bán căn hộ, chủ đầu tư bàn giao cho Ban quản trị quản lý."
+  ],
+  [
+   "Ban quản trị (BQT)",
+   "Đại diện chủ sở hữu do Hội nghị nhà chung cư bầu, đứng tên các tài khoản quỹ."
+  ],
+  [
+   "Hội nghị nhà chung cư (HNNCC)",
+   "Cuộc họp của chủ sở hữu, thông qua quy chế, kế hoạch bảo trì và bầu Ban quản trị."
+  ],
+  [
+   "Hợp đồng tiền gửi (HĐTG)",
+   "Tiền gửi có kỳ hạn tại ngân hàng; tái tục là gửi lại khi đáo hạn."
+  ],
+  [
+   "Biểu niêm yết",
+   "Lãi suất ngân hàng công bố công khai cho từng kỳ hạn tại thời điểm gửi."
+  ],
+  [
+   "Lãi không kỳ hạn",
+   "Lãi trên số dư tài khoản thanh toán, 0,2% một năm với tài khoản quỹ."
+  ],
+  [
+   "Tài khoản vận hành",
+   "TK 118002976372 do Ban quản trị đứng tên, dùng cho chi phí quản lý vận hành, không phải tài khoản quỹ."
+  ],
+  [
+   "TK 999, TK 7784, TK AGR",
+   "Tên gọi ngắn của VietinBank 116605084999 (quỹ), VietinBank 117002997784 (thu dịch vụ), Agribank 6350201010476 (quỹ)."
+  ],
+  [
+   "Tạm ứng, hoàn ứng",
+   "Tạm ứng là trả trước một phần hợp đồng; hoàn ứng là trả lại khoản đã ứng từ nguồn khác."
+  ],
+  [
+   "Nghiệm thu",
+   "Biên bản xác nhận công việc đã làm xong, đúng khối lượng và chất lượng, lập trước khi thanh toán."
+  ],
+  [
+   "Sao kê, sổ phụ",
+   "Bản liệt kê giao dịch và số dư của tài khoản do ngân hàng cấp."
+  ],
+  [
+   "Mức Đỏ, Cam, Vàng",
+   "Mức độ dấu hiệu: cần giải trình ngay, cần hồ sơ chứng minh, cần cải thiện."
+  ]
+ ],
+ "roll": [
+  {
+   "r": 0.047,
+   "label": "Bằng lần gửi trước (4,7%)",
+   "year": 5170000000.0,
+   "diff": 0.0
+  },
+  {
+   "r": 0.05,
+   "label": "Thương lượng nhẹ",
+   "year": 5500000000.0,
+   "diff": 330000000.0000003
+  },
+  {
+   "r": 0.055,
+   "label": "Mức trung gian",
+   "year": 6050000000.0,
+   "diff": 880000000.0
+  },
+  {
+   "r": 0.059,
+   "label": "Biểu 12 tháng tại quầy 08/2026",
+   "year": 6490000000.0,
+   "diff": 1319999999.9999998
+  },
+  {
+   "r": 0.068,
+   "label": "Agribank trực tuyến 08/2026",
+   "year": 7480000000.000001,
+   "diff": 2310000000.0000005
+  },
+  {
+   "r": 0.08,
+   "label": "BQT thông báo 15/09/2026, cần hợp đồng",
+   "year": 8800000000.0,
+   "diff": 3630000000.0
+  }
+ ],
+ "roll_base": 110000000000.0,
+ "concl": {
+  "01": [
+   "Kết luận chung",
+   "r",
+   [
+    "Có khuất tất theo nghĩa thiếu minh bạch và làm trái Quy chế ở ba điểm đã rõ trên sao kê.",
+    "Chưa có bằng chứng về việc chiếm đoạt tiền quỹ; kết luận cuối cùng phụ thuộc vào ba hồ sơ Ban quản trị phải cung cấp.",
+    "Hệ quả: ba điểm đã rõ phải khắc phục, thuộc diện xử phạt theo Nghị định 339/2026/NĐ-CP và là căn cứ bãi nhiệm; 1,69 tỷ không có chứng từ thì phải hoàn trả quỹ."
+   ]
+  ],
+  "02": [
+   "Dữ liệu tin cậy",
+   "g",
+   [
+    "Dữ liệu đủ tin cậy để phân tích: 198 giao dịch của 8 sao kê khớp với số dư, tổng phát sinh và số bút toán in trên sao kê.",
+    "Còn thiếu hai mảnh hồ sơ quyết định là sao kê tài khoản vận hành và giấy xác nhận tiền gửi tại ngày gần nhất; tài liệu ngân hàng Ban quản trị gửi ngày 28/09/2026 khớp tới từng đồng với dữ liệu."
+   ]
+  ],
+  "03": [
+   "Không có dấu hiệu làm giả",
+   "g",
+   [
+    "Sao kê là bản thật do ngân hàng lập, không có dấu hiệu tạo mới hay chỉnh sửa bằng AI.",
+    "Chỉ còn một rủi ro nhỏ là in bản đã sửa rồi scan lại, loại trừ được khi ngân hàng xác nhận trực tiếp."
+   ]
+  ],
+  "04": [
+   "Cần xác nhận",
+   "o",
+   [
+    "Tiền gốc quỹ không giảm: 127,15 tỷ ngày 31/05/2026, cao hơn số nhận bàn giao 2,36 tỷ.",
+    "Nhưng 98% quỹ là tiền gửi có kỳ hạn; ngân hàng mới xác nhận 120 tỷ tại ngày 20/05/2025, nên xác nhận số dư sau đợt tái tục là việc phải làm đầu tiên."
+   ]
+  ],
+  "05": [
+   "Làm trái Quy chế",
+   "r",
+   [
+    "Khoản giảm 3,12 tỷ là bốn nhóm chi có thật, mỗi khoản đều có nơi nhận.",
+    "Nhưng 1,69 tỷ trong đó không truy được tới người nhận cuối hoặc hàng hóa cụ thể, và khoản 986,9 triệu chuyển sang tài khoản vận hành làm trái Điều 7.2 và 7.4."
+   ]
+  ],
+  "06": [
+   "Làm trái Luật Nhà ở",
+   "r",
+   [
+    "1,71 tỷ tiền khai thác khu vực chung bị giữ ngoài tài khoản quỹ, trái khoản 4 Điều 153 Luật Nhà ở 2023.",
+    "1,40 tỷ trong số đó đã chi không qua quy trình của quỹ; khoản thu này cần được chuyển về quỹ và quyết toán lại."
+   ]
+  ],
+  "07": [
+   "Đúng biểu, hiệu quả thấp",
+   "o",
+   [
+    "Lãi suất phù hợp thực tế từng thời điểm: đúng biểu niêm yết, cao hơn biểu dành cho tổ chức, không có dấu hiệu bị trả thấp hay bị giữ lại tiền lãi.",
+    "Cách gửi kém hiệu quả làm quỹ bỏ lỡ 0,42 – 0,96 tỷ, và đợt tái tục 127,5 tỷ với lãi 8% cần được chứng minh bằng hợp đồng và xác nhận của ngân hàng."
+   ]
+  ],
+  "08": [
+   "Chưa chứng minh được an toàn",
+   "o",
+   [
+    "Tiền đã chi cho thang máy, phòng cháy và hạ tầng thiết yếu khoảng 2,42 tỷ, không nhỏ.",
+    "Nhưng chưa có bằng chứng an toàn được bảo đảm: 14 hợp đồng sửa chữa trong khoảng 7 tháng, phí bảo trì định kỳ vắng mặt từ 21/01/2025, chưa thấy giấy kiểm định và biên bản phòng cháy."
+   ]
+  ],
+  "09": [
+   "3 quy định bị vi phạm",
+   "r",
+   [
+    "Ban quản trị không tuân thủ 3 trong 17 quy định được đối chiếu và có nghi vấn ở 6 quy định khác.",
+    "Mức tuân thủ chưa đạt yêu cầu của chính Quy chế đã được Hội nghị nhà chung cư thông qua."
+   ]
+  ],
+  "10": [
+   "Ba điểm mới cần trả lời",
+   "o",
+   [
+    "Các phép kiểm tra thêm củng cố độ tin cậy của sao kê và không thấy tiền mặt hay khoản chuyển cho cá nhân.",
+    "Đồng thời phát hiện ba điểm mới: phí bảo trì thang máy vắng mặt, thao tác hai tài khoản trong cùng phiên và đợt tái tục tháng 8/2026."
+   ]
+  ],
+  "11": [
+   "Đủ căn cứ yêu cầu giải trình",
+   "r",
+   [
+    "16 dấu hiệu đủ để yêu cầu Ban quản trị giải trình bằng văn bản.",
+    "3 dấu hiệu mức Đỏ cần được trả lời trước khi phê duyệt bất kỳ khoản chi mới nào từ quỹ.",
+    "Về hệ quả: ba vi phạm đã rõ (986,9 triệu, 1,71 tỷ, 1,40 tỷ) phải khắc phục và thuộc diện xử phạt; dấu hiệu nào không được chứng minh bằng chứng từ thì phải bồi hoàn quỹ."
+   ]
+  ],
+  "12": [
+   "Hành động ngay",
+   "n",
+   [
+    "Cư dân có đủ căn cứ để đòi hồ sơ ngay, bắt đầu từ ba hồ sơ chính.",
+    "Song song, đề nghị tạm dừng khoảng 0,92 tỷ còn phải trả cho các hợp đồng đã tạm ứng cho tới khi có biên bản nghiệm thu."
+   ]
+  ]
+ }
+}

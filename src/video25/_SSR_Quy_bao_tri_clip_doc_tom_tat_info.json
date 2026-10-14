@@ -1,0 +1,131 @@
+{
+ "duration": 86.8,
+ "sentences": 13,
+ "cards": 0,
+ "scenes": 6,
+ "size": 5258639,
+ "voice": "vi_VN-vais1000-medium",
+ "doc": "/home/claude/ssr/video25/_SSR_Quy_bao_tri_clip_doc_tom_tat_Video_Doc.mp4",
+ "doc_size": 5258639,
+ "chapters": [
+  "00:00 Mở đầu",
+  "00:14 Tiền có mất không",
+  "00:23 Tóm lại",
+  "01:02 Hội nghị quyết định",
+  "01:09 Cư dân làm gì",
+  "01:16 Liên hệ"
+ ],
+ "timeline": [
+  [
+   "bia",
+   "Quỹ bảo trì chung cư: năm vấn đề trong 90 giây.",
+   1.5,
+   4.759
+  ],
+  [
+   "bia",
+   "Ngày 23/12/2025, 986,9 triệu tiền quỹ chuyển vào tài khoản do chính các thành viên Ban quản trị đồng đứng tên.",
+   4.999,
+   13.404
+  ],
+  [
+   "ok#2",
+   "Tiền chưa mất: 198 giao dịch khớp tới từng đồng, tiền gốc còn 127,15 tỷ.",
+   14.454,
+   20.152
+  ],
+  [
+   "ok#-1",
+   "Nhưng tiền đi sai đường ở năm chỗ.",
+   20.392,
+   22.438
+  ],
+  [
+   "tong#0",
+   "Một: 986,9 triệu tiền quỹ vào tài khoản của Ban quản trị, trái Điều 7.2, 7.4 và 3.2.a.",
+   23.488,
+   32.131
+  ],
+  [
+   "tong#1",
+   "Hai: 1,71 tỷ tiền khu vực chung không vào quỹ, trong đó 1,40 tỷ đã chi ngoài quy trình.",
+   32.371,
+   38.894
+  ],
+  [
+   "tong#2",
+   "Ba: 13 khoản chi trên 50 triệu, tổng 5,04 tỷ, chưa thấy văn bản cho phép.",
+   39.134,
+   44.284
+  ],
+  [
+   "tong#3",
+   "Bốn: 1,69 tỷ chưa truy được tới cùng, trong đó 705,8 triệu trả trọn cho Thép Quang.",
+   44.524,
+   51.747
+  ],
+  [
+   "tong#4",
+   "Năm: 127,5 tỷ tiền gửi sau tái tục chưa có xác nhận của ngân hàng.",
+   51.987,
+   57.074
+  ],
+  [
+   "tong#-1",
+   "Hai vấn đề đầu đã rõ trên sao kê; ba vấn đề sau đang chờ chứng từ.",
+   57.314,
+   61.603
+  ],
+  [
+   "pa#-1",
+   "Hội nghị có ba phương án, xét riêng từng thành viên: giữ, xem xét thêm, hoặc bãi nhiệm.",
+   62.653,
+   68.391
+  ],
+  [
+   "cuda#-1",
+   "Cư dân nên xem bộ clip đầy đủ, đọc ba file trong thư mục chia sẻ, và theo dõi câu trả lời cho mười câu hỏi.",
+   69.441,
+   75.449
+  ],
+  [
+   "lienhe",
+   "Toàn bộ số liệu truy được về sao kê gốc trong thư mục chia sẻ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.",
+   76.499,
+   83.563
+  ]
+ ],
+ "card_times": [],
+ "seg_times": [
+  [
+   "bia",
+   0.0,
+   13.929
+  ],
+  [
+   "ok",
+   13.929,
+   22.963
+  ],
+  [
+   "tong",
+   22.963,
+   62.128
+  ],
+  [
+   "pa",
+   62.128,
+   68.916
+  ],
+  [
+   "cuda",
+   68.916,
+   75.974
+  ],
+  [
+   "lienhe",
+   75.974,
+   86.763
+  ]
+ ]
+}
