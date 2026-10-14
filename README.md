@@ -22,7 +22,8 @@ Tổng quan (câu trả lời ngắn và năm vấn đề), Clip, Đường ti�
 
 ## Ghi chú
 
-- Tệp clip (`web/v/*.mp4`, khoảng 176 MB) không đưa vào kho; bản gốc 1080p ở thư mục chia sẻ, mục 1.5 Clip. Muốn chạy đủ tab Clip khi tự lưu trữ trang, chép 34 tệp clip 720p vào `web/v/`.
+- Trang chạy trên GitHub Pages: https://jukytwo.github.io/ssr-so-quy-bao-tri/ (tệp `index.html` ở gốc kho chuyển thẳng tới `web/`). Trên GitHub Pages trang ở chế độ chỉ xem: không sửa tình trạng mười câu hỏi, không có hỏi đáp bằng AI; muốn cập nhật thì dựng lại và tải lên tệp `web/index.html` mới.
+- `web/v/` là 34 clip 720p cho tab Clip (khoảng 176 MB); bản gốc 1080p ở thư mục chia sẻ, mục 1.5 Clip.
 - Phông chữ (Be Vietnam Pro, Cormorant Garamond, giấy phép OFL) không đưa vào kho; tải từ Google Fonts nếu cần dựng lại ảnh, clip.
 - Mã dựng dùng đường dẫn tuyệt đối của môi trường dựng (`/home/claude/...`); đổi lại cho máy mới trước khi chạy.
 - Kho chứa số tài khoản ngân hàng, tên nhà thầu và giao dịch của quỹ: giữ ở chế độ riêng tư (private).
