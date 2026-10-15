@@ -101,7 +101,7 @@ from html import escape as _esc
 Q10 = ('<div class="panel q10-p" id="muoi-cau-hoi"><h3>Mười câu hỏi đã gửi Ban quản trị</h3>'
        '<div class="sub">Các câu hỏi đã được gửi Ban quản trị bằng văn bản điện tử qua email và kênh Zalo do Ban quản trị lập và quản trị vào ngày 29/09/2026, đề nghị trả lời trong 5 ngày. Bản ảnh để đăng nhóm chung, bản PDF khổ A4 để in dán bảng tin.</div>'
        '<div class="q10-sum" id="q10-sum"></div><ol class="q10">' + "".join(f'<li><b>{_esc(t)}</b><span>{_esc(q)}</span><div class="q10-st" data-q="{i}"></div></li>' for i, (t, q) in enumerate(_BN.QS)) + '</ol>'
-       '<div class="q10-acts"><button class="tbtn pri" type="button" data-dl="q10png">Tải ảnh</button><button class="tbtn" type="button" data-dl="q10pdf">Tải PDF khổ A4</button></div>'
+       '<div class="q10-acts"><button class="tbtn pri" type="button" data-sendfile="q10png"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Gửi ảnh</button><button class="tbtn" type="button" data-dl="q10png">Tải ảnh</button><button class="tbtn" type="button" data-dl="q10pdf">Tải PDF khổ A4</button></div>'
        '<div class="h3x">Tài liệu làm việc của nhóm cư dân</div>'
        '<div class="sub">Đánh giá sơ bộ theo dữ liệu hiện có, sẽ cập nhật khi Ban quản trị trả lời và cung cấp chứng từ. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.</div>'
        '<div class="dlg q10-docs">'

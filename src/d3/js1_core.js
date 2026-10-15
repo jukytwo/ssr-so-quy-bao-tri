@@ -292,3 +292,54 @@ function shareBox(url, t){
   copyText(url).then(function(){ toast("Đã sao chép đường dẫn. Dán vào Zalo hoặc tin nhắn để gửi.", 3600); $("shr-cp").textContent = "Đã sao chép"; })
     .catch(function(){ if (inp){ inp.focus(); inp.select(); } });
 }
+/* gui tep that (anh, clip, PDF) qua bang chia se cua dien thoai; may khong ho tro thi tai ve (15/10/2026) */
+var SHR_PEND = null;
+var SHR_MIME = {pdf: "application/pdf", png: "image/png", jpg: "image/jpeg", mp4: "video/mp4", xlsx: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", docx: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"};
+var A4IMG = [
+  {k: "a4_tomtat", t: "Tóm tắt một trang A4", d: "Năm điểm đề nghị Ban quản trị làm rõ", n: "SSR - Tom tat mot trang A4.png"},
+  {k: "a4_tt1", t: "Những điểm nào cần làm rõ", d: "Ba hồ sơ quyết định kết luận cuối cùng", n: "SSR - Anh trong tam 1 - Nhung diem can lam ro.png"},
+  {k: "a4_tt2", t: "Sơ đồ dòng tiền ba tài khoản", d: "Tiền rời quỹ và tiền không vào quỹ", n: "SSR - Anh trong tam 2 - So do dong tien.png"},
+  {k: "a4_tt3", t: "Ba điểm nghi vấn và việc cần làm", d: "Đối chiếu 17 quy định", n: "SSR - Anh trong tam 3 - Diem nghi van.png"},
+  {k: "a4_pl", t: "Phân loại nguyên nhân", d: "Quy trình chưa chặt, lỡ tay hay có chủ đích", n: "SSR - Phan loai nguyen nhan.png"}
+];
+function fileExt(n){ var m = /\.([a-z0-9]+)$/i.exec(n || ""); return m ? m[1].toLowerCase() : ""; }
+function shareFileGo(getBytes, name, label){
+  var mime = SHR_MIME[fileExt(name)] || "application/octet-stream";
+  toast("Đang chuẩn bị " + label + "…", 8000);
+  getBytes().then(function(b){
+    var blob = b instanceof Blob ? b : new Blob([b], {type: mime}), f = null;
+    try { f = new File([blob], name, {type: mime}); } catch (e) {}
+    var can = false; try { can = !!(f && navigator.canShare && navigator.canShare({files: [f]})); } catch (e) {}
+    if (!can){ shareFileFallback(blob, name, mime, label); return; }
+    navigator.share({files: [f]}).then(function(){ toast("Đã gửi " + label + ".", 2600); }).catch(function(e){
+      if (e && e.name === "AbortError"){ $("toast").hidden = true; return; }
+      SHR_PEND = {f: f, blob: blob, name: name, mime: mime, label: label}; shareReady(label, blob.size);
+    });
+  }).catch(function(){ toast("Chưa lấy được " + label + " ở chế độ xem này. Mở trang trực tuyến rồi thử lại.", 6000); });
+}
+function shareReady(label, size){
+  var box = $("helpbox"); if (!box) return; $("toast").hidden = true;
+  box.querySelector(".hb-in").innerHTML = "<h3>Đã sẵn sàng để gửi</h3><p class=\"shr-t\">" + esc(label) + " · " + (size / 1048576).toFixed(1).replace(".", ",") + " MB</p>" +
+    '<p class="shr-n">Bấm nút dưới để mở bảng chia sẻ của máy, rồi chọn Zalo, Messenger hoặc ứng dụng khác.</p>' +
+    '<div class="acts"><button type="button" class="tbtn pri" id="shr-send">' + SHR_IC + "Gửi ngay</button><button type=\"button\" class=\"tbtn\" id=\"help-x\">Đóng</button></div>";
+  box.hidden = false;
+}
+function shareSendPending(){
+  var p = SHR_PEND; if (!p) return; $("helpbox").hidden = true;
+  navigator.share({files: [p.f]}).then(function(){ toast("Đã gửi " + p.label + ".", 2600); SHR_PEND = null; }).catch(function(e){
+    if (e && e.name === "AbortError") return; shareFileFallback(p.blob, p.name, p.mime, p.label); SHR_PEND = null;
+  });
+}
+function shareFileFallback(blob, name, mime, label){
+  toast("Máy này chưa gửi tệp thẳng được. Đang tải " + label + " về máy; sau đó mở Zalo và đính kèm tệp vừa tải.", 7000);
+  if (typeof saveFile === "function") saveFile(name, blob, mime);
+}
+function a4GalleryHtml(){
+  return A4IMG.map(function(a){
+    return '<figure class="a4c"><a class="a4t" href="f/' + a.k + '.png" target="_blank" rel="noopener"><img alt="' + esc(a.t) + '" loading="lazy" src="p/' + a.k + '.jpg" onerror="this.parentNode.classList.add(\'na\')"></a>' +
+      "<figcaption><b>" + esc(a.t) + "</b><small>" + esc(a.d) + "</small>" +
+      '<span class="a4b"><button type="button" class="tbtn pri" data-sendimg="' + a.k + '">' + SHR_IC + 'Gửi ảnh</button><button type="button" class="tbtn" data-saveimg="' + a.k + '">Tải</button></span></figcaption></figure>';
+  }).join("");
+}
+function a4Item(k){ return A4IMG.filter(function(a){ return a.k === k; })[0]; }
+function a4Bytes(k){ return function(){ return fetch("f/" + k + ".png").then(function(r){ if (!r.ok) throw new Error(r.status); return r.blob(); }); }; }

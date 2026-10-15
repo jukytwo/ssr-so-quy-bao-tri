@@ -38,7 +38,8 @@ function renderClips(){
           '<div class="clp-acts"><span class="clp-res" id="clp-res" hidden></span>' +
           '<label class="clp-auto"><input type="checkbox" id="clp-auto"' + (CLP.auto ? " checked" : "") + "> Tự phát clip tiếp theo</label>" +
           '<button type="button" class="tbtn" id="clp-dl">' + CLP_ICON.dl + "<span>Tải clip</span></button>" +
-          '<button type="button" class="tbtn" id="clp-share" data-share="#clip-full" data-st="Bộ clip Quỹ bảo trì">' + SHR_IC + "<span>Chia sẻ</span></button></div>" +
+          '<button type="button" class="tbtn pri" id="clp-send">' + SHR_IC + "<span>Gửi clip</span></button>" +
+          '<button type="button" class="tbtn" id="clp-share" data-share="#clip-full" data-st="Bộ clip Quỹ bảo trì">' + SHR_IC + "<span>Gửi link</span></button></div>" +
           '<button type="button" class="clp-back" id="clp-back" hidden></button>' +
           '<details class="clp-trd" id="clp-trd"><summary>Đọc lời thuyết minh <span id="clp-trn"></span></summary><div class="clp-tr" id="clp-tr"></div></details></div>' +
       "</div>" +
@@ -58,6 +59,7 @@ function renderClips(){
   $("clp-big").addEventListener("click", function(){ var p = v.play(); if (p && p.catch) p.catch(function(){}); });
   $("clp-auto").addEventListener("change", function(){ CLP.auto = this.checked; clpSet("auto", this.checked ? "1" : "0"); });
   $("clp-dl").addEventListener("click", clpDownload);
+  $("clp-send").addEventListener("click", clpSend);
   box.classList.add("xr-no");
   $("clp-back").addEventListener("click", clpGoBack);
   try { if (clpGet("trd") === "1") $("clp-trd").open = true; } catch (e) {}
@@ -121,6 +123,7 @@ function clpPlay(id, o){
   $("clp-t").textContent = it.g === "full" ? D.clips.full.title : it.title;
   $("clp-d").textContent = it.g === "full" ? "Chương " + it.n + ": " + it.title + ". " + it.desc : it.desc;
   var shb = $("clp-share"); if (shb){ shb.setAttribute("data-share", "#clip-" + it.id); shb.setAttribute("data-st", it.g === "full" ? "Chương " + it.n + ": " + it.title : it.title); }
+  $("clp-send").querySelector("span").textContent = it.g === "full" ? "Gửi chương này" : "Gửi clip";
   $("clp-dl").querySelector("span").textContent = (it.g === "full" ? "Tải chương này" : "Tải clip") + " (" + String(it.mb).replace(".", ",") + " MB)";
   var pos = o.t != null ? o.t : (+clpGet("pos:" + it.id) || 0), res = $("clp-res");
   if (o.t == null && pos > 8 && pos < it.dur - 8){ res.innerHTML = "Xem tiếp từ " + clpT(pos) + ' <button type="button" class="lnk" data-clres="1">' + CLP_ICON.back + "Xem từ đầu</button>"; res.hidden = false; }
@@ -169,6 +172,14 @@ function clpDownload(){
   fetch(it.src).then(function(r){ if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); })
     .then(function(b){ return saveFile(name, new Uint8Array(b), "video/mp4"); })
     .catch(function(){ toast("Chưa tải được clip ở chế độ xem này. Bản gốc có trong thư mục chia sẻ, mục 1.5 Clip.", 6000); });
+}
+function clpFileName(it){
+  var name = (it.g === "full" ? "Ban day du - Chuong " + (it.n < 10 ? "0" : "") + it.n + " - " + it.title : it.g === "parts" ? "Phan " + it.n + " - " + it.title : it.g === "docs" ? "Clip " + (it.n < 10 ? "0" : "") + it.n + " - " + it.title : "Clip tom tat - " + it.title);
+  return "SSR - " + name.replace(/[:\/\\?*"<>|]/g, " -").replace(/\s+/g, " ").trim() + ".mp4";
+}
+function clpSend(){
+  var it = CLP.cur; if (!it) return; var v = $("clp-v"); if (v && !v.paused) v.pause();
+  shareFileGo(function(){ return fetch(it.src).then(function(r){ if (!r.ok) throw new Error(r.status); return r.blob(); }); }, clpFileName(it), "clip " + String(it.mb).replace(".", ",") + " MB");
 }
 function renderClipStrip(){
   var s = $("clip-strip"); if (!s || !D.clips) return; var C = D.clips;

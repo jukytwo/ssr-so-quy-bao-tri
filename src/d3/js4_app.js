@@ -176,8 +176,9 @@ function renderDownloads(){
   items.push({k: "print", c: "#8a6100", t: "IN", h: "In hoặc lưu PDF trang này", p: "Bản in tự mở mọi mục đang thu gọn", b: "In"});
   if (!F.sum) items = items.filter(function(f){ return f.k !== "sum"; });
   var pop = items.filter(function(f){ return ["pdf", "sum", "xlsx", "cv", "q10pdf", "txx", "html", "print"].indexOf(f.k) >= 0; });
+  var g4 = $("a4g"); if (g4) g4.innerHTML = a4GalleryHtml();
   $("dl-pop").innerHTML = pop.map(function(f){ return '<button type="button" data-dl="' + f.k + '"><span class="ic" style="background:' + f.c + '">' + f.t + "</span><span>" + esc(f.h) + "<small>" + (f.k === "print" ? "Hoặc tải PDF để in" : esc(f.b)) + "</small></span></button>"; }).join("") + '<hr><a href="#tai-ve">Tất cả lựa chọn tải về</a>';
-  $("dlg").innerHTML = items.map(function(f){ return '<div class="dlc"><div class="ic" style="background:' + f.c + '">' + f.t + "</div><div><h4>" + esc(f.h) + "</h4><p>" + esc(f.p) + '</p></div><div class="dlc-b"><button class="tbtn" type="button" data-dl="' + f.k + '">' + f.b + "</button>" + (SHR_FILE[f.k] ? shareBtn(SHR_FILE[f.k], f.h, "Chia sẻ", "tbtn shr-f") : "") + "</div></div>"; }).join("");
+  $("dlg").innerHTML = items.map(function(f){ return '<div class="dlc"><div class="ic" style="background:' + f.c + '">' + f.t + "</div><div><h4>" + esc(f.h) + "</h4><p>" + esc(f.p) + '</p></div><div class="dlc-b"><button class="tbtn" type="button" data-dl="' + f.k + '">' + f.b + "</button>" + (SHR_SEND[f.k] ? '<button class="tbtn shr-f" type="button" data-sendfile="' + f.k + '">' + SHR_IC + "Gửi tệp</button>" : "") + "</div></div>"; }).join("");
 }
 /* tep tai ve: ban truc tuyen giu tep rieng (f/...), chi tai khi bam; ban offline nhung san trong trang */
 function fileBytes(k){
@@ -315,6 +316,7 @@ window.addEventListener("resize", function(){ clearTimeout(RZT); RZT = setTimeou
 
 /* ============================== events ============================== */
 function flash(node){ if (!node) return; node.style.transition = "box-shadow .3s"; node.style.boxShadow = "0 0 0 3px var(--accent)"; setTimeout(function(){ node.style.boxShadow = ""; }, 1800); }
+var SHR_SEND = {pdf: 1, sum: 1, xlsx: 1, cv: 1, q10pdf: 1, q10png: 1, pl: 1, hdan: 1};
 function addSecShare(){
   qa("main section[id] .sec-h").forEach(function(h){
     var s = h.closest("section[id]"), t = h.querySelector("h2"); if (!s || !t || h.querySelector(".shr")) return;
@@ -333,6 +335,10 @@ function bindEvents(){
     if (!$("dl-pop").hidden && !(e.target.closest && (e.target.closest("#dl-pop") || e.target.closest("#btn-dl")))) $("dl-pop").hidden = true;
     var t = e.target.closest ? e.target.closest("button, a") : null; if (!t) return;
     if (t.hasAttribute("data-share")){ e.preventDefault(); e.stopPropagation(); $("dl-pop").hidden = true; shareGo(t.getAttribute("data-share"), t.getAttribute("data-st") || ""); return; }
+    if (t.id === "shr-send"){ shareSendPending(); return; }
+    if (t.hasAttribute("data-sendfile")){ var sk = t.getAttribute("data-sendfile"); shareFileGo(function(){ return fileBytes(sk); }, D.files[sk], D.files[sk]); return; }
+    if (t.hasAttribute("data-sendimg")){ var ai = a4Item(t.getAttribute("data-sendimg")); shareFileGo(a4Bytes(ai.k), ai.n, "ảnh " + ai.t); return; }
+    if (t.hasAttribute("data-saveimg")){ var as = a4Item(t.getAttribute("data-saveimg")); a4Bytes(as.k)().then(function(b){ saveFile(as.n, b, "image/png"); }).catch(function(){ toast("Chưa tải được ảnh ở chế độ xem này. Mở trang trực tuyến rồi thử lại.", 6000); }); return; }
     if (t.id === "shr-cp"){ var su = $("shr-u"); if (su) copyText(su.value).then(function(){ t.textContent = "Đã sao chép"; toast("Đã sao chép đường dẫn.", 2600); }).catch(function(){ su.focus(); su.select(); toast("Nhấn giữ vào đường dẫn để sao chép.", 3600); }); return; }
     if (t.hasAttribute("data-goview")){ e.preventDefault(); showView(t.getAttribute("data-goview")); return; }
     if (t.hasAttribute("data-clipdeep")){ e.preventDefault(); if (!$("toc").hidden) closeToc(); clpDeep(t.getAttribute("data-clipdeep")); window.scrollTo(0, 0); return; }
