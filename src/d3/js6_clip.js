@@ -37,7 +37,8 @@ function renderClips(){
         '<div class="clp-meta"><div class="clp-kind" id="clp-kind"></div><h3 class="clp-t" id="clp-t"></h3><p class="clp-d" id="clp-d"></p>' +
           '<div class="clp-acts"><span class="clp-res" id="clp-res" hidden></span>' +
           '<label class="clp-auto"><input type="checkbox" id="clp-auto"' + (CLP.auto ? " checked" : "") + "> Tự phát clip tiếp theo</label>" +
-          '<button type="button" class="tbtn" id="clp-dl">' + CLP_ICON.dl + "<span>Tải clip</span></button></div>" +
+          '<button type="button" class="tbtn" id="clp-dl">' + CLP_ICON.dl + "<span>Tải clip</span></button>" +
+          '<button type="button" class="tbtn" id="clp-share" data-share="#clip-full" data-st="Bộ clip Quỹ bảo trì">' + SHR_IC + "<span>Chia sẻ</span></button></div>" +
           '<button type="button" class="clp-back" id="clp-back" hidden></button>' +
           '<details class="clp-trd" id="clp-trd"><summary>Đọc lời thuyết minh <span id="clp-trn"></span></summary><div class="clp-tr" id="clp-tr"></div></details></div>' +
       "</div>" +
@@ -119,6 +120,7 @@ function clpPlay(id, o){
   $("clp-kind").textContent = it.kind + " · " + clpLong(it.dur);
   $("clp-t").textContent = it.g === "full" ? D.clips.full.title : it.title;
   $("clp-d").textContent = it.g === "full" ? "Chương " + it.n + ": " + it.title + ". " + it.desc : it.desc;
+  var shb = $("clp-share"); if (shb){ shb.setAttribute("data-share", "#clip-" + it.id); shb.setAttribute("data-st", it.g === "full" ? "Chương " + it.n + ": " + it.title : it.title); }
   $("clp-dl").querySelector("span").textContent = (it.g === "full" ? "Tải chương này" : "Tải clip") + " (" + String(it.mb).replace(".", ",") + " MB)";
   var pos = o.t != null ? o.t : (+clpGet("pos:" + it.id) || 0), res = $("clp-res");
   if (o.t == null && pos > 8 && pos < it.dur - 8){ res.innerHTML = "Xem tiếp từ " + clpT(pos) + ' <button type="button" class="lnk" data-clres="1">' + CLP_ICON.back + "Xem từ đầu</button>"; res.hidden = false; }

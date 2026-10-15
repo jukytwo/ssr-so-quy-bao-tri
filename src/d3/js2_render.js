@@ -512,6 +512,7 @@ function hdItemHtml(it){
   var go = it.go.map(function(g){ return '<a class="qa-lk" href="' + g[0] + '">' + esc(g[1]) + "</a>"; }).join("") + it.c.map(function(c){ return '<a class="cd" href="#dau-hieu" data-code="' + esc(c) + '" title="Xem dấu hiệu ' + esc(c) + '">' + esc(c) + "</a>"; }).join("");
   if (it.dl && D.files[it.dl]) go += '<button type="button" class="tbtn" data-dl="' + it.dl + '">Tải văn bản kiến nghị</button>';
   if (go) h += '<div class="qa-go"><span class="qa-gl">Xem chi tiết</span>' + go + "</div>";
+  h += '<div class="qa-sh">' + shareBtn("#hdq-" + it.id, it.q, "Chia sẻ câu hỏi này") + "</div>";
   return h + "</div></details>";
 }
 function renderFAQ(){

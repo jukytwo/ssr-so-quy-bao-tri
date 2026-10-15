@@ -177,7 +177,7 @@ function renderDownloads(){
   if (!F.sum) items = items.filter(function(f){ return f.k !== "sum"; });
   var pop = items.filter(function(f){ return ["pdf", "sum", "xlsx", "cv", "q10pdf", "txx", "html", "print"].indexOf(f.k) >= 0; });
   $("dl-pop").innerHTML = pop.map(function(f){ return '<button type="button" data-dl="' + f.k + '"><span class="ic" style="background:' + f.c + '">' + f.t + "</span><span>" + esc(f.h) + "<small>" + (f.k === "print" ? "Hoặc tải PDF để in" : esc(f.b)) + "</small></span></button>"; }).join("") + '<hr><a href="#tai-ve">Tất cả lựa chọn tải về</a>';
-  $("dlg").innerHTML = items.map(function(f){ return '<div class="dlc"><div class="ic" style="background:' + f.c + '">' + f.t + "</div><div><h4>" + esc(f.h) + "</h4><p>" + esc(f.p) + '</p></div><button class="tbtn" type="button" data-dl="' + f.k + '">' + f.b + "</button></div>"; }).join("");
+  $("dlg").innerHTML = items.map(function(f){ return '<div class="dlc"><div class="ic" style="background:' + f.c + '">' + f.t + "</div><div><h4>" + esc(f.h) + "</h4><p>" + esc(f.p) + '</p></div><div class="dlc-b"><button class="tbtn" type="button" data-dl="' + f.k + '">' + f.b + "</button>" + (SHR_FILE[f.k] ? shareBtn(SHR_FILE[f.k], f.h, "Chia sẻ", "tbtn shr-f") : "") + "</div></div>"; }).join("");
 }
 /* tep tai ve: ban truc tuyen giu tep rieng (f/...), chi tai khi bam; ban offline nhung san trong trang */
 function fileBytes(k){
@@ -315,12 +315,25 @@ window.addEventListener("resize", function(){ clearTimeout(RZT); RZT = setTimeou
 
 /* ============================== events ============================== */
 function flash(node){ if (!node) return; node.style.transition = "box-shadow .3s"; node.style.boxShadow = "0 0 0 3px var(--accent)"; setTimeout(function(){ node.style.boxShadow = ""; }, 1800); }
+function addSecShare(){
+  qa("main section[id] .sec-h").forEach(function(h){
+    var s = h.closest("section[id]"), t = h.querySelector("h2"); if (!s || !t || h.querySelector(".shr")) return;
+    var ey = h.querySelector(".eyebrow"), b = shareBtn("#" + s.id, t.textContent.trim(), "");
+    if (ey) ey.insertAdjacentHTML("beforeend", b); else t.insertAdjacentHTML("afterend", b);
+  });
+  qa("main .part[id]").forEach(function(p){
+    var t = p.querySelector(".pt"); if (!t || p.querySelector(".shr")) return;
+    p.insertAdjacentHTML("beforeend", shareBtn("#" + p.id, t.textContent.trim(), "Chia sẻ phần này", "shr shr-p"));
+  });
+}
 function bindEvents(){
   document.addEventListener("click", function(e){
     if (e.target === $("toc")){ closeToc(); return; }
     if (e.target === $("helpbox")){ $("helpbox").hidden = true; return; }
     if (!$("dl-pop").hidden && !(e.target.closest && (e.target.closest("#dl-pop") || e.target.closest("#btn-dl")))) $("dl-pop").hidden = true;
     var t = e.target.closest ? e.target.closest("button, a") : null; if (!t) return;
+    if (t.hasAttribute("data-share")){ e.preventDefault(); e.stopPropagation(); $("dl-pop").hidden = true; shareGo(t.getAttribute("data-share"), t.getAttribute("data-st") || ""); return; }
+    if (t.id === "shr-cp"){ var su = $("shr-u"); if (su) copyText(su.value).then(function(){ t.textContent = "Đã sao chép"; toast("Đã sao chép đường dẫn.", 2600); }).catch(function(){ su.focus(); su.select(); toast("Nhấn giữ vào đường dẫn để sao chép.", 3600); }); return; }
     if (t.hasAttribute("data-goview")){ e.preventDefault(); showView(t.getAttribute("data-goview")); return; }
     if (t.hasAttribute("data-clipdeep")){ e.preventDefault(); if (!$("toc").hidden) closeToc(); clpDeep(t.getAttribute("data-clipdeep")); window.scrollTo(0, 0); return; }
     if (t.hasAttribute("data-hdt")){
@@ -427,11 +440,12 @@ function init(){
   initCollapse(); renderToc(); renderDlNote(); initPaged();
   renderClips(); renderLDX(); renderFive();
   renderDynamic(); renderReqs(); renderDownloads();
+  addSecShare();
   applyAbbr();
   bindEvents();
   onCaps(function(){ renderReqs(); renderBatches(); updateSavebar(); checkPending(); renderAskBox(); applyFAQ(); if (CAP.localLoaded){ M = compute(); renderDynamic(); toast("Đang dùng dữ liệu đã lưu trên trình duyệt này."); } });
   var d = new Date(); $("m-d").value = d.getFullYear() + "-" + pad2(d.getMonth() + 1) + "-" + pad2(d.getDate());
   if (location.hash){ var tg = document.getElementById(location.hash.slice(1)); if (tg){ revealTarget(tg); setTimeout(function(){ tg.scrollIntoView(); }, 60); } }
-  window.addEventListener("hashchange", function(){ var id = location.hash.slice(1), tg2 = id && document.getElementById(id); if (tg2) revealTarget(tg2); });
+  window.addEventListener("hashchange", function(){ var id = location.hash.slice(1), tg2 = id && document.getElementById(id); if (tg2) revealTarget(tg2); else if (id.indexOf("clip-") === 0 && typeof clpDeep === "function"){ clpDeep(id.slice(5)); window.scrollTo(0, 0); } });
 }
 init();

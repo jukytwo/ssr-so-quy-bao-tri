@@ -71,6 +71,10 @@ function initCaps(){
       var p = CAP.user && CAP.user.canEdit ? Promise.resolve(CAP.user.canEdit()).catch(function(){ return false; }) : Promise.resolve(false);
       return p.then(function(ce){ CAP.canEdit = !!ce && !!CAP.art; CAP.mode = CAP.canEdit ? "writer" : "reader"; });
     }).catch(function(){ CAP.mode = "reader"; }).then(function(){ CAP_CBS.forEach(function(f){ try { f(); } catch (e) { if (window.console) console.error(e); } }); });
+  } else if (/github\.io$/i.test(location.hostname)){
+    /* ban dang tren GitHub Pages: ai cung chi xem, khong sua, khong luu tren may */
+    CAP.mode = "reader"; CAP.framed = false; CAP.pages = true;
+    setTimeout(function(){ CAP_CBS.forEach(function(f){ try { f(); } catch (e) { if (window.console) console.error(e); } }); }, 0);
   } else {
     CAP.mode = "local"; CAP.framed = window.self !== window.top;
     var raw = lsGet("ssr-u-v3");
@@ -247,3 +251,44 @@ function interestChecks(all, nw){
   return out;
 }
 var M = null;
+/* ------------------------------ chia se: duong dan toi muc, cau hoi, clip, tep (15/10/2026) ------------------------------ */
+var SHARE_BASE = "https://jukytwo.github.io/ssr-so-quy-bao-tri/";
+var SHR_IC = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>';
+var SHR_FILE = {pdf: "f/pdf.pdf", sum: "f/sum.pdf", q10pdf: "f/q10pdf.pdf", q10png: "f/q10png.png", pl: "f/pl.pdf", hdan: "f/hdan.pdf"};
+function shareBtn(path, title, label, cls){
+  return '<button type="button" class="' + (cls || "shr") + '" data-share="' + esc(path) + '" data-st="' + esc(title) + '" title="Chia sẻ đường dẫn" aria-label="Chia sẻ: ' + esc(title) + '">' + SHR_IC + (label === "" ? "" : "<span>" + (label || "Chia sẻ") + "</span>") + "</button>";
+}
+function shareUrl(path){ return SHARE_BASE + String(path || ""); }
+function copyText(s){
+  if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(s).catch(function(){ return copyOld(s); });
+  return copyOld(s);
+}
+function copyOld(s){
+  return new Promise(function(ok, no){
+    var ta = document.createElement("textarea"); ta.value = s; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0"; document.body.appendChild(ta); ta.select();
+    var r = false; try { r = document.execCommand("copy"); } catch (e) {} document.body.removeChild(ta); r ? ok() : no(new Error("copy"));
+  });
+}
+function shareGo(path, title){
+  var url = shareUrl(path), t = "Sổ quỹ bảo trì SSR: " + title;
+  var touch = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+  if (touch && navigator.share){
+    navigator.share({title: t, text: t, url: url}).catch(function(e){ if (!e || e.name !== "AbortError") shareBox(url, t); });
+    return;
+  }
+  shareBox(url, t);
+}
+function shareBox(url, t){
+  var box = $("helpbox"); if (!box) return;
+  var u = encodeURIComponent(url), tt = encodeURIComponent(t);
+  box.querySelector(".hb-in").innerHTML = '<h3>Chia sẻ</h3><p class="shr-t">' + esc(t) + "</p>" +
+    '<div class="shr-row"><input type="text" id="shr-u" readonly value="' + esc(url) + '" aria-label="Đường dẫn"><button type="button" class="tbtn pri" id="shr-cp">Sao chép</button></div>' +
+    '<p class="shr-n">Dán đường dẫn vào Zalo, Messenger hoặc tin nhắn. Người nhận bấm vào là mở đúng phần này, không cần đăng nhập.</p>' +
+    '<div class="acts"><a class="tbtn" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + u + '">Facebook</a>' +
+    '<a class="tbtn" href="mailto:?subject=' + tt + "&body=" + tt + "%0A" + u + '">Email</a>' +
+    '<button type="button" class="tbtn" id="help-x">Đóng</button></div>';
+  box.hidden = false;
+  var inp = $("shr-u");
+  copyText(url).then(function(){ toast("Đã sao chép đường dẫn. Dán vào Zalo hoặc tin nhắn để gửi.", 3600); $("shr-cp").textContent = "Đã sao chép"; })
+    .catch(function(){ if (inp){ inp.focus(); inp.select(); } });
+}
