@@ -272,16 +272,16 @@ function initFileToggle(){
 }
 /* nam van de o trang dau: trong tam de xem, moi van de mot the, di thang toi clip va duong tien cua chinh van de do */
 var FIV = [
-  {n: 1, v: "sai", st: "Đã rõ trên sao kê", h: "986,9 triệu tiền quỹ vào tài khoản của Ban quản trị", s: "Ngày 23/12/2025, chuyển vào tài khoản do chính các thành viên Ban quản trị đồng đứng tên, trái Điều 7.2, 7.4 và 3.2.a Quy chế thu chi.", clip: "doc_03", ld: 0, sec: "vi-sao"},
-  {n: 2, v: "sai", st: "Đã rõ trên sao kê", h: "1,71 tỷ tiền khu vực chung không vào quỹ", s: "Trong đó 1,40 tỷ đã chi ra ngoài quy trình của quỹ.", clip: "doc_04", ld: 1, sec: "khu-vuc-chung"},
-  {n: 3, v: "ro", st: "Chờ chứng từ", h: "13 khoản chi trên 50 triệu, tổng 5,04 tỷ", s: "Chưa thấy văn bản cho phép của chủ sở hữu.", clip: "doc_05", ld: 3, sec: "quy-che"},
-  {n: 4, v: "ro", st: "Chờ chứng từ", h: "1,69 tỷ chưa truy được tới cùng", s: "Trong đó 705,8 triệu trả trọn cho Thép Quang.", clip: "doc_06", ld: 2, sec: "vi-sao"},
-  {n: 5, v: "ro", st: "Chờ chứng từ", h: "127,5 tỷ tiền gửi sau tái tục chưa có xác nhận", s: "Sao kê dừng ở 31/05/2026; cần hợp đồng và xác nhận của ngân hàng.", clip: "doc_07", ld: 4, sec: "lai-suat"}
+  {n: 1, v: "sai", st: "Thể hiện trên sao kê", h: "986,9 triệu tiền quỹ vào tài khoản của Ban quản trị", s: "Ngày 23/12/2025, chuyển vào tài khoản do chính các thành viên Ban quản trị đồng đứng tên. Đề nghị giải trình căn cứ theo Điều 7.2, 7.4 và 3.2.a Quy chế thu chi.", clip: "doc_03", ld: 0, sec: "vi-sao"},
+  {n: 2, v: "sai", st: "Thể hiện trên sao kê", h: "1,71 tỷ tiền khu vực chung chưa vào quỹ", s: "Trong đó 1,40 tỷ đã chi ra, chưa thấy qua quy trình của quỹ. Cần hợp đồng, nghiệm thu từng khoản.", clip: "doc_04", ld: 1, sec: "khu-vuc-chung"},
+  {n: 3, v: "ro", st: "Cần chứng từ", h: "13 khoản chi trên 50 triệu, tổng 5,04 tỷ", s: "Chưa thấy văn bản cho phép của chủ sở hữu, báo giá và nghiệm thu.", clip: "doc_05", ld: 3, sec: "quy-che"},
+  {n: 4, v: "ro", st: "Cần chứng từ", h: "1,69 tỷ chưa truy được tới cùng", s: "Trong đó 705,8 triệu trả trọn cho Thép Quang; cần danh mục hàng hóa, biên bản giao nhận và kiểm đếm thực tế.", clip: "doc_06", ld: 2, sec: "vi-sao"},
+  {n: 5, v: "ro", st: "Cần chứng từ", h: "127,5 tỷ tiền gửi sau tái tục chưa có xác nhận", s: "Sao kê dừng ở 31/05/2026; cần hợp đồng và xác nhận của ngân hàng.", clip: "doc_07", ld: 4, sec: "lai-suat"}
 ];
 function renderFive(){
   var el = $("fiv"); if (!el) return; var hasClip = D.clips && clpIndex();
   el.className = "fiv xr-no";
-  el.innerHTML = '<div class="fiv-h"><span class="fiv-k">Trọng tâm</span><h2>Tiền chưa mất, nhưng đi sai đường ở năm chỗ</h2><p>198 giao dịch khớp tới từng đồng, tiền gốc còn 127,15 tỷ. Hai vấn đề đầu đã rõ trên sao kê; ba vấn đề sau đang chờ chứng từ.</p></div>' +
+  el.innerHTML = '<div class="fiv-h"><span class="fiv-k">Trọng tâm</span><h2>Năm điểm đề nghị Ban quản trị làm rõ</h2><p>198 giao dịch đã đối chiếu khớp số dư sao kê. Số dư khớp chưa cho biết tiền chi có đúng giá trị hợp đồng và quỹ có nhận đúng hàng hóa, dịch vụ hay không. Hai điểm đầu thể hiện trực tiếp trên sao kê; ba điểm sau cần hợp đồng, nghiệm thu, hóa đơn, kể cả hậu kiểm.</p></div>' +
     '<ol class="fiv-l">' + FIV.map(function(f){
       var it = hasClip ? CLP.items[f.clip] : null;
       return '<li class="fv fv-' + f.v + '"><div class="fv-top"><span class="fv-n">' + f.n + '</span><span class="fv-st">' + f.st + "</span></div><b class=\"fv-h\">" + esc(f.h) + '</b><p class="fv-s">' + esc(f.s) + "</p>" +

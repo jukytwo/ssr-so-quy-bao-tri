@@ -321,6 +321,11 @@ js = "".join(open(f"d3/{f}").read() for f in ["js1_core.js", "js2_render.js", "j
 js = js.replace("__SKEL_OPEN__", jsstr(SKEL_OPEN)).replace("__SKEL_CLOSE__", jsstr(SKEL_CLOSE)).replace("__HEAD_FRAG__", jsstr(HEAD_FRAG)).replace("__ROOT_INIT__", jsstr(ROOT_INIT))
 APP = "(function(){\n" + js + "\n})();\n"
 assert "</script" not in APP.lower() and "<!--" not in APP, "app has forbidden sequence"
+# ngon tu dat nghi van, de nghi lam ro (15/10/2026); clip giu nguyen vi loi doc da ghi am
+import ngon_tu as NT
+tpl = NT.soften(tpl); APP = NT.soften(APP); HEAD_FRAG = NT.soften(HEAD_FRAG)
+_clips = D.pop("clips", None); D = NT.walk(D); D["clips"] = _clips
+NT.report()
 
 LIGHT = os.environ.get("DASH_LIGHT") == "1" or PAGES
 if LIGHT:
