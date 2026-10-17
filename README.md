@@ -1,4 +1,13 @@
-# Sổ quỹ bảo trì SSR
+# SSR: Quỹ bảo trì và Điều hành
+
+Một web app chung cho Saigon South Residences, gồm hai mục lớn, chuyển qua lại bằng thanh **SSR · Quỹ bảo trì · Điều hành** ở đầu trang:
+
+| Mục | Đường dẫn | Nội dung |
+|---|---|---|
+| Quỹ bảo trì | `index.html`, `web/` | Phân tích sổ quỹ bảo trì (mô tả bên dưới) |
+| Điều hành | `web/dieu-hanh/` | Công cụ SSR Điều Hành cho Ban Quản lý, Ban Quản trị: phản ánh, bảo trì, sự cố dịch vụ, tài chính, tuân thủ, kiểm tra pháp lý |
+
+## Mục Quỹ bảo trì
 
 Web app phân tích Quỹ bảo trì chung cư Nam Sài Gòn Residences (Saigon South Residences): sao kê ba tài khoản từ 15/08/2024 tới 31/05/2026, đối chiếu Quy chế thu chi tài chính và Luật Nhà ở 2023, kèm bộ clip có thuyết minh.
 
@@ -19,6 +28,19 @@ Phân tích độc lập phục vụ giám sát của cư dân, không phải v�
 ## Các tab trên điện thoại
 
 Tổng quan (câu trả lời ngắn và năm vấn đề), Clip, Đường tiền, 10 câu hỏi, Mục lục (báo cáo đầy đủ bảy phần).
+
+## Mục Điều hành
+
+| Tệp | Nội dung |
+|---|---|
+| `web/dieu-hanh/index.html` | Công cụ SSR Điều Hành, một tệp, chạy được cả khi không có mạng |
+| `web/dieu-hanh/tai-ve/*.xlsx` | File Excel Dashboard vận hành (có công thức) và file dữ liệu xuất từ công cụ |
+| `web/dieu-hanh/tai-ve/google/` | Mã Google Sheets (Code.gs, Portal.html, Field.html) và hướng dẫn cài đặt |
+| `src/ssr_switch.html` | Thanh chuyển hai mục, `build_dash3.py` tự chèn khi dựng lại trang Quỹ bảo trì |
+
+- Bản trên GitHub Pages đang chạy **dữ liệu mẫu** (có ghi chú trên từng trang). Dữ liệu thật do Ban Quản lý nhập chỉ lưu trong trình duyệt của máy nhập, hoặc trong Google Sheets của Ban Quản lý; không bao giờ đưa lên kho này.
+- Mã PIN quản trị mặc định chỉ để dùng thử, phải đổi trước khi dùng thật.
+- Khóa quản trị, khóa xem Google Sheets chỉ gửi riêng, không ghi vào kho.
 
 ## Ghi chú
 

@@ -303,6 +303,7 @@ SKEL_OPEN = ('<!doctype html><html><head><meta charset=utf8><meta name=viewport 
              ':root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}'
              'html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}'
              'img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>')
+SKEL_OPEN += open("ssr_switch.html", encoding="utf-8").read()  # thanh chuyen hai muc Quy bao tri va Dieu hanh (17/10/2026)
 SKEL_CLOSE = "</body></html>"
 HEAD_FRAG = ('<title>Sổ quỹ bảo trì SSR</title>\n'
              '<meta name="description" content="Quỹ bảo trì chung cư Nam Sài Gòn Residences có khuất tất hay không: phân tích sao kê ba tài khoản, đối chiếu Quy chế thu chi tài chính, cập nhật được khi có sao kê mới.">\n'

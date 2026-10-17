@@ -1,7 +1,7 @@
 {
-  "name": "Sổ quỹ bảo trì SSR",
-  "short_name": "Sổ quỹ SSR",
-  "description": "Phân tích sao kê quỹ bảo trì chung cư Nam Sài Gòn Residences (Saigon South Residences)",
+  "name": "SSR: Quỹ bảo trì và Điều hành",
+  "short_name": "SSR",
+  "description": "Saigon South Residences: phân tích sổ quỹ bảo trì và công cụ điều hành vận hành",
   "lang": "vi",
   "start_url": "./",
   "scope": "./",
@@ -9,8 +9,23 @@
   "background_color": "#ffffff",
   "theme_color": "#12301f",
   "icons": [
-    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
-    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
-    {"src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }
