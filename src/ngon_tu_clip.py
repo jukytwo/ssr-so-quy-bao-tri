@@ -3,6 +3,25 @@
 Chi dung cho clip tong 22 phut, clip tom tat 90 giay va Phan 2 (theo anh Vu); khong doi ten file clip khac."""
 import ngon_tu as NT
 CR = [
+    # ---- 17/10/2026, an toan phap ly (anh Vu: "dung tu chuyen nghiep, an toan, trang trong"); ap truoc, lop 2 cua ngon_tu chay sau ----
+    ("Chưa dấu hiệu nào đủ căn cứ để xếp vào nhóm có chủ đích, nhưng 4 dấu hiệu chưa loại trừ được khả năng này.", "Bốn dấu hiệu còn lại cần thêm hồ sơ để làm rõ nguyên nhân."),
+    ("Nhóm ba, lỡ tay có chủ đích: cùng một kiểu lặp lại, tiền đi qua tài khoản trung gian, hợp đồng chia nhỏ hoặc trả trước toàn bộ, né tránh chứng từ.",
+     "Nhóm ba, cần hồ sơ để làm rõ nguyên nhân: cùng một kiểu lặp lại, tiền đi qua tài khoản trung gian, hợp đồng chia nhỏ hoặc trả trước toàn bộ, chứng từ chưa được cung cấp."),
+    ("Nhóm ba, lỡ tay có chủ đích: cùng kiểu sai lặp lại, tiền đi qua tài khoản trung gian, hợp đồng chia nhỏ hoặc trả trước toàn bộ, né tránh chứng từ.",
+     "Nhóm ba, cần hồ sơ để làm rõ nguyên nhân: cùng một kiểu lặp lại, tiền đi qua tài khoản trung gian, hợp đồng chia nhỏ hoặc trả trước toàn bộ, chứng từ chưa được cung cấp."),
+    ("Trách nhiệm hình sự chỉ đặt ra khi có chứng cứ chiếm đoạt, do cơ quan điều tra xác định; đến nay chưa có dữ kiện như vậy.",
+     "Trách nhiệm hình sự, nếu có, chỉ do cơ quan tiến hành tố tụng xem xét; clip không đánh giá nội dung này."),
+    ("Bãi nhiệm, khi không khắc phục, không có văn bản cho phép, hoặc né tránh cung cấp chứng từ.",
+     "Việc bãi nhiệm thuộc thẩm quyền Hội nghị nhà chung cư, được xem xét khi việc khắc phục, văn bản cho phép hoặc chứng từ không được cung cấp theo yêu cầu."),
+    ("Tiền quỹ bảo trì có mất không, và Ban quản trị đã làm đúng những gì.", "Sao kê quỹ bảo trì cho thấy gì, và những điểm nào đã kiểm tra và khớp."),
+    ("Phần này trả lời câu hỏi đầu tiên: tiền quỹ có mất không, và tiền đã đi qua những tài khoản nào.", "Phần này trả lời câu hỏi đầu tiên: sao kê cho thấy gì, và tiền đã đi qua những tài khoản nào."),
+    ("lưu đồ cho thấy đường nào đúng, đường nào sai.", "lưu đồ đặt đường tiền theo Quy chế cạnh đường tiền thực tế trên sao kê."),
+    ("đường đỏ là chỗ làm trái Quy chế hoặc Luật.", "đường đỏ là chỗ chưa phù hợp Quy chế hoặc Luật, cần giải trình."),
+    ("Hội nghị có ba phương án, xét riêng từng thành viên: giữ, xem xét thêm, hoặc bãi nhiệm.", "Hội nghị có ba phương án theo Quy chế, xét riêng từng thành viên: tiếp tục, xem xét thêm, hoặc bãi nhiệm."),
+    ("Mức nặng nhất; cần ít nhất 2 trong 3 dấu hiệu rõ.", "Chỉ đánh giá được khi có đủ hồ sơ; kết luận thuộc cơ quan có thẩm quyền."),
+    ("(3) Lỡ tay có chủ đích", "(3) Cần hồ sơ làm rõ"),
+    ("(2) Lỡ tay thật", "(2) Sơ suất ghi chép"),
+    ("Mức nhẹ nhất, thường không tới mức phạt hay bãi nhiệm.", "Mức nhẹ nhất, thường chỉ cần điều chỉnh và rút kinh nghiệm."),
     ("Cũng cần ghi nhận những việc Ban quản trị đã làm đúng.", "Cũng cần ghi nhận những điểm đã kiểm tra và khớp."),
     ("9 dấu hiệu thuộc nhóm thiếu năng lực: làm sai quy trình hoặc quản lý tiền kém, không thấy ai hưởng lợi.", "9 dấu hiệu có thể do quy trình chưa chặt hoặc quản lý tiền chưa hiệu quả, chưa thấy ai hưởng lợi."),
     ("Với vi phạm đã rõ: khắc phục là bắt buộc, Ban quản trị thuộc diện phạt 50 đến 60 triệu đồng theo khoản 3 Điều 61 Nghị định 339 năm 2026, và đây là căn cứ để Hội nghị nhà chung cư xem xét bãi nhiệm.",

@@ -326,13 +326,157 @@ R = [
     ("Nhưng 1,69 tỷ trong đó không truy được", "Trong đó 1,69 tỷ chưa truy được"),
     ("Chắc chắn", "Cần giải trình ngay"),
 ]
+# ---- Lop 2 (17/10/2026): an toan phap ly. Chay SAU lop 1. Khong suy doan dong co, khong quy loi thay co quan co tham quyen;
+# moi che tai deu gan dieu kien "neu co quan co tham quyen xac dinh"; khong noi tien mat hay khong mat.
+NEU = "nếu cơ quan có thẩm quyền xác định là vi phạm"
+R2 = [
+    # phan loai nguyen nhan: bo khai niem "co chu dich", "lo tay"
+    ("Diện xử phạt hành chính; 9/16 có thể do quy trình chưa chặt, chưa dấu hiệu nào đủ căn cứ là có chủ đích.",
+     "Nếu cơ quan có thẩm quyền xác định có vi phạm thì thuộc khung xử phạt hành chính; 9/16 có thể do quy trình chưa chặt, các dấu hiệu còn lại cần hồ sơ để làm rõ nguyên nhân."),
+    ("Nếu được xác định là vi phạm, có khung xử phạt hành chính", "Nếu cơ quan có thẩm quyền xác định là vi phạm, có khung xử phạt hành chính"),
+    ("chưa dấu hiệu nào đủ căn cứ là có chủ đích, phần còn lại cần chứng từ để đánh giá", "phần còn lại cần chứng từ để đánh giá"),
+    ("chưa dấu hiệu nào đủ căn cứ để xếp vào lỡ tay có chủ đích, 4 dấu hiệu chưa loại trừ được khả năng này.", "4 dấu hiệu cần hồ sơ để làm rõ nguyên nhân."),
+    ("Chưa dấu hiệu nào đủ căn cứ để xếp vào lỡ tay có chủ đích, 4 dấu hiệu chưa loại trừ được khả năng này.", "4 dấu hiệu cần hồ sơ để làm rõ nguyên nhân."),
+    ("Chưa dấu hiệu nào đủ căn cứ để xếp vào lỡ tay có chủ đích.", "Việc xác định lỗi, nếu có, thuộc cơ quan có thẩm quyền."),
+    ("chưa dấu hiệu nào đủ căn cứ là có chủ đích", "các dấu hiệu còn lại cần hồ sơ để làm rõ nguyên nhân"),
+    ("4 dấu hiệu chưa loại trừ được khả năng lỡ tay có chủ đích:", "4 dấu hiệu cần hồ sơ để làm rõ nguyên nhân:"),
+    ("4 chưa loại trừ lỡ tay có chủ đích", "4 cần hồ sơ để làm rõ nguyên nhân"),
+    ("hay chưa loại trừ lỡ tay có chủ đích", "hay cần hồ sơ để làm rõ nguyên nhân"),
+    ("Chưa loại trừ có chủ đích", "Cần hồ sơ để làm rõ nguyên nhân"),
+    ("Chưa loại trừ (3)", "Cần hồ sơ (3)"),
+    ("0 dấu hiệu đủ căn cứ · 4 chưa loại trừ", "4 dấu hiệu cần hồ sơ để làm rõ"),
+    ("0 đủ căn cứ, 4 chưa loại trừ", "4 dấu hiệu cần hồ sơ để làm rõ"),
+    ("Lỡ tay có chủ đích: cần chứng từ để kết luận", "Cần chứng từ để làm rõ nguyên nhân"),
+    ("Bảng kiểm ba dấu hiệu của lỡ tay có chủ đích", "Bảng kiểm ba đặc điểm cần hồ sơ làm rõ"),
+    ("Chỉ xếp vào lỡ tay có chủ đích khi có ít nhất 2 trong 3 dấu hiệu rõ: cùng một kiểu lặp lại; có bên hưởng lợi hoặc giá bất thường; chứng từ né tránh hoặc mâu thuẫn sau khi đã được yêu cầu. Hiện chưa khoản nào đạt; F01 và F07 mới có một dấu hiệu rõ là lặp lại cùng kiểu.",
+     "Ba đặc điểm theo dõi: cùng một kiểu lặp lại; giá chênh so với thị trường; chứng từ chưa được cung cấp hoặc chưa khớp sau khi đã được yêu cầu. F01 và F07 có đặc điểm lặp lại cùng kiểu. Bảng chỉ ghi tình trạng hồ sơ, không đánh giá lỗi của cá nhân nào; việc đó thuộc cơ quan có thẩm quyền."),
+    ("Chỉ xếp vào (3) khi có ít nhất hai trong ba dấu hiệu rõ: cùng một kiểu lặp lại; có bên hưởng lợi hoặc giá bất thường; chứng từ né tránh hoặc mâu thuẫn sau khi đã được yêu cầu.",
+     "Nhóm (3) theo dõi ba đặc điểm: cùng một kiểu lặp lại; giá chênh so với thị trường; chứng từ chưa được cung cấp hoặc chưa khớp sau khi đã được yêu cầu."),
+    ("Mức nặng nhất. Chỉ xếp vào nhóm này khi có ít nhất 2 trong 3 dấu hiệu rõ; kết luận vi phạm pháp luật thuộc cơ quan có thẩm quyền.",
+     "Chưa đánh giá được khi chưa có hồ sơ; kết luận có vi phạm hay không thuộc cơ quan có thẩm quyền."),
+    ("Cùng một kiểu lặp lại; tiền đi qua tài khoản trung gian; hợp đồng chia nhỏ, trả trước toàn bộ; giá cao hơn thị trường; né tránh chứng từ.",
+     "Cùng một kiểu lặp lại; tiền đi qua tài khoản trung gian; hợp đồng chia nhỏ, trả trước toàn bộ; giá cao hơn thị trường; chứng từ chưa được cung cấp."),
+    ("Hưởng lợi, giá bất thường", "Giá so với thị trường"),
+    ("Chứng từ né tránh, mâu thuẫn", "Chứng từ chưa cung cấp, chưa khớp"),
+    ("Bồi hoàn, bồi thường (Điều 10.1 Quy chế thu chi); kiểm toán đột xuất; Hội nghị nhà chung cư xem xét bãi nhiệm (khoản 2 Điều 26 Quy chế kèm Thông tư 05/2024/TT-BXD); có dấu hiệu vi phạm pháp luật thì đề nghị cơ quan có thẩm quyền xem xét.",
+     "Đề nghị cung cấp chứng từ; khoản nào không có chứng từ thì cư dân có cơ sở đề nghị bồi hoàn (Điều 10.1 Quy chế thu chi); đề nghị kiểm toán đột xuất; Hội nghị nhà chung cư xem xét theo Quy chế (khoản 2 Điều 26 Quy chế kèm Thông tư 05/2024/TT-BXD); việc xác định vi phạm thuộc cơ quan có thẩm quyền."),
+    ("lỡ tay thật thì điều chỉnh sổ sách; có chủ đích thì bồi hoàn, bồi thường, kiểm toán đột xuất và xem xét bãi nhiệm.",
+     "sơ suất ghi chép thì điều chỉnh sổ sách; khoản không có chứng từ thì cư dân có cơ sở đề nghị bồi hoàn và kiểm toán đột xuất; các hình thức khác do Hội nghị nhà chung cư và cơ quan có thẩm quyền xem xét."),
+    ("lỡ tay thật thì điều chỉnh sổ sách; có chủ đích thì bồi hoàn, kiểm toán đột xuất, xem xét bãi nhiệm.",
+     "sơ suất ghi chép thì điều chỉnh sổ sách; khoản không có chứng từ thì cư dân có cơ sở đề nghị bồi hoàn và kiểm toán đột xuất."),
+    ("Quy trình chưa chặt, lỡ tay hay có chủ đích", "Quy trình chưa chặt, sơ suất hay cần hồ sơ làm rõ"),
+    ("lỡ tay thật hay lỡ tay có chủ đích", "sơ suất ghi chép hay cần hồ sơ để làm rõ"),
+    ("Việc chuyển 260,9 triệu ra khỏi quỹ với lý do trả nhầm là thao tác chủ động, nên không phải lỡ tay.",
+     "Việc chuyển 260,9 triệu ra khỏi quỹ với lý do trả nhầm là một lệnh chuyển tiền được lập riêng, cần Ban quản trị giải trình căn cứ."),
+    ("Lỡ tay có chủ đích", "Cần hồ sơ để làm rõ nguyên nhân"),
+    ("lỡ tay có chủ đích", "cần hồ sơ để làm rõ nguyên nhân"),
+    ("Lỡ tay thật", "Sơ suất ghi chép"),
+    ("lỡ tay thật", "sơ suất ghi chép"),
+    ("Nguyên nhân chỉ quyết định cách xử lý trách nhiệm cá nhân", "Nguyên nhân giúp chọn cách khắc phục phù hợp"),
+    ("Tình trạng của dấu hiệu quyết định hệ quả với Ban quản trị; nguyên nhân quyết định cách xử lý trách nhiệm cá nhân.",
+     "Bảng nêu khung quy định chung theo tình trạng hồ sơ của từng dấu hiệu, không phải kết luận; việc xử lý cụ thể do Hội nghị nhà chung cư và cơ quan có thẩm quyền quyết định."),
+    ("cách xử lý trách nhiệm cá nhân", "cách khắc phục phù hợp"),
+    ("Xử lý trách nhiệm cá nhân", "Hướng khắc phục"),
+    ("không ai hưởng lợi", "chưa thấy ai hưởng lợi"),
+    # che tai: luon gan dieu kien
+    ("Khắc phục, phạt 50 – 60 triệu, căn cứ bãi nhiệm; không chứng minh được thì bồi hoàn.",
+     "Quy định chung: khắc phục; khung phạt 50 – 60 triệu nếu cơ quan có thẩm quyền xác định có vi phạm; bồi hoàn, bãi nhiệm do Hội nghị nhà chung cư xem xét."),
+    ("Với nhóm này, cần khắc phục, Ban quản trị thuộc diện bị phạt 50 – 60 triệu đồng, và đây là căn cứ để Hội nghị nhà chung cư xem xét bãi nhiệm thành viên chịu trách nhiệm.",
+     "Với nhóm này, cư dân đề nghị khắc phục; " + NEU + " thì có khung phạt 50 – 60 triệu đồng, và Hội nghị nhà chung cư có thể xem xét trách nhiệm theo Quy chế."),
+    ("Có khung phạt 50 – 60 triệu đồng (khoản 3 Điều 61 Nghị định 339/2026/NĐ-CP) và có thể là căn cứ để xem xét bãi nhiệm thành viên chịu trách nhiệm.",
+     "Nếu cơ quan có thẩm quyền xác định là vi phạm: khung phạt 50 – 60 triệu đồng (khoản 3 Điều 61 Nghị định 339/2026/NĐ-CP); Hội nghị nhà chung cư có thể xem xét trách nhiệm theo Quy chế."),
+    ("Có khung phạt 50 – 60 triệu đồng và có thể là căn cứ để xem xét bãi nhiệm.",
+     "Nếu cơ quan có thẩm quyền xác định là vi phạm: khung phạt 50 – 60 triệu đồng; Hội nghị nhà chung cư có thể xem xét trách nhiệm theo Quy chế."),
+    ("Nếu không có văn bản cho phép thì có dấu hiệu chi vượt thẩm quyền (Điều 9.2), nếu được xác định là vi phạm, có khung phạt 50 – 60 triệu đồng; không chứng minh được hàng hóa thì 705,8 triệu có cơ sở đề nghị bồi hoàn quỹ, có thể là căn cứ để xem xét bãi nhiệm;",
+     "Nếu không có văn bản cho phép, cần giải trình thẩm quyền chi theo Điều 9.2; " + NEU + " thì có khung phạt 50 – 60 triệu đồng; không chứng minh được hàng hóa thì cư dân có cơ sở đề nghị bồi hoàn 705,8 triệu vào quỹ;"),
+    ("Không có thì là chi vượt thẩm quyền (hợp đồng 1,25 tỷ gấp 25 lần mức tự quyết), nếu được xác định là vi phạm, có khung phạt 50 – 60 triệu đồng; tạm dừng 623,3 triệu còn lại; giá cao hơn thị trường thì bồi hoàn phần chênh.",
+     "Nếu không có, cần giải trình thẩm quyền chi (hợp đồng 1,25 tỷ gấp 25 lần mức tự quyết theo Quy chế); " + NEU + " thì có khung phạt 50 – 60 triệu đồng; đề nghị tạm dừng 623,3 triệu còn lại; giá cao hơn thị trường thì cư dân có cơ sở đề nghị bồi hoàn phần chênh."),
+    ("Không có thì là chi vượt Quy chế (Điều 9.2), nếu được xác định là vi phạm, có khung phạt 50 – 60 triệu đồng; khoản trả trùng hoặc chưa nghiệm thu có cơ sở đề nghị bồi hoàn.",
+     "Nếu không có, cần giải trình theo Điều 9.2 Quy chế; " + NEU + " thì có khung phạt 50 – 60 triệu đồng; khoản trả trùng hoặc chưa nghiệm thu thì cư dân có cơ sở đề nghị bồi hoàn."),
+    ("Đề nghị khắc phục; có khung phạt 50 – 60 triệu đồng theo Nghị định 339/2026/NĐ-CP và có thể là căn cứ để xem xét bãi nhiệm thành viên chịu trách nhiệm.",
+     "Đề nghị khắc phục; " + NEU + " thì có khung phạt 50 – 60 triệu đồng theo Nghị định 339/2026/NĐ-CP; Hội nghị nhà chung cư có thể xem xét trách nhiệm theo Quy chế."),
+    ("Đề nghị khắc phục; có khung phạt 50 – 60 triệu đồng (khoản 3 Điều 61 Nghị định 339/2026/NĐ-CP); có thể là căn cứ để xem xét bãi nhiệm thành viên chịu trách nhiệm (",
+     "Đề nghị khắc phục; " + NEU + " thì có khung phạt 50 – 60 triệu đồng (khoản 3 Điều 61 Nghị định 339/2026/NĐ-CP); Hội nghị nhà chung cư có thể xem xét trách nhiệm thành viên liên quan ("),
+    ("Là căn cứ để Hội nghị nhà chung cư xem xét bãi nhiệm thành viên chịu trách nhiệm (",
+     "Nếu được xác định, Hội nghị nhà chung cư có thể xem xét trách nhiệm thành viên liên quan ("),
+    ("có thể là căn cứ bãi nhiệm thành viên chịu trách nhiệm (", "Hội nghị nhà chung cư có thể xem xét trách nhiệm thành viên liên quan ("),
+    ("và có thể là căn cứ bãi nhiệm;", "và Hội nghị nhà chung cư có thể xem xét trách nhiệm theo Quy chế;"),
+    ("Hội nghị nhà chung cư có thể xem xét bãi nhiệm;", "Hội nghị nhà chung cư có thể xem xét trách nhiệm theo Quy chế;"),
+    ("Hội nghị cân nhắc bãi nhiệm nếu không khắc phục.", "Hội nghị nhà chung cư có thể xem xét theo Quy chế nếu không khắc phục."),
+    ("Phải khắc phục, có khung phạt, căn cứ bãi nhiệm", "Đề nghị khắc phục; khung phạt nếu được xác định vi phạm"),
+    ("Căn cứ để bãi nhiệm đã có; thủ tục chưa đủ.", "Quy chế có quy định về bãi nhiệm; việc xem xét thuộc Hội nghị nhà chung cư."),
+    ("Căn cứ để bãi nhiệm đã có;", "Quy chế có quy định về bãi nhiệm;"),
+    ("Căn cứ bãi nhiệm đã có nhưng thủ tục cần đơn", "Quy chế có quy định về bãi nhiệm; thủ tục cần đơn"),
+    ('data-l="Bãi nhiệm">Đã có căn cứ<', 'data-l="Bãi nhiệm">Hội nghị nhà chung cư xem xét<'),
+    ('data-l="Bãi nhiệm">Có căn cứ<', 'data-l="Bãi nhiệm">Hội nghị nhà chung cư xem xét<'),
+    ('data-l="Khắc phục">Bắt buộc<', 'data-l="Khắc phục">Đề nghị khắc phục<'),
+    ("Phạt tiền Ban quản trị", "Phạt tiền, nếu được xác định vi phạm"),
+    ("Phạt Ban quản trị", "Khung phạt nếu có vi phạm"),
+    ("không khắc phục thì kiến nghị xử phạt và xem xét bãi nhiệm.", "không khắc phục thì kiến nghị cơ quan có thẩm quyền xem xét và đề nghị Hội nghị nhà chung cư xem xét theo Quy chế."),
+    ("thường không tới mức phạt hay bãi nhiệm.", "thường chỉ cần điều chỉnh và rút kinh nghiệm."),
+    ("Thiếu so với 127,5 tỷ là vấn đề nghiêm trọng nhất: báo ngay ngân hàng và cơ quan công an; Ban quản trị chịu trách nhiệm bồi thường.",
+     "Nếu số dư thấp hơn 127,5 tỷ, đây là vấn đề nghiêm trọng nhất: báo ngay ngân hàng và cơ quan có thẩm quyền; trách nhiệm bồi thường xác định theo Quy chế và pháp luật."),
+    ("Trả từ tài khoản vận hành có dấu hiệu dùng chưa đúng nguồn; nếu đang nợ phí, Ban quản trị chịu trách nhiệm về gián đoạn bảo trì và tiền phạt chậm trả nếu có.",
+     "Khoản trả từ tài khoản vận hành cần giải trình về nguồn chi; nếu đang nợ phí, đề nghị Ban quản trị giải trình nguy cơ gián đoạn bảo trì và tiền phạt chậm trả nếu có."),
+    ("người quyết định việc ký lại phải giải trình trước Hội nghị nhà chung cư và bồi thường nếu có lỗi.",
+     "đề nghị người quyết định việc ký lại giải trình trước Hội nghị nhà chung cư; trách nhiệm bồi thường, nếu có, xác định theo Quy chế."),
+    ("thành viên chịu trách nhiệm", "thành viên liên quan"),
+    # hinh su: trang khong danh gia
+    ("Hình sự chỉ đặt ra khi có chứng cứ chiếm đoạt, do cơ quan điều tra xác định; đến nay chưa có dữ kiện như vậy.",
+     "Trách nhiệm hình sự, nếu có, chỉ do cơ quan tiến hành tố tụng xem xét; trang không đánh giá nội dung này."),
+    ("Trách nhiệm hình sự chỉ đặt ra khi có chứng cứ chiếm đoạt; đến nay chưa có dữ kiện nào như vậy.",
+     "Trách nhiệm hình sự, nếu có, chỉ do cơ quan tiến hành tố tụng xem xét; trang không đánh giá nội dung này."),
+    ("Trách nhiệm hình sự chỉ đặt ra khi có chứng cứ chiếm đoạt; đến nay chưa có dữ kiện như vậy.",
+     "Trách nhiệm hình sự, nếu có, chỉ do cơ quan tiến hành tố tụng xem xét; trang không đánh giá nội dung này."),
+    ("Chỉ đặt ra khi có chứng cứ chiếm đoạt tài sản; do cơ quan điều tra xác định.", "Chỉ do cơ quan tiến hành tố tụng xem xét, quyết định; trang không đánh giá."),
+    ("Trên sao kê chưa có dữ kiện như vậy: không rút tiền mặt, không có khoản chuyển cho cá nhân.", "Trên sao kê chưa thấy rút tiền mặt hay chuyển tiền cho cá nhân."),
+    ("Chỉ khi có chứng cứ chiếm đoạt tài sản.", "Chỉ do cơ quan tiến hành tố tụng xem xét."),
+    ("Chỉ khi có chứng cứ chiếm đoạt", "Thuộc cơ quan tiến hành tố tụng"),
+    ("Chuyển cơ quan điều tra nếu có dấu hiệu chiếm đoạt", "Thuộc cơ quan có thẩm quyền"),
+    ("Không có căn cứ xử lý; chưa có dữ kiện về chiếm đoạt.", "Không thuộc phạm vi đánh giá của trang."),
+    ("Chưa có căn cứ để xử lý hình sự.", "Trang không đánh giá trách nhiệm hình sự."),
+    ("Chưa có căn cứ hình sự", "Trang không đánh giá hình sự"),
+    # khang dinh qua muc
+    ("mỗi hợp đồng là một lần chi vượt thẩm quyền theo Điều 9.2", "mỗi hợp đồng cần giải trình thẩm quyền chi theo Điều 9.2"),
+    ("Không có thì 67,1 triệu là trả vượt không căn cứ, có cơ sở đề nghị bồi hoàn quỹ.", "Nếu không có, 67,1 triệu là khoản trả vượt cần giải trình căn cứ; cư dân có cơ sở đề nghị bồi hoàn quỹ."),
+    ("Đây là bằng chứng rõ nhất cho việc tiền khu vực chung bị đưa ra ngoài quỹ.", "Đây là giao dịch thể hiện rõ nhất việc tiền khu vực chung nằm ngoài tài khoản quỹ."),
+    ("bị giữ ngoài tài khoản quỹ", "nằm ngoài tài khoản quỹ"),
+    ("1,71 tỷ giữ ngoài quỹ", "1,71 tỷ nằm ngoài tài khoản quỹ"),
+    ("năm trường hợp thiếu minh bạch", "năm trường hợp cần làm rõ"),
+    ("Đây là khoản thiếu minh bạch nhất.", "Đây là khoản cần làm rõ nhất."),
+    ("Điểm chưa phù hợp quy định, thiếu minh bạch", "Điểm chưa phù hợp quy định, cần làm rõ"),
+    (" nên rủi ro gian lận thấp hơn; rủi ro nằm ở", ", không qua trung gian; điểm cần làm rõ nằm ở"),
+    (" nên rủi ro gian lận thấp hơn", ", không qua trung gian"),
+    (" nên rủi ro gian lận thấp", ", không qua trung gian"),
+    ("Từng điểm riêng lẻ không chứng minh sai phạm", "Từng điểm riêng lẻ chưa nói lên vấn đề"),
+    ("chưa phải kết luận sai phạm", "không phải kết luận"),
+    ("Chưa thấy tiền quỹ bị mất: quỹ còn", "Chưa đánh giá được. Số dư khớp sao kê: quỹ còn"),
+    ("Thiệt hại cơ hội", "Lãi có thể đã bỏ lỡ"),
+    ("Thiệt hại đến từ thiếu kế hoạch dòng tiền kéo dài 21 tháng", "Phần lãi bỏ lỡ có thể đến từ việc chưa có kế hoạch dòng tiền trong 21 tháng"),
+    ("Chưa có bằng chứng: tài liệu Ban quản trị gửi", "Chưa có hồ sơ: tài liệu Ban quản trị gửi"),
+    ("quan hệ người nhà xung đột lợi ích sân sau công ty liên quan", "quan hệ người nhà xung đột lợi ích công ty liên quan"),
+    ("khuất tất gian lận tham ô sai phạm", "khuất tất gian lận sai phạm"),
+    # giong trung tinh, trang trong: bo tu nhan manh, tu ham y
+    ("do chính các thành viên Ban quản trị đồng đứng tên", "do các thành viên Ban quản trị đồng đứng tên"),
+    ("do chính các thành viên Ban quản trị đứng tên", "do các thành viên Ban quản trị đứng tên"),
+    ("do chính Ban quản trị đứng tên", "do Ban quản trị đứng tên"),
+    ("tài khoản của chính Ban quản trị", "tài khoản do Ban quản trị đứng tên"),
+    ("vòng qua một tài khoản", "đi qua một tài khoản"),
+    ("hoặc trả cho Thép Quang mà hàng hóa mô tả chung chung", "hoặc trả cho Thép Quang với nội dung hàng hóa chưa ghi cụ thể"),
+    ("không nộp vào quỹ như Luật Nhà ở 2023 yêu cầu", "chưa nộp vào tài khoản quỹ theo khoản 4 Điều 153 Luật Nhà ở 2023"),
+    ("là yếu kém quản lý.", "cho thấy công tác quản lý cần được cải thiện."),
+]
+HITS2 = {i: 0 for i in range(len(R2))}
 # Cac cau can tranh hoan toan sau khi ap dung (kiem tra cuoi)
-CAM = ["chưa mất", "không mất", "khuất tất", "làm trái", "vi phạm đã rõ", "đi sai", "chi sai", "thất thoát thật", "Lẽ ra", "lẽ ra"]
+CAM = ["chưa mất", "không mất", "khuất tất", "làm trái", "vi phạm đã rõ", "đi sai", "chi sai", "thất thoát thật", "Lẽ ra", "lẽ ra",
+       "có chủ đích", "lỡ tay", "rủi ro gian lận", "thuộc diện bị phạt", "Căn cứ để bãi nhiệm đã có", "chịu trách nhiệm bồi thường"]
 
 HITS = {i: 0 for i in range(len(R))}
 
 _RX = None
 _ORD = None
+_RX2 = None
+_ORD2 = None
 _B64 = re.compile(r"(data:[a-zA-Z0-9/+.-]+;base64,[A-Za-z0-9+/=]{200,})")
 
 def _sub(x):
@@ -343,15 +487,25 @@ def _sub(x):
         HITS[i] += 1; return b
     return _RX.sub(f, x)
 
+def _sub2(x):
+    def f(m):
+        i = _ORD2[m.lastindex - 1]; a, b = R2[i]
+        k = b.find(a)
+        if k >= 0 and m.start() >= k and x.startswith(b, m.start() - k): return a
+        HITS2[i] += 1; return b
+    return _RX2.sub(f, x)
+
 def soften(s):
     """Mot luot duy nhat, cum dai nhat thang tai moi vi tri; khong thay chong; chay lai tren van ban da sua khong doi gi; bo qua anh base64."""
-    global _RX, _ORD
+    global _RX, _ORD, _RX2, _ORD2
     if not isinstance(s, str): return s
     if _RX is None:
         _ORD = sorted(range(len(R)), key=lambda i: -len(R[i][0]))
         _RX = re.compile("|".join("(" + re.escape(R[i][0]) + ")" for i in _ORD))
+        _ORD2 = sorted(range(len(R2)), key=lambda i: -len(R2[i][0]))
+        _RX2 = re.compile("|".join("(" + re.escape(R2[i][0]) + ")" for i in _ORD2))
     parts = _B64.split(s)
-    return "".join(x if i % 2 else _sub(x) for i, x in enumerate(parts))
+    return "".join(x if i % 2 else _sub2(_sub(x)) for i, x in enumerate(parts))
 
 def walk(o):
     if isinstance(o, str): return soften(o)
@@ -360,6 +514,6 @@ def walk(o):
     return o
 
 def report():
-    miss = [R[i][0][:70] for i, n in HITS.items() if n == 0]
+    miss = [R[i][0][:70] for i, n in HITS.items() if n == 0] + ["L2: " + R2[i][0][:70] for i, n in HITS2.items() if n == 0]
     print("ngon_tu: ap dung", sum(1 for n in HITS.values() if n), "/", len(R), "quy tac; khong khop:", len(miss))
     for m in miss: print("   -", m)

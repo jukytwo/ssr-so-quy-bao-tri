@@ -19,13 +19,14 @@ function clpIndex(){
   var s = Object.assign({g: "short", n: 1, thumb: C.short.poster}, C.short); CLP.items[s.id] = s; CLP.groups.short.push(s);
   return true;
 }
-var CLP_GN = {full: "Bản đầy đủ", parts: "6 phần ngang", docs: "11 clip dọc", short: "Tóm tắt 90 giây"};
+var CLP_GN = {full: "Bản đầy đủ", parts: "phần ngang", docs: "clip dọc", short: "Tóm tắt 90 giây"};
+function clpGN(g){ var L = CLP.groups[g] || [], n = L.length; return g === "parts" ? (n === 1 ? "Phần " + L[0].n + " · ngang" : n + " phần ngang") : g === "docs" ? n + " clip dọc" : CLP_GN[g]; }
 function clpGroupDur(g){ return CLP.groups[g].reduce(function(a, x){ return a + x.dur; }, 0); }
 function renderClips(){
   var box = $("clip-app"); if (!box || !clpIndex()) return;
   var a = clpGet("auto"); CLP.auto = a == null ? true : a === "1";
-  var tabs = ["full", "parts", "docs", "short"].map(function(g){
-    return '<button type="button" role="tab" class="clp-tab" data-clg="' + g + '" aria-selected="false"><b>' + CLP_GN[g] + "</b><small>" + (g === "full" ? "16 chương · " : "") + clpT(clpGroupDur(g)) + "</small></button>";
+  var tabs = ["full", "parts", "docs", "short"].filter(function(g){ return CLP.groups[g].length; }).map(function(g){
+    return '<button type="button" role="tab" class="clp-tab" data-clg="' + g + '" aria-selected="false"><b>' + clpGN(g) + "</b><small>" + (g === "full" ? CLP.groups.full.length + " chương · " : "") + clpT(clpGroupDur(g)) + "</small></button>";
   }).join("");
   box.innerHTML =
     '<div class="clp-tabs" role="tablist" aria-label="Chọn bộ clip">' + tabs + "</div>" +
@@ -91,7 +92,7 @@ function clpGroup(g, loadFirst){
   CLP.g = g;
   qa("#clip-app .clp-tab").forEach(function(b){ b.setAttribute("aria-selected", b.getAttribute("data-clg") === g ? "true" : "false"); });
   var L = CLP.groups[g], vert = L[0].vert;
-  var sh = "<b>" + CLP_GN[g] + "</b><span>" + L.length + (g === "full" ? " chương" : " clip") + " · " + clpLong(clpGroupDur(g)) + "</span>";
+  var sh = "<b>" + clpGN(g) + "</b><span>" + L.length + (g === "full" ? " chương" : " clip") + " · " + clpLong(clpGroupDur(g)) + "</span>";
   if (g === "full") sh += '<div class="clp-bar" role="group" aria-label="Thanh tiến độ bản đầy đủ, bấm để tua">' + L.map(function(c){
       return '<button type="button" class="clp-seg" data-clseek="' + c.id + '" style="flex:' + c.dur.toFixed(1) + '" title="' + esc(c.n + ". " + c.title + " · " + clpT(c.t0)) + '" aria-label="' + esc("Chương " + c.n + ": " + c.title) + '"><i></i></button>';
     }).join("") + '</div><div class="clp-gt" id="clp-gt"></div>';
@@ -184,7 +185,7 @@ function clpSend(){
 function renderClipStrip(){
   var s = $("clip-strip"); if (!s || !D.clips) return; var C = D.clips;
   s.innerHTML = '<div class="cs-img"><img alt="" src="' + esc(C.full.poster) + '" onerror="this.parentNode.style.display=\'none\'"><span class="cs-play">' + CLP_ICON.play.replace('width="16" height="16"', 'width="28" height="28"') + "</span></div>" +
-    '<div class="cs-tx"><span class="cs-k">Xem thay vì đọc</span><b>Bộ clip Quỹ bảo trì</b><small>Bản đầy đủ ' + clpT(C.full.dur) + " · 6 phần ngang · 11 clip dọc · tóm tắt " + clpT(C.short.dur) + "</small>" +
+    '<div class="cs-tx"><span class="cs-k">Xem thay vì đọc</span><b>Bộ clip Quỹ bảo trì</b><small>Bản đầy đủ ' + clpT(C.full.dur) + " · " + C.docs.length + " clip dọc · tóm tắt " + clpT(C.short.dur) + "</small>" +
     '<span class="cs-bt"><button type="button" class="tbtn pri" data-clipgo="full">' + CLP_ICON.play + "Xem bản đầy đủ</button>" +
     '<button type="button" class="tbtn" data-clipgo="tom_tat">Tóm tắt 90 giây</button><button type="button" class="tbtn" data-clipgo="docs">Clip dọc cho điện thoại</button></span></div>' +
     (C.qr_svg ? '<div class="cs-qr"><div class="qr">' + C.qr_svg + "</div><small>Quét để xem<br>trên điện thoại</small></div>" : "");
@@ -198,8 +199,8 @@ function renderClipStrip(){
 }
 
 /* nut Xem clip ngay trong tung muc phan tich, va nut quay lai muc dang doc */
-var SEC_CLIPS = {"ket-luan": ["tom_tat", "doc_09"], "du-lieu": ["doc_01"], "tien-o-dau": ["doc_02"], "vi-sao": ["doc_03", "doc_05", "doc_06"],
-  "khu-vuc-chung": ["doc_04"], "lai-suat": ["doc_07"], "quy-che": ["doc_08"], "dau-hieu": ["doc_09", "doc_11"], "ho-so": ["doc_10"], "muoi-cau-hoi": ["doc_10"]};
+var SEC_CLIPS = {"ket-luan": ["tom_tat", "phan_2"], "vi-sao": ["doc_05", "doc_06"], "khu-vuc-chung": ["doc_04"], "lai-suat": ["doc_07"], "quy-che": ["doc_08"],
+  "dau-hieu": ["doc_11"], "ho-so": ["doc_10"], "muoi-cau-hoi": ["doc_10"]};
 function renderSecClips(){
   if (!D.clips || !clpIndex()) return;
   Object.keys(SEC_CLIPS).forEach(function(sid){

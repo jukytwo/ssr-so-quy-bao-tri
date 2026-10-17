@@ -97,7 +97,7 @@ function showHelp(kind, code){
   var box = $("helpbox"), h = "";
   if (kind === "print") h = '<h3>Trình xem này không cho in trực tiếp</h3><p>Trang đang mở trong khung xem của Claude, nơi lệnh in bị chặn. Hai cách in:</p><ol><li>Tải <b>báo cáo PDF đầy đủ</b> (đã dàn trang A4) rồi in.</li><li>Tải <b>bản HTML của trang này</b>, mở bằng trình duyệt (Chrome, Edge, Safari) rồi bấm Ctrl+P, trên Mac là Cmd+P. Bản in tự mở mọi mục thu gọn.</li></ol>';
   else h = '<h3>Chưa tải được tệp ở chế độ xem này</h3><p>Khung xem hiện tại không cho trang tải tệp' + (code ? " (mã: " + esc(code) + ")" : "") + '. Cách khác:</p><ol><li>Mở trang bằng trình duyệt web tại claude.ai theo đường link của trang, đăng nhập, rồi bấm tải lại; trình duyệt sẽ hỏi xác nhận trước khi lưu tệp.</li><li>Nhờ người quản trị trang gửi trực tiếp các tệp PDF, Excel, Word.</li></ol>';
-  box.querySelector(".hb-in").innerHTML = h + '<div class="acts">' + (kind === "print" ? '<button class="tbtn pri" type="button" data-dl="pdf">Tải báo cáo PDF</button><button class="tbtn" type="button" data-dl="html">Tải bản HTML</button>' : "") + '<button class="tbtn" type="button" id="help-x">Đóng</button></div>';
+  box.querySelector(".hb-in").innerHTML = h + '<div class="acts">' + (kind === "print" ? (D.files.pdf ? '<button class="tbtn pri" type="button" data-dl="pdf">Tải báo cáo PDF</button>' : "") + '<button class="tbtn" type="button" data-dl="html">Tải bản HTML</button>' : "") + '<button class="tbtn" type="button" id="help-x">Đóng</button></div>';
   box.hidden = false; setTimeout(function(){ var x = $("help-x"); if (x) x.focus(); }, 30);
 }
 function saveFile(name, data, mime){
@@ -174,10 +174,11 @@ function renderDownloads(){
   items.push({k: "csv", c: "#4b5a66", t: "CSV", h: "Giao dịch dạng CSV", p: "Mở được bằng mọi phần mềm bảng tính", b: "Tải CSV"});
   items.push({k: "html", c: "#0b6e69", t: "HTML", h: "Bản lưu trữ của trang này", p: "Một tệp duy nhất, mở bằng trình duyệt, gồm dữ liệu hiện tại", b: "Tải HTML"});
   items.push({k: "print", c: "#8a6100", t: "IN", h: "In hoặc lưu PDF trang này", p: "Bản in tự mở mọi mục đang thu gọn", b: "In"});
-  if (!F.sum) items = items.filter(function(f){ return f.k !== "sum"; });
+  items = items.filter(function(f){ return ["pdf", "sum", "pl", "hdan"].indexOf(f.k) < 0 || (F[f.k] && files()[f.k]); });
   var pop = items.filter(function(f){ return ["pdf", "sum", "xlsx", "cv", "q10pdf", "txx", "html", "print"].indexOf(f.k) >= 0; });
   var g4 = $("a4g"); if (g4) g4.innerHTML = a4GalleryHtml();
   $("dl-pop").innerHTML = pop.map(function(f){ return '<button type="button" data-dl="' + f.k + '"><span class="ic" style="background:' + f.c + '">' + f.t + "</span><span>" + esc(f.h) + "<small>" + (f.k === "print" ? "Hoặc tải PDF để in" : esc(f.b)) + "</small></span></button>"; }).join("") + '<hr><a href="#tai-ve">Tất cả lựa chọn tải về</a>';
+  setTimeout(hideMissingDl, 0);
   $("dlg").innerHTML = items.map(function(f){ return '<div class="dlc"><div class="ic" style="background:' + f.c + '">' + f.t + "</div><div><h4>" + esc(f.h) + "</h4><p>" + esc(f.p) + '</p></div><div class="dlc-b"><button class="tbtn" type="button" data-dl="' + f.k + '">' + f.b + "</button>" + (SHR_SEND[f.k] ? '<button class="tbtn shr-f" type="button" data-sendfile="' + f.k + '">' + SHR_IC + "Gửi tệp</button>" : "") + "</div></div>"; }).join("");
 }
 /* tep tai ve: ban truc tuyen giu tep rieng (f/...), chi tai khi bam; ban offline nhung san trong trang */
@@ -186,6 +187,7 @@ function fileBytes(k){
   if (v.indexOf("f/") === 0) return fetch(v).then(function(r){ if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); }).then(function(b){ return new Uint8Array(b); });
   return Promise.resolve(b64Bytes(v));
 }
+function hideMissingDl(){ qa("[data-dl]").forEach(function(b){ var k = b.getAttribute("data-dl"); if (["pdf", "sum", "pl", "hdan"].indexOf(k) >= 0 && !(D.files[k] && files()[k])){ var c = b.closest(".dlc"); (c || b).remove(); } }); }
 function doDownload(k){
   var F = D.files;
   var XM = {pdf: "application/pdf", sum: "application/pdf", xlsx: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", cv: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -299,7 +301,7 @@ var PARTN = [["I", "Kết luận", 1], ["II", "Dữ liệu và độ tin cậy",
 function renderToc(){
   var h = '<a href="#tong-quan"><span class="no">·</span><span>Tổng quan, câu trả lời ngắn</span><span></span></a>';
   h += '<div class="tp">Xem nhanh</div>' + [["phan-tien", "Đường đi của tiền: năm trường hợp"], ["phan-cauhoi", "Mười câu hỏi gửi Ban quản trị"]].map(function(x){ return '<a href="#' + x[0] + '"><span class="no">·</span><span>' + x[1] + '</span><span></span></a>'; }).join("");
-  if (D.clips) h += '<div class="tp">Xem clip</div>' + [["full", "Bản đầy đủ, 16 chương"], ["phan_1", "Sáu phần ngang"], ["doc_01", "Mười một clip dọc"], ["tom_tat", "Clip tóm tắt 90 giây"]].map(function(x){ return '<a href="#clip-' + x[0] + '" data-clipdeep="' + x[0] + '"><span class="no">▶</span><span>' + x[1] + "</span><span></span></a>"; }).join("");
+  if (D.clips) h += '<div class="tp">Xem clip</div>' + [["full", "Bản đầy đủ"], ["phan_2", "Phần 2: hai điểm nghi vấn trên sao kê"], ["doc_04", "Clip dọc cho điện thoại"], ["tom_tat", "Clip tóm tắt 90 giây"]].map(function(x){ return '<a href="#clip-' + x[0] + '" data-clipdeep="' + x[0] + '"><span class="no">▶</span><span>' + x[1] + "</span><span></span></a>"; }).join("");
   PARTN.forEach(function(p, i){
     h += '<div class="tp">Phần ' + p[0] + " · " + p[1] + "</div>";
     if (p[2] === "hd") h += [{id: "hot", l: "Nên đọc trước"}].concat(D.faq.topics).map(function(t){ var n = t.id === "hot" ? D.faq.items.filter(function(x){ return x.hot; }).length : D.faq.items.filter(function(x){ return x.t === t.id; }).length; return '<a href="#hoi-dap" data-hdt="' + t.id + '"><span class="no">?</span><span>' + esc(t.l) + '</span><span class="subx">' + n + " câu</span></a>"; }).join("");

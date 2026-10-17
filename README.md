@@ -13,6 +13,16 @@ Web app phân tích Quỹ bảo trì chung cư Nam Sài Gòn Residences (Saigon 
 
 Phân tích độc lập phục vụ giám sát của cư dân, không phải văn bản của chủ đầu tư, Ban quản trị hay đơn vị quản lý vận hành. Các nhận định là dấu hiệu cần làm rõ, không phải cáo buộc.
 
+## Câu chữ an toàn pháp lý (17/10/2026)
+
+Mọi câu chữ đi qua hai lớp lọc trong `src/ngon_tu.py`: lớp 1 (15/10) chuyển khẳng định sang đặt nghi vấn; lớp 2 (17/10) không suy đoán động cơ, không quy lỗi thay cơ quan có thẩm quyền, mọi chế tài gắn điều kiện "nếu cơ quan có thẩm quyền xác định là vi phạm", trang không đánh giá trách nhiệm hình sự. Lời đọc và chữ trên hình của clip đi qua `src/ngon_tu_clip.py` rồi tới hai lớp trên.
+
+Khi không có môi trường dựng đầy đủ: `src/ap_ngon_tu_web.py` áp lớp lọc lên trang đã dựng, `src/ap_ngon_tu_files.py` áp lên file Word và Excel nhúng trong trang.
+
+Tạm rút trong lúc chờ dựng lại bằng bộ dựng clip và báo cáo (`src/clip_an_toan.py`): Phần 1, 3, 4, 5, 6; clip dọc 1, 2, 3, 9; chương 11 bản đầy đủ; PDF báo cáo đầy đủ, tóm tắt, phân loại nguyên nhân, hỏi dần; ảnh A4 tóm tắt và phân loại. Dựng lại xong thì thêm lại vào `web/clips.json` và khối FILES.
+
+Bản Điều hành trên web dùng dữ liệu mẫu nên thay tên thật sáu thành viên Ban Quản trị bằng "Thành viên BQT 1" tới "6"; bản offline gửi riêng Ban Quản trị giữ tên thật.
+
 ## Cấu trúc
 
 | Thư mục | Nội dung |

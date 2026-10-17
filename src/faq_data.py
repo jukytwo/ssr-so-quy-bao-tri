@@ -360,7 +360,7 @@ ITEMS = [
             "Theo nguyên nhân (đánh giá sơ bộ): 9 dấu hiệu do thiếu năng lực, 2 dấu hiệu là lỡ tay thật; chưa dấu hiệu nào đủ căn cứ để xếp vào lỡ tay có chủ đích, 4 dấu hiệu chưa loại trừ được khả năng này.",
             "Nguyên nhân chỉ quyết định cách xử lý trách nhiệm cá nhân: thiếu năng lực thì sửa quy trình và vẫn thuộc diện phạt nếu vi phạm đã rõ; lỡ tay thật thì điều chỉnh sổ sách; có chủ đích thì bồi hoàn, kiểm toán đột xuất, xem xét bãi nhiệm.",
             "Đây là khung hệ quả theo quy định, không phải kết luận; việc xử lý cụ thể do Hội nghị nhà chung cư và cơ quan có thẩm quyền quyết định."],
-         n=[["3", "vi phạm đã rõ"], ["50 – 60", "triệu đồng, mức phạt"], ["9", "dấu hiệu do thiếu năng lực"], ["0", "đủ căn cứ có chủ đích"]],
+         n=[["3", "vi phạm đã rõ"], ["50 – 60", "triệu đồng, mức phạt"], ["9", "dấu hiệu do thiếu năng lực"], ["4", "dấu hiệu cần hồ sơ để làm rõ nguyên nhân"]],
          go=[["#khung-xu-ly", "Mục 01 · Khung xử lý"], ["#he-qua", "Mục 11 · Hệ quả pháp lý"], ["#nguyen-nhan", "Mục 01 · Phân loại nguyên nhân"]], c=["F01", "F02"],
          k="xử lý xử phạt phạt tiền kỷ luật bãi nhiệm bãi miễn miễn nhiệm cách chức bồi hoàn bồi thường hình sự nghị định 339 hệ quả pháp lý chế tài trách nhiệm nguyên nhân thiếu năng lực lỡ tay cố ý có chủ đích sai sót mức độ vi phạm"),
     dict(id="quy-che-loi", t="quy-dinh", st="ct",

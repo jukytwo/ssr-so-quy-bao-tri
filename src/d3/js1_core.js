@@ -296,11 +296,9 @@ function shareBox(url, t){
 var SHR_PEND = null;
 var SHR_MIME = {pdf: "application/pdf", png: "image/png", jpg: "image/jpeg", mp4: "video/mp4", xlsx: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", docx: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"};
 var A4IMG = [
-  {k: "a4_tomtat", t: "Tóm tắt một trang A4", d: "Năm điểm đề nghị Ban quản trị làm rõ", n: "SSR - Tom tat mot trang A4.png"},
   {k: "a4_tt1", t: "Những điểm nào cần làm rõ", d: "Ba hồ sơ quyết định kết luận cuối cùng", n: "SSR - Anh trong tam 1 - Nhung diem can lam ro.png"},
   {k: "a4_tt2", t: "Sơ đồ dòng tiền ba tài khoản", d: "Tiền rời quỹ và tiền không vào quỹ", n: "SSR - Anh trong tam 2 - So do dong tien.png"},
-  {k: "a4_tt3", t: "Ba điểm nghi vấn và việc cần làm", d: "Đối chiếu 17 quy định", n: "SSR - Anh trong tam 3 - Diem nghi van.png"},
-  {k: "a4_pl", t: "Phân loại nguyên nhân", d: "Quy trình chưa chặt, lỡ tay hay có chủ đích", n: "SSR - Phan loai nguyen nhan.png"}
+  {k: "a4_tt3", t: "Ba điểm nghi vấn và việc cần làm", d: "Đối chiếu 17 quy định", n: "SSR - Anh trong tam 3 - Diem nghi van.png"}
 ];
 function fileExt(n){ var m = /\.([a-z0-9]+)$/i.exec(n || ""); return m ? m[1].toLowerCase() : ""; }
 function shareFileGo(getBytes, name, label){
