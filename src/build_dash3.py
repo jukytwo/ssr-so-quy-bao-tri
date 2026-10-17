@@ -317,7 +317,7 @@ if PAGES:
     HEAD_FRAG = HEAD_FRAG + '\n<meta name="robots" content="noindex, nofollow">'
 def jsstr(s):
     return json.dumps(s, ensure_ascii=False).replace("</", "<\\/")
-js = "".join(open(f"d3/{f}").read() for f in ["js1_core.js", "js2_render.js", "js3_upload.js", "js6_clip.js", "js7_ldx.js", "js4_app.js", "js5_xref.js"])
+js = "".join(open(f"d3/{f}").read() for f in ["js1_core.js", "js2_render.js", "js3_upload.js", "js6_clip.js", "js7_ldx.js", "js8_hook.js", "js4_app.js", "js5_xref.js"])
 js = js.replace("__SKEL_OPEN__", jsstr(SKEL_OPEN)).replace("__SKEL_CLOSE__", jsstr(SKEL_CLOSE)).replace("__HEAD_FRAG__", jsstr(HEAD_FRAG)).replace("__ROOT_INIT__", jsstr(ROOT_INIT))
 APP = "(function(){\n" + js + "\n})();\n"
 assert "</script" not in APP.lower() and "<!--" not in APP, "app has forbidden sequence"

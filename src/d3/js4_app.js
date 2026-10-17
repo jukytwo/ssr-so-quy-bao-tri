@@ -444,7 +444,7 @@ function init(){
   M = compute();
   renderKL(); renderPartChips(); renderVerdict(); renderTests(); renderCauses(); renderChic(); renderRateStatic(); renderSafety(); renderMatrix(); renderChecks(); renderFinds(); renderRoad(); renderGlossary(); renderTdTrace(); renderHT(); renderHD(); renderDocs(); renderTdNew(); initTheme(); renderFAQ(); renderKM(); renderClipStrip(); renderSecClips(); initFileToggle();
   initCollapse(); renderToc(); renderDlNote(); initPaged();
-  renderClips(); renderLDX(); renderFive();
+  renderClips(); renderLDX(); renderFive(); if (typeof renderHooks === "function") renderHooks();
   renderDynamic(); renderReqs(); renderDownloads();
   addSecShare();
   applyAbbr();

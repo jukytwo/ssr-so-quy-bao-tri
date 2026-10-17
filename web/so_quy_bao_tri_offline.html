@@ -1460,6 +1460,7 @@ section:not(.cz) .sb-t svg{transform:rotate(180deg)}
 @media print{.ldx{display:none!important}.ld-print{display:block!important}}
 :root[data-theme="dark"] .vtag,:root[data-theme="dark"] .cap-v,:root[data-theme="dark"] .stp-n,:root[data-theme="dark"] .ldx-tab .dots i{color:#0b1410}
 :root[data-theme="dark"] .vtag em{border-left-color:rgba(0,0,0,.35)}
+.hook{margin:10px 0 12px;padding:8px 0 8px 12px;border-left:3px solid var(--accent);font:600 16px/1.5 var(--f-body);color:var(--ink);max-width:62ch}.hook b{color:var(--accent-ink)}#tong-quan .hero>div>.hook{order:3;margin:8px 0 14px}
 </style>
 <div id="root"><div class="boot">Đang tải sổ quỹ bảo trì…</div></div>
 <script id="tpl" type="text/plain"><header class="top">
@@ -1937,6 +1938,28 @@ section:not(.cz) .sb-t svg{transform:rotate(180deg)}
 <script id="U" type="application/json">{"v":1,"updatedAt":"2026-10-14T08:00:00.000Z","batches":[],"tracker":{"q0":{"s":"chua","n":"","at":"2026-10-14T08:00:00.000Z"},"q1":{"s":"chua","n":"","at":"2026-10-14T08:00:00.000Z"},"q2":{"s":"chua","n":"","at":"2026-10-14T08:00:00.000Z"},"q3":{"s":"chua","n":"","at":"2026-10-14T08:00:00.000Z"},"q4":{"s":"chua","n":"","at":"2026-10-14T08:00:00.000Z"},"q5":{"s":"chua","n":"","at":"2026-10-14T08:00:00.000Z"},"q6":{"s":"chua","n":"","at":"2026-10-14T08:00:00.000Z"},"q7":{"s":"chua","n":"","at":"2026-10-14T08:00:00.000Z"},"q8":{"s":"chua","n":"","at":"2026-10-14T08:00:00.000Z"},"q9":{"s":"chua","n":"","at":"2026-10-14T08:00:00.000Z"}},"ai":null}</script>
 <script id="app">(function(){
 "use strict";
+/* cau moc mo dau (17/10/2026): mot cau co so, viet duoi dang cau hoi, dat ngay duoi tieu de trang dau va tung phan lon */
+function hookSet(sel, html){
+  var h = document.querySelector(sel); if (!h) return;
+  var id = "hk-" + sel.replace(/[^a-z0-9]/gi, ""), o = document.getElementById(id); if (o) o.parentNode.removeChild(o);
+  if (!html) return; var p = document.createElement("p"); p.className = "hook"; p.id = id; p.innerHTML = html; h.parentNode.insertBefore(p, h.nextSibling);
+}
+function renderHooks(){
+  try {
+    hookSet("#tong-quan .hero h1", "198 giao dịch đều khớp số dư sao kê, nhưng ngày 23/12/2025 có <b>986,9 triệu</b> tiền quỹ chuyển vào tài khoản do chính các thành viên Ban quản trị đồng đứng tên. Căn cứ nào cho khoản chuyển này?");
+    hookSet("#phan-clip .pt", "Bản tóm tắt 1 phút 22 giây đi qua đủ năm điểm cần làm rõ, từ <b>986,9 triệu</b> chuyển vào tài khoản Ban quản trị tới <b>127,5 tỷ</b> tiền gửi chưa có xác nhận của ngân hàng.");
+    if (D.ldx && D.ldx.cases){
+      var t = {sai: 0, giai: 0, ro: 0, dung: 0}; D.ldx.cases.forEach(function(c){ for (var k in t) t[k] += (c.cnt && c.cnt[k]) || 0; });
+      var n = t.sai + t.giai + t.ro + t.dung;
+      if (n) hookSet("#phan-tien .pt", D.ldx.cases.length + " trường hợp, " + n + " chặng tiền đi, nhưng chỉ <b>" + t.dung + " chặng</b> khớp hồ sơ. " + (n - t.dung) + " chặng còn lại đang chờ Ban quản trị giải trình hoặc bổ sung chứng từ: đó là những chặng nào?");
+    }
+    if (D.q10 && typeof q10State === "function"){
+      var S = q10State(), due = String(D.q10.due || "").split("-").reverse().join("/");
+      hookSet("#phan-cauhoi .pt", S.got >= S.n ? "Ban quản trị đã trả lời đủ " + S.n + " câu hỏi. Câu nào kèm chứng từ, câu nào còn thiếu?" :
+        "Mười câu hỏi gửi ngày 29/09/2026, hạn trả lời " + due + (S.late ? "; đã quá hạn <b>" + S.late + " ngày</b>" : "") + (S.got ? " mà Ban quản trị mới trả lời " + S.got + " trên " + S.n + " câu." : " mà Ban quản trị chưa trả lời câu nào."));
+    }
+  } catch (e) { }
+}
 /* ============================== helpers ============================== */
 var $ = function(id){ return document.getElementById(id); };
 function qa(sel, root){ return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
@@ -2687,7 +2710,7 @@ function renderTrkBar(){
 }
 function renderReqs(){
   var ed = canWrite();
-  renderTrkBar(); if (typeof renderQ10 === "function") renderQ10();
+  renderTrkBar(); if (typeof renderQ10 === "function") renderQ10(); if (typeof renderHooks === "function") renderHooks();
   $("reqs").innerHTML = D.requests.map(function(r, i){
     var id = "rq" + i, t = U.tracker[id] || {}, st = t.s || "chua";
     var right = ed ? '<select data-rq="' + id + '" aria-label="Tình trạng hồ sơ ' + (i + 1) + '">' + TST.map(function(s){ return '<option value="' + s[0] + '"' + (s[0] === st ? " selected" : "") + ">" + s[1] + "</option>"; }).join("") + '</select><input class="nt" data-rqn="' + id + '" type="text" maxlength="200" placeholder="Ghi chú: ngày gửi, số văn bản, trả lời" value="' + esc(t.n || "") + '">' :
@@ -4268,7 +4291,7 @@ function init(){
   M = compute();
   renderKL(); renderPartChips(); renderVerdict(); renderTests(); renderCauses(); renderChic(); renderRateStatic(); renderSafety(); renderMatrix(); renderChecks(); renderFinds(); renderRoad(); renderGlossary(); renderTdTrace(); renderHT(); renderHD(); renderDocs(); renderTdNew(); initTheme(); renderFAQ(); renderKM(); renderClipStrip(); renderSecClips(); initFileToggle();
   initCollapse(); renderToc(); renderDlNote(); initPaged();
-  renderClips(); renderLDX(); renderFive();
+  renderClips(); renderLDX(); renderFive(); if (typeof renderHooks === "function") renderHooks();
   renderDynamic(); renderReqs(); renderDownloads();
   addSecShare();
   applyAbbr();

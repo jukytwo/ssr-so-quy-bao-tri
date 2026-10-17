@@ -404,7 +404,7 @@ function renderTrkBar(){
 }
 function renderReqs(){
   var ed = canWrite();
-  renderTrkBar(); if (typeof renderQ10 === "function") renderQ10();
+  renderTrkBar(); if (typeof renderQ10 === "function") renderQ10(); if (typeof renderHooks === "function") renderHooks();
   $("reqs").innerHTML = D.requests.map(function(r, i){
     var id = "rq" + i, t = U.tracker[id] || {}, st = t.s || "chua";
     var right = ed ? '<select data-rq="' + id + '" aria-label="Tình trạng hồ sơ ' + (i + 1) + '">' + TST.map(function(s){ return '<option value="' + s[0] + '"' + (s[0] === st ? " selected" : "") + ">" + s[1] + "</option>"; }).join("") + '</select><input class="nt" data-rqn="' + id + '" type="text" maxlength="200" placeholder="Ghi chú: ngày gửi, số văn bản, trả lời" value="' + esc(t.n || "") + '">' :

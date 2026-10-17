@@ -99,3 +99,6 @@
 @media print{.ldx{display:none!important}.ld-print{display:block!important}}
 :root[data-theme="dark"] .vtag,:root[data-theme="dark"] .cap-v,:root[data-theme="dark"] .stp-n,:root[data-theme="dark"] .ldx-tab .dots i{color:#0b1410}
 :root[data-theme="dark"] .vtag em{border-left-color:rgba(0,0,0,.35)}
+
+/* cau moc mo dau */
+.hook{margin:10px 0 12px;padding:8px 0 8px 12px;border-left:3px solid var(--accent);font:600 16px/1.5 var(--f-body);color:var(--ink);max-width:62ch}.hook b{color:var(--accent-ink)}#tong-quan .hero>div>.hook{order:3;margin:8px 0 14px}
