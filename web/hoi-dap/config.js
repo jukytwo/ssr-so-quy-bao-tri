@@ -1,1 +1,1 @@
-window.SSR_HOIDAP = { url: "" }; // Dán địa chỉ web app Hỏi đáp (dạng https://script.google.com/macros/s/.../exec) vào giữa hai dấu nháy
+window.SSR_HOIDAP = { url: "https://script.google.com/macros/s/AKfycbyrDa9KfB5G1kFKQIivxqd-3axS0jGs4FLPEHvI33CqGulQcO0m-EqivIAKJzYvK2P6/exec" }; // Địa chỉ web app Hỏi đáp (Apps Script "SSR - Hỏi đáp"), gắn 17/10/2026
