@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="SSR">
 <meta name="theme-color" content="#063B28">
 <title>SSR Điều Hành | Trung tâm quản trị Saigon South Residences</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -99,7 +99,7 @@ a{color:var(--em-600)}
 .ph{display:flex;align-items:flex-end;justify-content:space-between;gap:14px 20px;flex-wrap:wrap;margin-bottom:20px}
 .ph h1{margin:0;font:600 38px/1.02 var(--f-disp);color:var(--title);letter-spacing:.1px}
 .ph p{margin:7px 0 0;color:var(--ink-3);max-width:70ch}
-.ph p.hook{margin:9px 0 0;max-width:78ch;padding:7px 0 7px 12px;border-left:3px solid var(--gold-700);color:var(--title);font-weight:600;font-size:16.5px;line-height:1.45}.ph p.hook a{font-weight:500;font-size:13.5px;color:var(--em-600);margin-left:4px;white-space:nowrap}.rep .hk{margin:12px 0 4px;padding:9px 13px;border-left:4px solid #B8892B;background:#F6F2E7;color:#063B28;font-weight:700;font-size:16.5px;line-height:1.45}.rep .hk span{display:block;font-weight:400;font-size:13px;color:#3A4A40;margin-top:3px}.ph:has(h1){display:flex;border:0;border-radius:0;background:none;overflow:visible}.demo-note{margin:0 0 14px;padding:9px 13px;border:1px solid #E7C97A;background:#FFF6DC;color:#5C4300;border-radius:10px;font-size:13.5px;line-height:1.5}.demo-note b{color:#7A5600}@media print{.demo-note{display:none}}
+.ph p.hook{margin:9px 0 0;max-width:78ch;padding:7px 0 7px 12px;border-left:3px solid var(--gold-700);color:var(--title);font-weight:600;font-size:16.5px;line-height:1.45}.ph p.hook a{font-weight:500;font-size:13.5px;color:var(--em-600);margin-left:4px;white-space:nowrap}.rep .hk{margin:12px 0 4px;padding:9px 13px;border-left:4px solid #B8892B;background:#F6F2E7;color:#063B28;font-weight:700;font-size:16.5px;line-height:1.45}.rep .hk span{display:block;font-weight:400;font-size:13px;color:#3A4A40;margin-top:3px}.ph:has(h1){display:flex;border:0;border-radius:0;background:none;overflow:visible}.demo-note{margin:0 0 14px;padding:9px 13px;border:1px solid #E7C97A;background:#FFF6DC;color:#5C4300;border-radius:10px;font-size:13.5px;line-height:1.5}.demo-note b{color:#7A5600}@media print{.demo-note{display:none}}.bnav{display:none}@media (max-width:960px){.bnav{position:fixed;left:0;right:0;bottom:0;z-index:80;display:flex;background:var(--surface);border-top:1px solid var(--line-2);padding:4px 4px calc(4px + env(safe-area-inset-bottom,0px));box-shadow:0 -6px 18px rgba(3,28,19,.07)}.bnav a,.bnav button{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 2px 5px;font:600 11px/1.15 var(--f-ui);color:var(--ink-3);text-decoration:none;background:none;border:0;position:relative;border-radius:12px;cursor:pointer;-webkit-tap-highlight-color:transparent}.bnav .i{width:23px;height:23px}.bnav .on{color:var(--em-600)}.bnav .on .i{stroke-width:2.2}.bnav .on::before{content:'';position:absolute;top:-4px;left:28%;right:28%;height:3px;border-radius:0 0 3px 3px;background:var(--gold-700)}.bnav i{position:absolute;top:1px;left:calc(50% + 5px);min-width:17px;height:17px;padding:0 4px;border-radius:9px;background:#C0392B;color:#fff;font:700 10px/17px var(--f-ui);font-style:normal;text-align:center}body{padding-bottom:calc(66px + env(safe-area-inset-bottom,0px))}#toast-root{bottom:calc(env(safe-area-inset-bottom,0px) + 80px)}.top .gs.gs{flex:1;min-width:0;width:auto;max-width:none}.top .gs.gs input{width:100%}.top .top-sp{display:none}.top .menu-btn,.top [data-act=theme-cycle],.top .iconbtn[data-act=go][data-r=canh-bao]{display:none!important}}@media print{.bnav{display:none!important}}.hero>*{min-width:0}.hero .chips{flex-wrap:wrap}.hd-i.hd-i{grid-template-columns:22px minmax(0,1fr) auto}.hd-i.hd-i b{max-width:100%}.hd-i.hd-i>*{min-width:0}.hd-i.hd-i>div>span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.g>*{min-width:0}@media (max-width:960px){.g2.g2{grid-template-columns:minmax(0,1fr)}.seg{max-width:100%}}
 .ph .acts{display:flex;gap:8px;flex-wrap:wrap}
 
 /* panels */
@@ -1810,7 +1810,7 @@ function render() {
   const sy = window.scrollY; const keepFocus = document.activeElement && document.activeElement.id === 'gs';
   $('#side').innerHTML = sidebar();
   if (!keepFocus) $('#top').innerHTML = topbar(); else { const t = document.createElement('div'); t.innerHTML = topbar(); $('#top .iconbtn[data-act="go"]') && $('#top .iconbtn[data-act="go"]').replaceWith(t.querySelector('.iconbtn[data-act="go"]')); }
-  $('#view').innerHTML = r[3](); if (typeof hookInject === 'function') hookInject(r[0]); if (typeof demoNote === 'function') demoNote(); fillParts();
+  $('#view').innerHTML = r[3](); if (typeof hookInject === 'function') hookInject(r[0]); if (typeof demoNote === 'function') demoNote(); if (typeof bnav === 'function') bnav(); fillParts();
   document.title = r[1] + ' | SSR Điều Hành';
   window.scrollTo(0, sy);
   const dr = $('.drawer'); if (dr && dr.dataset.block) { const g = dr.querySelector('[data-part-b]'); if (g) g.innerHTML = floorGrid(dr.dataset.block, UI.blockLayer); }
@@ -3972,6 +3972,18 @@ function demoNote() {
     const d = document.createElement('div'); d.className = 'demo-note';
     d.innerHTML = '<b>Dữ liệu mẫu.</b> Mọi phản ánh, công việc, số tiền, tên nhân viên và căn hộ trên trang này chỉ để minh họa cách dùng công cụ, không phải số liệu thật của Saigon South Residences.';
     v.insertBefore(d, v.firstChild);
+  } catch (e) { }
+}
+/* ---------- v10: giao diện web app trên điện thoại: thanh điều hướng dưới cùng ---------- */
+function bnav() {
+  try {
+    let n = document.getElementById('bnav');
+    if (!n) { n = document.createElement('nav'); n.id = 'bnav'; n.className = 'bnav'; n.setAttribute('aria-label', 'Điều hướng nhanh'); document.body.appendChild(n); }
+    const na = alarms().filter(a => a.lv >= 1).length, tk = S.tickets.filter(isOpenTk).length;
+    const it = [['tong-quan', 'home', 'Tổng quan', 0], ['phan-anh', 'chat', 'Phản ánh', tk], ['van-hanh', 'wrench', 'Vận hành', 0], ['canh-bao', 'bell', 'Cảnh báo', na]];
+    const main = it.some(x => x[0] === route), cnt = v => v ? `<i>${v > 99 ? '99+' : v}</i>` : '';
+    n.innerHTML = it.map(x => `<a href="#${x[0]}" data-act="go" data-r="${x[0]}"${route === x[0] ? ' class="on" aria-current="page"' : ''}>${ic(x[1])}<span>${x[2]}</span>${cnt(x[3])}</a>`).join('') +
+      `<button type="button" data-act="menu"${main ? '' : ' class="on"'}>${ic('menu')}<span>Thêm</span></button>`;
   } catch (e) { }
 }
 
