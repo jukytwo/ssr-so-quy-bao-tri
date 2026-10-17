@@ -42,6 +42,18 @@ Tổng quan (câu trả lời ngắn và năm vấn đề), Clip, Đường ti�
 - Mã PIN quản trị mặc định chỉ để dùng thử, phải đổi trước khi dùng thật.
 - Khóa quản trị, khóa xem Google Sheets chỉ gửi riêng, không ghi vào kho.
 
+## Nút Hỏi đáp (cả hai mục)
+
+| Tệp | Nội dung |
+|---|---|
+| `web/hoi-dap/hoidap.js` | Nút và khung hỏi đáp; tìm câu trả lời có sẵn trên trang trước, chỉ hỏi AI khi trang chưa có |
+| `web/hoi-dap/kb.json` | Kho nội dung dựng từ trang Quỹ bảo trì và thư viện quy định, hướng dẫn của mục Điều hành (không lấy dữ liệu mẫu); dựng bằng `node src/hoidap/build_kb.js` |
+| `web/hoi-dap/config.js` | Địa chỉ máy chủ hỏi AI; để trống thì chỉ trả lời từ nội dung trang |
+| `web/hoi-dap/may-chu/HoiDap.gs` | Máy chủ Google Apps Script gọi Gemini miễn phí, giữ khóa API, giới hạn lượt mỗi ngày |
+| `web/hoi-dap/tai-lieu/` | Toàn văn quy chế, nội quy (tệp .txt) muốn đưa thêm vào kho |
+
+Hướng dẫn bật phần AI: `web/hoi-dap/HUONG-DAN-HOI-DAP.md`. Khi sửa nội dung trang Quỹ bảo trì, chạy lại `build_kb.js` để kho hỏi đáp khớp nội dung mới.
+
 ## Ghi chú
 
 - Trang chạy trên GitHub Pages: https://jukytwo.github.io/ssr-so-quy-bao-tri/ (tệp `index.html` ở gốc kho chuyển thẳng tới `web/`). Trên GitHub Pages trang ở chế độ chỉ xem: không sửa tình trạng mười câu hỏi, không có hỏi đáp bằng AI; muốn cập nhật thì dựng lại và tải lên tệp `web/index.html` mới.
