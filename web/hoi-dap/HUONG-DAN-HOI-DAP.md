@@ -52,5 +52,5 @@ Quy chế hoạt động của Ban Quản trị, Nội quy nhà chung cư, Quy c
 - Khóa Gemini chỉ nằm ở Thuộc tính tập lệnh, không nằm trong trang công khai.
 - Ở gói miễn phí, Google có thể dùng nội dung câu hỏi để cải thiện sản phẩm. Khung hỏi đáp đã nhắc cư dân không ghi tên, số điện thoại, số căn hộ.
 - Hết lượt trong ngày, trang báo cư dân hỏi lại hôm sau; câu trả lời có sẵn trên trang vẫn dùng bình thường.
-- Câu trả lời AI có thể sai, trang luôn ghi rõ là tham khảo, không thay cho tư vấn pháp lý.
+- Câu trả lời AI có thể sai, trang luôn ghi rõ là tham khảo, không thay cho tư vấn pháp lý. Chỉ dẫn cho AI trong `HoiDap.gs` theo Bộ nguyên tắc xác minh thông tin (bản 17/10/2026): chỉ trả lời từ tài liệu của trang, riêng quy định pháp luật nhà chung cư được dùng văn bản chính thức còn hiệu lực và ghi rõ là ngoài tài liệu; nguồn web chỉ hiện nguồn chính thức và báo chí lớn.
 - Cập nhật mã máy chủ: **Triển khai**, **Quản lý các bản triển khai**, bút chì, chọn phiên bản mới. Địa chỉ giữ nguyên.
