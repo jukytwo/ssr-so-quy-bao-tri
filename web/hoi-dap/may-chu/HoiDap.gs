@@ -7,11 +7,12 @@
  *   GEMINI_API_KEY  bắt buộc, lấy ở https://aistudio.google.com/apikey
  *   DAILY_LIMIT     tùy chọn, số câu hỏi AI tối đa mỗi ngày, mặc định 300
  *   GEMINI_MODEL    tùy chọn, danh sách mô hình cách nhau dấu phẩy, thử lần lượt
- *   GEMINI_SEARCH   tùy chọn, "0" để tắt tra cứu Google khi trả lời
+ *   GEMINI_SEARCH   tùy chọn, "0" để tắt tra cứu Google khi trả lời (gói miễn phí thường không cho, máy tự bỏ)
  *   KB_URL          tùy chọn, địa chỉ kb.json nếu trang chuyển đi nơi khác
  */
 const HD_KB_URL = 'https://jukytwo.github.io/ssr-so-quy-bao-tri/web/hoi-dap/kb.json';
-const HD_MODELS = 'gemini-flash-latest,gemini-2.5-flash,gemini-2.5-flash-lite';
+// Mô hình thử lần lượt (Google đã đóng dòng 2.5 với khóa mới). Kiểm tra với khóa thật ngày 17/10/2026.
+const HD_MODELS = 'gemini-3.8-flash,gemini-3.5-flash,gemini-flash-latest,gemini-3.1-flash-lite';
 // Chỉ dẫn hệ thống theo Bộ nguyên tắc xác minh thông tin và phân tích dựa trên bằng chứng (bản hợp nhất 17/10/2026), Phần I, IV, V.
 const HD_SYS = [
   'Bạn là trợ lý hỏi đáp của trang SSR, phục vụ cư dân chung cư Saigon South Residences (Nam Sài Gòn Residences, Phú Mỹ Hưng, TP.HCM).',
@@ -104,11 +105,14 @@ function hdKb_() {
 
 function hdGemini_(key, q, ctx) {
   const pr = hdP_(), models = (pr.getProperty('GEMINI_MODEL') || HD_MODELS).split(',').map(s => s.trim()).filter(Boolean);
-  const modes = pr.getProperty('GEMINI_SEARCH') === '0' ? [false] : [true, false];
+  // Gói miễn phí có thể không cho tra Google (lỗi 429). Khi gặp, ghi nhớ 6 giờ để khỏi gọi thừa.
+  const cache = CacheService.getScriptCache();
+  const modes = (pr.getProperty('GEMINI_SEARCH') === '0' || cache.get('hd_nosearch')) ? [false] : [true, false];
   const user = 'TÀI LIỆU TRÊN TRANG SSR:\n' + (ctx || '(không tìm thấy đoạn nào liên quan trên trang)') + '\n\nCÂU HỎI CỦA CƯ DÂN: ' + q;
   let last = '';
   for (const m of models) for (const s of modes) {
-    const body = { systemInstruction: { parts: [{ text: HD_SYS }] }, contents: [{ role: 'user', parts: [{ text: user }] }], generationConfig: { temperature: 0.2, maxOutputTokens: 1024 } };
+    if (s && cache.get('hd_nosearch')) continue;
+    const body = { systemInstruction: { parts: [{ text: HD_SYS }] }, contents: [{ role: 'user', parts: [{ text: user }] }], generationConfig: { temperature: 0.2, maxOutputTokens: 4096 } };
     if (s) body.tools = [{ google_search: {} }];
     let res; try {
       res = UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/models/' + encodeURIComponent(m) + ':generateContent', { method: 'post', contentType: 'application/json', headers: { 'x-goog-api-key': key }, payload: JSON.stringify(body), muteHttpExceptions: true });
@@ -120,7 +124,10 @@ function hdGemini_(key, q, ctx) {
       const web = ((cd.groundingMetadata && cd.groundingMetadata.groundingChunks) || []).map(g => g.web).filter(Boolean).filter(hdWebOk_).map(w => ({ uri: w.uri, title: w.title }));
       return { ok: true, answer: text, model: m, web: web };
     }
-    last = code + ' ' + ((j.error && j.error.message) || '').slice(0, 160);
+    last = m + (s ? ' (tra Google) ' : ' ') + code + ' ' + ((j.error && j.error.message) || '').slice(0, 160);
+    console.log('Gemini thử: ' + last);
+    if (s && code === 429) { try { cache.put('hd_nosearch', '1', 21600); } catch (x) { } continue; }
+    if (code === 404 || code === 400) break; // mô hình không dùng được với khóa này, sang mô hình kế
   }
   console.log('Gemini lỗi: ' + last);
   return { ok: false, error: 'AI đang bận hoặc tạm hết lượt miễn phí. Vui lòng thử lại sau ít phút.' };
