@@ -7,7 +7,7 @@ function hookSet(sel, html){
 function renderHooks(){
   try {
     hookSet("#tong-quan .hero h1", "198 giao dịch đều khớp số dư sao kê, nhưng ngày 23/12/2025 có <b>986,9 triệu</b> tiền quỹ chuyển vào tài khoản do chính các thành viên Ban quản trị đồng đứng tên. Căn cứ nào cho khoản chuyển này?");
-    hookSet("#phan-clip .pt", "Bản tóm tắt 1 phút 22 giây đi qua đủ năm điểm cần làm rõ, từ <b>986,9 triệu</b> chuyển vào tài khoản Ban quản trị tới <b>127,5 tỷ</b> tiền gửi chưa có xác nhận của ngân hàng.");
+    hookSet("#phan-clip .pt", "Bản tóm tắt dưới 90 giây đi qua đủ năm điểm cần làm rõ, từ <b>986,9 triệu</b> chuyển vào tài khoản Ban quản trị tới <b>127,5 tỷ</b> tiền gửi chưa có xác nhận của ngân hàng.");
     if (D.ldx && D.ldx.cases){
       var t = {sai: 0, giai: 0, ro: 0, dung: 0}; D.ldx.cases.forEach(function(c){ for (var k in t) t[k] += (c.cnt && c.cnt[k]) || 0; });
       var n = t.sai + t.giai + t.ro + t.dung;

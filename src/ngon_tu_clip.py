@@ -96,7 +96,7 @@ CR3 = [
     ("trong đó 1,40 tỷ đã chi ngoài quy trình.", "trong đó 1,40 tỷ đã chi chưa qua quy trình của quỹ."),
     ("vào tài khoản của Ban quản trị,", "vào tài khoản do Ban quản trị đứng tên,"),
 ]
-EXACT = {"Đã rõ": "Trên sao kê", "Chưa có khoản nào.": "Ngoài phạm vi đánh giá.", "Bãi nhiệm": "Xem xét bãi nhiệm",
+EXACT = {"Điểm nghi vấn trên sao kê; đã chi 1,40 tỷ": "Nghi vấn trên sao kê; đã chi 1,40 tỷ", "Điểm nghi vấn trên sao kê": "Nghi vấn trên sao kê", "Đã rõ": "Trên sao kê", "Chưa có khoản nào.": "Ngoài phạm vi đánh giá.", "Bãi nhiệm": "Xem xét bãi nhiệm",
          "Khi không khắc phục": "Thuộc thẩm quyền Hội nghị", "chi ngoài quy trình": "chi chưa qua quy trình quỹ"}
 def soften(t):
     if not isinstance(t, str): return t

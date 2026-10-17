@@ -63,7 +63,7 @@ body{{width:1600px;padding-bottom:44px;font-family:'Be Vietnam Pro';color:#1b243
 .ft{{padding:6px 72px 0;font-size:21px;color:#566459;line-height:1.45}}
 .ft b{{color:#12301F}}
 </style></head><body>
-<div class="hd">{LOGO}<div><div class="k">SỔ QUỸ BẢO TRÌ SSR · BỘ CLIP</div><h1>Quỹ bảo trì: sai ở đâu, tới mức nào, Hội nghị quyết định gì</h1>
+<div class="hd">{LOGO}<div><div class="k">SỔ QUỸ BẢO TRÌ SSR · BỘ CLIP</div><h1>Quỹ bảo trì: điểm nào cần làm rõ, tới mức nào, Hội nghị quyết định gì</h1>
 <div class="s">Sao kê 15/08/2024 tới 31/05/2026 · Phát hành 04/10/2026</div></div></div>
 <div class="wrap">
 <div class="sec"><div class="sh"><span class="tag">1 bản đầy đủ</span><h2>Clip ngang, toàn bộ nội dung</h2><span class="m">Chiếu Hội nghị, xem trên máy tính, TV</span></div>

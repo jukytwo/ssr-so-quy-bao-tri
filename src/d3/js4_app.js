@@ -301,7 +301,7 @@ var PARTN = [["I", "Kết luận", 1], ["II", "Dữ liệu và độ tin cậy",
 function renderToc(){
   var h = '<a href="#tong-quan"><span class="no">·</span><span>Tổng quan, câu trả lời ngắn</span><span></span></a>';
   h += '<div class="tp">Xem nhanh</div>' + [["phan-tien", "Đường đi của tiền: năm trường hợp"], ["phan-cauhoi", "Mười câu hỏi gửi Ban quản trị"]].map(function(x){ return '<a href="#' + x[0] + '"><span class="no">·</span><span>' + x[1] + '</span><span></span></a>'; }).join("");
-  if (D.clips) h += '<div class="tp">Xem clip</div>' + [["full", "Bản đầy đủ"], ["phan_2", "Phần 2: hai điểm nghi vấn trên sao kê"], ["doc_04", "Clip dọc cho điện thoại"], ["tom_tat", "Clip tóm tắt 90 giây"]].map(function(x){ return '<a href="#clip-' + x[0] + '" data-clipdeep="' + x[0] + '"><span class="no">▶</span><span>' + x[1] + "</span><span></span></a>"; }).join("");
+  if (D.clips) h += '<div class="tp">Xem clip</div>' + [["full", "Bản đầy đủ, 16 chương"], ["phan_1", "Sáu phần ngang"], ["doc_01", "Mười một clip dọc"], ["tom_tat", "Clip tóm tắt 90 giây"]].map(function(x){ return '<a href="#clip-' + x[0] + '" data-clipdeep="' + x[0] + '"><span class="no">▶</span><span>' + x[1] + "</span><span></span></a>"; }).join("");
   PARTN.forEach(function(p, i){
     h += '<div class="tp">Phần ' + p[0] + " · " + p[1] + "</div>";
     if (p[2] === "hd") h += [{id: "hot", l: "Nên đọc trước"}].concat(D.faq.topics).map(function(t){ var n = t.id === "hot" ? D.faq.items.filter(function(x){ return x.hot; }).length : D.faq.items.filter(function(x){ return x.t === t.id; }).length; return '<a href="#hoi-dap" data-hdt="' + t.id + '"><span class="no">?</span><span>' + esc(t.l) + '</span><span class="subx">' + n + " câu</span></a>"; }).join("");

@@ -33,18 +33,20 @@ _themed("build_video", "/home/claude/vtpl/build_video.py")
 for _n in ("luudo", "video_ssr", "video_ssr_nn", "flowclip"): _themed(_n, f"/home/claude/ssr/{_n}.py")
 import video_ssr_one2 as O
 O.BV._SCENE_CSS += SERIF_CSS
+# 17/10: canh "Tom lai" 16:9 bi tran xuong chan trang; nhan mot dong, hang thap hon
+O.BV._SCENE_CSS += " .fv{gap:9px} .fv .it{grid-template-columns:62px 540px 1fr 290px;padding:8px 22px} .fv .q{font-size:33px;line-height:1.15} .fv .a{font-size:27px}"
 VS, NN, FC, BV = O.VS, O.NN, O.FC, O.BV
 OUT = "/home/claude/ssr/video25"; os.makedirs(OUT, exist_ok=True)
 
 def S(sec, icon): return dict(sec=sec, icon=icon)
-S1, S2 = S("Tiền có mất không", "view"), S("Toàn cảnh dòng tiền", "money")
+S1, S2 = S("Sao kê cho thấy gì", "view"), S("Toàn cảnh dòng tiền", "money")
 SV = {i: S(f"Vấn đề {i}", "money") for i in range(1, 6)}
 SQC = S("Quy chế áp dụng", "company")
 FL = {sid: (v, [x for x in O.VS_FLOW if x[0].split("#")[0] == sid]) for sid, v in zip(["f0", "f1", "f2", "f3", "f4", "f5"], O.V_FLOW)}
 
 # ---------------- 11 chu de: (canh, loi doc) ----------------
 SEG = {}
-SEG[1] = dict(name="Tiền quỹ có mất không", short="Tiền có mất không", vis=[
+SEG[1] = dict(name="Sao kê quỹ cho thấy gì", short="Sao kê cho thấy gì", vis=[
  O.V_ONE[0],
  dict(id="kt", type="timeline", **S1, tag="Cách kiểm tra", title="Bốn bước trước khi kết luận",
       items=[{"d": "Bước 1", "h": "Sao kê", "t": "Đọc **3 tài khoản** từ 15/08/2024 tới 31/05/2026"},
@@ -294,7 +296,7 @@ _VS11 = [("pa#-2", "Hội nghị quyết định theo điều kiện, xét riên
 SEG[11] = dict(name="Hội nghị quyết định gì, cư dân làm gì", short="Hội nghị quyết định gì, cư dân làm gì",
                vis=[_V1["pa"], _V1["cuda"]], vs=_VS11)
 
-PARTS = {1: dict(segs=[1, 2], name="Tiền có mất không và toàn cảnh dòng tiền"),
+PARTS = {1: dict(segs=[1, 2], name="Sao kê cho thấy gì và toàn cảnh dòng tiền"),
          2: dict(segs=[3, 4], name="Hai điểm nghi vấn trên sao kê: vấn đề 1 và 2"),
          3: dict(segs=[5, 6], name="Hai khoản chờ chứng từ: vấn đề 3 và 4"),
          4: dict(segs=[7, 8], name="Tiền gửi sau tái tục và Quy chế áp dụng"),
@@ -359,11 +361,11 @@ PART_STATS = {1: [["127,15 tỷ", "tiền gốc còn trong quỹ", "g"], ["198",
               2: [["986,9 triệu", "vào tài khoản Ban quản trị", "r"], ["1,71 tỷ", "khu vực chung ngoài quỹ", "r"], ["1,40 tỷ", "chi ngoài quy trình", "r"]],
               3: [["13", "khoản trên 50 triệu", "o"], ["5,04 tỷ", "chưa thấy văn bản cho phép", "o"], ["705,8 triệu", "trả trọn Thép Quang", "o"]],
               4: [["127,5 tỷ", "tiền gửi sau tái tục", "y"], ["98%", "quỹ là tiền gửi kỳ hạn", "n"], ["26/05/2024", "ngày thông qua Quy chế", "g"]],
-              5: [["3", "vi phạm đã rõ", "r"], ["16", "dấu hiệu được phân loại", "o"], ["0", "khoản có căn cứ hình sự", "g"]],
+              5: [["3", "điểm nghi vấn trên sao kê", "r"], ["16", "dấu hiệu được phân loại", "o"], ["17", "quy định được đối chiếu", "n"]],
               6: [["10", "câu hỏi đã gửi", "o"], ["3", "phương án cho Hội nghị", "n"], ["3", "việc cư dân nên làm", "g"]]}
 DOC_STATS = {1: [["127,15 tỷ", "tiền gốc còn", "g"], ["0", "lệnh rút tiền mặt", "g"]],
              2: [["4", "tài khoản", "n"], ["3,12 tỷ", "đã rời quỹ", "o"]],
-             3: [["986,9 triệu", "vào TK Ban quản trị", "r"], ["3", "điều đã rõ", "r"]],
+             3: [["986,9 triệu", "vào TK Ban quản trị", "r"], ["3", "điều thể hiện trên sao kê", "r"]],
              4: [["1,71 tỷ", "ngoài quỹ", "r"], ["1,40 tỷ", "đã chi", "r"]],
              5: [["13", "khoản trên 50 triệu", "o"], ["5,04 tỷ", "chưa thấy văn bản", "o"]],
              6: [["705,8 triệu", "trả trọn", "o"], ["6", "chứng từ cần có", "o"]],

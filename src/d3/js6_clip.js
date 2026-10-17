@@ -199,8 +199,8 @@ function renderClipStrip(){
 }
 
 /* nut Xem clip ngay trong tung muc phan tich, va nut quay lai muc dang doc */
-var SEC_CLIPS = {"ket-luan": ["tom_tat", "phan_2"], "vi-sao": ["doc_05", "doc_06"], "khu-vuc-chung": ["doc_04"], "lai-suat": ["doc_07"], "quy-che": ["doc_08"],
-  "dau-hieu": ["doc_11"], "ho-so": ["doc_10"], "muoi-cau-hoi": ["doc_10"]};
+var SEC_CLIPS = {"ket-luan": ["tom_tat", "doc_09"], "du-lieu": ["doc_01"], "tien-o-dau": ["doc_02"], "vi-sao": ["doc_03", "doc_05", "doc_06"],
+  "khu-vuc-chung": ["doc_04"], "lai-suat": ["doc_07"], "quy-che": ["doc_08"], "dau-hieu": ["doc_09", "doc_11"], "ho-so": ["doc_10"], "muoi-cau-hoi": ["doc_10"]};
 function renderSecClips(){
   if (!D.clips || !clpIndex()) return;
   Object.keys(SEC_CLIPS).forEach(function(sid){

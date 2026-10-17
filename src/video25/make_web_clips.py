@@ -25,7 +25,7 @@ for i, c in enumerate(info["chapters"], 1):
     f = f"full_{i:02d}.mp4"; d = dur(f"{W}/v/{f}")
     chs.append(dict(id=f"full_{i:02d}", src="v/" + f, title=c.split(" ", 1)[1], dur=d, poster=frame(f"{W}/v/{f}", min(4, d / 2), f"full_{i:02d}.jpg"),
                     mb=round(os.path.getsize(f"{W}/v/{f}") / 1048576, 1)))
-full = dict(id="full", title="Quỹ bảo trì: sai ở đâu, tới mức nào, Hội nghị quyết định gì", kind="Bản đầy đủ · ngang",
+full = dict(id="full", title="Quỹ bảo trì: điểm nào cần làm rõ, tới mức nào, Hội nghị quyết định gì", kind="Bản đầy đủ · ngang",
             desc="Toàn bộ nội dung trong một clip, chia 16 chương. Hợp để chiếu tại Hội nghị hoặc xem trên máy tính, TV.",
             poster=poster(thumb("00 - "), "full.jpg", False), vert=False, dur=round(sum(c["dur"] for c in chs), 2), chapters=chs)
 parts = [item(f"phan_{n}", f"phan_{n}.mp4", p["name"], f"Phần {n} / 6 · ngang", V.PHOOK[n], poster(thumb(f"Phần {n} - "), f"phan_{n}.jpg", False), False) for n, p in V.PARTS.items()]
