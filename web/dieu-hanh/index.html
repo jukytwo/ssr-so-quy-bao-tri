@@ -970,13 +970,20 @@ let S = null, role = 'viewer', actor = '', loadNote = '', tamper = [];
 const COLS = ['staff', 'units', 'tickets', 'tasks', 'assets', 'facilities', 'bookings', 'vehicles', 'visits', 'tx', 'contracts', 'notices', 'items', 'moves', 'shifts', 'scores', 'capex', 'checkpoints', 'meters', 'readings', 'patrols'];
 const isAdmin = () => role === 'admin';
 function readJSON(str) { try { const o = JSON.parse(str); return o && o.app === 'SSR-DH' ? o : null; } catch (e) { return null; } }
+/* 17/10/2026: ban web cong khai chi hien so lieu that; bo toan bo du lieu mau (ten nguoi phu trach, cong viec, so tien gia dinh) */
+function realOnly(S) {
+  Object.keys(S).forEach(k => { if (Array.isArray(S[k]) && k !== 'audit' && k !== 'bankSeen') S[k] = []; });
+  S.settings = S.settings || {}; S.settings.demo = false; S.settings.open = {}; S.budget = {};
+  if (S.imp) S.imp = { field: 0, guestMap: {} };
+}
 function load() {
   let local = null, emb = null;
   try { local = readJSON(localStorage.getItem(KEY)); } catch (e) { }
   const el = document.getElementById('ssr-data'); if (el && el.textContent.trim()) emb = readJSON(el.textContent);
   if (emb && (!local || (emb.updatedAt || 0) > (local.updatedAt || 0))) { S = emb; if (local) loadNote = 'Đã mở dữ liệu mới hơn từ file chia sẻ, cập nhật lúc ' + fDT(dtStr(new Date(emb.updatedAt))); }
   else if (local) S = local;
-  else { S = seed(); S.audit = []; log('Khởi tạo', 'system', null, [], 'Nạp dữ liệu mẫu để làm quen công cụ', 'Hệ thống'); }
+  else { S = seed(); S.audit = []; realOnly(S); log('Khởi tạo', 'system', null, [], 'Bắt đầu với dữ liệu trống, chỉ nhập số liệu thật', 'Hệ thống'); }
+  if (S && S.settings && S.settings.demo) realOnly(S);
   COLS.forEach(k => { if (!Array.isArray(S[k])) S[k] = []; });
   S.budget = S.budget || {}; S.seq = S.seq || {}; S.audit = S.audit || [];
   persist(true);
@@ -3610,7 +3617,7 @@ const LAW = [
    kw: /hội nghị|họp cư dân|ban quản trị|bqt|nhiệm kỳ|quyết toán|bầu/i, res: 'Có cơ sở', who: 'Ban Quản trị' },
  { id: 'giadv', topic: 'Phí quản lý', title: 'Giá dịch vụ quản lý vận hành phải được Hội nghị thông qua',
    basis: 'Luật Nhà ở 2023; Thông tư 05/2024/TT-BXD, khoản 3 Điều 4; Nghị định 339/2026/NĐ-CP, Điều 61',
-   rule: 'Kinh phí quản lý vận hành đóng theo thỏa thuận giữa chủ sở hữu và đơn vị quản lý vận hành trên cơ sở pháp luật nhà ở. Ban Quản trị tự quyết mức giá dịch vụ quản lý vận hành mà không thông qua Hội nghị nhà chung cư có thể bị phạt, và bị buộc thực hiện theo mức giá Hội nghị đã thông qua.',
+   rule: 'Kinh phí quản lý vận hành đóng theo thỏa thuận giữa chủ sở hữu và đơn vị quản lý vận hành trên cơ sở pháp luật nhà ở. Việc tự quyết mức giá dịch vụ quản lý vận hành mà không thông qua Hội nghị nhà chung cư, nếu cơ quan có thẩm quyền xác định là vi phạm, có thể bị xử phạt và buộc thực hiện theo mức giá Hội nghị đã thông qua.',
    kw: /phí quản lý|giá dịch vụ|tăng phí|phí dịch vụ|đơn giá|11\.?000/i, res: 'Có cơ sở', who: 'Ban Quản trị, đơn vị quản lý vận hành' },
  { id: 'catdien', topic: 'Quyền của Ban Quản lý', title: 'Cắt điện, nước sinh hoạt của căn hộ để thu phí hoặc xử lý vi phạm',
    basis: 'Luật Nhà ở 2023, khoản 3 Điều 148; Thông tư 05/2024/TT-BXD; ý kiến luật sư đăng trên báo Pháp Luật TP.HCM (10/2024)',
@@ -3968,9 +3975,9 @@ function hkAfterRh(html, t, sub) { if (!t) return html; const i = html.indexOf('
 })();
 function demoNote() {
   try {
-    const v = document.getElementById('view'); if (!v || !S.settings.demo || v.querySelector('.demo-note')) return;
+    const v = document.getElementById('view'); if (!v || v.querySelector('.demo-note')) return; const _n = ['tickets', 'tasks', 'tx', 'outages', 'letters'].reduce((a, k) => a + ((S[k] || []).length), 0); if (!S.settings.demo && _n) return;
     const d = document.createElement('div'); d.className = 'demo-note';
-    d.innerHTML = '<b>Dữ liệu mẫu.</b> Mọi phản ánh, công việc, số tiền, tên nhân viên và căn hộ trên trang này chỉ để minh họa cách dùng công cụ, không phải số liệu thật của Saigon South Residences.';
+    d.innerHTML = '<b>Chưa có số liệu vận hành được công bố.</b> Trang chỉ hiển thị việc đã diễn ra thật khi Ban Quản lý, Ban Quản trị cung cấp số liệu. Không dùng dữ liệu giả định, không nêu tên người phụ trách.';
     v.insertBefore(d, v.firstChild);
   } catch (e) { }
 }
@@ -3987,6 +3994,10 @@ function bnav() {
   } catch (e) { }
 }
 
+/* 17/10/2026: chua co so lieu that thi khong cham diem, khong bao dong suy ra tu du lieu trong */
+function hasData() { return typeof S !== 'undefined' && S && ['tickets', 'tasks', 'tx', 'outages', 'letters', 'meetings', 'permits', 'fires', 'lifts', 'wtests', 'notices', 'shifts', 'bookings', 'visits', 'contracts', 'assets'].some(k => (S[k] || []).length); }
+(function () { const _al = alarms; alarms = function () { if (hasData()) return _al.apply(this, arguments); const o = []; o._v5 = true; return o; };
+  const _dh = dashHero; dashHero = function () { if (hasData()) return _dh.apply(this, arguments); return `<section class="hero pn"><div class="hr-l"><h2>Tổng quan vận hành</h2><p class="hr-s">Chưa có số liệu vận hành thật được nhập, nên trang chưa chấm điểm và chưa đưa ra cảnh báo. Mỗi mục sẽ hiển thị khi Ban Quản lý, Ban Quản trị cung cấp số liệu đã diễn ra.</p></div></section>`; }; })();
 boot();
 cloudTimers();
 

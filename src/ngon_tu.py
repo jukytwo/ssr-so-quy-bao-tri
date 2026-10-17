@@ -11,6 +11,41 @@ R = [
     ("Quỹ bảo trì chung cư Nam Sài Gòn Residences có khuất tất hay không:", "Quỹ bảo trì chung cư Nam Sài Gòn Residences, những điểm cần làm rõ:"),
     ("Quỹ bảo trì có khuất tất hay không?", "Quỹ bảo trì có những điểm nào cần làm rõ?"),
     ("Quỹ bảo trì: có khuất tất hay không?", "Quỹ bảo trì: những điểm nào cần làm rõ?"),
+    ("Khó là lỡ tay:", "Khó là sơ suất ghi chép:"),
+    ("tài khoản của chính Ban quản trị", "tài khoản do Ban quản trị đứng tên"),
+    ("Chưa có dấu hiệu né tránh", "Chứng từ được cung cấp khi có yêu cầu"),
+    ("né tránh cung cấp", "chưa cung cấp"),
+    ("Chuyển cơ quan điều tra chỉ khi có chứng cứ chiếm đoạt; đến nay chưa có dữ kiện như vậy.", "Trách nhiệm hình sự, nếu có, chỉ do cơ quan tiến hành tố tụng xem xét; tài liệu này không đánh giá nội dung này."),
+    ("Chỉ khi có chứng cứ chiếm đoạt; đến nay chưa có dữ kiện như vậy", "Chỉ do cơ quan tiến hành tố tụng xem xét; tài liệu này không đánh giá nội dung này"),
+    (">Chuyển cơ quan điều tra<", ">Trách nhiệm hình sự<"),
+    ("Bồi hoàn khoản không có chứng từ", "Đề nghị hoàn trả khoản không có chứng từ"),
+    ("Bồi hoàn: Điều 10.1 Quy chế thu chi.", "Hoàn trả quỹ: Điều 10.1 Quy chế thu chi."),
+    ("triệu đồng, nếu xác định vi phạm", "triệu đồng, nếu cơ quan có thẩm quyền xác định vi phạm"),
+    ("Khoản không chứng minh được phải bồi hoàn quỹ.", "Khoản không chứng minh được, cư dân có cơ sở đề nghị hoàn trả về quỹ."),
+    ("khoản không chứng minh được phải bồi hoàn", "khoản không chứng minh được có cơ sở đề nghị hoàn trả"),
+    ("có khung phạt 50 – 60 triệu đồng kèm buộc bồi hoàn.", "có khung phạt 50 – 60 triệu đồng và biện pháp khắc phục."),
+    ("nhóm chưa loại trừ (3)", "nhóm cần hồ sơ (3)"),
+    ("Cũng không có lý do phải ứng trước:", "Cũng cần làm rõ lý do phải ứng trước:"),
+    ("không có lý do phải ứng từ tài khoản khác", "cần làm rõ lý do phải ứng từ tài khoản khác"),
+    ("do chính 6 thành viên Ban quản trị", "do 6 thành viên Ban quản trị"),
+    ("4 chưa loại trừ khả năng có chủ đích, cần chứng từ để kết luận.", "4 dấu hiệu cần thêm hồ sơ để làm rõ nguyên nhân."),
+    ("Chưa có khoản nào đủ căn cứ để đặt vấn đề hình sự.", "Trang không đánh giá trách nhiệm hình sự."),
+    ("nếu được xác định là vi phạm, khung phạt 50 đến 60 triệu và buộc bồi hoàn.", "nếu cơ quan có thẩm quyền xác định là vi phạm, khung phạt 50 – 60 triệu đồng và biện pháp khắc phục."),
+    ("Tuy vậy, 4 dấu hiệu chưa loại trừ được khả năng này;", "Có 4 dấu hiệu cần thêm hồ sơ để làm rõ nguyên nhân;"),
+    ("Vì sao chưa loại trừ", "Vì sao cần thêm hồ sơ"),
+    ("Né tránh chứng từ khi được yêu cầu.", "Chứng từ chưa được cung cấp khi được yêu cầu."),
+    ("chứng từ né tránh hoặc mâu thuẫn sau khi đã được yêu cầu.", "chứng từ chưa được cung cấp hoặc mâu thuẫn sau khi đã được yêu cầu."),
+    ("Khoản chi không đủ chứng từ vẫn phải làm rõ và hoàn lại quỹ; điểm nghi vấn trên sao kê vẫn cần được khắc phục.", "Khoản chi chưa đủ chứng từ cần được làm rõ; khoản không chứng minh được có cơ sở đề nghị hoàn trả về quỹ."),
+    ("điểm nghi vấn trên sao kê vẫn có khung phạt.", "điểm nghi vấn trên sao kê vẫn cần được giải trình."),
+    ("Bồi hoàn, kiểm toán đột xuất, xem xét bãi nhiệm; có dấu hiệu vi phạm pháp luật thì đề nghị cơ quan có thẩm quyền xem xét.", "Đề nghị cung cấp chứng từ, kiểm toán đột xuất; Hội nghị nhà chung cư xem xét trách nhiệm theo Quy chế."),
+    ("Không có chứng từ thì bồi hoàn", "Không có chứng từ thì cư dân có cơ sở đề nghị hoàn trả"),
+    ("thì phải bồi hoàn quỹ", "thì cư dân có cơ sở đề nghị hoàn trả quỹ"),
+    ("Né tránh, trả lời chung chung, không đưa chứng từ sau khi được yêu cầu bằng văn bản.", "Trả lời chung chung, không cung cấp chứng từ sau khi được yêu cầu bằng văn bản."),
+    ("né tránh là dấu hiệu của nhóm (3).", "việc chưa cung cấp chứng từ là căn cứ xếp vào nhóm (3)."),
+    ("từ chối hoặc trì hoãn cung cấp là dấu hiệu né tránh.", "việc chưa cung cấp hoặc trì hoãn cung cấp là căn cứ để đề nghị làm rõ thêm."),
+    ("báo cáo lệch số liệu có thể thuộc sai phạm chứng từ theo Điều 10.1 Quy chế thu chi.", "báo cáo lệch số liệu cần được đối chiếu với quy định về chứng từ tại Điều 10.1 Quy chế thu chi."),
+    ("; bồi hoàn, bãi nhiệm do Hội nghị nhà chung cư xem xét.", "; việc đề nghị hoàn trả quỹ và xem xét trách nhiệm thuộc Hội nghị nhà chung cư."),
+    ("Cột Tin cậy là mức chắc chắn của việc xếp nhóm", "Cột Tin cậy là mức độ tin cậy của việc xếp nhóm"),
     ("Có khuất tất hay không?", "Những điểm nào cần làm rõ?"),
     ("Có khuất tất không, quỹ có mất tiền không, các mức dấu hiệu", "Điểm nào cần làm rõ, quỹ có bị thiệt hại không, các mức dấu hiệu"),
     ("Quỹ có bị mất tiền không?", "Đã đánh giá được quỹ có bị thiệt hại hay chưa?"),
@@ -466,6 +501,77 @@ R2 = [
     ("không nộp vào quỹ như Luật Nhà ở 2023 yêu cầu", "chưa nộp vào tài khoản quỹ theo khoản 4 Điều 153 Luật Nhà ở 2023"),
     ("là yếu kém quản lý.", "cho thấy công tác quản lý cần được cải thiện."),
 ]
+R3 = [
+    # ---- 17/10/2026 (phien Sao ke, lop loc 3): bo y tran an, bo suy dien, che tai co dieu kien, "hoan tra" thay "boi hoan" ----
+    ("tiền về đúng người nhận và chưa thấy ai hưởng lợi", "tiền về đúng người nhận theo sao kê"),
+    ("Tiền về đúng người nhận, chưa thấy ai hưởng lợi.", "Tiền về đúng người nhận theo sao kê."),
+    ("hoặc quản lý tiền chưa hiệu quả, chưa thấy ai hưởng lợi.", "hoặc quản lý tiền chưa hiệu quả."),
+    ("tiền về đúng người nhận, chưa thấy ai hưởng lợi.", "tiền về đúng người nhận theo sao kê."),
+    ("quản lý tiền chưa hiệu quả; **chưa thấy ai hưởng lợi**.", "quản lý tiền chưa hiệu quả; **cần hồ sơ để xác nhận**."),
+    ("; chưa thấy ai hưởng lợi", "; cần hồ sơ để xác nhận"),
+    (", chưa thấy ai hưởng lợi", ""),
+    ("không thấy ai hưởng lợi", "cần hồ sơ để xác nhận"),
+    ("không ai hưởng lợi", "cần hồ sơ để xác nhận"),
+    ("không có dấu hiệu ai hưởng lợi.", "cần hồ sơ để xác nhận người hưởng thụ cuối cùng."),
+    ("Chưa có dấu hiệu nào đủ để kết luận chiếm đoạt, nhưng Điều 10 Quy chế quy định chi sai mục đích hay sai phạm chứng từ đều phải bồi thường, nên Ban quản trị có nghĩa vụ giải trình.",
+     "Điều 10 Quy chế quy định trách nhiệm của thành viên khi chi tiêu sai mục đích hoặc có sai phạm chứng từ; vì vậy Ban quản trị cần giải trình các khoản nêu trên."),
+    ("cái sai có thể do", "dấu hiệu có thể do"),
+    ("nên bắt buộc phải có kế hoạch", "nên theo Quy chế cần có kế hoạch"),
+    ("có cơ sở đề nghị bồi hoàn quỹ, có thể là căn cứ để xem xét bãi nhiệm", "có cơ sở đề nghị hoàn trả về quỹ, và Hội nghị nhà chung cư có thể xem xét trách nhiệm theo Quy chế"),
+    ("phần chênh giá có cơ sở đề nghị bồi hoàn và có thể là căn cứ để xem xét bãi nhiệm.", "cư dân có cơ sở đề nghị hoàn trả phần chênh giá về quỹ, và Hội nghị nhà chung cư có thể xem xét trách nhiệm theo Quy chế."),
+    ("giá cao hơn thị trường thì bồi hoàn phần chênh.", "giá cao hơn thị trường thì có cơ sở đề nghị hoàn trả phần chênh."),
+    ("có thể thuộc diện quản lý kinh phí bảo trì không đúng quy định", "cần làm rõ theo quy định về quản lý kinh phí bảo trì"),
+    ("bồi hoàn và bãi nhiệm đặt ra khi không chứng minh được hoặc không khắc phục.", "việc đề nghị hoàn trả quỹ và xem xét trách nhiệm chỉ đặt ra khi không chứng minh được hoặc không khắc phục."),
+    ("Khung phạt Ban quản trị 50 – 60 triệu đồng, kèm buộc bồi hoàn khoản sử dụng không đúng quy định (khoản 3 Điều 61 Nghị định 339/2026/NĐ-CP).",
+     "Nếu cơ quan có thẩm quyền xác định là vi phạm: khung phạt Ban quản trị 50 – 60 triệu đồng và biện pháp khắc phục theo khoản 3 Điều 61 Nghị định 339/2026/NĐ-CP."),
+    ("đề nghị bồi hoàn quỹ", "đề nghị hoàn trả khoản chi về quỹ"),
+    ("đề nghị bồi hoàn", "đề nghị hoàn trả"),
+    ("4,22 tỷ, cần làm rõ lý do phải ứng trước", "4,22 tỷ, nên cần làm rõ lý do phải ứng trước"),
+    ("Trách nhiệm hình sự Chưa có khoản nào.", "Trách nhiệm hình sự: ngoài phạm vi đánh giá."),
+    ("Chưa có dữ kiện: không rút tiền mặt, không chuyển cho cá nhân.", "Tài liệu này chỉ đối chiếu sao kê với Quy chế và Luật Nhà ở."),
+    ("không có lý do phải ứng trước từ tài khoản khác", "cần làm rõ lý do phải ứng trước từ tài khoản khác"),
+    ("chưa loại trừ có chủ đích", "cần hồ sơ làm rõ nguyên nhân"),
+    ("Chưa loại trừ khả năng có chủ đích", "Cần hồ sơ để làm rõ nguyên nhân"),
+    ("Bốn dấu hiệu chưa loại trừ", "Bốn dấu hiệu cần thêm hồ sơ"),
+    ("né tránh chứng từ", "chứng từ chưa được cung cấp"),
+    ("Quỹ bảo trì: có khuất tất hay không?", "Quỹ bảo trì: những điểm nào cần làm rõ?"),
+    ("Khó là lỡ tay:", "Khó là sơ suất ghi chép:"),
+    ("tài khoản của chính Ban quản trị", "tài khoản do Ban quản trị đứng tên"),
+    ("Chưa có dấu hiệu né tránh", "Chứng từ được cung cấp khi có yêu cầu"),
+    ("né tránh cung cấp", "chưa cung cấp"),
+    ("Chuyển cơ quan điều tra chỉ khi có chứng cứ chiếm đoạt; đến nay chưa có dữ kiện như vậy.", "Trách nhiệm hình sự, nếu có, chỉ do cơ quan tiến hành tố tụng xem xét; tài liệu này không đánh giá nội dung này."),
+    ("Chỉ khi có chứng cứ chiếm đoạt; đến nay chưa có dữ kiện như vậy", "Chỉ do cơ quan tiến hành tố tụng xem xét; tài liệu này không đánh giá nội dung này"),
+    (">Chuyển cơ quan điều tra<", ">Trách nhiệm hình sự<"),
+    ("Bồi hoàn khoản không có chứng từ", "Đề nghị hoàn trả khoản không có chứng từ"),
+    ("Bồi hoàn: Điều 10.1 Quy chế thu chi.", "Hoàn trả quỹ: Điều 10.1 Quy chế thu chi."),
+    ("triệu đồng, nếu xác định vi phạm", "triệu đồng, nếu cơ quan có thẩm quyền xác định vi phạm"),
+    ("Khoản không chứng minh được phải bồi hoàn quỹ.", "Khoản không chứng minh được, cư dân có cơ sở đề nghị hoàn trả về quỹ."),
+    ("khoản không chứng minh được phải bồi hoàn", "khoản không chứng minh được có cơ sở đề nghị hoàn trả"),
+    ("có khung phạt 50 – 60 triệu đồng kèm buộc bồi hoàn.", "có khung phạt 50 – 60 triệu đồng và biện pháp khắc phục."),
+    ("nhóm chưa loại trừ (3)", "nhóm cần hồ sơ (3)"),
+    ("Cũng không có lý do phải ứng trước:", "Cũng cần làm rõ lý do phải ứng trước:"),
+    ("không có lý do phải ứng từ tài khoản khác", "cần làm rõ lý do phải ứng từ tài khoản khác"),
+    ("do chính 6 thành viên Ban quản trị", "do 6 thành viên Ban quản trị"),
+    ("4 chưa loại trừ khả năng có chủ đích, cần chứng từ để kết luận.", "4 dấu hiệu cần thêm hồ sơ để làm rõ nguyên nhân."),
+    ("Chưa có khoản nào đủ căn cứ để đặt vấn đề hình sự.", "Trang không đánh giá trách nhiệm hình sự."),
+    ("nếu được xác định là vi phạm, khung phạt 50 đến 60 triệu và buộc bồi hoàn.", "nếu cơ quan có thẩm quyền xác định là vi phạm, khung phạt 50 – 60 triệu đồng và biện pháp khắc phục."),
+    ("Tuy vậy, 4 dấu hiệu chưa loại trừ được khả năng này;", "Có 4 dấu hiệu cần thêm hồ sơ để làm rõ nguyên nhân;"),
+    ("Vì sao chưa loại trừ", "Vì sao cần thêm hồ sơ"),
+    ("Né tránh chứng từ khi được yêu cầu.", "Chứng từ chưa được cung cấp khi được yêu cầu."),
+    ("chứng từ né tránh hoặc mâu thuẫn sau khi đã được yêu cầu.", "chứng từ chưa được cung cấp hoặc mâu thuẫn sau khi đã được yêu cầu."),
+    ("Khoản chi không đủ chứng từ vẫn phải làm rõ và hoàn lại quỹ; điểm nghi vấn trên sao kê vẫn cần được khắc phục.", "Khoản chi chưa đủ chứng từ cần được làm rõ; khoản không chứng minh được có cơ sở đề nghị hoàn trả về quỹ."),
+    ("điểm nghi vấn trên sao kê vẫn có khung phạt.", "điểm nghi vấn trên sao kê vẫn cần được giải trình."),
+    ("Bồi hoàn, kiểm toán đột xuất, xem xét bãi nhiệm; có dấu hiệu vi phạm pháp luật thì đề nghị cơ quan có thẩm quyền xem xét.", "Đề nghị cung cấp chứng từ, kiểm toán đột xuất; Hội nghị nhà chung cư xem xét trách nhiệm theo Quy chế."),
+    ("Không có chứng từ thì bồi hoàn", "Không có chứng từ thì cư dân có cơ sở đề nghị hoàn trả"),
+    ("thì phải bồi hoàn quỹ", "thì cư dân có cơ sở đề nghị hoàn trả quỹ"),
+    ("Né tránh, trả lời chung chung, không đưa chứng từ sau khi được yêu cầu bằng văn bản.", "Trả lời chung chung, không cung cấp chứng từ sau khi được yêu cầu bằng văn bản."),
+    ("né tránh là dấu hiệu của nhóm (3).", "việc chưa cung cấp chứng từ là căn cứ xếp vào nhóm (3)."),
+    ("từ chối hoặc trì hoãn cung cấp là dấu hiệu né tránh.", "việc chưa cung cấp hoặc trì hoãn cung cấp là căn cứ để đề nghị làm rõ thêm."),
+    ("báo cáo lệch số liệu có thể thuộc sai phạm chứng từ theo Điều 10.1 Quy chế thu chi.", "báo cáo lệch số liệu cần được đối chiếu với quy định về chứng từ tại Điều 10.1 Quy chế thu chi."),
+    ("; bồi hoàn, bãi nhiệm do Hội nghị nhà chung cư xem xét.", "; việc đề nghị hoàn trả quỹ và xem xét trách nhiệm thuộc Hội nghị nhà chung cư."),
+    ("Cột Tin cậy là mức chắc chắn của việc xếp nhóm", "Cột Tin cậy là mức độ tin cậy của việc xếp nhóm"),
+]
+HITS3 = {i: 0 for i in range(len(R3))}
 HITS2 = {i: 0 for i in range(len(R2))}
 # Cac cau can tranh hoan toan sau khi ap dung (kiem tra cuoi)
 CAM = ["chưa mất", "không mất", "khuất tất", "làm trái", "vi phạm đã rõ", "đi sai", "chi sai", "thất thoát thật", "Lẽ ra", "lẽ ra",
@@ -495,17 +601,29 @@ def _sub2(x):
         HITS2[i] += 1; return b
     return _RX2.sub(f, x)
 
+_RX3 = None
+_ORD3 = None
+def _sub3(x):
+    def f(m):
+        i = _ORD3[m.lastindex - 1]; a, b = R3[i]
+        k = b.find(a)
+        if k >= 0 and m.start() >= k and x.startswith(b, m.start() - k): return a
+        HITS3[i] += 1; return b
+    return _RX3.sub(f, x)
+
 def soften(s):
     """Mot luot duy nhat, cum dai nhat thang tai moi vi tri; khong thay chong; chay lai tren van ban da sua khong doi gi; bo qua anh base64."""
-    global _RX, _ORD, _RX2, _ORD2
+    global _RX, _ORD, _RX2, _ORD2, _RX3, _ORD3
     if not isinstance(s, str): return s
     if _RX is None:
         _ORD = sorted(range(len(R)), key=lambda i: -len(R[i][0]))
         _RX = re.compile("|".join("(" + re.escape(R[i][0]) + ")" for i in _ORD))
         _ORD2 = sorted(range(len(R2)), key=lambda i: -len(R2[i][0]))
         _RX2 = re.compile("|".join("(" + re.escape(R2[i][0]) + ")" for i in _ORD2))
+        _ORD3 = sorted(range(len(R3)), key=lambda i: -len(R3[i][0]))
+        _RX3 = re.compile("|".join("(" + re.escape(R3[i][0]) + ")" for i in _ORD3))
     parts = _B64.split(s)
-    return "".join(x if i % 2 else _sub2(_sub(x)) for i, x in enumerate(parts))
+    return "".join(x if i % 2 else _sub3(_sub2(_sub(x))) for i, x in enumerate(parts))
 
 def walk(o):
     if isinstance(o, str): return soften(o)
@@ -514,6 +632,6 @@ def walk(o):
     return o
 
 def report():
-    miss = [R[i][0][:70] for i, n in HITS.items() if n == 0] + ["L2: " + R2[i][0][:70] for i, n in HITS2.items() if n == 0]
+    miss = [R[i][0][:70] for i, n in HITS.items() if n == 0] + ["L2: " + R2[i][0][:70] for i, n in HITS2.items() if n == 0] + ["L3: " + R3[i][0][:70] for i, n in HITS3.items() if n == 0]
     print("ngon_tu: ap dung", sum(1 for n in HITS.values() if n), "/", len(R), "quy tac; khong khop:", len(miss))
     for m in miss: print("   -", m)

@@ -17,7 +17,7 @@ QC05 = "Quy chế kèm Thông tư 05/2024/TT-BXD"
 
 # ---------------------------------------------------------------- tinh trang phap ly cua tung dau hieu
 # key: (nhan, mau chu, mau nen) theo nghia: do = da ro, cam = cho chung minh, vang = hieu qua thap, navy = theo doi
-LG_ST = {"ro": ("Đã rõ", "#A93434", "#F8E3E3"),
+LG_ST = {"ro": ("Trên sao kê", "#A93434", "#F8E3E3"),
          "cho": ("Chờ chứng minh", "#C55A11", "#FCE9DC"),
          "hq": ("Hiệu quả thấp", "#8A6100", "#FBF3D9"),
          "td": ("Theo dõi", "#1F3864", "#E6ECF5")}

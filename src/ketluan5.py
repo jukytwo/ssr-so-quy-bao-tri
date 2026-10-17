@@ -124,12 +124,12 @@ def qm_pct(v):
 
 
 # ---------------------------------------------------------------- khung xu ly
-KX_H = ["Tình trạng", "Dấu hiệu", "Khắc phục", "Phạt Ban quản trị", "Bồi hoàn quỹ", "Bãi nhiệm", "Hình sự"]
-KX = [
-    ("Đã rõ trên sao kê", ", ".join(ST["ro"]), "Bắt buộc", "50 – 60 triệu đồng", "Phần không có chứng từ hợp lệ", "Đã có căn cứ", "Chỉ khi có chứng cứ chiếm đoạt", "r"),
-    ("Chờ chứng minh, có chứng từ hợp lệ", f"{len(ST['cho'])} dấu hiệu", "Sửa quy trình nếu sai", "Không", "Không", "Không", "Không", "g"),
-    ("Chờ chứng minh, không chứng minh được", f"{len(ST['cho'])} dấu hiệu", "Bắt buộc", "50 – 60 triệu đồng", "Toàn bộ khoản đó", "Có căn cứ", "Chuyển cơ quan điều tra nếu có dấu hiệu chiếm đoạt", "o"),
-    ("Hiệu quả thấp", ", ".join(ST["hq"]), "Giải trình trước Hội nghị, đổi cách gửi", "Không", "Không", "Hội nghị đánh giá khi bầu lại", "Không", "y"),
+KX_H = ["Tình trạng", "Dấu hiệu", "Khắc phục", "Khung phạt, nếu cơ quan có thẩm quyền xác định vi phạm", "Hoàn trả quỹ", "Xem xét trách nhiệm", "Hình sự"]
+KX = [  # 17/10/2026: che tai luon co dieu kien; xem xet trach nhiem thuoc Hoi nghi nha chung cu; trang khong danh gia hinh su
+    ("Thể hiện trên sao kê", ", ".join(ST["ro"]), "Đề nghị khắc phục", "50 – 60 triệu đồng", "Phần không có chứng từ hợp lệ", "Hội nghị nhà chung cư xem xét", "Ngoài phạm vi đánh giá", "r"),
+    ("Chờ chứng minh, có chứng từ hợp lệ", f"{len(ST['cho'])} dấu hiệu", "Hoàn thiện quy trình nếu cần", "Không", "Không", "Không", "Không", "g"),
+    ("Chờ chứng minh, không chứng minh được", f"{len(ST['cho'])} dấu hiệu", "Đề nghị khắc phục", "50 – 60 triệu đồng", "Khoản không chứng minh được", "Hội nghị nhà chung cư xem xét", "Do cơ quan có thẩm quyền xem xét", "o"),
+    ("Hiệu quả thấp", ", ".join(ST["hq"]), "Giải trình trước Hội nghị, điều chỉnh cách gửi", "Không", "Không", "Hội nghị đánh giá khi bầu lại", "Không", "y"),
     ("Theo dõi", ", ".join(ST["td"]), "Công khai hợp đồng tái tục", "Không", "Không", "Không", "Không", "n"),
 ]
 KXC_H = ["Nguyên nhân", "Số dấu hiệu", "Xử lý trách nhiệm cá nhân"]

@@ -55,20 +55,20 @@ def page(fmt, pill, title, stats, d_short, no=""):
 
 jobs = []
 ds, dl = dur("SSR_Quy_bao_tri_ban_day_du_25p")
-jobs.append(("w", f"00 - Bản đầy đủ ({dl})", page("w", "BẢN ĐẦY ĐỦ · CLIP NGANG · CÓ CHIA CHƯƠNG", "Quỹ bảo trì: **sai ở đâu**, tới mức nào, Hội nghị quyết định gì",
-                                                  O_STATS if (O_STATS := V.O.C_ONE["video_cover_stats"]) else [], ds)))
+jobs.append(("w", f"00 - Bản đầy đủ ({dl})", page("w", "BẢN ĐẦY ĐỦ · CLIP NGANG · CÓ CHIA CHƯƠNG", "Quỹ bảo trì: **điểm nào cần làm rõ**, tới mức nào, Hội nghị quyết định gì",
+                                                  __import__("ngon_tu_clip").walk(V.O.C_ONE["video_cover_stats"]), ds)))
 for n, p in V.PARTS.items():
     ds, dl = dur(f"SSR_Quy_bao_tri_phan_{n}_tren_6")
     t = p["name"]; t = t.replace(": ", ": **", 1) + "**" if ": " in t else "**" + t + "**"
-    jobs.append(("w", f"Phần {n} - {p['name'].replace(':', ' -')} ({dl})", page("w", f"PHẦN {n} / 6 · CLIP NGANG", t, V.PART_STATS[n], ds)))
+    jobs.append(("w", f"Phần {n} - {p['name'].replace(':', ' -')} ({dl})", page("w", f"PHẦN {n} / 6 · CLIP NGANG", t, __import__("ngon_tu_clip").walk(V.PART_STATS[n]), ds)))
 for k, s in V.SEG.items():
     ds, dl = dur(f"SSR_Quy_bao_tri_clip_doc_{k:02d}_tren_11")
     t = s["short"]; t = t.replace(": ", ": **", 1) + "**" if ": " in t else "**" + t + "**"
-    jobs.append(("t", f"Clip {k:02d} - {s['short'].replace(':', ' -')} ({dl})", page("t", f"CLIP {k} / 11 · XEM TRÊN ĐIỆN THOẠI", t, V.DOC_STATS[k], ds, no=f"{k:02d}")))
+    jobs.append(("t", f"Clip {k:02d} - {s['short'].replace(':', ' -')} ({dl})", page("t", f"CLIP {k} / 11 · XEM TRÊN ĐIỆN THOẠI", t, __import__("ngon_tu_clip").walk(V.DOC_STATS[k]), ds, no=f"{k:02d}")))
 
 ds, dl = dur("SSR_Quy_bao_tri_clip_doc_tom_tat")
 jobs.append(("t", f"Clip tóm tắt - Năm vấn đề trong 90 giây ({dl})", page("t", "CLIP TÓM TẮT · XEM TRÊN ĐIỆN THOẠI", "Quỹ bảo trì: **năm vấn đề** trong 90 giây",
-             [["5", "vấn đề", "r"], ["127,15 tỷ", "tiền gốc còn", "g"]], ds, no="5")))
+             [["5", "vấn đề", "r"], ["127,15 tỷ", "số dư theo sao kê", "g"]], ds, no="5")))
 from playwright.sync_api import sync_playwright
 with sync_playwright() as pw:
     b = pw.chromium.launch()

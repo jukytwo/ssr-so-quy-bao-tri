@@ -5,7 +5,7 @@ os.environ.setdefault("CLIP_RES", "1080")
 sys.path.insert(0, "/home/claude/ssr"); os.chdir("/home/claude/ssr")
 import video_ssr_25 as V
 O = V.O; _V = {v["id"]: v for v in O.V_ONE}
-S0 = dict(sec="Tiền có mất không", icon="view")
+S0 = dict(sec="Sao kê cho thấy gì", icon="view")
 vis = [dict(_V["ok"]), dict(_V["tong"]), dict(_V["pa"]), dict(_V["cuda"])]
 vs = [("bia", "Quỹ bảo trì chung cư: năm vấn đề trong 90 giây."),
       ("bia", "Ngày 23/12/2025, 986,9 triệu tiền quỹ chuyển vào tài khoản do chính các thành viên Ban quản trị đồng đứng tên."),
@@ -20,9 +20,10 @@ vs = [("bia", "Quỹ bảo trì chung cư: năm vấn đề trong 90 giây."),
       ("pa#-1", "Hội nghị có ba phương án, xét riêng từng thành viên: giữ, xem xét thêm, hoặc bãi nhiệm."),
       ("cuda#-1", "Cư dân nên xem bộ clip đầy đủ, đọc ba file trong thư mục chia sẻ, và theo dõi câu trả lời cho mười câu hỏi."),
       ("lienhe", V.END)]
+import ngon_tu_clip as _NC; vs = _NC.walk(vs); vis = _NC.walk(vis)
 for s in vs: assert "(" not in s[1] and "→" not in s[1]
 C = V.VS.C.copy()
-C.update(hero_title="Quỹ bảo trì: **năm vấn đề** trong 90 giây", video_cover_stats=[["5", "vấn đề", "r"], ["127,15 tỷ", "tiền gốc còn", "g"]],
+C.update(hero_title="Quỹ bảo trì: **năm vấn đề** trong 90 giây", video_cover_stats=[["5", "vấn đề", "r"], ["127,15 tỷ", "số dư theo sao kê", "g"]],
          video_script=vs, video_visuals=vis)
 C["meta"] = dict(V.VS.C["meta"], date="Tóm tắt · 04/10/2026"); C.pop("video_script_short", None)
 if __name__ == "__main__":

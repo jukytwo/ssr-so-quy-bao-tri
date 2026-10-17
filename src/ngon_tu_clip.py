@@ -54,11 +54,58 @@ CR = [
     ("Tiền có mất không", "Sao kê cho thấy gì"),
     ("tiền gốc còn", "số dư theo sao kê"),
 ]
+# ---- 17/10/2026 (phien Sao ke): lop cuoi cho clip, chay sau ngon_tu; trang trong, khong suy dien, che tai luon co dieu kien ----
+CR3 = [
+    ("Không có lệnh rút tiền mặt, không có khoản chuyển cho cá nhân.", "Trên sao kê, không có lệnh rút tiền mặt, không có khoản chuyển cho cá nhân."),
+    ("không có lý do phải ứng trước từ tài khoản khác.", "nên cần làm rõ lý do phải ứng trước từ tài khoản khác."),
+    ("không vào quỹ như khoản 4 Điều 153 Luật Nhà ở 2023 quy định.", "chưa nộp vào tài khoản quỹ theo khoản 4 Điều 153 Luật Nhà ở 2023."),
+    ("và phải chuyển toàn bộ số dư về quỹ.", "và đề nghị chuyển toàn bộ số dư về quỹ."),
+    ("dù theo luật tài khoản quỹ mới là tài khoản đúng.", "trong khi theo Luật Nhà ở, khoản thu này cần nộp vào tài khoản quỹ."),
+    ("Xây mới trên phần sở hữu chung không phải bảo trì, phải do Hội nghị quyết định.", "Xây mới trên phần sở hữu chung có thể không thuộc phạm vi bảo trì; cần làm rõ việc này đã được Hội nghị quyết định hay chưa."),
+    ("Cả ba đều không qua kế hoạch bảo trì, ba báo giá và nghiệm thu như tiền quỹ phải có.", "Với cả ba, chưa thấy hồ sơ kế hoạch bảo trì, ba báo giá và nghiệm thu theo quy trình chi tiền quỹ."),
+    ("không qua kế hoạch bảo trì, ba báo giá và nghiệm thu của quỹ.", "chưa thấy hồ sơ kế hoạch bảo trì, ba báo giá và nghiệm thu theo quy trình của quỹ."),
+    ("và 187,4 triệu nộp thuế, không qua quy trình của quỹ.", "và 187,4 triệu nộp thuế, chưa qua quy trình chi của quỹ."),
+    ("Rõ nhất là tháng 4/2026", "Đáng chú ý là tháng 4/2026"),
+    ("Không thấy lấy ý kiến chủ sở hữu theo Điều 9.2.", "Chưa thấy văn bản lấy ý kiến chủ sở hữu theo Điều 9.2."),
+    ("cho thấy người lập và người duyệt lệnh chưa tách riêng.", "cần làm rõ việc tách riêng người lập và người duyệt lệnh."),
+    ("tiền lãi bỏ lỡ khoảng", "chênh lệch tiền lãi ước tính khoảng"),
+    ("Chưa thấy dấu hiệu bất thường, nhưng chỉ nhìn sao kê tài khoản thanh toán thì chưa thể khẳng định tiền còn đủ.", "Chỉ dựa vào sao kê tài khoản thanh toán thì chưa thể xác nhận đầy đủ số tiền gửi; cần xác nhận của ngân hàng."),
+    ("hồ sơ lưu thiếu, nhưng tiền về đúng người nhận và chưa thấy ai hưởng lợi.", "hồ sơ lưu thiếu, tiền về đúng người nhận theo sao kê."),
+    ("hoặc quản lý tiền chưa hiệu quả, chưa thấy ai hưởng lợi.", "hoặc quản lý tiền chưa hiệu quả."),
+    ("tiền về đúng người nhận, chưa thấy ai hưởng lợi.", "tiền về đúng người nhận theo sao kê."),
+    ("quản lý tiền chưa hiệu quả; **chưa thấy ai hưởng lợi**.", "quản lý tiền chưa hiệu quả; **cần hồ sơ để xác nhận**."),
+    ("Bốn dấu hiệu chưa loại trừ.", "Bốn dấu hiệu cần thêm hồ sơ."),
+    ("Bốn dấu hiệu chưa loại trừ", "Bốn dấu hiệu cần thêm hồ sơ"),
+    ("Chưa loại trừ khả năng có chủ đích", "Cần hồ sơ để làm rõ nguyên nhân"),
+    ("chưa loại trừ có chủ đích", "cần hồ sơ làm rõ nguyên nhân"),
+    ("chưa từng vào quỹ.", "đang nằm ngoài tài khoản quỹ."),
+    ("đề nghị bồi hoàn quỹ", "đề nghị hoàn trả khoản chi về quỹ"),
+    ("né tránh chứng từ.", "chứng từ chưa được cung cấp."),
+    ("Điểm nghi vấn trên sao kê vẫn cần được khắc phục và có khung phạt.", "Điểm nghi vấn trên sao kê cần được giải trình, khắc phục theo Quy chế."),
+    ("Nếu xác định vi phạm: phạt 50 – 60 triệu đồng, buộc bồi hoàn (Điều 61 Nghị định 339/2026/NĐ-CP).", "Khung phạt 50 – 60 triệu đồng nếu cơ quan có thẩm quyền xác định vi phạm (Điều 61 NĐ 339/2026)."),
+    ("Có thể là căn cứ bãi nhiệm thành viên liên quan (khoản 2 Điều 8 Quy chế hoạt động BQT).", "Hội nghị xem xét trách nhiệm (khoản 2 Điều 8 Quy chế hoạt động)."),
+    ("Chưa có dữ kiện: không rút tiền mặt, không chuyển cho cá nhân.", "Tài liệu này chỉ đối chiếu sao kê với Quy chế và Luật Nhà ở."),
+    ("Không có văn bản, né tránh chứng từ; khoản không chứng minh được thì **bồi hoàn quỹ**", "Theo thẩm quyền Hội nghị, khi văn bản, chứng từ không được cung cấp; khoản không chứng minh được, cư dân có cơ sở đề nghị **hoàn trả về quỹ**"),
+    ("Hai hợp đồng **trả 100%** trước nghiệm thu", "Hai hợp đồng **trả 100%** ngay sau khi ký"),
+    ("Không có văn bản, chứng từ chưa được cung cấp; khoản không chứng minh được thì **bồi hoàn quỹ**", "Theo thẩm quyền Hội nghị, khi văn bản, chứng từ không được cung cấp; khoản không chứng minh được, cư dân có cơ sở đề nghị **hoàn trả về quỹ**"),
+    ("đề nghị hoàn trả quỹ", "đề nghị hoàn trả khoản chi về quỹ"),
+    ("4,22 tỷ, cần làm rõ lý do phải ứng trước", "4,22 tỷ, nên cần làm rõ lý do phải ứng trước"),
+    ("Đề nghị khắc phục: đưa tiền khu vực chung về quỹ, có chứng từ từng khoản.", "Đề nghị đưa tiền khu vực chung về quỹ, kèm chứng từ."),
+    ("Không có thì cư dân có cơ sở đề nghị hoàn trả khoản chi về quỹ (Điều 10.1).", "Không có: cư dân có cơ sở đề nghị hoàn trả về quỹ (Điều 10.1)."),
+    ("Đề nghị Ban quản trị chứng minh bằng chứng từ (Điều 6.1.f Quy chế thu chi).", "Đề nghị chứng minh bằng chứng từ (Điều 6.1.f Quy chế thu chi)."),
+    ("trong đó 1,40 tỷ đã chi ngoài quy trình.", "trong đó 1,40 tỷ đã chi chưa qua quy trình của quỹ."),
+    ("vào tài khoản của Ban quản trị,", "vào tài khoản do Ban quản trị đứng tên,"),
+]
+EXACT = {"Đã rõ": "Trên sao kê", "Chưa có khoản nào.": "Ngoài phạm vi đánh giá.", "Bãi nhiệm": "Xem xét bãi nhiệm",
+         "Khi không khắc phục": "Thuộc thẩm quyền Hội nghị", "chi ngoài quy trình": "chi chưa qua quy trình quỹ"}
 def soften(t):
     if not isinstance(t, str): return t
     for a, b in CR:
         if a in t and not (a in b and b in t): t = t.replace(a, b)
-    return NT.soften(t)
+    t = NT.soften(t)
+    for a, b in CR3:
+        if a in t and not (a in b and b in t): t = t.replace(a, b)
+    return EXACT.get(t, t)
 def walk(o):
     if isinstance(o, str): return soften(o)
     if isinstance(o, list): return [walk(x) for x in o]
