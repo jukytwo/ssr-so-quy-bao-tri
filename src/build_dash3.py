@@ -288,7 +288,7 @@ LDP = ('<div class="h3x" id="luu-do">Đường đi của tiền: năm trường 
 assert tpl.count("{{LD}}") == 1
 tpl = tpl.replace("{{LD}}", LDP)
 assert tpl.count("{{LEGAL}}") == 1 and tpl.count("{{NFAQ}}") == 1
-assert tpl.count("{{KL5}}") == 1 and tpl.count("{{KL5S}}") == 1 and tpl.count("{{NN}}") == 1
+assert tpl.count("{{KL5}}") == 1 and tpl.count("{{KL5S}}") <= 1 and tpl.count("{{NN}}") == 1  # 20/10/2026: KL5S bỏ khỏi Tổng quan
 tpl = tpl.replace("{{KL5}}", KL5).replace("{{KL5S}}", KL5S).replace("{{NN}}", NNP).replace("{{LEGAL}}", LEGAL).replace("{{NFAQ}}", str(len(FAQ["items"])))
 tpl = tpl.replace("{{SVG_FLOW}}", viz.svg_flow(T)).replace("{{SVG_MONTHLY}}", viz.svg_monthly(T)).replace("{{SVG_RATES}}", viz.svg_rates(T)) \
          .replace("{{SVG_DONUT}}", viz.svg_donut(Counter(m["st"] for m in MX), T, 210)).replace("{{SVG_INTEREST}}", viz.svg_interest(T))

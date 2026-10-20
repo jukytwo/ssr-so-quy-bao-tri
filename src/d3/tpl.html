@@ -27,7 +27,7 @@
         <div class="ansr"><small>Câu trả lời ngắn</small><span id="ansr"></span></div>
         <p class="lede" id="lede"></p>
         <div class="chips" id="hero-chips"></div>
-        <div class="cta"><a class="tbtn pri" href="#phan-clip"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>Xem clip</a><a class="tbtn" href="#nam-cau-hoi">Năm câu hỏi kết luận</a><a class="tbtn" href="#dau-hieu" data-sev="Đỏ">3 điểm mức Đỏ</a><a class="tbtn" href="#hoi-dap">Hỏi đáp nhanh</a><a class="tbtn" href="#muoi-cau-hoi">Mười câu hỏi gửi Ban quản trị</a><a class="tbtn" href="#cap-nhat">Cập nhật sao kê mới</a></div>
+        <div class="cta"><a class="tbtn pri" href="#phan-clip"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>Xem clip</a><a class="tbtn" href="#muoi-cau-hoi">Mười câu hỏi gửi Ban quản trị</a><a class="tbtn" href="#hoi-dap">Hỏi đáp</a></div>
       </div>
       <aside class="file" aria-label="Hồ sơ đã phân tích">
         <h3>Hồ sơ đã phân tích</h3>
@@ -42,12 +42,9 @@
       </aside>
     </div>
     <div class="fiv" id="fiv"></div>
-    <div class="cstrip" id="clip-strip"></div>
     <div class="q10s" id="q10s"></div>
-    <div class="kmw" id="km" aria-label="Hiểu đúng vấn đề"></div>
-    {{KL5S}}
-    <div class="startp" id="bat-dau"><h2>Đọc theo từng phần</h2><p>Trang chia thành bảy phần, mỗi lần hiện một phần. Chọn phần muốn đọc bên dưới, ở thanh trên cùng (trên điện thoại là thanh dưới cùng), hoặc bấm Phần tiếp theo ở cuối mỗi trang. Mỗi mục hiện kết luận trước; bấm Xem phân tích chi tiết khi cần đọc sâu.</p><div class="sp-g"><button type="button" class="sp-c first" data-goview="1"><span class="sp-n">PHẦN I</span><b>Kết luận</b><small>Năm câu hỏi: có sai phạm không, tới đâu, mức độ, quy mô, khung xử lý</small></button><button type="button" class="sp-c" data-goview="2"><span class="sp-n">PHẦN II</span><b>Dữ liệu và độ tin cậy</b><small>Nguồn dữ liệu, sao kê thật hay giả</small></button><button type="button" class="sp-c" data-goview="3"><span class="sp-n">PHẦN III</span><b>Dòng tiền của quỹ</b><small>Quỹ còn bao nhiêu, 3,12 tỷ đi đâu, tiền khu vực chung, lãi suất</small></button><button type="button" class="sp-c" data-goview="4"><span class="sp-n">PHẦN IV</span><b>An toàn và tuân thủ</b><small>Thang máy, phòng cháy, đối chiếu 17 quy định</small></button><button type="button" class="sp-c" data-goview="5"><span class="sp-n">PHẦN V</span><b>Dấu hiệu và hành động</b><small>16 dấu hiệu, hệ quả pháp lý, mười câu hỏi, hồ sơ cần đòi</small></button><button type="button" class="sp-c" data-goview="hd"><span class="sp-n">PHẦN VI</span><b>Hỏi đáp</b><small>{{NFAQ}} câu hỏi thường gặp, tìm theo từ khóa</small></button><button type="button" class="sp-c" data-goview="6"><span class="sp-n">PHẦN VII</span><b>Công cụ và dữ liệu gốc</b><small>Tra cứu 198 giao dịch, nạp sao kê mới, tải tài liệu</small></button><a class="sp-c sp-q" href="#muoi-cau-hoi"><span class="sp-n">MỚI</span><b>Mười câu hỏi đã gửi Ban quản trị</b><small>Đọc nhanh, tải ảnh và PDF để chia sẻ</small></a></div></div>
-    <div class="kpis" id="kpis" style="margin-top:22px"></div>
+    <div class="cstrip" id="clip-strip"></div>
+    <div class="startp" id="bat-dau"><h2>Đọc theo từng phần</h2><p>Trang chia thành bảy phần, mỗi lần hiện một phần. Chọn phần muốn đọc bên dưới, ở thanh trên cùng (trên điện thoại là thanh dưới cùng), hoặc bấm Phần tiếp theo ở cuối mỗi trang. Mỗi mục hiện kết luận trước; bấm Xem phân tích chi tiết khi cần đọc sâu. Chữ có gạch chấm (tên doanh nghiệp, số tiền, tài khoản, điều khoản) bấm vào sẽ hiện thông tin liên quan.</p><div class="sp-g"><button type="button" class="sp-c first" data-goview="1"><span class="sp-n">PHẦN I</span><b>Kết luận</b><small>Năm câu hỏi: có sai phạm không, tới đâu, mức độ, quy mô, khung xử lý</small></button><button type="button" class="sp-c" data-goview="2"><span class="sp-n">PHẦN II</span><b>Dữ liệu và độ tin cậy</b><small>Nguồn dữ liệu, sao kê thật hay giả</small></button><button type="button" class="sp-c" data-goview="3"><span class="sp-n">PHẦN III</span><b>Dòng tiền của quỹ</b><small>Quỹ còn bao nhiêu, 3,12 tỷ đi đâu, tiền khu vực chung, lãi suất</small></button><button type="button" class="sp-c" data-goview="4"><span class="sp-n">PHẦN IV</span><b>An toàn và tuân thủ</b><small>Thang máy, phòng cháy, đối chiếu 17 quy định</small></button><button type="button" class="sp-c" data-goview="5"><span class="sp-n">PHẦN V</span><b>Dấu hiệu và hành động</b><small>16 dấu hiệu, hệ quả pháp lý, mười câu hỏi, hồ sơ cần đòi</small></button><button type="button" class="sp-c" data-goview="hd"><span class="sp-n">PHẦN VI</span><b>Hỏi đáp</b><small>{{NFAQ}} câu hỏi thường gặp, tìm theo từ khóa</small></button><button type="button" class="sp-c" data-goview="6"><span class="sp-n">PHẦN VII</span><b>Công cụ và dữ liệu gốc</b><small>Tra cứu 198 giao dịch, nạp sao kê mới, tải tài liệu</small></button><a class="sp-c sp-q" href="#muoi-cau-hoi"><span class="sp-n">MỚI</span><b>Mười câu hỏi đã gửi Ban quản trị</b><small>Đọc nhanh, tải ảnh và PDF để chia sẻ</small></a></div></div>
   </section>
 
   <div class="part part-clip" id="phan-clip"><div class="pn">Xem thay vì đọc</div><h2 class="pt">Bộ clip Quỹ bảo trì</h2><p class="pd">Toàn bộ nội dung phân tích dưới dạng clip có thuyết minh: bản đầy đủ chia chương để chiếu Hội nghị, sáu phần ngang để chiếu từng phần, mười một clip dọc và một clip tóm tắt để xem, gửi trên điện thoại.</p></div>
@@ -75,6 +72,7 @@
       <p>Mục tiêu của việc soi sao kê là trả lời năm câu hỏi: có sai phạm không, sai phạm tới đâu, mức độ, quy mô và khung xử lý. Điều đã rõ có bằng chứng trực tiếp trên sao kê; điều nghi vấn cần chứng từ để khẳng định hoặc bác bỏ.</p></div>
     <div class="kl-slot" data-no="01"></div>
     <div class="vans" id="vans"></div>
+    <div class="kmw" id="km" aria-label="Hiểu đúng vấn đề"></div>
     <div class="aisum" id="ai-sum" hidden></div>
     {{KL5}}
     {{NN}}
@@ -143,6 +141,7 @@
     <div class="sec-h"><div class="eyebrow"><span class="no">04</span>Quỹ còn bao nhiêu</div><h2 id="tod-h2">127,15 tỷ đang nằm ở đâu</h2>
       <p>98% quỹ là hợp đồng tiền gửi có kỳ hạn. Sao kê tài khoản thanh toán chỉ cho thấy lệnh gửi và tiền lãi, chưa phải bằng chứng số dư hiện tại.</p></div>
     <div class="kl-slot" data-no="04"></div>
+    <div class="kpis" id="kpis" style="margin:4px 0 18px"></div>
     <div class="grid2">
       <div class="panel"><h3 id="comp-h3">Cơ cấu quỹ ngày 31/05/2026</h3><div class="sub">Tiền gửi có kỳ hạn suy ra từ sao kê, cần ngân hàng xác nhận</div>
         <div class="stack" id="stack" role="img" aria-label="Cơ cấu quỹ bảo trì"></div>

@@ -98,7 +98,7 @@ function xrInit(){
   document.addEventListener("keydown", function(ev){ if (ev.key === "Escape") xrClose(); var x = ev.target; if ((ev.key === "Enter" || ev.key === " ") && x && x.classList && x.classList.contains("xr")){ ev.preventDefault(); xrOpen(x.getAttribute("data-x")); } });
   var tmr = null;
   if (window.MutationObserver) new MutationObserver(function(){ if (XR_BUSY) return; clearTimeout(tmr); tmr = setTimeout(function(){ XR_BUSY = true; xrWrap(root); XR_BUSY = false; }, 350); }).observe(root, {childList: true, subtree: true});
-  if (!sessionStorageSafe("xr-hint") && !localOnce("xr-hint")){ setTimeout(function(){ if (typeof VIEW_CUR !== "undefined" && VIEW_CUR === "clip") return; if (typeof toast === "function") toast("Mẹo: bấm vào tên doanh nghiệp, số tiền, tài khoản, điều khoản có gạch chấm để xem ngay thông tin liên quan."); }, 1500); }
+  /* 20/10/2026: bỏ hộp Mẹo tự bật khi mở trang (che tiêu đề); lời nhắc chuyển thành dòng chữ trong khối Đọc theo từng phần */
 }
 function localOnce(k){ try { var v = localStorage.getItem(k); localStorage.setItem(k, "1"); return v; } catch (e) { return null; } }
 function sessionStorageSafe(k){ try { var v = sessionStorage.getItem(k); sessionStorage.setItem(k, "1"); return v; } catch (e) { return "1"; } }

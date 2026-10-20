@@ -41,9 +41,8 @@ function renderHero(){
   var B = D.base, g = M.g;
   $("ansr").textContent = D.verdict.answer;
   $("hero-eyebrow").textContent = "Sao kê ngân hàng 15/08/2024 – " + M.asof + (M.hasNew ? ", gồm dữ liệu nạp thêm" : "");
-  $("lede").innerHTML = "Quỹ nhận <b>" + ty(D.fund_in) + " tỷ</b> ngày 15/08/2024 và có thêm <b>" + ty(M.interest) + " tỷ</b> tiền lãi. Đã chi <b>" + ty(M.spend) + " tỷ</b>, trong đó <b>" + ty(D.opaque) + " tỷ</b> đi vào tài khoản của chính Ban quản trị hoặc trả cho Thép Quang mà hàng hóa mô tả chung chung. Ngoài ra <b>" + ty(M.ca_total) + " tỷ</b> thu từ khu vực chung không nộp vào quỹ như Luật Nhà ở 2023 yêu cầu.";
-  var chips = [["Đỏ", "dấu hiệu mức Đỏ"], ["Cam", "dấu hiệu mức Cam"], ["Vàng", "dấu hiệu mức Vàng"]].map(function(x){ return '<a class="pill sev-' + x[0] + '" href="#dau-hieu" data-sev="' + x[0] + '" style="text-decoration:none"><i class="dot"></i>' + sevCount[x[0]] + " " + x[1] + "</a>"; }).join("");
-  chips += '<a class="pill sev-ok" href="#giam-dinh" style="text-decoration:none"><i class="dot"></i>Không có dấu hiệu làm giả bằng AI</a>';
+  $("lede").innerHTML = "Quỹ nhận <b>" + ty(D.fund_in) + " tỷ</b> ngày 15/08/2024 và có thêm <b>" + ty(M.interest) + " tỷ</b> tiền lãi; số dư theo sao kê ngày " + M.asofFund + " là <b>" + ty(M.fund_end) + " tỷ</b>. Năm điểm dưới đây cần Ban quản trị làm rõ bằng hồ sơ, chứng từ.";
+  var chips = '<a class="pill sev-ok" href="#giam-dinh" style="text-decoration:none"><i class="dot"></i>Không có dấu hiệu làm giả bằng AI</a>';
   var nn = g.cnt["Đỏ"] + g.cnt["Cam"] + g.cnt["Vàng"];
   if (M.hasNew) chips += '<a class="pill ' + (g.cnt["Đỏ"] ? "sev-Đỏ" : nn ? "sev-Cam" : "sev-ok") + '" href="#canh-bao-moi" style="text-decoration:none"><i class="dot"></i>' + nn + " cảnh báo từ dữ liệu mới</a>";
   $("hero-chips").innerHTML = chips;
