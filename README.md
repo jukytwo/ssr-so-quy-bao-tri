@@ -1,5 +1,8 @@
 # SSR: Quỹ bảo trì và Điều hành
 
+> **Bàn giao 20/10/2026:** toàn bộ SSR chuyển sang tài khoản Claude guest@tvnpartners.com.vn. Đọc `BAN-GIAO-SSR.md` trước mỗi việc.
+
+
 Một web app chung cho Saigon South Residences, gồm hai mục lớn, chuyển qua lại bằng thanh **SSR · Quỹ bảo trì · Điều hành** ở đầu trang:
 
 | Mục | Đường dẫn | Nội dung |
