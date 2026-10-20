@@ -105,7 +105,7 @@ Lưu ý khi sửa:
 1. **Clip 11 phút "toàn bộ vấn đề"**: đã dựng lại xong ngày 20/10 (ngang 11 phút 25 giây và dọc), đã thay ở mọi thư mục trên máy anh Vũ. Trang web không dùng clip này.
 2. **Môi trường dựng:** đã đóng gói xong (xem mục 4). Tài khoản guest bung gói vào `/home/claude` là dựng lại được trang, clip, PDF từ nguồn.
 3. **Toàn văn Quy chế:** đã xong ngày 20/10/2026. Năm văn bản của bộ đã thông qua tại Hội nghị nhà chung cư ngày 26/05/2024 (Quy chế bầu Ban Quản trị, Quy chế họp Hội nghị nhà chung cư, Quy chế thu chi tài chính, Quy chế hoạt động Ban Quản trị, Nội quy) nằm ở `web/hoi-dap/tai-lieu/*.txt`, chuyển chữ từ bản chụp gốc `1.8 Tài liệu gốc/Quy chế đã thông qua` nên khi trích dẫn cần đối chiếu bản gốc. `kb.json` đã dựng lại (thêm 144 mục).
-4. **Lịch sử git:** kho công khai còn giữ clip, PDF cũ và tên thật Ban Quản trị ở bản Điều hành trước. Muốn xóa hẳn phải viết lại lịch sử kho. Việc này không đảo ngược được, chỉ làm khi anh Vũ quyết.
+4. **Lịch sử git:** kho công khai còn giữ clip, PDF cũ và tên thật Ban Quản trị ở bản Điều hành trước. Ngày 20/10/2026 anh Vũ quyết giữ nguyên, không viết lại lịch sử kho.
 5. **Khóa Gemini lộ:** khóa Gemini đầu tiên anh Vũ dán trong chat ngày 17/10 đã lộ. Nên xóa trong AI Studio nếu chưa xóa.
 6. **Theo dõi 10 câu hỏi:** cập nhật tình trạng trả lời của Ban quản trị khi có. Hạn trả lời công văn là 15 ngày.
 
