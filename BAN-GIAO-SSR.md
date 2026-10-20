@@ -30,6 +30,8 @@ Hai mảng chạy chung **một web app**, chuyển qua lại bằng thanh "SSR 
 | Trang trên claude.ai (thuộc Vũ max) | SSR Điều Hành https://claude.ai/artifact/A8XH73Bt3A31EgZxA7MhYp · Sổ quỹ bảo trì SSR https://claude.ai/artifact/5ZrS77qvrnpcY3R3bXqGGe · SSR Hội nghị: Quỹ bảo trì https://claude.ai/artifact/4L8FayGNKheeDgin1pkEvj · Quản lý vận hành và tài chính https://claude.ai/artifact/KEGhfULFytZNCKTVUbWz8P · Phản ánh và vận hành https://claude.ai/artifact/XqnQ4C3VYYojBfGx47bDvG · Giới thiệu công cụ quản lý https://claude.ai/artifact/RQLCFusCTPh8md4KFxvtZ4 · Cách làm clip minh bạch quỹ bảo trì https://claude.ai/artifact/5aPPjB3j7RxotmVAxFRVN9 | Anh Vũ chia sẻ cho tài khoản guest bằng nút Share của từng trang. Muốn guest tự sửa thì guest đăng lại bản của mình; link mới phải báo lại cho cư dân. Trang dùng chính cho cư dân là GitHub Pages, không phải các trang này. |
 | Thư mục chia sẻ SSR | Google Drive jukytwo@gmail.com, chia theo chủ đề | Anh Vũ cho mọi người có link đọc, tải. Tài khoản guest kết nối Drive bằng jukytwo@gmail.com nên đọc thẳng được. |
 
+**Không còn phụ thuộc Vũ max (20/10/2026):** bản offline Sổ quỹ (kho, Drive 1.6, Nhóm điều phối 3.4), `web/clips.json`, Mục lục Drive và Tin nhắn mẫu (Drive 1.7, Nhóm điều phối 3.1) đã đổi liên kết và mã QR sang https://jukytwo.github.io/ssr-so-quy-bao-tri/. Mã dựng đã sửa theo, bản mới nằm trong `src/` (`src/qr/build_qr.py`, `src/drive/`, `src/cv/`, `src/video25/make_web_clips.py`); bản trong `ssr_ma_nguon.tar.gz` là bản cũ, khi bung gói thì chép đè các tệp này từ `src/`.
+
 ## 3. Nguyên tắc bắt buộc
 
 **Nhận diện**

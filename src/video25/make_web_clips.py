@@ -51,7 +51,7 @@ assert sum(len(c["tx"]) for c in J["full"]["chapters"]) == len(ftl)
 for n, p in enumerate(J["parts"], 1): p["tx"] = [list(x) for x in _tl(f"SSR_Quy_bao_tri_phan_{n}_tren_6")]
 for k, p in enumerate(J["docs"], 1): p["tx"] = [list(x) for x in _tl(f"SSR_Quy_bao_tri_clip_doc_{k:02d}_tren_11")]
 J["short"]["tx"] = [list(x) for x in _tl("SSR_Quy_bao_tri_clip_doc_tom_tat")]
-URL = "https://claude.ai/artifact/5ZrS77qvrnpcY3R3bXqGGe"
+URL = "https://jukytwo.github.io/ssr-so-quy-bao-tri/"
 q = segno.make(URL, error="m"); b = _io.BytesIO(); q.save(b, kind="svg", scale=4, border=2, dark="#12301F", light="#FFFFFF", xmldecl=False, svgns=True)
 J["qr_svg"] = b.getvalue().decode(); J["url"] = URL
 json.dump(J, open(f"{W}/clips.json", "w"), ensure_ascii=False, indent=1)
