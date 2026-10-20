@@ -68,7 +68,7 @@ Hai mảng chạy chung **một web app**, chuyển qua lại bằng thanh "SSR 
 ## 4. Cách cập nhật
 
 **Trang Quỹ bảo trì**
-- Mã dựng `src/build_dash3.py` ghép `src/d3/` với dữ liệu JSON. Mã dựng trang, clip (`src/video_ssr_25.py`) và PDF dùng đường dẫn tuyệt đối của môi trường dựng cũ: `/home/claude/ssr`, `/home/claude/vtpl`, `/home/claude/gv`, `/home/claude/vshim`. Các thư mục này không có trong kho.
+- Mã dựng `src/build_dash3.py` ghép `src/d3/` với dữ liệu JSON. Mã dựng trang, clip (`src/video_ssr_25.py`) và PDF dùng đường dẫn tuyệt đối của môi trường dựng cũ: `/home/claude/ssr`, `/home/claude/vtpl`, `/home/claude/gv`, `/home/claude/vshim`. Các thư mục này không có trong kho; chúng nằm trong gói `ssr_ma_nguon.tar.gz` (kèm bộ đệm giọng đọc `ssr_bo_dem_giong_doc.tar.gz`) ở thư mục `SSR - Sao kê\Bàn giao cho guest - 20.10.2026` trên máy anh Vũ. Cách bung và quy trình dựng ở `BAN-GIAO-SSR-cho-guest.md` cùng thư mục.
 - Khi chưa có môi trường dựng, sửa thẳng trang đã dựng:
   - `src/ap_ngon_tu_web.py` áp lớp lọc câu chữ lên `index.html` và `web/index.html`.
   - `src/ap_ngon_tu_files.py` áp lên Word, Excel nhúng.
@@ -102,8 +102,8 @@ Lưu ý khi sửa:
 - Hỏi đáp AI đang chạy.
 
 **Việc còn dở**
-1. **Clip 11 phút "toàn bộ vấn đề"** (ngang và dọc) đang dựng lại ở phiên "Sao kê tài chính SSR" của Vũ max. Trang web không dùng clip này.
-2. **Môi trường dựng:** nhờ phiên "Sao kê tài chính SSR" (Vũ max) đóng gói các thư mục dựng (`/home/claude/ssr`, `vtpl`, `gv`, `vshim`, phông chữ) gửi sang. Có gói này thì tài khoản guest mới dựng lại được trang, clip, PDF từ nguồn.
+1. **Clip 11 phút "toàn bộ vấn đề"**: đã dựng lại xong ngày 20/10 (ngang 11 phút 25 giây và dọc), đã thay ở mọi thư mục trên máy anh Vũ. Trang web không dùng clip này.
+2. **Môi trường dựng:** đã đóng gói xong (xem mục 4). Tài khoản guest bung gói vào `/home/claude` là dựng lại được trang, clip, PDF từ nguồn.
 3. **Toàn văn Quy chế:** chưa có toàn văn Quy chế hoạt động Ban Quản trị, Nội quy và Quy chế thu chi (bộ đã thông qua tại Hội nghị nhà chung cư ngày 26/05/2024) cho kho Hỏi đáp. Có file thì chép thành `web/hoi-dap/tai-lieu/*.txt` rồi chạy `build_kb.js`.
 4. **Lịch sử git:** kho công khai còn giữ clip, PDF cũ và tên thật Ban Quản trị ở bản Điều hành trước. Muốn xóa hẳn phải viết lại lịch sử kho. Việc này không đảo ngược được, chỉ làm khi anh Vũ quyết.
 5. **Khóa Gemini lộ:** khóa Gemini đầu tiên anh Vũ dán trong chat ngày 17/10 đã lộ. Nên xóa trong AI Studio nếu chưa xóa.
